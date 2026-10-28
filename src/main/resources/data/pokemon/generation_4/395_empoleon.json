@@ -1,0 +1,16 @@
+{
+	"pokedex_number" : 395,
+	"species" : "EMPOLEON",
+	"category" : "EMPEROR",
+	"types" : ["WATER", "STEEL"],
+	"egg_groups" : ["WATER_1", "FIELD"],
+	"color" : "BLUE",
+	"shape" : "TWO_LEGS_AND_TAIL",
+	"height" : 1.7,
+	"weight" : 84.5,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

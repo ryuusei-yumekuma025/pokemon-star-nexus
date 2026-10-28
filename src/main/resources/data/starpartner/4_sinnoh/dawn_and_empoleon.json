@@ -1,0 +1,64 @@
+{
+	"id" : 0,
+	"code" : "DAWN_#_EMPOLEON",
+	"trainer" : "DAWN",
+	"pokemon" : {
+		"species" : "EMPOLEON",
+		"gender" : 2,
+		"is_shiny" : false
+	},
+	"star_jewel" : {
+		"sync_type" : "WATER"
+	},
+	"resonance_moves" : [
+		{
+			"id" : 0,
+			"code" : "SHIMMERING_PEARL_WHIRLPOOL",
+			"prototype" : "WHIRLPOOL",
+			"base_power" : 40,
+			"accuracy" : 100.0,
+			"action_speed" : 0.0,
+			"bond_energy_cost" : 4,
+			"stardust_tuning" : 1,
+			"target" : "SINGLE_TARGET",
+			"tags" : []
+		}
+	],
+	"star_nexus_moves" : [
+		{
+			"id" : 0,
+			"code" : "BRAND_NEW_DAWN_OF_BUBBLE_BEAM_SHINE",
+			"prototype" : "BUBBLE_BEAM",
+			"base_power" : 200,
+			"target" : "SINGLE_TARGET",
+			"tags" : []
+		}
+	],
+	"default_state" : 0,
+	"states" : [
+		{
+			"id" : 0,
+			"code" : "BASE",
+			"pokemon_form" : "EMPOLEON",
+			"moveset" : [
+				{
+					"class" : "RESONANCE",
+					"code" : "SHIMMERING_PEARL_WHIRLPOOL"
+				},
+				{
+					"class" : "POKEMON",
+					"code" : "BUBBLE_BEAM"
+				},
+				{
+					"class" : "ITEM",
+					"code" : "FULL_HEAL"
+				},
+				{
+					"class" : "TRAINER",
+					"code" : "SHINING_BRILLIANCE"
+				}
+			],
+			"star_nexus_move" : "BRAND_NEW_DAWN_OF_BUBBLE_BEAM_SHINE"
+		}
+	]
+}

@@ -1,0 +1,101 @@
+[
+	{
+		"id" : 1,
+		"code" : "POTION",
+		"tactic_point" : 4,
+		"bond_energy_cost" : 0,
+		"stardust_tuning" : 1,
+		"target" : "SELF_OR_SINGLE_ALLY_LONG_RANGE",
+		"tags" : ["HEALING"]
+	},
+	{
+		"id" : 2,
+		"code" : "SUPER_POTION",
+		"tactic_point" : 3,
+		"bond_energy_cost" : 2,
+		"stardust_tuning" : 1,
+		"target" : "SELF_OR_SINGLE_ALLY_LONG_RANGE",
+		"tags" : ["HEALING"]
+	},
+	{
+		"id" : 3,
+		"code" : "HYPER_POTION",
+		"tactic_point" : 2,
+		"bond_energy_cost" : 4,
+		"stardust_tuning" : 1,
+		"target" : "SELF_OR_SINGLE_ALLY_LONG_RANGE",
+		"tags" : ["HEALING"]
+	},
+	{
+		"id" : 4,
+		"code" : "MAX_POTION",
+		"tactic_point" : 1,
+		"bond_energy_cost" : 6,
+		"stardust_tuning" : 1,
+		"target" : "SELF_OR_SINGLE_ALLY_LONG_RANGE",
+		"tags" : ["HEALING"]
+	},
+	{
+		"id" : 5,
+		"code" : "FULL_RESTORE",
+		"tactic_point" : 1,
+		"bond_energy_cost" : 8,
+		"stardust_tuning" : 1,
+		"target" : "SELF_OR_SINGLE_ALLY_LONG_RANGE",
+		"tags" : ["HEALING"]
+	},
+	{
+		"id" : 6,
+		"code" : "ANTIDOTE",
+		"tactic_point" : 3,
+		"bond_energy_cost" : 0,
+		"stardust_tuning" : 1,
+		"target" : "SELF_OR_SINGLE_ALLY_LONG_RANGE",
+		"tags" : []
+	},
+	{
+		"id" : 7,
+		"code" : "BURN_HEAL",
+		"tactic_point" : 3,
+		"bond_energy_cost" : 0,
+		"stardust_tuning" : 1,
+		"target" : "SELF_OR_SINGLE_ALLY_LONG_RANGE",
+		"tags" : []
+	},
+	{
+		"id" : 8,
+		"code" : "ICE_HEAL",
+		"tactic_point" : 3,
+		"bond_energy_cost" : 0,
+		"stardust_tuning" : 1,
+		"target" : "SELF_OR_SINGLE_ALLY_LONG_RANGE",
+		"tags" : []
+	},
+	{
+		"id" : 9,
+		"code" : "AWAKENING",
+		"tactic_point" : 3,
+		"bond_energy_cost" : 0,
+		"stardust_tuning" : 1,
+		"target" : "SELF_OR_SINGLE_ALLY_LONG_RANGE",
+		"tags" : []
+	},
+	{
+		"id" : 10,
+		"code" : "PARALYZE_HEAL",
+		"tactic_point" : 3,
+		"bond_energy_cost" : 0,
+		"stardust_tuning" : 1,
+		"target" : "SELF_OR_SINGLE_ALLY_LONG_RANGE",
+		"tags" : []
+	},
+	{
+		"id" : 6,
+		"code" : "FULL_HEAL",
+		"tactic_point" : 3,
+		"bond_energy_cost" : 2,
+		"stardust_tuning" : 1,
+		"target" : "SELF_OR_SINGLE_ALLY_LONG_RANGE",
+		"tags" : []
+	}
+]

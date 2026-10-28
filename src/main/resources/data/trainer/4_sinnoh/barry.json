@@ -1,0 +1,23 @@
+{
+	"id" : "00400000002",
+	"code" : "BARRY",
+	"alternate_variety" : [
+		{
+			"id" : 0,
+			"code" : "CASUAL",
+			"region" : "SINNOH",
+			"trainer_classes" : ["RIVAL"],
+			"moves" : [
+				{
+					"id" : 0,
+					"code" : "NO_HESTITATION",
+					"tactic_point" : 3,
+					"bond_energy_cost" : 0,
+					"stardust_tuning" : 1,
+					"target" : "SELF",
+					"tags" : []
+				}
+			]
+		}
+	]
+}

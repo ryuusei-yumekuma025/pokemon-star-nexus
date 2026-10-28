@@ -1,0 +1,44 @@
+[
+	{
+		"id" : 1,
+		"code" : "POUND",
+		"type" : "NORMAL",
+		"category" : "PHYSICAL",
+		"tier" : 1,
+		"base_power" : 40,
+		"accuracy" : 100.0,
+		"action_speed" : 0.0,
+		"bond_energy_cost" : 4,
+		"stardust_tuning" : 1,
+		"target" : "SINGLE_TARGET",
+		"tags" : ["CONTACT"]
+	},
+	{
+		"id" : 2,
+		"code" : "KARATE_CHOP",
+		"type" : "FIGHTING",
+		"category" : "PHYSICAL",
+		"tier" : 1,
+		"base_power" : 50,
+		"accuracy" : 100.0,
+		"action_speed" : 0.0,
+		"bond_energy_cost" : 6,
+		"stardust_tuning" : 1,
+		"target" : "SINGLE_TARGET",
+		"tags" : ["CONTACT"]
+	},
+	{
+		"id" : 61,
+		"code" : "BUBBLE_BEAM",
+		"type" : "WATER",
+		"category" : "SPECIAL",
+		"tier" : 2,
+		"base_power" : 65,
+		"accuracy" : 100.0,
+		"action_speed" : 0.0,
+		"bond_energy_cost" : 10,
+		"stardust_tuning" : 2,
+		"target" : "SINGLE_TARGET",
+		"tags" : []
+	}
+]

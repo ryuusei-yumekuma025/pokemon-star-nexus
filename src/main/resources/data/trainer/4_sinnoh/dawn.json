@@ -1,0 +1,26 @@
+{
+	"id" : "00400000001",
+	"code" : "DAWN",
+	"alternate_variety" : [
+		{
+			"id" : 0,
+			"code" : "CASUAL",
+			"region" : "SINNOH",
+			"trainer_classes" : ["TRAINER_ON_JOURNEY"],
+			"moves" : [
+				{
+					"id" : 0,
+					"code" : "SHINING_BRILLIANCE",
+					"tactic_point" : 3,
+					"bond_energy_cost" : 0,
+					"stardust_tuning" : 1,
+					"target" : "SELF",
+					"tags" : []
+				}
+			],
+			"partners" : [
+				"EMPOLEON"
+			]
+		}
+	]
+}

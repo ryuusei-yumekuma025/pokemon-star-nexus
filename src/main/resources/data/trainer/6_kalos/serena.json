@@ -1,0 +1,23 @@
+{
+	"id" : "00600000001",
+	"code" : "SERENA",
+	"alternate_variety" : [
+		{
+			"id" : 0,
+			"code" : "CASUAL",
+			"region" : "KALOS",
+			"trainer_classes" : ["TRAINER_ON_JOURNEY"],
+			"moves" : [
+				{
+					"id" : 0,
+					"code" :"WHAT_MAKE_US_SPECIAL",
+					"tactic_point" : 3,
+					"bond_energy_cost" : 0,
+					"stardust_tuning" : 1,
+					"target" : "SELF",
+					"tags" : []
+				}
+			]
+		}
+	]
+}

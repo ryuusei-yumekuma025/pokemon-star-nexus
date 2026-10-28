@@ -1,0 +1,23 @@
+{
+	"id" : "00700000000",
+	"code" : "ELIO",
+	"alternate_variety" : [
+		{
+			"id" : 0,
+			"code" : "CASUAL",
+			"region" : "ALOLA",
+			"trainer_classes" : ["TRAINER_ON_JOURNEY"],
+			"moves" : [
+				{
+					"id" : 0,
+					"code" : "SYMPHONY_OF_THE_OCEAN",
+					"tactic_point" : 3,
+					"bond_energy_cost" : 0,
+					"stardust_tuning" : 1,
+					"target" : "SELF",
+					"tags" : []
+				}
+			]
+		}
+	]
+}

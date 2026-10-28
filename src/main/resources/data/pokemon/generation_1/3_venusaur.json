@@ -1,0 +1,25 @@
+{
+	"pokedex_number" : 3,
+	"species" : "VENUSAUR",
+	"category" : "SEED",
+	"types" : ["GRASS", "POISON"],
+	"egg_groups" : ["MONSTER", "GRASS"],
+	"color" : "GREEN",
+	"shape" : "FOUR_LEGGED",
+	"height" : 2.0,
+	"weight" : 100.0,
+	"forms" : [
+		{
+			"id" : 0,
+			"gender_appearance_difference" : true
+		},
+		{
+			"id" : 1,
+			"code" : "MEGA",
+			"height" : 2.4,
+			"weight" : 155.5,
+			"mega_origin" : 0,
+			"mega_boost" : [5, 30, 25, 30, 10]
+		}
+	]
+}
