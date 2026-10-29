@@ -5,7 +5,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.gameplay.masterdata.template.starpartner.PartnerState;
 import com.utils.StringUtils;
 
-import java.util.List;
+import java.util.Map;
 import java.util.Objects;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
@@ -17,7 +17,7 @@ public record PartnerStateDTO(
 		@JsonProperty("pokemon_form")
 		String pokemonForm,
 		@JsonProperty("moveset")
-		List<MoveSlotDTO> moveSlotDTOList,
+		Map<Integer, MoveSlotDTO> moveSlotDTOMap,
 		@JsonProperty("star_nexus_move")
 		String starNexusMove
 ) {
@@ -25,7 +25,7 @@ public record PartnerStateDTO(
 		Objects.requireNonNull(stateCode, "Missing State Code.");
 		stateCode = StringUtils.upperSnakeCase(stateCode);
 		Objects.requireNonNull(pokemonForm, "Missing Partner Pokemon Form.");
-		moveSlotDTOList = (moveSlotDTOList != null) ? List.copyOf(moveSlotDTOList) : List.of();
+		moveSlotDTOMap = (moveSlotDTOMap != null) ? Map.copyOf(moveSlotDTOMap) : Map.of();
 		Objects.requireNonNull(starNexusMove, "Missing Star Nexus Move.");
 	}
 
@@ -34,9 +34,7 @@ public record PartnerStateDTO(
 				.setPartnerPokemonForm(pokemonForm)
 				.setStarNexusMove(starNexusMove);
 
-		for (MoveSlotDTO moveSlotDTO : moveSlotDTOList) {
-			builder.addMoveSlot(moveSlotDTO.create());
-		}
+		moveSlotDTOMap.forEach(builder::addMoveSlot);
 
 		return builder.build();
 	}

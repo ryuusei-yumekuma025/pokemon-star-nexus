@@ -1,14 +1,14 @@
 package com.gameplay.masterdata.template.starpartner;
 
+import com.gameplay.masterdata.data.master.dto.starpartner.MoveSlotDTO;
 import com.gameplay.masterdata.data.master.registry.move.starnexus.StarNexusMoveRegistry;
 import com.gameplay.masterdata.data.master.registry.pokemon.PokemonRegistry;
+import com.gameplay.masterdata.template.move.Move;
 import com.gameplay.masterdata.template.move.starnexus.StarNexusMove;
 import com.gameplay.masterdata.template.pokemon.form.PokemonForm;
 import com.utils.StringUtils;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
 public class PartnerState {
 
@@ -22,7 +22,7 @@ public class PartnerState {
 	private final String stateCode;
 	private final PokemonForm partnerPokemonForm;
 	private final StarNexusMove starNexusMove;
-	private final List<MoveSlot> moveSlotList;
+	private final Map<Integer, Move> moveSlotMap;
 
 	//==================================================================================================================
 	//	Constructor
@@ -33,7 +33,7 @@ public class PartnerState {
 		this.stateCode = builder.stateCode;
 		this.partnerPokemonForm = builder.partnerPokemonForm;
 		this.starNexusMove = builder.starNexusMove;
-		this.moveSlotList = List.copyOf(builder.moveSlotList);
+		this.moveSlotMap = Collections.unmodifiableMap(new TreeMap<>(builder.moveSlotMap));
 	}
 
 	//==================================================================================================================
@@ -56,17 +56,16 @@ public class PartnerState {
 		return starNexusMove;
 	}
 
-	public List<MoveSlot> getMoveSlotList() {
-		return moveSlotList;
+	public Collection<Move> getMoveSlots() {
+		return Collections.unmodifiableCollection(moveSlotMap.values());
 	}
 
-	public Optional<MoveSlot> getMoveSlot(int moveSlot) {
-		for (MoveSlot slot : moveSlotList) {
-			if (slot.getMoveSlot() == moveSlot) {
-				return Optional.of(slot);
-			}
-		}
-		return Optional.empty();
+	public Move getMove(int moveSlot) {
+		return moveSlotMap.get(moveSlot);
+	}
+
+	public <M extends Move> M getMove(int moveSlot, Class<M> moveClass) {
+		return moveClass.cast(getMove(moveSlot));
 	}
 
 	//==================================================================================================================
@@ -78,7 +77,7 @@ public class PartnerState {
 		private final String stateCode;
 		private PokemonForm partnerPokemonForm;
 		private StarNexusMove starNexusMove;
-		private final List<MoveSlot> moveSlotList = new ArrayList<>();
+		private final Map<Integer, Move> moveSlotMap = new TreeMap<>();
 
 		public Builder(int stateId, String stateCode) {
 			this.stateId = stateId;
@@ -95,30 +94,17 @@ public class PartnerState {
 			return this;
 		}
 
-		public void addMoveSlot(MoveSlot moveSlot) {
-			if (moveSlot == null || moveSlot.getMove() == null) {
+		public void addMoveSlot(int moveSlot, MoveSlotDTO moveSlotDTO) {
+			if (moveSlotDTO == null) {
 				return;
 			}
 
-			int slot = moveSlot.getMoveSlot();
-
-			if (slot < 1 || slot > MAX_BASE_MOVE_SLOT) {
-				throw new IllegalArgumentException("An Unit has only 4 base Move. Slot Number " + slot + " is out of range.");
+			Move move = moveSlotDTO.create();
+			if (move == null) {
+				return;
 			}
 
-			for (int count = 0; count < moveSlotList.size(); ++count) {
-				if (moveSlotList.get(count).getMoveSlot() == slot) {
-					moveSlotList.set(count, moveSlot);
-					return;
-				}
-			}
-
-			int moveSlotPosition = 0;
-			while (moveSlotPosition < moveSlotList.size() && moveSlotList.get(moveSlotPosition).getMoveSlot() < slot) {
-				moveSlotPosition++;
-			}
-
-			moveSlotList.add(moveSlotPosition, moveSlot);
+			this.moveSlotMap.put(moveSlot, move);
 		}
 
 		public PartnerState build() {

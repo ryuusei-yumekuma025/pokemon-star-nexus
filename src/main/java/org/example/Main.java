@@ -32,7 +32,7 @@ public class Main {
 
 		System.out.println(StarNexusMoveRegistry.getStarNexusMoveByCode("Brand New Dawn of Bubble Beam Shine"));
 
-		System.out.println(StarPartnerRegistry.getStarPartnerByCode("DAWN_#_EMPOLEON").getDefaultPartnerState().getMoveSlot(1).orElseThrow().getMove(ResonanceMove.class));
+		System.out.println(StarPartnerRegistry.getStarPartnerByCode("DAWN_#_EMPOLEON").getDefaultPartnerState().getMove(1, ResonanceMove.class).getMovePrototype());
 	}
 
 	public static void printTrainer(TrainerAlternate trainerAlternate) {
