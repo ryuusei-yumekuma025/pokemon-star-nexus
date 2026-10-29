@@ -42,18 +42,22 @@
 			"pokemon_form" : "EMPOLEON",
 			"moveset" : [
 				{
+					"slot" : 1,
 					"class" : "RESONANCE",
 					"code" : "SHIMMERING_PEARL_WHIRLPOOL"
 				},
 				{
+					"slot" : 2,
 					"class" : "POKEMON",
 					"code" : "BUBBLE_BEAM"
 				},
 				{
+					"slot" : 3,
 					"class" : "ITEM",
 					"code" : "FULL_HEAL"
 				},
 				{
+					"slot" : 4,
 					"class" : "TRAINER",
 					"code" : "SHINING_BRILLIANCE"
 				}

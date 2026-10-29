@@ -26,7 +26,7 @@ public class MoveSlot {
 			case "RESONANCE" -> ResonanceMoveRegistry.getResonanceMoveByCode(moveCode);
 			case "ITEM" -> ItemMoveRegistry.getItemMoveByCode(moveCode);
 			case "TRAINER" -> TrainerMoveRegistry.getTrainerMoveByCode(moveCode);
-			default -> null;
+			default -> throw new IllegalArgumentException("Unknown Move Class : " + moveClass);
 		};
 	}
 

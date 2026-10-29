@@ -6,16 +6,23 @@ import com.gameplay.masterdata.template.move.starnexus.StarNexusMove;
 import com.gameplay.masterdata.template.pokemon.form.PokemonForm;
 import com.utils.StringUtils;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
+
 public class PartnerState {
 
 	//==================================================================================================================
 	//	Field and Properties
 	//==================================================================================================================
 
+	private static final int MAX_BASE_MOVE_SLOT = 4;
+
 	private final int stateId;
 	private final String stateCode;
 	private final PokemonForm partnerPokemonForm;
 	private final StarNexusMove starNexusMove;
+	private final List<MoveSlot> moveSlotList;
 
 	//==================================================================================================================
 	//	Constructor
@@ -26,6 +33,7 @@ public class PartnerState {
 		this.stateCode = builder.stateCode;
 		this.partnerPokemonForm = builder.partnerPokemonForm;
 		this.starNexusMove = builder.starNexusMove;
+		this.moveSlotList = List.copyOf(builder.moveSlotList);
 	}
 
 	//==================================================================================================================
@@ -48,6 +56,19 @@ public class PartnerState {
 		return starNexusMove;
 	}
 
+	public List<MoveSlot> getMoveSlotList() {
+		return moveSlotList;
+	}
+
+	public Optional<MoveSlot> getMoveSlot(int moveSlot) {
+		for (MoveSlot slot : moveSlotList) {
+			if (slot.getMoveSlot() == moveSlot) {
+				return Optional.of(slot);
+			}
+		}
+		return Optional.empty();
+	}
+
 	//==================================================================================================================
 	//	Builder
 	//==================================================================================================================
@@ -57,6 +78,7 @@ public class PartnerState {
 		private final String stateCode;
 		private PokemonForm partnerPokemonForm;
 		private StarNexusMove starNexusMove;
+		private final List<MoveSlot> moveSlotList = new ArrayList<>();
 
 		public Builder(int stateId, String stateCode) {
 			this.stateId = stateId;
@@ -71,6 +93,32 @@ public class PartnerState {
 		public Builder setStarNexusMove(String starNexusMove) {
 			this.starNexusMove = StarNexusMoveRegistry.getStarNexusMoveByCode(starNexusMove);
 			return this;
+		}
+
+		public void addMoveSlot(MoveSlot moveSlot) {
+			if (moveSlot == null || moveSlot.getMove() == null) {
+				return;
+			}
+
+			int slot = moveSlot.getMoveSlot();
+
+			if (slot < 1 || slot > MAX_BASE_MOVE_SLOT) {
+				throw new IllegalArgumentException("An Unit has only 4 base Move. Slot Number " + slot + " is out of range.");
+			}
+
+			for (int count = 0; count < moveSlotList.size(); ++count) {
+				if (moveSlotList.get(count).getMoveSlot() == slot) {
+					moveSlotList.set(count, moveSlot);
+					return;
+				}
+			}
+
+			int moveSlotPosition = 0;
+			while (moveSlotPosition < moveSlotList.size() && moveSlotList.get(moveSlotPosition).getMoveSlot() < slot) {
+				moveSlotPosition++;
+			}
+
+			moveSlotList.add(moveSlotPosition, moveSlot);
 		}
 
 		public PartnerState build() {

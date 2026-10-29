@@ -13,6 +13,7 @@ import com.gameplay.masterdata.data.master.registry.move.tactic.TrainerMoveRegis
 import com.gameplay.masterdata.data.master.registry.pokemon.PokemonRegistry;
 import com.gameplay.masterdata.data.master.registry.starpartner.StarPartnerRegistry;
 import com.gameplay.masterdata.data.master.registry.trainer.TrainerRegistry;
+import com.gameplay.masterdata.template.move.battle.resonance.ResonanceMove;
 import com.gameplay.masterdata.template.move.tactic.trainer.TrainerMove;
 import com.gameplay.masterdata.template.trainer.TrainerAlternate;
 import com.utils.StringUtils;
@@ -31,7 +32,7 @@ public class Main {
 
 		System.out.println(StarNexusMoveRegistry.getStarNexusMoveByCode("Brand New Dawn of Bubble Beam Shine"));
 
-		System.out.println(StarPartnerRegistry.getStarPartnerByCode("DAWN_#_EMPOLEON").getDefaultPartnerState().getStarNexusMove());
+		System.out.println(StarPartnerRegistry.getStarPartnerByCode("DAWN_#_EMPOLEON").getDefaultPartnerState().getMoveSlot(1).orElseThrow().getMove(ResonanceMove.class));
 	}
 
 	public static void printTrainer(TrainerAlternate trainerAlternate) {
