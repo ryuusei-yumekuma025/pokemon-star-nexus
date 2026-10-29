@@ -99,6 +99,10 @@ public class PartnerState {
 				return;
 			}
 
+			if (moveSlot < 1 || moveSlot > MAX_BASE_MOVE_SLOT) {
+				throw new IllegalArgumentException("Move Slot is out of range : " + moveSlot);
+			}
+
 			Move move = moveSlotDTO.create();
 			if (move == null) {
 				return;
