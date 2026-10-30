@@ -36,6 +36,42 @@
 		"tags" : ["CONTACT", "PUNCHING"]
 	},
 	{
+		"id" : 8,
+		"code" : "ICE_PUNCH",
+		"attribute" : "ICE/PHYSICAL/2",
+		"base_power" : 75,
+		"accuracy" : 100.0,
+		"action_speed" : 0.0,
+		"bond_energy_cost" : 8,
+		"stardust_tuning" : 2,
+		"target" : "SINGLE_TARGET",
+		"tags" : ["CONTACT", "PUNCHING"]
+	},
+	{
+		"id" : 9,
+		"code" : "THUNDER_PUNCH",
+		"attribute" : "ELECTRIC/PHYSICAL/2",
+		"base_power" : 75,
+		"accuracy" : 100.0,
+		"action_speed" : 0.0,
+		"bond_energy_cost" : 8,
+		"stardust_tuning" : 2,
+		"target" : "SINGLE_TARGET",
+		"tags" : ["CONTACT", "PUNCHING"]
+	},
+	{
+		"id" : 38,
+		"code" : "DOUBLE_EDGE",
+		"attribute" : "NORMAL/PHYSICAL/3",
+		"base_power" : 120,
+		"accuracy" : 100.0,
+		"action_speed" : 0.0,
+		"bond_energy_cost" : 16,
+		"stardust_tuning" : 3,
+		"target" : "SINGLE_TARGET",
+		"tags" : ["CONTACT", "RECOIL"]
+	},
+	{
 		"id" : 52,
 		"code" : "EMBER",
 		"attribute" : "FIRE/SPECIAL/1",
@@ -106,5 +142,29 @@
 		"stardust_tuning" : 2,
 		"target" : "SINGLE_TARGET",
 		"tags" : []
+	},
+	{
+		"id" : 126,
+		"code" : "FIRE_BLAST",
+		"attribute" : "FIRE/SPECIAL/3",
+		"base_power" : 110,
+		"accuracy" : 85.0,
+		"action_speed" : 0.0,
+		"bond_energy_cost" : 18,
+		"stardust_tuning" : 3,
+		"target" : "SINGLE_TARGET",
+		"tags" : []
+	},
+	{
+		"id" : 136,
+		"code" : "HIGH_JUMP_KICK",
+		"attribute" : "FIGHTING/PHYSICAL/3",
+		"base_power" : 130,
+		"accuracy" : 90.0,
+		"action_speed" : 0.0,
+		"bond_energy_cost" : 18,
+		"stardust_tuning" : 3,
+		"target" : "SINGLE_TARGET",
+		"tags" : ["CONTACT", "RECOIL"]
 	}
 ]
