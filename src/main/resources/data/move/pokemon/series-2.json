@@ -2,9 +2,7 @@
 	{
 		"id" : 250,
 		"code" : "WHIRLPOOL",
-		"type" : "WATER",
-		"category" : "SPECIAL",
-		"tier" : 1,
+		"attribute" : "WATER/SPECIAL/1",
 		"base_power" : 35,
 		"accuracy" : 85.0,
 		"action_speed" : 0.0,

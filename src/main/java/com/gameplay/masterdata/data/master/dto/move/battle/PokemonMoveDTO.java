@@ -23,11 +23,10 @@ public record PokemonMoveDTO(
 		int moveId,
 		@JsonProperty("code")
 		String moveCode,
-		@JsonProperty("type")
+		@JsonProperty("attribute")
+		String moveAttribute,
 		String moveType,
-		@JsonProperty("category")
 		String moveCategory,
-		@JsonProperty("tier")
 		int moveTier,
 		@JsonProperty("base_power")
 		@JsonFormat(with = JsonFormat.Feature.ACCEPT_SINGLE_VALUE_AS_ARRAY)
@@ -63,6 +62,24 @@ public record PokemonMoveDTO(
 	public PokemonMoveDTO {
 		Objects.requireNonNull(moveCode, "Missing Move Code.");
 		moveCode = StringUtils.upperSnakeCase(moveCode);
+
+		if (moveAttribute != null) {
+			String[] attributes = moveAttribute.split("/", -1);
+
+			if (attributes.length != 3) {
+				throw new IllegalArgumentException(
+						"Error Move : " + moveCode + " . Move Attribute must be TYPE/CATEGORY/TIER but was " + moveAttribute);
+			}
+
+			try {
+				moveType = attributes[0];
+				moveCategory = attributes[1];
+				moveTier = Integer.parseInt(attributes[2].trim());
+			} catch (NumberFormatException e) {
+				throw new IllegalArgumentException("Error Move : " + moveCode + " : Wrong Move Tier Format : " + moveAttribute, e);
+			}
+		}
+
 		Objects.requireNonNull(moveType, "Missing Move Type.");
 		Objects.requireNonNull(moveCategory, "Missing Move Category.");
 
@@ -121,4 +138,6 @@ public record PokemonMoveDTO(
 			return List.copyOf(list);
 		}
 	}
+
+
 }
