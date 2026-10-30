@@ -1,1 +1,14 @@
-[]
+[
+	{
+		"id" : 413,
+		"code" : "BRAVE_BIRD",
+		"attribute" : "FLYING/PHYSICAL/3",
+		"base_power" : 120,
+		"accuracy" : 100.0,
+		"action_speed" : 0.0,
+		"bond_energy_cost" : 16,
+		"stardust_tuning" : 3,
+		"target" : "SINGLE_TARGET_LONG_RANGE",
+		"tags" : ["CONTACT", "RECOIL"]
+	}
+]

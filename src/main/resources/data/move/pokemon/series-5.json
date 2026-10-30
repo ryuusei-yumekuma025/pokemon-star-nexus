@@ -1,1 +1,14 @@
-[]
+[
+	{
+		"id" : 488,
+		"code" : "FLAME_CHARGE",
+		"attribute" : "FIRE/PHYSICAL/2",
+		"base_power" : 60,
+		"accuracy" : 100.0,
+		"action_speed" : 4.0,
+		"bond_energy_cost" : 10,
+		"stardust_tuning" : 2,
+		"target" : "SINGLE_TARGET",
+		"tags" : ["CONTACT"]
+	}
+]

@@ -1,1 +1,26 @@
-[]
+[
+	{
+		"id" : 297,
+		"code" : "FEATHER_DANCE",
+		"attribute" : "FLYING/STATUS/2",
+		"base_power" : -1,
+		"accuracy" : 100.0,
+		"action_speed" : 0.0,
+		"bond_energy_cost" : 8,
+		"stardust_tuning" : 2,
+		"target" : "SINGLE_TARGET",
+		"tags" : []
+	},
+	{
+		"id" : 307,
+		"code" : "BLAST_BURN",
+		"attribute" : "FIRE/SPECIAL/4",
+		"base_power" : 225,
+		"accuracy" : 90.0,
+		"action_speed" : -12.0,
+		"bond_energy_cost" : 26,
+		"stardust_tuning" : 4,
+		"target" : "SINGLE_TARGET",
+		"tags" : []
+	}
+]

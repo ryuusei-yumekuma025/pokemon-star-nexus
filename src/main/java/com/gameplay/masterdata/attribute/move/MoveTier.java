@@ -25,7 +25,7 @@ public enum MoveTier {
 			case 2 -> MID;
 			case 3 -> HIGH;
 			case 4 -> SUPER;
-			default -> null;
+			default -> throw new IllegalArgumentException("Invalid MoveTier Id : " + id);
 		};
 	}
 }

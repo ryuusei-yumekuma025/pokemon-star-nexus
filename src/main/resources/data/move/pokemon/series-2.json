@@ -1,5 +1,29 @@
 [
 	{
+		"id" : 224,
+		"code" : "MEGAHORN",
+		"attribute" : "BUG/PHYSICAL/4",
+		"base_power" : 150,
+		"accuracy" : 85.0,
+		"action_speed" : 0.0,
+		"bond_energy_cost" : 24,
+		"stardust_tuning" : 4,
+		"target" : "SINGLE_TARGET",
+		"tags" : ["CONTACT"]
+	},
+	{
+		"id" : 231,
+		"code" : "IRON_TAIL",
+		"attribute" : "STEEL/PHYSICAL/3",
+		"base_power" : 110,
+		"accuracy" : 75.0,
+		"action_speed" : 0.0,
+		"bond_energy_cost" : 18,
+		"stardust_tuning" : 3,
+		"target" : "SINGLE_TARGET",
+		"tags" : ["CONTACT"]
+	},
+	{
 		"id" : 250,
 		"code" : "WHIRLPOOL",
 		"attribute" : "WATER/SPECIAL/1",
