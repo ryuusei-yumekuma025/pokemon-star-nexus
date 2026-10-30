@@ -84,7 +84,7 @@ public class TrainerLoader {
 
 			List<List<String>> trainerDexByRegionList = MAPPER.readValue(inputStream, new TypeReference<List<List<String>>>() {});
 
-			int region = 1;
+			int region = 0;
 
 			for (List<String> trainerDexByRegion : trainerDexByRegionList) {
 				loadByRegion(region++, trainerDexByRegion);

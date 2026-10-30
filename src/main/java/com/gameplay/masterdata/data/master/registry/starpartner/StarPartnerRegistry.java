@@ -75,6 +75,10 @@ public class StarPartnerRegistry {
 			throw new IllegalArgumentException("Missing Star Partner Code.");
 		}
 
+		starPartnerCode = StringUtils.upperSnakeCase(starPartnerCode);
+		if (starPartnerCode != null && starPartnerCode.contains("_AND_")) {
+			starPartnerCode = starPartnerCode.replace("_AND_", "_#_");
+		}
 		StarPartner starPartner = STAR_PARTNER_BY_CODE_MAP.get(StringUtils.upperSnakeCase(starPartnerCode));
 		if (starPartner == null) {
 			throw new IllegalArgumentException("Failed Star Partner Search : " + starPartnerCode);

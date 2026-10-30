@@ -32,7 +32,7 @@ public class Main {
 
 		System.out.println(StarNexusMoveRegistry.getStarNexusMoveByCode("Brand New Dawn of Bubble Beam Shine"));
 
-		System.out.println(StarPartnerRegistry.getStarPartnerByCode("DAWN_#_EMPOLEON").getDefaultPartnerState().getMove(1, ResonanceMove.class).getMovePrototype());
+		System.out.println(StarPartnerRegistry.getStarPartnerByCode("DAWN and EMPOLEON").getStarPartnerId());
 
 		System.out.println(PokemonMoveRegistry.getPokemonMoveByCode("LUNGE").getMoveTier());
 	}
