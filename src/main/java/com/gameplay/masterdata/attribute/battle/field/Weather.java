@@ -14,4 +14,25 @@ public enum Weather {
 			default -> false;
 		};
 	}
+
+	public int getWeatherTypeId() {
+		return switch (this) {
+			case HARSH_SUNLIGHT, EXTREMELY_HARSH_SUNLIGHT -> 1;
+			case RAIN, HEAVY_RAIN -> 2;
+			case SANDSTORM -> 3;
+			default -> 0;
+		};
+	}
+
+	public static boolean equalsWeather(Weather firstWeather, Weather secondWeather) {
+		if (firstWeather == null || secondWeather == null) {
+			return false;
+		}
+
+		if (firstWeather == secondWeather) {
+			return true;
+		}
+
+		return firstWeather.getWeatherTypeId() == secondWeather.getWeatherTypeId();
+	}
 }
