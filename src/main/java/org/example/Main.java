@@ -1,5 +1,6 @@
 package org.example;
 
+import com.gameplay.masterdata.attribute.battle.field.Terrain;
 import com.gameplay.masterdata.attribute.region.WorldRegion;
 import com.gameplay.masterdata.data.master.MasterDataBootstrap;
 import com.gameplay.masterdata.data.master.loader.move.item.ItemMoveLoader;
@@ -35,6 +36,8 @@ public class Main {
 		System.out.println(StarPartnerRegistry.getStarPartnerByCode("DAWN and EMPOLEON").getStarPartnerId());
 
 		System.out.println(PokemonMoveRegistry.getPokemonMoveByCode("LUNGE").getMoveTier());
+
+		System.out.println(Terrain.equalsTerrain(Terrain.GRASSY_TERRAIN, Terrain.OVERGROWN_GRASSY_TERRAIN));
 	}
 
 	public static void printTrainer(TrainerAlternate trainerAlternate) {
