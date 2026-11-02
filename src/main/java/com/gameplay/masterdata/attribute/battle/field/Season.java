@@ -1,5 +1,7 @@
 package com.gameplay.masterdata.attribute.battle.field;
 
+import com.utils.StringUtils;
+
 public enum Season {
 	NONE,
 	SPRING,
@@ -10,6 +12,20 @@ public enum Season {
 	SUNFLOWER_BUZZING_SUMMER,
 	LOTUS_RUSTLING_AUTUMN,
 	CAMELLIA_FROSTY_WINTER;
+
+	public static Season fromCode(String code) {
+		if (StringUtils.isNullOrBlank(code)) {
+			return null;
+		}
+
+		String fixedCode = StringUtils.upperSnakeCase(code);
+
+		try {
+			return valueOf(fixedCode);
+		} catch (IllegalArgumentException e) {
+			throw new IllegalArgumentException("Invalid Season : " + code);
+		}
+	}
 
 	public boolean isSuper() {
 		return switch (this) {

@@ -1,5 +1,7 @@
 package com.gameplay.masterdata.attribute.battle.field;
 
+import com.utils.StringUtils;
+
 public enum Weather {
 	NONE,
 	HARSH_SUNLIGHT,
@@ -7,6 +9,20 @@ public enum Weather {
 	RAIN,
 	HEAVY_RAIN,
 	SANDSTORM;
+
+	public static Weather fromCode(String code) {
+		if (StringUtils.isNullOrBlank(code)) {
+			return null;
+		}
+
+		String fixedCode = StringUtils.upperSnakeCase(code);
+
+		try {
+			return valueOf(fixedCode);
+		} catch (IllegalArgumentException e) {
+			throw new IllegalArgumentException("Invalid Weather : " + code);
+		}
+	}
 
 	public boolean isSuper() {
 		return switch (this) {

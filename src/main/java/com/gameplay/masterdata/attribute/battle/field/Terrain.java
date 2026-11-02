@@ -1,5 +1,7 @@
 package com.gameplay.masterdata.attribute.battle.field;
 
+import com.utils.StringUtils;
+
 public enum Terrain {
 	NONE,
 	GRASSY_TERRAIN,
@@ -9,6 +11,20 @@ public enum Terrain {
 	PSYCHIC_TERRAIN,
 	OVERWARPED_PSYCHIC_TERRAIN,
 	MISTY_TERRAIN;
+
+	public static Terrain fromCode(String code) {
+		if (StringUtils.isNullOrBlank(code)) {
+			return null;
+		}
+
+		String fixedCode = StringUtils.upperSnakeCase(code);
+
+		try {
+			return valueOf(fixedCode);
+		} catch (IllegalArgumentException e) {
+			throw new IllegalArgumentException("Invalid Terrain : " + code);
+		}
+	}
 
 	public boolean isSuper() {
 		return switch (this) {
