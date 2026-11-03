@@ -1,0 +1,16 @@
+{
+	"pokedex_number" : 7,
+	"species" : "SQUIRTLE",
+	"category" : "TINY_TURTLE",
+	"types" : ["WATER"],
+	"egg_groups" : ["MONSTER", "WATER_1"],
+	"color" : "BLUE",
+	"shape" : "TWO_LEGS_AND_TAIL",
+	"height" : 0.5,
+	"weight" : 9.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

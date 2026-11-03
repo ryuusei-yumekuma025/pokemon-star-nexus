@@ -37,6 +37,10 @@ public record PokemonFormDTO(
 		}
 		formCode = StringUtils.upperSnakeCase(formCode);
 
+		if (formCode.contains("GIGANTAMAX")) {
+			weight = (double)-1;
+		}
+
 		if (genderAppearanceDifference == null) {
 			genderAppearanceDifference = false;
 		}

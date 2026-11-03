@@ -1,0 +1,16 @@
+{
+	"pokedex_number" : 4,
+	"species" : "CHARMANDER",
+	"category" : "LIZARD",
+	"types" : ["FIRE"],
+	"egg_groups" : ["MONSTER", "DRAGON"],
+	"color" : "RED",
+	"shape" : "TWO_LEGS_AND_TAIL",
+	"height" : 0.6,
+	"weight" : 8.5,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

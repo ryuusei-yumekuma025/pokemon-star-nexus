@@ -1,0 +1,16 @@
+{
+	"pokedex_number" : 5,
+	"species" : "CHARMELEON",
+	"category" : "FLAME",
+	"types" : ["FIRE"],
+	"egg_groups" : ["MONSTER", "DRAGON"],
+	"color" : "RED",
+	"shape" : "TWO_LEGS_AND_TAIL",
+	"height" : 1.1,
+	"weight" : 19.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}
