@@ -1,0 +1,16 @@
+{
+	"pokedex_number" : 10,
+	"species" : "CATERPIE",
+	"category" : "WORM",
+	"types" : ["BUG"],
+	"egg_groups" : ["BUG"],
+	"color" : "GREEN",
+	"shape" : "INSECT",
+	"height" : 0.3,
+	"weight" : 2.9,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

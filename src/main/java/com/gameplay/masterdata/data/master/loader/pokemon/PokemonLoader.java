@@ -10,6 +10,7 @@ import com.utils.StringUtils;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.UncheckedIOException;
+import java.nio.charset.StandardCharsets;
 import java.util.List;
 
 public class PokemonLoader {
@@ -39,7 +40,14 @@ public class PokemonLoader {
 				return;
 			}
 
-			PokemonSpeciesDTO pokemonSpeciesDTO = MAPPER.readValue(inputStream, PokemonSpeciesDTO.class);
+			// Chỉ để parse file json khi chưa hoàn thiện hết các file thôi
+			String json = new String(inputStream.readAllBytes(), StandardCharsets.UTF_8).trim();
+			if (json.isEmpty() || json.matches("\\{\\s*}")) {
+				return;
+			}
+			//
+
+			PokemonSpeciesDTO pokemonSpeciesDTO = MAPPER.readValue(json, PokemonSpeciesDTO.class);
 			PokemonSpecies pokemonSpecies = pokemonSpeciesDTO.create();
 			PokemonRegistry.register(pokemonSpecies);
 		} catch (IOException e) {

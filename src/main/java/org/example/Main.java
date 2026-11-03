@@ -39,7 +39,7 @@ public class Main {
 
 		System.out.println(Terrain.equalsTerrain(Terrain.fromCode("Grassy Terrain"), Terrain.OVERGROWN_GRASSY_TERRAIN));
 
-		System.out.println(PokemonRegistry.getPokemonFormByCode("CHARIZARD_GIGANTAMAX").getWeight());
+		System.out.println(PokemonRegistry.getPokemonFormByCode("CATERPIE").getWeight());
 	}
 
 	public static void printTrainer(TrainerAlternate trainerAlternate) {

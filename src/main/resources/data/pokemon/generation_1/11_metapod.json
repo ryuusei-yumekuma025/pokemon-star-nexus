@@ -1,0 +1,16 @@
+{
+	"pokedex_number" : 11,
+	"species" : "METAPOD",
+	"category" : "COCOON",
+	"types" : ["BUG"],
+	"egg_groups" : ["BUG"],
+	"color" : "GREEN",
+	"shape" : "BELLY_CRAWLING_NO_LEGS",
+	"height" : 0.7,
+	"weight" : 9.9,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}
