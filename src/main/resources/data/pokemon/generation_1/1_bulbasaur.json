@@ -1,0 +1,16 @@
+{
+	"pokedex_number" : 1,
+	"species" : "BULBASAUR",
+	"category" : "SEED",
+	"types" : ["GRASS", "POISON"],
+	"egg_groups" : ["MONSTER", "GRASS"],
+	"color" : "GREEN",
+	"shape" : "FOUR_LEGGED",
+	"height" : 0.7,
+	"weight" : 6.9,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

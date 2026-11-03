@@ -1,0 +1,16 @@
+{
+	"pokedex_number" : 2,
+	"species" : "IVYSAUR",
+	"category" : "SEED",
+	"types" : ["GRASS", "POISON"],
+	"egg_groups" : ["MONSTER", "GRASS"],
+	"color" : "GREEN",
+	"shape" : "FOUR_LEGGED",
+	"height" : 1.0,
+	"weight" : 13.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

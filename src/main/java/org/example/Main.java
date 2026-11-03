@@ -38,6 +38,8 @@ public class Main {
 		System.out.println(PokemonMoveRegistry.getPokemonMoveByCode("LUNGE").getMoveTier());
 
 		System.out.println(Terrain.equalsTerrain(Terrain.fromCode("Grassy Terrain"), Terrain.OVERGROWN_GRASSY_TERRAIN));
+
+		System.out.println(PokemonRegistry.getPokemonFormById("ivySAUR_0"));
 	}
 
 	public static void printTrainer(TrainerAlternate trainerAlternate) {
