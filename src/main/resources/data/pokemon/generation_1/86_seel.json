@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 86,
+	"species" : "SEEL",
+	"category" : "SEA_LION",
+	"types" : ["WATER"],
+	"egg_groups" : ["WATER_1", "FIELD"],
+	"color" : "WHITE",
+	"shape" : "FISH",
+	"height" : 1.1,
+	"weight" : 90.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

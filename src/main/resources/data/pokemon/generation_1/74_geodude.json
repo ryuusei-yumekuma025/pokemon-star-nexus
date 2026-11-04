@@ -1,1 +1,23 @@
-{}
+{
+	"pokedex_number" : 74,
+	"species" : "GEODUDE",
+	"category" : "ROCK",
+	"types" : ["ROCK", "GROUND"],
+	"egg_groups" : ["MINERAL"],
+	"color" : "BROWN",
+	"shape" : "ARM",
+	"height" : 0.4,
+	"weight" : 20.0,
+	"forms" : [
+		{
+			"id" : 0
+		},
+		{
+			"id" : 1,
+			"code" : "ALOLAN",
+			"types" : ["ROCK", "ELECTRIC"],
+			"color" : "GRAY",
+			"weight" : 20.3
+		}
+	]
+}

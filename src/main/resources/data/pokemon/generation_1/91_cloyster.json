@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 91,
+	"species" : "CLOYSTER",
+	"category" : "BIVALVE",
+	"types" : ["WATER", "ICE"],
+	"egg_groups" : ["WATER_3"],
+	"color" : "PURPLE",
+	"shape" : "ROUND",
+	"height" : 1.5,
+	"weight" : 132.5,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

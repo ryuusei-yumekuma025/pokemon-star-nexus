@@ -1,1 +1,21 @@
-{}
+{
+	"pokedex_number" : 68,
+	"species" : "MACHAMP",
+	"category" : "SUPERPOWER",
+	"types" : ["FIGHTING"],
+	"egg_groups" : ["HUMAN_LIKE"],
+	"color" : "GRAY",
+	"shape" : "TWO_LEGS_AND_HUMAN_FORM",
+	"height" : 1.6,
+	"weight" : 130.0,
+	"forms" : [
+		{
+			"id" : 0
+		},
+		{
+			"id" : 1,
+			"code" : "GIGANTAMAX",
+			"height" : 25.0
+		}
+	]
+}

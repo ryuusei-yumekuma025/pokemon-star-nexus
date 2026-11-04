@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 92,
+	"species" : "GASTLY",
+	"category" : "GAS",
+	"types" : ["GHOST", "POISON"],
+	"egg_groups" : ["AMORPHOUS"],
+	"color" : "PURPLE",
+	"shape" : "ROUND",
+	"height" : 1.3,
+	"weight" : 0.1,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

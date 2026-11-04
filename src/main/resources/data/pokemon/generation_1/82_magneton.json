@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 82,
+	"species" : "MAGNETON",
+	"category" : "MAGNET",
+	"types" : ["ELECTRIC", "STEEL"],
+	"egg_groups" : ["MINERAL"],
+	"color" : "GRAY",
+	"shape" : "GATHERING",
+	"height" : 1.0,
+	"weight" : 60.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 81,
+	"species" : "MAGNEMITE",
+	"category" : "MAGNET",
+	"types" : ["ELECTRIC", "STEEL"],
+	"egg_groups" : ["MINERAL"],
+	"color" : "GRAY",
+	"shape" : "ARM",
+	"height" : 0.3,
+	"weight" : 6.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

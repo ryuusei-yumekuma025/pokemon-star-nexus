@@ -1,1 +1,23 @@
-{}
+{
+	"pokedex_number" : 101,
+	"species" : "ELECTRODE",
+	"category" : "BALL",
+	"types" : ["ELECTRIC"],
+	"egg_groups" : ["MINERAL"],
+	"color" : "RED",
+	"shape" : "ROUND",
+	"height" : 1.2,
+	"weight" : 66.6,
+	"forms" : [
+		{
+			"id" : 0
+		},
+		{
+			"id" : 1,
+			"code" : "HISUIAN",
+			"category" : "SPHERE",
+			"types" : ["ELECTRIC", "GRASS"],
+			"weight" : 71.0
+		}
+	]
+}

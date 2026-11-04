@@ -1,1 +1,24 @@
-{}
+{
+	"pokedex_number" : 78,
+	"species" : "RAPIDASH",
+	"category" : "FIRE_HORSE",
+	"types" : ["FIRE"],
+	"egg_groups" : ["FIELD"],
+	"color" : "YELLOW",
+	"shape" : "FOUR_LEGGED",
+	"height" : 1.7,
+	"weight" : 95.0,
+	"forms" : [
+		{
+			"id" : 0
+		},
+		{
+			"id" : 1,
+			"code" : "GALARIAN",
+			"category" : "UNIQUE_HORN",
+			"types" : ["PSYCHIC", "FAIRY"],
+			"color" : "WHITE",
+			"weight" : 80.0
+		}
+	]
+}

@@ -1,1 +1,35 @@
-{}
+{
+	"pokedex_number" : 52,
+	"species" : "MEOWTH",
+	"category" : "SCRATCH_CAT",
+	"types" : ["NORMAL"],
+	"egg_groups" : ["FIELD"],
+	"color" : "YELLOW",
+	"shape" : "FOUR_LEGGED",
+	"height" : 0.4,
+	"weight" : 4.2,
+	"forms" : [
+		{
+			"id" : 0
+		},
+		{
+			"id" : 1,
+			"code" : "ALOLAN",
+			"types" : ["DARK"],
+			"color" : "BLUE"
+		},
+		{
+			"id" : 2,
+			"code" : "GALARIAN",
+			"types" : ["STEEL"],
+			"color" : "BROWN",
+			"shape" : "TWO_LEGS_AND_TAIL",
+			"weight" : 7.5
+		},
+		{
+			"id" : 3,
+			"code" : "GIGANTAMAX",
+			"height" : 33.0
+		}
+	]
+}

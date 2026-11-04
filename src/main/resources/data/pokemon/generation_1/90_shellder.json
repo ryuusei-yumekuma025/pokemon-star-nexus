@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 90,
+	"species" : "SHELLDER",
+	"category" : "BIVALVE",
+	"types" : ["WATER"],
+	"egg_groups" : ["WATER_3"],
+	"color" : "PURPLE",
+	"shape" : "ROUND",
+	"height" : 0.3,
+	"weight" : 4.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

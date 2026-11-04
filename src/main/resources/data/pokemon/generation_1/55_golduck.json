@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 55,
+	"species" : "GOLDUCK",
+	"category" : "DUCK",
+	"types" : ["WATER"],
+	"egg_groups" : ["WATER_1", "FIELD"],
+	"color" : "BLUE",
+	"shape" : "TWO_LEGS_AND_TAIL",
+	"height" : 1.7,
+	"weight" : 76.6,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

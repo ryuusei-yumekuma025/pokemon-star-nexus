@@ -1,1 +1,23 @@
-{}
+{
+	"pokedex_number" : 59,
+	"species" : "ARCANINE",
+	"category" : "LEGENDARY",
+	"types" : ["FIRE"],
+	"egg_groups" : ["FIELD"],
+	"color" : "BROWN",
+	"shape" : "FOUR_LEGGED",
+	"height" : 1.9,
+	"weight" : 155.0,
+	"forms" : [
+		{
+			"id" : 0
+		},
+		{
+			"id" : 1,
+			"code" : "HISUIAN",
+			"types" : ["FIRE", "ROCK"],
+			"height" : 2.0,
+			"weight" : 168.0
+		}
+	]
+}

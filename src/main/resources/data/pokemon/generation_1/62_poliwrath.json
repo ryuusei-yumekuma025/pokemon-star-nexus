@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 62,
+	"species" : "POLIWRATH",
+	"category" : "TADPOLE",
+	"types" : ["WATER", "FIGHTING"],
+	"egg_groups" : ["WATER_1"],
+	"color" : "BLUE",
+	"shape" : "TWO_LEGS_AND_HUMAN_FORM",
+	"height" : 1.3,
+	"weight" : 54.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

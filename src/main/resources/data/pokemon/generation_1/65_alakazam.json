@@ -1,1 +1,23 @@
-{}
+{
+	"pokedex_number" : 65,
+	"species" : "ALAKAZAM",
+	"category" : "PSI",
+	"types" : ["PSYCHIC"],
+	"egg_groups" : ["HUMAN_LIKE"],
+	"color" : "BROWN",
+	"shape" : "TWO_LEGS_AND_HUMAN_FORM",
+	"height" : 1.5,
+	"weight" : 48.0,
+	"forms" : [
+		{
+			"id" : 0
+		},
+		{
+			"id" : 1,
+			"code" : "MEGA",
+			"height" : 1.2,
+			"mega_origin" : 0,
+			"mega_boost" : [0, 10, 45, 15, 30]
+		}
+	]
+}

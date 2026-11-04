@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 96,
+	"species" : "DROWZEE",
+	"category" : "HYPNOSIS",
+	"types" : ["PSYCHIC"],
+	"egg_groups" : ["HUMAN_LIKE"],
+	"color" : "YELLOW",
+	"shape" : "TWO_LEGS_AND_HUMAN_FORM",
+	"height" : 1.0,
+	"weight" : 32.4,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

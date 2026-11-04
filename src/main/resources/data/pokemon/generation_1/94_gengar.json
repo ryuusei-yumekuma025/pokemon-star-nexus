@@ -1,1 +1,28 @@
-{}
+{
+	"pokedex_number" : 94,
+	"species" : "GENGAR",
+	"category" : "SHADOW",
+	"types" : ["GHOST", "POISON"],
+	"egg_groups" : ["AMORPHOUS"],
+	"color" : "PURPLE",
+	"shape" : "TWO_LEGS_AND_TAIL",
+	"height" : 1.5,
+	"weight" : 40.5,
+	"forms" : [
+		{
+			"id" : 0
+		},
+		{
+			"id" : 1,
+			"code" : "MEGA",
+			"height" : 1.4,
+			"mega_origin" : 0,
+			"mega_boost" : [0, 10, 45, 20, 25]
+		},
+		{
+			"id" : 2,
+			"code" : "GIGANTAMAX",
+			"height" : 20.0
+		}
+	]
+}

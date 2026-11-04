@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 72,
+	"species" : "TENTACOOL",
+	"category" : "JELLYFISH",
+	"types" : ["WATER", "POISON"],
+	"egg_groups" : ["WATER_3"],
+	"color" : "BLUE",
+	"shape" : "MULTI_LEG",
+	"height" : 0.9,
+	"weight" : 45.5,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

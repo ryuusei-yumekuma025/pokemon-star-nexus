@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 95,
+	"species" : "ONIX",
+	"category" : "ROCK_SNAKE",
+	"types" : ["ROCK", "GROUND"],
+	"egg_groups" : ["MINERAL"],
+	"color" : "GRAY",
+	"shape" : "BELLY_CRAWLING_NO_LEGS",
+	"height" : 8.8,
+	"weight" : 210.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

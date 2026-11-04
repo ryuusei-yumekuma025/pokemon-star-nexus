@@ -1,1 +1,21 @@
-{}
+{
+	"pokedex_number" : 79,
+	"species" : "SLOWPOKE",
+	"category" : "DOPEY",
+	"types" : ["WATER", "PSYCHIC"],
+	"egg_groups" : ["MONSTER", "WATER_1"],
+	"color" : "PINK",
+	"shape" : "FOUR_LEGGED",
+	"height" : 1.2,
+	"weight" : 36.0,
+	"forms" : [
+		{
+			"id" : 0
+		},
+		{
+			"id" : 1,
+			"code" : "GALARIAN",
+			"types" : ["PSYCHIC"]
+		}
+	]
+}

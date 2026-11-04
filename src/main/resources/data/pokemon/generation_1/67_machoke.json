@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 67,
+	"species" : "MACHOKE",
+	"category" : "SUPERPOWER",
+	"types" : ["FIGHTING"],
+	"egg_groups" : ["HUMAN_LIKE"],
+	"color" : "GRAY",
+	"shape" : "TWO_LEGS_AND_HUMAN_FORM",
+	"height" : 1.5,
+	"weight" : 70.5,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

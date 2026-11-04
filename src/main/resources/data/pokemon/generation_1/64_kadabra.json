@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 64,
+	"species" : "KADABRA",
+	"category" : "PSI",
+	"types" : ["PSYCHIC"],
+	"egg_groups" : ["HUMAN_LIKE"],
+	"color" : "BROWN",
+	"shape" : "TWO_LEGS_AND_TAIL",
+	"height" : 1.3,
+	"weight" : 56.5,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

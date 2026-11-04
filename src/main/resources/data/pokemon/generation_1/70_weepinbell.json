@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 70,
+	"species" : "WEEPINBELL",
+	"category" : "FLYCATCHER",
+	"types" : ["GRASS", "POISON"],
+	"egg_groups" : ["GRASS"],
+	"color" : "GREEN",
+	"shape" : "UPRIGHT_TORSO",
+	"height" : 1.0,
+	"weight" : 6.4,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

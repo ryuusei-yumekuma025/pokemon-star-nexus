@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 85,
+	"species" : "DODRIO",
+	"category" : "TRIPLE_BIRD",
+	"types" : ["NORMAL", "FLYING"],
+	"egg_groups" : ["FLYING"],
+	"color" : "BROWN",
+	"shape" : "LEGS",
+	"height" : 1.8,
+	"weight" : 85.2,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

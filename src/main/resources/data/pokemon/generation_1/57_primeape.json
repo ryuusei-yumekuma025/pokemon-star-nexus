@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 57,
+	"species" : "PRIMEAPE",
+	"category" : "PIG_MONKEY",
+	"types" : ["FIGHTING"],
+	"egg_groups" : ["FIELD"],
+	"color" : "BROWN",
+	"shape" : "TWO_LEGS_AND_TAIL",
+	"height" : 1.0,
+	"weight" : 32.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

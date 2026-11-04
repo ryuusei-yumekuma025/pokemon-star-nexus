@@ -1,1 +1,25 @@
-{}
+{
+	"pokedex_number" : 71,
+	"species" : "VICTREEBEL",
+	"category" : "FLYCATCHER",
+	"types" : ["GRASS", "POISON"],
+	"egg_groups" : ["GRASS"],
+	"color" : "GREEN",
+	"shape" : "UPRIGHT_TORSO",
+	"height" : 1.7,
+	"weight" : 15.5,
+	"forms" : [
+		{
+			"id" : 0
+		},
+		{
+			"id" : 1,
+			"code" : "MEGA",
+			"color" : "YELLOW",
+			"height" : 4.5,
+			"weight" : 125.5,
+			"mega_origin" : 0,
+			"mega_boost" : [35, 15, 35, 15, 0]
+		}
+	]
+}

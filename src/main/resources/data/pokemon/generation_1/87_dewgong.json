@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 87,
+	"species" : "DEWGONG",
+	"category" : "SEA_LION",
+	"types" : ["WATER", "ICE"],
+	"egg_groups" : ["WATER_1", "FIELD"],
+	"color" : "WHITE",
+	"shape" : "FISH",
+	"height" : 1.7,
+	"weight" : 120.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

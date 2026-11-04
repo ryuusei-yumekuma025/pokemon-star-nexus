@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 73,
+	"species" : "TENTACRUEL",
+	"category" : "JELLYFISH",
+	"types" : ["WATER", "POISON"],
+	"egg_groups" : ["WATER_3"],
+	"color" : "BLUE",
+	"shape" : "MULTI_LEG",
+	"height" : 1.6,
+	"weight" : 55.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

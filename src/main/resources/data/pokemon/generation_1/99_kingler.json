@@ -1,1 +1,21 @@
-{}
+{
+	"pokedex_number" : 99,
+	"species" : "KINGLER",
+	"category" : "PINCER",
+	"types" : ["WATER"],
+	"egg_groups" : ["WATER_3"],
+	"color" : "RED",
+	"shape" : "INSECT",
+	"height" : 1.3,
+	"weight" : 60.0,
+	"forms" : [
+		{
+			"id" : 0
+		},
+		{
+			"id" : 1,
+			"code" : "GIGANTAMAX",
+			"height" : 19.0
+		}
+	]
+}

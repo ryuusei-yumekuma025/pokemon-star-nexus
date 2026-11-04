@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 84,
+	"species" : "DODUO",
+	"category" : "TWIN_BIRD",
+	"types" : ["NORMAL", "FLYING"],
+	"egg_groups" : ["FLYING"],
+	"color" : "BROWN",
+	"shape" : "LEGS",
+	"height" : 1.4,
+	"weight" : 39.2,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

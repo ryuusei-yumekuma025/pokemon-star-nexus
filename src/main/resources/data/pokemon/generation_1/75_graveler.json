@@ -1,1 +1,23 @@
-{}
+{
+	"pokedex_number" : 75,
+	"species" : "GRAVELER",
+	"category" : "ROCK",
+	"types" : ["ROCK", "GROUND"],
+	"egg_groups" : ["MINERAL"],
+	"color" : "BROWN",
+	"shape" : "TWO_LEGS_AND_HUMAN_FORM",
+	"height" : 1.0,
+	"weight" : 105.0,
+	"forms" : [
+		{
+			"id" : 0
+		},
+		{
+			"id" : 1,
+			"code" : "ALOLAN",
+			"types" : ["ROCK", "ELECTRIC"],
+			"color" : "GRAY",
+			"weight" : 110.0
+		}
+	]
+}

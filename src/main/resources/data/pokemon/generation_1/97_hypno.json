@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 97,
+	"species" : "HYPNO",
+	"category" : "HYPNOSIS",
+	"types" : ["PSYCHIC"],
+	"egg_groups" : ["HUMAN_LIKE"],
+	"color" : "YELLOW",
+	"shape" : "TWO_LEGS_AND_HUMAN_FORM",
+	"height" : 1.6,
+	"weight" : 75.6,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}
