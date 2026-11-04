@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 102,
+	"species" : "EXEGGCUTE",
+	"category" : "EGG",
+	"types" : ["GRASS", "PSYCHIC"],
+	"egg_groups" : ["GRASS"],
+	"color" : "PINK",
+	"shape" : "GATHERING",
+	"height" : 0.4,
+	"weight" : 2.5,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

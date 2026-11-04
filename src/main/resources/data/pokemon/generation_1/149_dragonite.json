@@ -1,1 +1,23 @@
-{}
+{
+	"pokedex_number" : 149,
+	"species" : "DRAGONITE",
+	"category" : "DRAGON",
+	"types" : ["DRAGON", "FLYING"],
+	"egg_groups" : ["WATER_1", "DRAGON"],
+	"color" : "BROWN",
+	"shape" : "TWO_LEGS_AND_TAIL",
+	"height" : 2.2,
+	"weight" : 210.0,
+	"forms" : [
+		{
+			"id" : 0
+		},
+		{
+			"id" : 1,
+			"code" : "MEGA",
+			"weight" : 290.0,
+			"mega_origin" : 0,
+			"mega_boost" : [0, 15, 45, 15, 25]
+		}
+	]
+}

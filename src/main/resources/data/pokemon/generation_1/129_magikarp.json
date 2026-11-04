@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 129,
+	"species" : "MAGIKARP",
+	"category" : "FISH",
+	"types" : ["WATER"],
+	"egg_groups" : ["WATER_2", "DRAGON"],
+	"color" : "RED",
+	"shape" : "FISH",
+	"height" : 0.9,
+	"weight" : 10.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

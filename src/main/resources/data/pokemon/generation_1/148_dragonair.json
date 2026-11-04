@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 148,
+	"species" : "DRAGONAIR",
+	"category" : "DRAGON",
+	"types" : ["DRAGON"],
+	"egg_groups" : ["WATER_1", "DRAGON"],
+	"color" : "BLUE",
+	"shape" : "BELLY_CRAWLING_NO_LEGS",
+	"height" : 4.0,
+	"weight" : 16.5,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

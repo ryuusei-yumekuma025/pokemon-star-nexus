@@ -1,1 +1,26 @@
-{}
+{
+	"pokedex_number" : 127,
+	"species" : "PINSIR",
+	"category" : "STAG_BEETLE",
+	"types" : ["BUG"],
+	"egg_groups" : ["BUG"],
+	"color" : "BROWN",
+	"shape" : "TWO_LEGS_AND_HUMAN_FORM",
+	"height" : 1.5,
+	"weight" : 55.0,
+	"forms" : [
+		{
+			"id" : 0
+		},
+		{
+			"id" : 1,
+			"code" : "MEGA",
+			"types" : ["BUG", "FLYING"],
+			"shape" : "FOUR_WINGS",
+			"height" : 1.7,
+			"weight" : 59.0,
+			"mega_origin" : 0,
+			"mega_boost" : [30, 20, 0, 20, 30]
+		}
+	]
+}

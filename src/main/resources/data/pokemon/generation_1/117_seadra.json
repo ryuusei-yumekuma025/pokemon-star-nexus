@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 117,
+	"species" : "SEADRA",
+	"category" : "DRAGON",
+	"types" : ["WATER"],
+	"egg_groups" : ["WATER_1", "DRAGON"],
+	"color" : "BLUE",
+	"shape" : "UPRIGHT_TORSO",
+	"height" : 1.2,
+	"weight" : 25.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

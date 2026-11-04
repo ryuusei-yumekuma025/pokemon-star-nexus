@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 104,
+	"species" : "CUBONE",
+	"category" : "LONELY",
+	"types" : ["GROUND"],
+	"egg_groups" : ["MONSTER"],
+	"color" : "BROWN",
+	"shape" : "TWO_LEGS_AND_TAIL",
+	"height" : 0.4,
+	"weight" : 6.5,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

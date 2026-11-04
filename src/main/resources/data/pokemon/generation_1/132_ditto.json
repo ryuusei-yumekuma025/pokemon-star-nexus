@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 132,
+	"species" : "DITTO",
+	"category" : "TRANSFORM",
+	"types" : ["NORMAL"],
+	"egg_groups" : ["DITTO"],
+	"color" : "PURPLE",
+	"shape" : "ROUND",
+	"height" : 0.3,
+	"weight" : 4.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

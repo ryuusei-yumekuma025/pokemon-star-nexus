@@ -1,1 +1,21 @@
-{}
+{
+	"pokedex_number" : 143,
+	"species" : "SNORLAX",
+	"category" : "SLEEPING",
+	"types" : ["NORMAL"],
+	"egg_groups" : ["MONSTER"],
+	"color" : "BLACK",
+	"shape" : "TWO_LEGS_AND_HUMAN_FORM",
+	"height" : 2.1,
+	"weight" : 460.0,
+	"forms" : [
+		{
+			"id" : 0
+		},
+		{
+			"id" : 1,
+			"code" : "GIGANTAMAX",
+			"height" : 35.0
+		}
+	]
+}

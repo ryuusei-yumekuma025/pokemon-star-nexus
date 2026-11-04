@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 107,
+	"species" : "HITMONCHAN",
+	"category" : "PUNCHING",
+	"types" : ["FIGHTING"],
+	"egg_groups" : ["HUMAN_LIKE"],
+	"color" : "BROWN",
+	"shape" : "TWO_LEGS_AND_HUMAN_FORM",
+	"height" : 1.4,
+	"weight" : 50.2,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

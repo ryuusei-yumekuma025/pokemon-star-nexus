@@ -1,1 +1,21 @@
-{}
+{
+	"pokedex_number" : 131,
+	"species" : "LAPRAS",
+	"category" : "TRANSPORT",
+	"types" : ["WATER", "ICE"],
+	"egg_groups" : ["MONSTER", "WATER_1"],
+	"color" : "BLUE",
+	"shape" : "FISH",
+	"height" : 2.5,
+	"weight" : 220.0,
+	"forms" : [
+		{
+			"id" : 0
+		},
+		{
+			"id" : 1,
+			"code" : "GIGANTAMAX",
+			"height" : 24.0
+		}
+	]
+}

@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 119,
+	"species" : "SEAKING",
+	"category" : "GOLDFISH",
+	"types" : ["WATER"],
+	"egg_groups" : ["WATER_2"],
+	"color" : "RED",
+	"shape" : "FISH",
+	"height" : 1.3,
+	"weight" : 39.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

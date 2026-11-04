@@ -1,1 +1,37 @@
-{}
+{
+	"pokedex_number" : 128,
+	"species" : "TAUROS",
+	"category" : "WILD_BULL",
+	"types" : ["NORMAL"],
+	"egg_groups" : ["FIELD"],
+	"color" : "BROWN",
+	"shape" : "FOUR_LEGGED",
+	"height" : 1.4,
+	"weight" : 88.4,
+	"forms" : [
+		{
+			"id" : 0
+		},
+		{
+			"id" : 1,
+			"code" : "PALDEAN_COMBAT_BREED",
+			"types" : ["FIGHTING"],
+			"color" : "BLACK",
+			"weight" : 115.0
+		},
+		{
+			"id" : 2,
+			"code" : "PALDEAN_BLAZE_BREED",
+			"types" : ["FIGHTING", "FIRE"],
+			"color" : "BLACK",
+			"weight" : 85.0
+		},
+		{
+			"id" : 3,
+			"code" : "PALDEAN_AQUA_BREED",
+			"types" : ["FIGHTING", "WATER"],
+			"color" : "BLACK",
+			"weight" : 110.0
+		}
+	]
+}

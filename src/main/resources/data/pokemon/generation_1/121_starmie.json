@@ -1,1 +1,23 @@
-{}
+{
+	"pokedex_number" : 121,
+	"species" : "STARMIE",
+	"category" : "MYSTERIOUS",
+	"types" : ["WATER", "PSYCHIC"],
+	"egg_groups" : ["WATER_3"],
+	"color" : "PURPLE",
+	"shape" : "UPRIGHT_TORSO",
+	"height" : 1.1,
+	"weight" : 80.0,
+	"forms" : [
+		{
+			"id" : 0
+		},
+		{
+			"id" : 1,
+			"code" : "MEGA",
+			"height" : 2.3,
+			"mega_origin" : 0,
+			"mega_boost" : [25, 20, 25, 20, 10]
+		}
+	]
+}

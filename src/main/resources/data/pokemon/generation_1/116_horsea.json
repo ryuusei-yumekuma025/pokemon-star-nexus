@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 116,
+	"species" : "HORSEA",
+	"category" : "DRAGON",
+	"types" : ["WATER"],
+	"egg_groups" : ["WATER_1", "DRAGON"],
+	"color" : "BLUE",
+	"shape" : "UPRIGHT_TORSO",
+	"height" : 0.4,
+	"weight" : 8.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

@@ -1,1 +1,24 @@
-{}
+{
+	"pokedex_number" : 130,
+	"species" : "GYARADOS",
+	"category" : "ATROCIOUS",
+	"types" : ["WATER", "FLYING"],
+	"egg_groups" : ["WATER_2", "DRAGON"],
+	"color" : "BLUE",
+	"shape" : "BELLY_CRAWLING_NO_LEGS",
+	"height" : 6.5,
+	"weight" : 235.0,
+	"forms" : [
+		{
+			"id" : 0
+		},
+		{
+			"id" : 1,
+			"code" : "MEGA",
+			"types" : ["WATER", "DARK"],
+			"weight" : 305.0,
+			"mega_origin" : 0,
+			"mega_boost" : [30, 30, 10, 30, 0]
+		}
+	]
+}

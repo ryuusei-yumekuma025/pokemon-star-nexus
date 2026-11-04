@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 123,
+	"species" : "SCYTHER",
+	"category" : "MANTIS",
+	"types" : ["BUG", "FLYING"],
+	"egg_groups" : ["BUG"],
+	"color" : "GREEN",
+	"shape" : "FOUR_WINGS",
+	"height" : 1.5,
+	"weight" : 56.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

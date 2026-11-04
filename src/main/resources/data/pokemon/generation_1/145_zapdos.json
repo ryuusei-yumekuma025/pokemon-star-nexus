@@ -1,1 +1,23 @@
-{}
+{
+	"pokedex_number" : 145,
+	"species" : "ZAPDOS",
+	"category" : "ELECTRIC",
+	"types" : ["ELECTRIC", "FLYING"],
+	"egg_groups" : ["NO_EGGS_DISCOVERED"],
+	"color" : "YELLOW",
+	"shape" : "TWO_WINGS",
+	"height" : 1.6,
+	"weight" : 52.6,
+	"forms" : [
+		{
+			"id" : 0
+		},
+		{
+			"id" : 1,
+			"code" : "GALARIAN",
+			"category" : "STRONG_LEGS",
+			"types" : ["FIGHTING", "FLYING"],
+			"weight" : 58.2
+		}
+	]
+}

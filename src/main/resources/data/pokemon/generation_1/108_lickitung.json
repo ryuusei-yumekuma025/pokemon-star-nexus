@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 108,
+	"species" : "LICKITUNG",
+	"category" : "LICKING",
+	"types" : ["NORMAL"],
+	"egg_groups" : ["MONSTER"],
+	"color" : "PINK",
+	"shape" : "TWO_LEGS_AND_TAIL",
+	"height" : 1.2,
+	"weight" : 65.5,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 113,
+	"species" : "CHANSEY",
+	"category" : "EGG",
+	"types" : ["NORMAL"],
+	"egg_groups" : ["FAIRY"],
+	"color" : "PINK",
+	"shape" : "TWO_LEGS_AND_TAIL",
+	"height" : 1.1,
+	"weight" : 34.6,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

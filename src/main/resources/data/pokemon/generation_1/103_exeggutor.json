@@ -1,1 +1,23 @@
-{}
+{
+	"pokedex_number" : 103,
+	"species" : "EXEGGUTOR",
+	"category" : "COCONUT",
+	"types" : ["GRASS", "PSYCHIC"],
+	"egg_groups" : ["GRASS"],
+	"color" : "YELLOW",
+	"shape" : "LEGS",
+	"height" : 2.0,
+	"weight" : 120.0,
+	"forms" : [
+		{
+			"id" : 0
+		},
+		{
+			"id" : 1,
+			"code" : "ALOLAN",
+			"types" : ["GRASS", "DRAGON"],
+			"height" : 10.9,
+			"weight" : 415.6
+		}
+	]
+}

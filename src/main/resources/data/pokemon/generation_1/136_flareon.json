@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 136,
+	"species" : "FLAREON",
+	"category" : "FLAME",
+	"types" : ["FIRE"],
+	"egg_groups" : ["FIELD"],
+	"color" : "RED",
+	"shape" : "FOUR_LEGGED",
+	"height" : 0.9,
+	"weight" : 25.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

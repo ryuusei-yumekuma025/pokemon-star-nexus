@@ -1,1 +1,24 @@
-{}
+{
+	"pokedex_number" : 146,
+	"species" : "MOLTRES",
+	"category" : "FLAME",
+	"types" : ["FIRE", "FLYING"],
+	"egg_groups" : ["NO_EGGS_DISCOVERED"],
+	"color" : "YELLOW",
+	"shape" : "TWO_WINGS",
+	"height" : 2.0,
+	"weight" : 60.0,
+	"forms" : [
+		{
+			"id" : 0
+		},
+		{
+			"id" : 1,
+			"code" : "GALARIAN",
+			"category" : "MALEVOLENT",
+			"types" : ["DARK", "FLYING"],
+			"color" : "RED",
+			"weight" : 66.0
+		}
+	]
+}

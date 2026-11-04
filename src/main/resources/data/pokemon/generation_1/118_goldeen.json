@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 118,
+	"species" : "GOLDEEN",
+	"category" : "GOLDFISH",
+	"types" : ["WATER"],
+	"egg_groups" : ["WATER_2"],
+	"color" : "RED",
+	"shape" : "FISH",
+	"height" : 0.6,
+	"weight" : 15.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

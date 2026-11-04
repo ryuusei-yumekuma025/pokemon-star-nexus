@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 112,
+	"species" : "RHYDON",
+	"category" : "DRILL",
+	"types" : ["GROUND", "ROCK"],
+	"egg_groups" : ["MONSTER", "FIELD"],
+	"color" : "GRAY",
+	"shape" : "TWO_LEGS_AND_TAIL",
+	"height" : 1.9,
+	"weight" : 120.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

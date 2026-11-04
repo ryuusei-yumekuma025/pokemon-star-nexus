@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 139,
+	"species" : "OMASTAR",
+	"category" : "SPIRAL",
+	"types" : ["ROCK", "WATER"],
+	"egg_groups" : ["WATER_1", "WATER_3"],
+	"color" : "BLUE",
+	"shape" : "MULTI_LEG",
+	"height" : 1.0,
+	"weight" : 35.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

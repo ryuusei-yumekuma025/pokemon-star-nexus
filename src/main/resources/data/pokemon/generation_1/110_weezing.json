@@ -1,1 +1,24 @@
-{}
+{
+	"pokedex_number" : 110,
+	"species" : "WEEZING",
+	"category" : "POISON_GAS",
+	"types" : ["POISON"],
+	"egg_groups" : ["AMORPHOUS"],
+	"color" : "PURPLE",
+	"shape" : "GATHERING",
+	"height" : 1.2,
+	"weight" : 9.5,
+	"forms" : [
+		{
+			"id" : 0
+		},
+		{
+			"id" : 1,
+			"code" : "GALARIAN",
+			"types" : ["POISON", "FAIRY"],
+			"color" : "GRAY",
+			"height" : 3.0,
+			"weight" : 16.0
+		}
+	]
+}

@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 140,
+	"species" : "KABUTO",
+	"category" : "SHELLFISH",
+	"types" : ["ROCK", "WATER"],
+	"egg_groups" : ["WATER_1", "WATER_3"],
+	"color" : "BROWN",
+	"shape" : "INSECT",
+	"height" : 0.5,
+	"weight" : 11.5,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

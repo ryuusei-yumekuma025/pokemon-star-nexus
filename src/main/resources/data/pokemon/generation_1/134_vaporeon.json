@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 134,
+	"species" : "VAPOREON",
+	"category" : "BUBBLE_JET",
+	"types" : ["WATER"],
+	"egg_groups" : ["FIELD"],
+	"color" : "BLUE",
+	"shape" : "FOUR_LEGGED",
+	"height" : 1.0,
+	"weight" : 29.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

@@ -2,6 +2,7 @@ package org.example;
 
 import com.gameplay.masterdata.attribute.battle.field.Terrain;
 import com.gameplay.masterdata.attribute.region.WorldRegion;
+import com.gameplay.masterdata.attribute.type.PokemonType;
 import com.gameplay.masterdata.data.master.MasterDataBootstrap;
 import com.gameplay.masterdata.data.master.loader.move.item.ItemMoveLoader;
 import com.gameplay.masterdata.data.master.loader.move.pokemon.PokemonMoveLoader;
@@ -16,6 +17,7 @@ import com.gameplay.masterdata.data.master.registry.starpartner.StarPartnerRegis
 import com.gameplay.masterdata.data.master.registry.trainer.TrainerRegistry;
 import com.gameplay.masterdata.template.move.battle.resonance.ResonanceMove;
 import com.gameplay.masterdata.template.move.tactic.trainer.TrainerMove;
+import com.gameplay.masterdata.template.pokemon.form.PokemonForm;
 import com.gameplay.masterdata.template.trainer.TrainerAlternate;
 import com.utils.StringUtils;
 
@@ -24,8 +26,6 @@ import java.util.Objects;
 public class Main {
 	static void main() {
 		MasterDataBootstrap.init();
-
-		printTrainer(TrainerRegistry.getTrainerAlternateByCode("DAWN"));
 
 		System.out.println(TrainerRegistry.getTrainerAlternateByCode("DAWN").getStarPartnerByPartnerPokemon("Empoleon").getStarPartnerId());
 
@@ -39,7 +39,9 @@ public class Main {
 
 		System.out.println(Terrain.equalsTerrain(Terrain.fromCode("Grassy Terrain"), Terrain.OVERGROWN_GRASSY_TERRAIN));
 
-		System.out.println(PokemonRegistry.getPokemonFormByCode("RATICATE_ALOLAN"));
+		for (PokemonForm pokemonForm : PokemonRegistry.getAllPokemonForms()) {
+			printPokemon(pokemonForm);
+		}
 	}
 
 	public static void printTrainer(TrainerAlternate trainerAlternate) {
@@ -48,5 +50,10 @@ public class Main {
 		for (TrainerMove trainerMove : trainerAlternate.getAllTrainerMoves()) {
 			System.out.println(trainerMove.getMoveId() + " " + trainerMove.getMoveCode() + " " + trainerMove.getTacticPoint());
 		}
+	}
+
+	public static void printPokemon(PokemonForm pokemonForm) {
+		System.out.println(pokemonForm.getPokemonSpecies().getPokedexNumber() + " " + pokemonForm.getPokemonFormFullCode() + " " +
+				pokemonForm.getPrimaryType() + ((pokemonForm.getSecondaryType() == PokemonType.TYPELESS) ? "" : "/" + pokemonForm.getSecondaryType()));
 	}
 }

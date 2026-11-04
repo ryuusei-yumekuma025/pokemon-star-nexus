@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 111,
+	"species" : "RHYHORN",
+	"category" : "SPIKES",
+	"types" : ["GROUND", "ROCK"],
+	"egg_groups" : ["MONSTER", "FIELD"],
+	"color" : "GRAY",
+	"shape" : "FOUR_LEGGED",
+	"height" : 1.0,
+	"weight" : 115.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 151,
+	"species" : "MEW",
+	"category" : "NEW_SPECIES",
+	"types" : ["PSYCHIC"],
+	"egg_groups" : ["NO_EGGS_DISCOVERED"],
+	"color" : "PINK",
+	"shape" : "TWO_LEGS_AND_TAIL",
+	"height" : 0.4,
+	"weight" : 4.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

@@ -1,1 +1,33 @@
-{}
+{
+	"pokedex_number": 150,
+	"species": "MEWTWO",
+	"category": "GENETIC",
+	"types": ["PSYCHIC"],
+	"egg_groups": ["NO_EGGS_DISCOVERED"],
+	"color": "PURPLE",
+	"shape": "TWO_LEGS_AND_TAIL",
+	"height": 2.0,
+	"weight": 122.0,
+	"forms": [
+		{
+			"id": 0
+		},
+		{
+			"id": 1,
+			"code": "MEGA_X",
+			"types": ["PSYCHIC", "FIGHTING"],
+			"height": 2.3,
+			"weight": 127.0,
+			"mega_origin": 0,
+			"mega_boost": [80, 10, 0, 10, 0]
+		},
+		{
+			"id": 2,
+			"code": "MEGA_Y",
+			"height": 1.5,
+			"weight": 33.0,
+			"mega_origin": 0,
+			"mega_boost": [20, 0, 40, 30, 10]
+		}
+	]
+}

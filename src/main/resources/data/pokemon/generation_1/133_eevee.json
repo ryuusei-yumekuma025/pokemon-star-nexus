@@ -1,1 +1,21 @@
-{}
+{
+	"pokedex_number" : 133,
+	"species" : "EEVEE",
+	"category" : "EVOLUTION",
+	"types" : ["NORMAL"],
+	"egg_groups" : ["FIELD"],
+	"color" : "BROWN",
+	"shape" : "FOUR_LEGGED",
+	"height" : 0.3,
+	"weight" : 6.5,
+	"forms" : [
+		{
+			"id" : 0
+		},
+		{
+			"id" : 1,
+			"code" : "GIGANTAMAX",
+			"height" : 18.0
+		}
+	]
+}

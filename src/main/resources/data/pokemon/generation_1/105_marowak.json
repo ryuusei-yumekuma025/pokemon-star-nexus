@@ -1,1 +1,23 @@
-{}
+{
+	"pokedex_number" : 105,
+	"species" : "MAROWAK",
+	"category" : "BONE_KEEPER",
+	"types" : ["GROUND"],
+	"egg_groups" : ["MONSTER"],
+	"color" : "BROWN",
+	"shape" : "TWO_LEGS_AND_TAIL",
+	"height" : 1.0,
+	"weight" : 45.0,
+	"forms" : [
+		{
+			"id" : 0
+		},
+		{
+			"id" : 1,
+			"code" : "ALOLAN",
+			"types" : ["FIRE", "GHOST"],
+			"color" : "PURPLE",
+			"weight" : 34.0
+		}
+	]
+}

@@ -1,1 +1,23 @@
-{}
+{
+	"pokedex_number" : 115,
+	"species" : "KANGASKHAN",
+	"category" : "PARENT",
+	"types" : ["NORMAL"],
+	"egg_groups" : ["MONSTER"],
+	"color" : "BROWN",
+	"shape" : "TWO_LEGS_AND_TAIL",
+	"height" : 2.2,
+	"weight" : 80.0,
+	"forms" : [
+		{
+			"id" : 0
+		},
+		{
+			"id" : 1,
+			"code" : "MEGA",
+			"weight" : 100.0,
+			"mega_origin" : 0,
+			"mega_boost" : [35, 20, 10, 20, 15]
+		}
+	]
+}

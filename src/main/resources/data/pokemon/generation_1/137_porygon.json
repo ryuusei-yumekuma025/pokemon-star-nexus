@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 137,
+	"species" : "PORYGON",
+	"category" : "VIRTUAL",
+	"types" : ["NORMAL"],
+	"egg_groups" : ["MINERAL"],
+	"color" : "PINK",
+	"shape" : "LEGS",
+	"height" : 0.8,
+	"weight" : 36.5,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

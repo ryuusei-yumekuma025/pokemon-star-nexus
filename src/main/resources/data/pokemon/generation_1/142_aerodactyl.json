@@ -1,1 +1,24 @@
-{}
+{
+	"pokedex_number" : 142,
+	"species" : "AERODACTYL",
+	"category" : "FOSSIL",
+	"types" : ["ROCK", "FLYING"],
+	"egg_groups" : ["FLYING"],
+	"color" : "PURPLE",
+	"shape" : "TWO_WINGS",
+	"height" : 1.8,
+	"weight" : 59.0,
+	"forms" : [
+		{
+			"id" : 0
+		},
+		{
+			"id" : 1,
+			"code" : "MEGA",
+			"height" : 2.1,
+			"weight" : 79.0,
+			"mega_origin" : 0,
+			"mega_boost" : [40, 20, 0, 20, 20]
+		}
+	]
+}
