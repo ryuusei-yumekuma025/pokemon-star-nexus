@@ -1,1 +1,24 @@
-{}
+{
+	"pokedex_number" : 27,
+	"species" : "SANDSHREW",
+	"category" : "MOUSE",
+	"types" : ["GROUND"],
+	"egg_groups" : ["FIELD"],
+	"color" : "YELLOW",
+	"shape" : "TWO_LEGS_AND_TAIL",
+	"height" : 0.6,
+	"weight" : 12.0,
+	"forms" : [
+		{
+			"id" : 0
+		},
+		{
+			"id" : 1,
+			"code" : "ALOLAN",
+			"types" : ["ICE", "STEEL"],
+			"color" : "WHITE",
+			"height" : 0.7,
+			"weight" : 40.0
+		}
+	]
+}

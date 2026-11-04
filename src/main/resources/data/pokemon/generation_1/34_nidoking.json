@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 34,
+	"species" : "NIDOKING",
+	"category" : "DRILL",
+	"types" : ["POISON", "GROUND"],
+	"egg_groups" : ["MONSTER", "FIELD"],
+	"color" : "PURPLE",
+	"shape" : "TWO_LEGS_AND_TAIL",
+	"height" : 1.4,
+	"weight" : 62.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

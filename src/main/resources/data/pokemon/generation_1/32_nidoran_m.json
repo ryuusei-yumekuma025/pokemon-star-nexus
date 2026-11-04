@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 32,
+	"species" : "NIDORAN_M",
+	"category" : "POISON_PIN",
+	"types" : ["POISON"],
+	"egg_groups" : ["MONSTER", "FIELD"],
+	"color" : "PURPLE",
+	"shape" : "FOUR_LEGGED",
+	"height" : 0.5,
+	"weight" : 9.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

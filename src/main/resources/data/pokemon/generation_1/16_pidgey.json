@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 16,
+	"species" : "PIDGEY",
+	"category" : "TINY_BIRD",
+	"types" : ["NORMAL", "FLYING"],
+	"egg_groups" : ["FLYING"],
+	"color" : "BROWN",
+	"shape" : "TWO_WINGS",
+	"height" : 0.3,
+	"weight" : 1.8,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

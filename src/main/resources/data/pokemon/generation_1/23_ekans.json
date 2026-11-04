@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 23,
+	"species" : "EKANS",
+	"category" : "SNAKE",
+	"types" : ["POISON"],
+	"egg_groups" : ["FIELD", "DRAGON"],
+	"color" : "PURPLE",
+	"shape" : "BELLY_CRAWLING_NO_LEGS",
+	"height" : 2.0,
+	"weight" : 6.9,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

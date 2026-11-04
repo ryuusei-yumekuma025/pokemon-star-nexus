@@ -1,1 +1,22 @@
-{}
+{
+	"pokedex_number" : 38,
+	"species" : "NINETALES",
+	"category" : "FOX",
+	"types" : ["FIRE"],
+	"egg_groups" : ["FIELD"],
+	"color" : "YELLOW",
+	"shape" : "FOUR_LEGGED",
+	"height" : 1.1,
+	"weight" : 19.9,
+	"forms" : [
+		{
+			"id" : 0
+		},
+		{
+			"id" : 1,
+			"code" : "ALOLAN",
+			"types" : ["ICE", "FAIRY"],
+			"color" : "BLUE"
+		}
+	]
+}

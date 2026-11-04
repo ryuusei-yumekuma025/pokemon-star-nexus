@@ -1,1 +1,40 @@
-{}
+{
+	"pokedex_number" : 26,
+	"species" : "RAICHU",
+	"category" : "MOUSE",
+	"types" : ["ELECTRIC"],
+	"egg_groups" : ["FIELD", "FAIRY"],
+	"color" : "YELLOW",
+	"shape" : "TWO_LEGS_AND_TAIL",
+	"height" : 0.8,
+	"weight" : 30.0,
+	"forms" : [
+		{
+			"id" : 0
+		},
+		{
+			"id" : 1,
+			"code" : "ALOLAN",
+			"types" : ["ELECTRIC", "PSYCHIC"],
+			"color" : "BROWN",
+			"height" : 0.7,
+			"weight" : 21.0
+		},
+		{
+			"id" : 2,
+			"code" : "MEGA_X",
+			"height" : 1.2,
+			"weight" : 38.0,
+			"mega_origin" : 0,
+			"mega_boost" : [45, 15, 15, 10, 15]
+		},
+		{
+			"id" : 3,
+			"code" : "MEGA_Y",
+			"height" : 1.0,
+			"weight" : 26.0,
+			"mega_origin" : 0,
+			"mega_boost" : [10, 0, 50, 0, 40]
+		}
+	]
+}

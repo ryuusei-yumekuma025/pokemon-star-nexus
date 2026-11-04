@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 45,
+	"species" : "VILEPLUME",
+	"category" : "FLOWER",
+	"types" : ["GRASS", "POISON"],
+	"egg_groups" : ["GRASS"],
+	"color" : "RED",
+	"shape" : "TWO_LEGS_AND_HUMAN_FORM",
+	"height" : 1.2,
+	"weight" : 18.6,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

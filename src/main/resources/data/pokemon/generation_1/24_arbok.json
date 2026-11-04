@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 24,
+	"species" : "ARBOK",
+	"category" : "COBRA",
+	"types" : ["POISON"],
+	"egg_groups" : ["FIELD", "DRAGON"],
+	"color" : "PURPLE",
+	"shape" : "BELLY_CRAWLING_NO_LEGS",
+	"height" : 3.5,
+	"weight" : 65.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

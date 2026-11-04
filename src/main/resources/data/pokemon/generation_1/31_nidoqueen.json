@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 31,
+	"species" : "NIDOQUEEN",
+	"category" : "DRILL",
+	"types" : ["POISON", "GROUND"],
+	"egg_groups" : ["NO_EGGS_DISCOVERED"],
+	"color" : "BLUE",
+	"shape" : "TWO_LEGS_AND_TAIL",
+	"height" : 1.3,
+	"weight" : 60.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

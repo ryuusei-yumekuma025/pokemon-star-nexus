@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 49,
+	"species" : "VENOMOTH",
+	"category" : "POISON_MOTH",
+	"types" : ["BUG", "POISON"],
+	"egg_groups" : ["BUG"],
+	"color" : "PURPLE",
+	"shape" : "FOUR_WINGS",
+	"height" : 1.5,
+	"weight" : 12.5,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

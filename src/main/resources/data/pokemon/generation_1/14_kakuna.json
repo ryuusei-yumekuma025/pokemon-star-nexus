@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 14,
+	"species" : "KAKUNA",
+	"category" : "COCOON",
+	"types" : ["BUG", "POISON"],
+	"egg_groups" : ["BUG"],
+	"color" : "YELLOW",
+	"shape" : "BELLY_CRAWLING_NO_LEGS",
+	"height" : 0.6,
+	"weight" : 10.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

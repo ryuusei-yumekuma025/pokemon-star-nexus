@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 13,
+	"species" : "WEEDLE",
+	"category" : "HAIRY_BUG",
+	"types" : ["BUG", "POISON"],
+	"egg_groups" : ["BUG"],
+	"color" : "BROWN",
+	"shape" : "INSECT",
+	"height" : 0.3,
+	"weight" : 3.2,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

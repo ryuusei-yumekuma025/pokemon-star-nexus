@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 35,
+	"species" : "CLEFAIRY",
+	"category" : "FAIRY",
+	"types" : ["FAIRY"],
+	"egg_groups" : ["FAIRY"],
+	"color" : "PINK",
+	"shape" : "TWO_LEGS_AND_TAIL",
+	"height" : 0.6,
+	"weight" : 7.5,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

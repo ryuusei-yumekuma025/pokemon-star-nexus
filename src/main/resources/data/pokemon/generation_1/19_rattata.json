@@ -1,1 +1,23 @@
-{}
+{
+	"pokedex_number" : 19,
+	"species" : "RATTATA",
+	"category" : "MOUSE",
+	"types" : ["NORMAL"],
+	"egg_groups" : ["FIELD"],
+	"color" : "PURPLE",
+	"shape" : "FOUR_LEGGED",
+	"height" : 0.3,
+	"weight" : 3.5,
+	"forms" : [
+		{
+			"id" : 0
+		},
+		{
+			"id" : 1,
+			"code" : "ALOLAN",
+			"types" : ["DARK", "NORMAL"],
+			"color" : "BLACK",
+			"weight" : 3.8
+		}
+	]
+}

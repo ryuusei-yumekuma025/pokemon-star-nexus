@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 43,
+	"species" : "ODDISH",
+	"category" : "WEED",
+	"types" : ["GRASS", "POISON"],
+	"egg_groups" : ["GRASS"],
+	"color" : "BLUE",
+	"shape" : "LEGS",
+	"height" : 0.5,
+	"weight" : 5.4,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

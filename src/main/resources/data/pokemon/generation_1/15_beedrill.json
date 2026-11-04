@@ -1,1 +1,24 @@
-{}
+{
+	"pokedex_number" : 15,
+	"species" : "BEEDRILL",
+	"category" : "POISON_BEE",
+	"types" : ["BUG", "POISON"],
+	"egg_groups" : ["BUG"],
+	"color" : "YELLOW",
+	"shape" : "FOUR_WINGS",
+	"height" : 1.0,
+	"weight" : 29.5,
+	"forms" : [
+		{
+			"id" : 0
+		},
+		{
+			"id" : 1,
+			"code" : "MEGA",
+			"height" : 1.4,
+			"weight" : 40.5,
+			"mega_origin" : 0,
+			"mega_boost" : [40, 0, 0, 10, 50]
+		}
+	]
+}

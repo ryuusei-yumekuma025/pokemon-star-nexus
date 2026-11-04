@@ -1,1 +1,22 @@
-{}
+{
+	"pokedex_number" : 50,
+	"species" : "DIGLETT",
+	"category" : "MOLE",
+	"types" : ["GROUND"],
+	"egg_groups" : ["FIELD"],
+	"color" : "BROWN",
+	"shape" : "UPRIGHT_TORSO",
+	"height" : 0.2,
+	"weight" : 0.8,
+	"forms" : [
+		{
+			"id" : 0
+		},
+		{
+			"id" : 1,
+			"code" : "ALOLAN",
+			"types" : ["GROUND", "STEEL"],
+			"weight" : 1.0
+		}
+	]
+}

@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 21,
+	"species" : "SPEAROW",
+	"category" : "TINY_BIRD",
+	"types" : ["NORMAL", "FLYING"],
+	"egg_groups" : ["FLYING"],
+	"color" : "BROWN",
+	"shape" : "TWO_WINGS",
+	"height" : 0.3,
+	"weight" : 2.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

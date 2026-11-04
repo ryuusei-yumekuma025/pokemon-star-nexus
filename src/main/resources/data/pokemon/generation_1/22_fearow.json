@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 22,
+	"species" : "FEAROW",
+	"category" : "BEAK",
+	"types" : ["NORMAL", "FLYING"],
+	"egg_groups" : ["FLYING"],
+	"color" : "BROWN",
+	"shape" : "TWO_WINGS",
+	"height" : 1.2,
+	"weight" : 38.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

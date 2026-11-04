@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 40,
+	"species" : "WIGGLYTUFF",
+	"category" : "BALLOON",
+	"types" : ["NORMAL", "FAIRY"],
+	"egg_groups" : ["FAIRY"],
+	"color" : "PINK",
+	"shape" : "TWO_LEGS_AND_HUMAN_FORM",
+	"height" : 1.0,
+	"weight" : 12.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

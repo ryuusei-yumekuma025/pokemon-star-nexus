@@ -1,1 +1,21 @@
-{}
+{
+	"pokedex_number" : 25,
+	"species" : "PIKACHU",
+	"category" : "MOUSE",
+	"types" : ["ELECTRIC"],
+	"egg_groups" : ["FIELD", "FAIRY"],
+	"color" : "YELLOW",
+	"shape" : "FOUR_LEGGED",
+	"height" : 0.4,
+	"weight" : 6.0,
+	"forms" : [
+		{
+			"id" : 0
+		},
+		{
+			"id" : 1,
+			"code" : "GIGANTAMAX",
+			"height" : 21.0
+		}
+	]
+}

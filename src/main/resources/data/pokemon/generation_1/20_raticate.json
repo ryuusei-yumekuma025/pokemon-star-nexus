@@ -1,1 +1,23 @@
-{}
+{
+	"pokedex_number" : 20,
+	"species" : "RATICATE",
+	"category" : "MOUSE",
+	"types" : ["NORMAL"],
+	"egg_groups" : ["FIELD"],
+	"color" : "BROWN",
+	"shape" : "FOUR_LEGGED",
+	"height" : 0.7,
+	"weight" : 18.5,
+	"forms" : [
+		{
+			"id" : 0
+		},
+		{
+			"id" : 1,
+			"code" : "ALOLAN",
+			"types" : ["DARK", "NORMAL"],
+			"color" : "BLACK",
+			"weight" : 25.5
+		}
+	]
+}

@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 33,
+	"species" : "NIDORINO",
+	"category" : "POISON_PIN",
+	"types" : ["POISON"],
+	"egg_groups" : ["MONSTER", "FIELD"],
+	"color" : "PURPLE",
+	"shape" : "FOUR_LEGGED",
+	"height" : 0.9,
+	"weight" : 19.5,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

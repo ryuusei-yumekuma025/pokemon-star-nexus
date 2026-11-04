@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 48,
+	"species" : "VENONAT",
+	"category" : "INSECT",
+	"types" : ["BUG", "POISON"],
+	"egg_groups" : ["BUG"],
+	"color" : "PURPLE",
+	"shape" : "TWO_LEGS_AND_HUMAN_FORM",
+	"height" : 1.0,
+	"weight" : 30.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

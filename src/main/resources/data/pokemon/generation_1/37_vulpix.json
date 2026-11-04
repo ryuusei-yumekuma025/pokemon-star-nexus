@@ -1,1 +1,22 @@
-{}
+{
+	"pokedex_number" : 37,
+	"species" : "VULPIX",
+	"category" : "FOX",
+	"types" : ["FIRE"],
+	"egg_groups" : ["FIELD"],
+	"color" : "BROWN",
+	"shape" : "FOUR_LEGGED",
+	"height" : 0.6,
+	"weight" : 9.9,
+	"forms" : [
+		{
+			"id" : 0
+		},
+		{
+			"id" : 1,
+			"code" : "ALOLAN",
+			"types" : ["ICE"],
+			"color" : "WHITE"
+		}
+	]
+}

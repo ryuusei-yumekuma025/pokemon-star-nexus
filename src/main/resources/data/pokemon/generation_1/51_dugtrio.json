@@ -1,1 +1,22 @@
-{}
+{
+	"pokedex_number" : 51,
+	"species" : "DUGTRIO",
+	"category" : "MOLE",
+	"types" : ["GROUND", "STEEL"],
+	"egg_groups" : ["FIELD"],
+	"color" : "BROWN",
+	"shape" : "GATHERING",
+	"height" : 0.7,
+	"weight" : 33.3,
+	"forms" : [
+		{
+			"id" : 0
+		},
+		{
+			"id" : 1,
+			"code" : "ALOLAN",
+			"types" : ["GROUND", "STEEL"],
+			"weight" : 66.6
+		}
+	]
+}

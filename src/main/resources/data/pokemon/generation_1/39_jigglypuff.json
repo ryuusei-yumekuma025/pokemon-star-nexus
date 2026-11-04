@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 39,
+	"species" : "JIGGLYPUFF",
+	"category" : "BALLOON",
+	"types" : ["NORMAL", "FAIRY"],
+	"egg_groups" : ["FAIRY"],
+	"color" : "PINK",
+	"shape" : "TWO_LEGS_AND_HUMAN_FORM",
+	"height" : 0.5,
+	"weight" : 5.5,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

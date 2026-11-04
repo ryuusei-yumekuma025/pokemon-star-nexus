@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 42,
+	"species" : "GOLBAT",
+	"category" : "BAT",
+	"types" : ["POISON", "FLYING"],
+	"egg_groups" : ["FLYING"],
+	"color" : "PURPLE",
+	"shape" : "TWO_WINGS",
+	"height" : 1.6,
+	"weight" : 55.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

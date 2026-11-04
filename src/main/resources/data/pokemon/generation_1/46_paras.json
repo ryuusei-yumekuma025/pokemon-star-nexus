@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 46,
+	"species" : "PARAS",
+	"category" : "MUSHROOM",
+	"types" : ["BUG", "GRASS"],
+	"egg_groups" : ["BUG", "GRASS"],
+	"color" : "RED",
+	"shape" : "INSECT",
+	"height" : 0.3,
+	"weight" : 5.4,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

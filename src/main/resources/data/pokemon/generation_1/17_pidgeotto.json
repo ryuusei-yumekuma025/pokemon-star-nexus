@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 17,
+	"species" : "PIDGEOTTO",
+	"category" : "BIRD",
+	"types" : ["NORMAL", "FLYING"],
+	"egg_groups" : ["FLYING"],
+	"color" : "BROWN",
+	"shape" : "TWO_WINGS",
+	"height" : 1.1,
+	"weight" : 30.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}
