@@ -1,1 +1,24 @@
-{}
+{
+	"pokedex_number" : 227,
+	"species" : "SKARMORY",
+	"category" : "ARMOR_BIRD",
+	"types" : ["STEEL", "FLYING"],
+	"egg_groups" : ["FLYING"],
+	"color" : "GRAY",
+	"shape" : "TWO_WINGS",
+	"height" : 1.7,
+	"weight" : 50.5,
+	"forms" : [
+		{
+			"id" : 0
+		},
+		{
+			"id" : 1,
+			"code" : "MEGA",
+			"color" : "YELLOW",
+			"weight" : 40.4,
+			"mega_origin" : 0,
+			"mega_boost" : [50, 10, 0, 20, 20]
+		}
+	]
+}

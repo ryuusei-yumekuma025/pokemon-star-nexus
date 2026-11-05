@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 197,
+	"species" : "UMBREON",
+	"category" : "MOONLIGHT",
+	"types" : ["DARK"],
+	"egg_groups" : ["FIELD"],
+	"color" : "BLACK",
+	"shape" : "FOUR_LEGGED",
+	"height" : 1.0,
+	"weight" : 27.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

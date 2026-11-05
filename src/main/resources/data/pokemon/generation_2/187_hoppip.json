@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 187,
+	"species" : "HOPPIP",
+	"category" : "COTTONWEED",
+	"types" : ["GRASS", "FLYING"],
+	"egg_groups" : ["FAIRY", "GRASS"],
+	"color" : "PINK",
+	"shape" : "TWO_LEGS_AND_TAIL",
+	"height" : 0.4,
+	"weight" : 0.5,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

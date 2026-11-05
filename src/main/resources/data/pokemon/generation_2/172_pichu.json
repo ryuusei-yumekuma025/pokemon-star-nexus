@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 172,
+	"species" : "PICHU",
+	"category" : "TINY_MOUSE",
+	"types" : ["ELECTRIC"],
+	"egg_groups" : ["NO_EGGS_DISCOVERED"],
+	"color" : "YELLOW",
+	"shape" : "FOUR_LEGGED",
+	"height" : 0.3,
+	"weight" : 2.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

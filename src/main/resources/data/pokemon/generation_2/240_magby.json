@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 240,
+	"species" : "MAGBY",
+	"category" : "LIVE_COAL",
+	"types" : ["FIRE"],
+	"egg_groups" : ["NO_EGGS_DISCOVERED"],
+	"color" : "RED",
+	"shape" : "TWO_LEGS_AND_TAIL",
+	"height" : 0.7,
+	"weight" : 21.4,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

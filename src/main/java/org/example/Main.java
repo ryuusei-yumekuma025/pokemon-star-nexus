@@ -42,6 +42,8 @@ public class Main {
 		for (PokemonForm pokemonForm : PokemonRegistry.getAllPokemonForms()) {
 			printPokemon(pokemonForm);
 		}
+
+		System.out.println(StringUtils.upperPartedCase("Normal-type/Special/Super"));
 	}
 
 	public static void printTrainer(TrainerAlternate trainerAlternate) {

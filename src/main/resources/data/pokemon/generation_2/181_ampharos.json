@@ -1,1 +1,23 @@
-{}
+{
+	"pokedex_number" : 181,
+	"species" : "AMPHAROS",
+	"category" : "LIGHT",
+	"types" : ["ELECTRIC"],
+	"egg_groups" : ["MONSTER", "FIELD"],
+	"color" : "YELLOW",
+	"shape" : "TWO_LEGS_AND_TAIL",
+	"height" : 1.4,
+	"weight" : 61.5,
+	"forms" : [
+		{
+			"id" : 0
+		},
+		{
+			"id" : 1,
+			"code" : "MEGA",
+			"types": ["ELECTRIC", "DRAGON"],
+			"mega_origin" : 0,
+			"mega_boost" : [0, 20, 50, 30, 0]
+		}
+	]
+}

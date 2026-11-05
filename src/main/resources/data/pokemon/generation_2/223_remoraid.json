@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 223,
+	"species" : "REMORAID",
+	"category" : "JET",
+	"types" : ["WATER"],
+	"egg_groups" : ["WATER_1", "WATER_2"],
+	"color" : "GRAY",
+	"shape" : "FISH",
+	"height" : 0.6,
+	"weight" : 12.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

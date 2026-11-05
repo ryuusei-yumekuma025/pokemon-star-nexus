@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 166,
+	"species" : "LEDIAN",
+	"category" : "FIVE_STAR",
+	"types" : ["BUG", "FLYING"],
+	"egg_groups" : ["BUG"],
+	"color" : "RED",
+	"shape" : "TWO_WINGS",
+	"height" : 1.4,
+	"weight" : 35.6,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

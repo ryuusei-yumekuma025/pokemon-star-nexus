@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 234,
+	"species" : "STANTLER",
+	"category" : "BIG_HORN",
+	"types" : ["NORMAL"],
+	"egg_groups" : ["FIELD"],
+	"color" : "BROWN",
+	"shape" : "FOUR_LEGGED",
+	"height" : 1.4,
+	"weight" : 71.2,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

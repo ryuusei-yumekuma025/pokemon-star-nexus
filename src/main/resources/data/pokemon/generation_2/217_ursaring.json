@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 217,
+	"species" : "URSARING",
+	"category" : "HIBERNATOR",
+	"types" : ["NORMAL"],
+	"egg_groups" : ["FIELD"],
+	"color" : "BROWN",
+	"shape" : "TWO_LEGS_AND_TAIL",
+	"height" : 1.8,
+	"weight" : 125.8,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

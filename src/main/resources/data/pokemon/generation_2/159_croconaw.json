@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 159,
+	"species" : "CROCONAW",
+	"category" : "BIG_JAW",
+	"types" : ["WATER"],
+	"egg_groups" : ["MONSTER", "WATER_1"],
+	"color" : "BLUE",
+	"shape" : "TWO_LEGS_AND_TAIL",
+	"height" : 1.1,
+	"weight" : 25.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

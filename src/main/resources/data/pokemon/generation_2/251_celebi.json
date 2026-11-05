@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 251,
+	"species" : "CELEBI",
+	"category" : "TIME_TRAVEL",
+	"types" : ["PSYCHIC", "GRASS"],
+	"egg_groups" : ["NO_EGGS_DISCOVERED"],
+	"color" : "GREEN",
+	"shape" : "TWO_LEGS_AND_HUMAN_FORM",
+	"height" : 0.6,
+	"weight" : 5.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

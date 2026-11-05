@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 185,
+	"species" : "SUDOWOODO",
+	"category" : "IMITATION",
+	"types" : ["ROCK"],
+	"egg_groups" : ["MINERAL"],
+	"color" : "BROWN",
+	"shape" : "TWO_LEGS_AND_HUMAN_FORM",
+	"height" : 1.2,
+	"weight" : 38.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

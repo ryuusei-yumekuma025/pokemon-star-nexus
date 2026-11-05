@@ -1,1 +1,23 @@
-{}
+{
+	"pokedex_number" : 222,
+	"species" : "CORSOLA",
+	"category" : "CORAL",
+	"types" : ["WATER", "ROCK"],
+	"egg_groups" : ["WATER_1", "WATER_3"],
+	"color" : "PINK",
+	"shape" : "INSECT",
+	"height" : 0.6,
+	"weight" : 5.0,
+	"forms" : [
+		{
+			"id" : 0
+		},
+		{
+			"id" : 1,
+			"code" : "GALARIAN",
+			"types" : ["GHOST"],
+			"color" : "WHITE",
+			"weight" : 0.5
+		}
+	]
+}

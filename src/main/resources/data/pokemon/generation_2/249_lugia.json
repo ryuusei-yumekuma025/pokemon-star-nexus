@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 249,
+	"species" : "LUGIA",
+	"category" : "DIVING",
+	"types" : ["PSYCHIC", "FLYING"],
+	"egg_groups" : ["NO_EGGS_DISCOVERED"],
+	"color" : "WHITE",
+	"shape" : "TWO_WINGS",
+	"height" : 5.2,
+	"weight" : 216.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

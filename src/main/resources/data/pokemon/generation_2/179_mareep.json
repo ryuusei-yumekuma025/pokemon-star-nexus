@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 179,
+	"species" : "MAREEP",
+	"category" : "WOOL",
+	"types" : ["ELECTRIC"],
+	"egg_groups" : ["MONSTER", "FIELD"],
+	"color" : "WHITE",
+	"shape" : "FOUR_LEGGED",
+	"height" : 0.6,
+	"weight" : 7.8,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

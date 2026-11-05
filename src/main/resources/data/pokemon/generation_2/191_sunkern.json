@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 191,
+	"species" : "SUNKERN",
+	"category" : "SEED",
+	"types" : ["GRASS"],
+	"egg_groups" : ["GRASS"],
+	"color" : "YELLOW",
+	"shape" : "ROUND",
+	"height" : 0.3,
+	"weight" : 1.8,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

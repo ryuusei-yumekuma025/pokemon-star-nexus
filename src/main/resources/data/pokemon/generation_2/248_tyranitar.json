@@ -1,1 +1,24 @@
-{}
+{
+	"pokedex_number" : 248,
+	"species" : "TYRANITAR",
+	"category" : "ARMOR",
+	"types" : ["ROCK", "DARK"],
+	"egg_groups" : ["MONSTER"],
+	"color" : "GREEN",
+	"shape" : "TWO_LEGS_AND_TAIL",
+	"height" : 2.0,
+	"weight" : 202.0,
+	"forms" : [
+		{
+			"id" : 0
+		},
+		{
+			"id" : 1,
+			"code" : "MEGA",
+			"height" : 2.5,
+			"weight" : 255.0,
+			"mega_origin" : 0,
+			"mega_boost" : [30, 40, 0, 20, 10]
+		}
+	]
+}

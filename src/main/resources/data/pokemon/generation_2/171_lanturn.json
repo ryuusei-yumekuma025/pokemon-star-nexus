@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 171,
+	"species" : "LANTURN",
+	"category" : "LIGHT",
+	"types" : ["WATER", "ELECTRIC"],
+	"egg_groups" : ["WATER_2"],
+	"color" : "BLUE",
+	"shape" : "FISH",
+	"height" : 1.2,
+	"weight" : 22.5,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

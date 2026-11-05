@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 203,
+	"species" : "GIRAFARIG",
+	"category" : "LONG_NECK",
+	"types" : ["NORMAL", "PSYCHIC"],
+	"egg_groups" : ["FIELD"],
+	"color" : "YELLOW",
+	"shape" : "FOUR_LEGGED",
+	"height" : 1.5,
+	"weight" : 41.5,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

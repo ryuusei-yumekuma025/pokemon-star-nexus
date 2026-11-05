@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 207,
+	"species" : "GLIGAR",
+	"category" : "FLY_SCORPION",
+	"types" : ["GROUND", "FLYING"],
+	"egg_groups" : ["BUG"],
+	"color" : "PURPLE",
+	"shape" : "TWO_WINGS",
+	"height" : 1.1,
+	"weight" : 64.8,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

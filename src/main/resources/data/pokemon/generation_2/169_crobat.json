@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 169,
+	"species" : "CROBAT",
+	"category" : "BAT",
+	"types" : ["POISON", "FLYING"],
+	"egg_groups" : ["FLYING"],
+	"color" : "PURPLE",
+	"shape" : "FOUR_WINGS",
+	"height" : 1.8,
+	"weight" : 75.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

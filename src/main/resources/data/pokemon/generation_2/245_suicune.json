@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 245,
+	"species" : "SUICUNE",
+	"category" : "AURORA",
+	"types" : ["WATER"],
+	"egg_groups" : ["NO_EGG_DISCOVERED"],
+	"color" : "BLUE",
+	"shape" : "FOUR_LEGGED",
+	"height" : 2.0,
+	"weight" : 187.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

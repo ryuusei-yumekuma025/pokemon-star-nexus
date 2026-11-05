@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 246,
+	"species" : "LARVITAR",
+	"category" : "ROCK_SKIN",
+	"types" : ["ROCK", "GROUND"],
+	"egg_groups" : ["MONSTER"],
+	"color" : "GREEN",
+	"shape" : "TWO_LEGS_AND_TAIL",
+	"height" : 0.6,
+	"weight" : 72.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

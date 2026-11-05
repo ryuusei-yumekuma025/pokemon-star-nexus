@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 241,
+	"species" : "MILTANK",
+	"category" : "MILK_COW",
+	"types" : ["NORMAL"],
+	"egg_groups" : ["FIELD"],
+	"color" : "PINK",
+	"shape" : "TWO_LEGS_AND_TAIL",
+	"height" : 1.2,
+	"weight" : 75.5,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

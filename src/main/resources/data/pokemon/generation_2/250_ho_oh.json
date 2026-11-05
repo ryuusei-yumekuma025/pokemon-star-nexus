@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 250,
+	"species" : "HO_OH",
+	"category" : "RAINBOW",
+	"types" : ["FIRE", "FLYING"],
+	"egg_groups" : ["NO_EGGS_DISCOVERED"],
+	"color" : "RED",
+	"shape" : "TWO_WINGS",
+	"height" : 3.8,
+	"weight" : 199.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

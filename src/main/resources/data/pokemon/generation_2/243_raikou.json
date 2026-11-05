@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 243,
+	"species" : "RAIKOU",
+	"category" : "THUNDER",
+	"types" : ["ELECTRIC"],
+	"egg_groups" : ["NO_EGGS_DISCOVERED"],
+	"color" : "YELLOW",
+	"shape" : "FOUR_LEGGED",
+	"height" : 1.9,
+	"weight" : 178.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

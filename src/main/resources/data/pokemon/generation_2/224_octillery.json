@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 224,
+	"species" : "OCTILLERY",
+	"category" : "JET",
+	"types" : ["WATER"],
+	"egg_groups" : ["WATER_1", "WATER_2"],
+	"color" : "RED",
+	"shape" : "MULTI_LEG",
+	"height" : 0.9,
+	"weight" : 28.5,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

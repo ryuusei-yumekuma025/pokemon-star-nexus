@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 209,
+	"species" : "SNUBBULL",
+	"category" : "FAIRY",
+	"types" : ["FAIRY"],
+	"egg_groups" : ["FIELD", "FAIRY"],
+	"color" : "PINK",
+	"shape" : "TWO_LEGS_AND_HUMAN_FORM",
+	"height" : 0.6,
+	"weight" : 7.8,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

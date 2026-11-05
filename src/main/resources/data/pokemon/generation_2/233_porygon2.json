@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 233,
+	"species" : "PORYGON2",
+	"category" : "VIRTUAL",
+	"types" : ["NORMAL"],
+	"egg_groups" : ["MINERAL"],
+	"color" : "RED",
+	"shape" : "LEGS",
+	"height" : 0.6,
+	"weight" : 32.5,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

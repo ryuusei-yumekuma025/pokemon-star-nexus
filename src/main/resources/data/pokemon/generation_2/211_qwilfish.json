@@ -1,1 +1,22 @@
-{}
+{
+	"pokedex_number" : 211,
+	"species" : "QWILFISH",
+	"category" : "BALLOON",
+	"types" : ["WATER", "POISON"],
+	"egg_groups" : ["WATER_2"],
+	"color" : "GRAY",
+	"shape" : "FISH",
+	"height" : 0.5,
+	"weight" : 3.9,
+	"forms" : [
+		{
+			"id" : 0
+		},
+		{
+			"id" : 1,
+			"code" : "HISUIAN",
+			"types" : ["DARK", "POISON"],
+			"color" : "BLACK"
+		}
+	]
+}

@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 170,
+	"species" : "CHINCHOU",
+	"category" : "ANGLER",
+	"types" : ["WATER", "ELECTRIC"],
+	"egg_groups" : ["WATER_2"],
+	"color" : "BLUE",
+	"shape" : "FISH",
+	"height" : 0.5,
+	"weight" : 12.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

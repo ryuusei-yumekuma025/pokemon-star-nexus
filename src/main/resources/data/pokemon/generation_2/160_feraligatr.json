@@ -1,1 +1,25 @@
-{}
+{
+	"pokedex_number" : 160,
+	"species" : "FERALIGATR",
+	"category" : "BIG_JAW",
+	"types" : ["WATER"],
+	"egg_groups" : ["MONSTER", "WATER_1"],
+	"color" : "BLUE",
+	"shape" : "TWO_LEGS_AND_TAIL",
+	"height" : 2.3,
+	"weight" : 88.8,
+	"forms" : [
+		{
+			"id" : 0
+		},
+		{
+			"id" : 1,
+			"code" : "MEGA",
+			"category" : "DOUBLE_JAW",
+			"types" : ["WATER", "DRAGON"],
+			"weight" : 108.8,
+			"mega_origin" : 0,
+			"mega_boost" : [55, 25, 0, 10, 10]
+		}
+	]
+}

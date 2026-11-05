@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 198,
+	"species" : "MURKROW",
+	"category" : "DARKNESS",
+	"types" : ["DARK", "FLYING"],
+	"egg_groups" : ["FLYING"],
+	"color" : "BLACK",
+	"shape" : "TWO_WINGS",
+	"height" : 0.5,
+	"weight" : 2.1,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

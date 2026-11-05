@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 247,
+	"species" : "PUPITAR",
+	"category" : "HARD_SHELL",
+	"types" : ["ROCK", "GROUND"],
+	"egg_groups" : ["MONSTER"],
+	"color" : "GRAY",
+	"shape" : "BELLY_CRAWLING_NO_LEGS",
+	"height" : 1.2,
+	"weight" : 152.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

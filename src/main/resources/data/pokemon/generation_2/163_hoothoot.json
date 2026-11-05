@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 163,
+	"species" : "HOOTHOOT",
+	"category" : "OWL",
+	"types" : ["NORMAL", "FLYING"],
+	"egg_groups" : ["FLYING"],
+	"color" : "BROWN",
+	"shape" : "TWO_WINGS",
+	"height" : 0.7,
+	"weight" : 21.2,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

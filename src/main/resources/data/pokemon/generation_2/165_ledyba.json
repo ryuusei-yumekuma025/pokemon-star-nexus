@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 165,
+	"species" : "LEDYBA",
+	"category" : "FIVE_STAR",
+	"types" : ["BUG", "FLYING"],
+	"egg_groups" : ["BUG"],
+	"color" : "RED",
+	"shape" : "TWO_WINGS",
+	"height" : 1.0,
+	"weight" : 10.8,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

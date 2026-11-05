@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 168,
+	"species" : "ARIADOS",
+	"category" : "LONG_LEG",
+	"types" : ["BUG", "POISON"],
+	"egg_groups" : ["BUG"],
+	"color" : "RED",
+	"shape" : "INSECT",
+	"height" : 1.1,
+	"weight" : 33.5,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

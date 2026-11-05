@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 182,
+	"species" : "BELLOSSOM",
+	"category" : "FLOWER",
+	"types" : ["GRASS"],
+	"egg_groups" : ["GRASS"],
+	"color" : "GREEN",
+	"shape" : "TWO_LEGS_AND_HUMAN_FORM",
+	"height" : 0.4,
+	"weight" : 5.8,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 164,
+	"species" : "NOCTOWL",
+	"category" : "OWL",
+	"types" : ["NORMAL", "FLYING"],
+	"egg_groups" : ["FLYING"],
+	"color" : "BROWN",
+	"shape" : "TWO_WINGS",
+	"height" : 1.6,
+	"weight" : 40.8,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

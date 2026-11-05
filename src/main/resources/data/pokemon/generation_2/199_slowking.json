@@ -1,1 +1,23 @@
-{}
+{
+	"pokedex_number" : 199,
+	"species" : "SLOWKING",
+	"category" : "ROYAL",
+	"types" : ["WATER", "PSYCHIC"],
+	"egg_groups" : ["MONSTER", "WATER_1"],
+	"color" : "PINK",
+	"shape" : "TWO_LEGS_AND_TAIL",
+	"height" : 2.0,
+	"weight" : 79.5,
+	"forms" : [
+		{
+			"id" : 0
+		},
+		{
+			"id" : 1,
+			"code" : "GALARIAN",
+			"category" : "HEXPERT",
+			"types" : ["POISON", "PSYCHIC"],
+			"height" : 1.8
+		}
+	]
+}

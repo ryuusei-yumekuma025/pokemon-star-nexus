@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 244,
+	"species" : "ENTEI",
+	"category" : "VOLCANO",
+	"types" : ["FIRE"],
+	"egg_groups" : ["NO_EGGS_DISCOVERED"],
+	"color" : "BROWN",
+	"shape" : "FOUR_LEGGED",
+	"height" : 2.1,
+	"weight" : 198.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

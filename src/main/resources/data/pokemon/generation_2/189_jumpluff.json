@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 189,
+	"species" : "JUMPLUFF",
+	"category" : "COTTONWEED",
+	"types" : ["GRASS", "FLYING"],
+	"egg_groups" : ["FAIRY", "GRASS"],
+	"color" : "BLUE",
+	"shape" : "TWO_LEGS_AND_TAIL",
+	"height" : 0.8,
+	"weight" : 3.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

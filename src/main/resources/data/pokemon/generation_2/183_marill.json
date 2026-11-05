@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 183,
+	"species" : "MARILL",
+	"category" : "AQUA_MOUSE",
+	"types" : ["WATER", "FAIRY"],
+	"egg_groups" : ["WATER_1", "FAIRY"],
+	"color" : "BLUE",
+	"shape" : "TWO_LEGS_AND_TAIL",
+	"height" : 0.4,
+	"weight" : 8.5,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

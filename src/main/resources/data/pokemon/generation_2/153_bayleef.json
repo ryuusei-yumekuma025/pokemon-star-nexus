@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 153,
+	"species" : "BAYLEEF",
+	"category" : "LEAF",
+	"types" : ["GRASS"],
+	"egg_groups" : ["MONSTER", "GRASS"],
+	"color" : "GREEN",
+	"shape" : "FOUR_LEGGED",
+	"height" : 1.2,
+	"weight" : 15.8,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

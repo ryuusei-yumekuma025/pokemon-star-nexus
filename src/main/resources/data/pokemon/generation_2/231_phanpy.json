@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 231,
+	"species" : "PHANPY",
+	"category" : "LONG_NOSE",
+	"types" : ["GROUND"],
+	"egg_groups" : ["FIELD"],
+	"color" : "BLUE",
+	"shape" : "FOUR_LEGGED",
+	"height" : 0.5,
+	"weight" : 33.5,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

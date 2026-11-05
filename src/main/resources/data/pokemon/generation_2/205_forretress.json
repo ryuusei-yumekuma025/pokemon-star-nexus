@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 205,
+	"species" : "FORRETRESS",
+	"category" : "BAGWORM",
+	"types" : ["BUG", "STEEL"],
+	"egg_groups" : ["BUG"],
+	"color" : "PURPLE",
+	"shape" : "ROUND",
+	"height" : 1.2,
+	"weight" : 125.8,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

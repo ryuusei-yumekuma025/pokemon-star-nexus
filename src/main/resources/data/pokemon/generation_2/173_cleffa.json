@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 173,
+	"species" : "CLEFFA",
+	"category" : "STAR_SHAPE",
+	"types" : ["FAIRY"],
+	"egg_groups" : ["NO_EGGS_DISCOVERED"],
+	"color" : "PINK",
+	"shape" : "TWO_LEGS_AND_TAIL",
+	"height" : 0.3,
+	"weight" : 3.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

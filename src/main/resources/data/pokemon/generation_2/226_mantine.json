@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 226,
+	"species" : "MANTINE",
+	"category" : "KITE",
+	"types" : ["WATER", "FLYING"],
+	"egg_groups" : ["WATER_1"],
+	"color" : "PURPLE",
+	"shape" : "TWO_WINGS",
+	"height" : 2.1,
+	"weight" : 220.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

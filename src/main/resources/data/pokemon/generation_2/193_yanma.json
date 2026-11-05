@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 193,
+	"species" : "YANMA",
+	"category" : "CLEAR_WING",
+	"types" : ["BUG", "FLYING"],
+	"egg_groups" : ["BUG"],
+	"color" : "RED",
+	"shape" : "FOUR_WINGS",
+	"height" : 1.2,
+	"weight" : 38.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

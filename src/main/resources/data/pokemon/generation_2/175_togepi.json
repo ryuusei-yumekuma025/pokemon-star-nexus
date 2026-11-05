@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 175,
+	"species" : "TOGEPI",
+	"category" : "SPIKE_BALL",
+	"types" : ["FAIRY"],
+	"egg_groups" : ["NO_EGGS_DISCOVERED"],
+	"color" : "WHITE",
+	"shape" : "TWO_LEGS_AND_HUMAN_FORM",
+	"height" : 0.3,
+	"weight" : 1.5,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

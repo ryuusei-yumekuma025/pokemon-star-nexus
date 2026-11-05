@@ -1,1 +1,25 @@
-{}
+{
+	"pokedex_number" : 154,
+	"species" : "MEGANIUM",
+	"category" : "HERB",
+	"types" : ["GRASS"],
+	"egg_groups" : ["MONSTER", "GRASS"],
+	"color" : "GREEN",
+	"shape" : "FOUR_LEGGED",
+	"height" : 1.8,
+	"weight" : 100.5,
+	"forms" : [
+		{
+			"id" : 0
+		},
+		{
+			"id" : 1,
+			"code" : "MEGA",
+			"types" : ["GRASS", "FAIRY"],
+			"height" : 2.4,
+			"weight" : 201.0,
+			"mega_origin" : 0,
+			"mega_boost" : [10, 15, 60, 15, 0]
+		}
+	]
+}

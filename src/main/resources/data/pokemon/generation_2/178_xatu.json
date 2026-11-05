@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 178,
+	"species" : "XATU",
+	"category" : "MYSTIC",
+	"types" : ["PSYCHIC", "FLYING"],
+	"egg_groups" : ["FLYING"],
+	"color" : "GREEN",
+	"shape" : "TWO_WINGS",
+	"height" : 1.5,
+	"weight" : 15.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

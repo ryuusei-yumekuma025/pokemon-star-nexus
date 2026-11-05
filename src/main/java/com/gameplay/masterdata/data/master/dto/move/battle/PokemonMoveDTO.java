@@ -63,6 +63,7 @@ public record PokemonMoveDTO(
 		Objects.requireNonNull(moveCode, "Missing Move Code.");
 		moveCode = StringUtils.upperSnakeCase(moveCode);
 
+		moveAttribute = StringUtils.upperPartedCase(moveAttribute);
 		if (moveAttribute != null) {
 			String[] attributes = moveAttribute.split("/", -1);
 

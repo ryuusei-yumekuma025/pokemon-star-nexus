@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 152,
+	"species" : "CHIKORITA",
+	"category" : "LEAF",
+	"types" : ["GRASS"],
+	"egg_groups" : ["MONSTER", "GRASS"],
+	"color" : "GREEN",
+	"shape" : "FOUR_LEGGED",
+	"height" : 0.9,
+	"weight" : 6.4,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

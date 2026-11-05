@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 204,
+	"species" : "PINECO",
+	"category" : "BAGWORM",
+	"types" : ["BUG"],
+	"egg_groups" : ["BUG"],
+	"color" : "GRAY",
+	"shape" : "ROUND",
+	"height" : 0.6,
+	"weight" : 7.2,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

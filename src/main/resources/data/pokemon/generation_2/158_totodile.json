@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 158,
+	"species" : "TOTODILE",
+	"category" : "BIG_JAW",
+	"types" : ["WATER"],
+	"egg_groups" : ["MONSTER", "WATER_1"],
+	"color" : "BLUE",
+	"shape" : "TWO_LEGS_AND_TAIL",
+	"height" : 0.6,
+	"weight" : 9.5,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 218,
+	"species" : "SLUGMA",
+	"category" : "LAVA",
+	"types" : ["FIRE"],
+	"egg_groups" : ["AMORPHOUS"],
+	"color" : "RED",
+	"shape" : "BELLY_CRAWLING_NO_LEGS",
+	"height" : 0.7,
+	"weight" : 35.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

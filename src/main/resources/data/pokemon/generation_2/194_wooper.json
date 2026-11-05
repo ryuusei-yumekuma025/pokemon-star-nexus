@@ -1,1 +1,24 @@
-{}
+{
+	"pokedex_number" : 194,
+	"species" : "WOOPER",
+	"category" : "WATER_FISH",
+	"types" : ["WATER", "GROUND"],
+	"egg_groups" : ["WATER_1", "FIELD"],
+	"color" : "BLUE",
+	"shape" : "LEGS",
+	"height" : 0.4,
+	"weight" : 8.5,
+	"forms" : [
+		{
+			"id" : 0
+		},
+		{
+			"id" : 1,
+			"code" : "PALDEAN",
+			"category" : "POISON_FISH",
+			"types" : ["POISON", "GROUND"],
+			"color" : "BROWN",
+			"weight" : 11.0
+		}
+	]
+}

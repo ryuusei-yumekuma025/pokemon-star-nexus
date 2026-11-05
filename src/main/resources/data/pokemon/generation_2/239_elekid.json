@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 239,
+	"species" : "ELEKID",
+	"category" : "ELECTRIC",
+	"types" : ["ELECTRIC"],
+	"egg_groups" : ["NO_EGGS_DISCOVERED"],
+	"color" : "YELLOW",
+	"shape" : "TWO_LEGS_AND_HUMAN_FORM",
+	"height" : 0.6,
+	"weight" : 23.5,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

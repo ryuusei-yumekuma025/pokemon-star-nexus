@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 235,
+	"species" : "SMEARGLE",
+	"category" : "PAINTER",
+	"types" : ["NORMAL"],
+	"egg_groups" : ["FIELD"],
+	"color" : "WHITE",
+	"shape" : "TWO_LEGS_AND_TAIL",
+	"height" : 1.2,
+	"weight" : 58.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

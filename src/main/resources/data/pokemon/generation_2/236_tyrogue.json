@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 236,
+	"species" : "TYROGUE",
+	"category" : "SCUFFLE",
+	"types" : ["FIGHTING"],
+	"egg_groups" : ["NO_EGGS_DISCOVERED"],
+	"color" : "PURPLE",
+	"shape" : "TWO_LEGS_AND_HUMAN_FORM",
+	"height" : 0.7,
+	"weight" : 21.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

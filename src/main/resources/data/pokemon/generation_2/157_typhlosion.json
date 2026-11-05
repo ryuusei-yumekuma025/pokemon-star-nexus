@@ -1,1 +1,24 @@
-{}
+{
+	"pokedex_number" : 157,
+	"species" : "TYPHLOSION",
+	"category" : "VOLCANO",
+	"types" : ["FIRE"],
+	"egg_groups" : ["FIELD"],
+	"color" : "YELLOW",
+	"shape" : "FOUR_LEGGED",
+	"height" : 1.7,
+	"weight" : 79.5,
+	"forms" : [
+		{
+			"id" : 0
+		},
+		{
+			"id" : 1,
+			"code" : "HISUIAN",
+			"category" : "GHOST_FLAME",
+			"types" : ["FIRE", "GHOST"],
+			"height" : 1.6,
+			"weight" : 69.8
+		}
+	]
+}

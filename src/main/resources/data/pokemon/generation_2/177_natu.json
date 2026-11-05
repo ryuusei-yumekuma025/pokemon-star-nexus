@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 177,
+	"species" : "NATU",
+	"category" : "TINY_BIRD",
+	"types" : ["PSYCHIC", "FLYING"],
+	"egg_groups" : ["FLYING"],
+	"color" : "GREEN",
+	"shape" : "TWO_WINGS",
+	"height" : 0.2,
+	"weight" : 2.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

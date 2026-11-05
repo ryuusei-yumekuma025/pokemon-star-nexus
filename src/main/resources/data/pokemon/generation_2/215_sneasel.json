@@ -1,1 +1,23 @@
-{}
+{
+	"pokedex_number" : 215,
+	"species" : "SNEASEL",
+	"category" : "SHARP_CLAW",
+	"types" : ["DARK", "ICE"],
+	"egg_groups" : ["FIELD"],
+	"color" : "BLACK",
+	"shape" : "TWO_LEGS_AND_TAIL",
+	"height" : 0.9,
+	"weight" : 28.0,
+	"forms" : [
+		{
+			"id" : 0
+		},
+		{
+			"id" : 1,
+			"code" : "HISUIAN",
+			"types" : ["FIGHTING", "POISON"],
+			"color" : "GRAY",
+			"weight" : 27.0
+		}
+	]
+}

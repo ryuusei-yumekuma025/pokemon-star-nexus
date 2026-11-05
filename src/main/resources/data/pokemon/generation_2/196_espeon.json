@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 196,
+	"species" : "ESPEON",
+	"category" : "SUN",
+	"types" : ["PSYCHIC"],
+	"egg_groups" : ["FIELD"],
+	"color" : "PURPLE",
+	"shape" : "FOUR_LEGGED",
+	"height" : 0.9,
+	"weight" : 26.5,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

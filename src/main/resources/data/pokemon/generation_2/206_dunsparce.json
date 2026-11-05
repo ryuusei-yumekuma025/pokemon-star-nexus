@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 206,
+	"species" : "DUNSPARCE",
+	"category" : "LAND_SNAKE",
+	"types" : ["NORMAL"],
+	"egg_groups" : ["FIELD"],
+	"color" : "YELLOW",
+	"shape" : "BELLY_CRAWLING_NO_LEGS",
+	"height" : 1.5,
+	"weight" : 14.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

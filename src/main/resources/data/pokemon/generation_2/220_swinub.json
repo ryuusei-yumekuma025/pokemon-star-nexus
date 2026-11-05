@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 220,
+	"species" : "SWINUB",
+	"category" : "PIG",
+	"types" : ["ICE", "GROUND"],
+	"egg_groups" : ["FIELD"],
+	"color" : "BROWN",
+	"shape" : "FOUR_LEGGED",
+	"height" : 0.4,
+	"weight" : 6.5,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}
