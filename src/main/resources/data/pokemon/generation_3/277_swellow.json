@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 277,
+	"species" : "SWELLOW",
+	"category" : "SWALLOW",
+	"types" : ["NORMAL", "FLYING"],
+	"egg_groups" : ["FLYING"],
+	"color" : "BLUE",
+	"shape" : "TWO_WINGS",
+	"height" : 0.7,
+	"weight" : 19.8,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 268,
+	"species" : "CASCOON",
+	"category" : "COCOON",
+	"types" : ["BUG"],
+	"egg_groups" : ["BUG"],
+	"color" : "PURPLE",
+	"shape" : "ROUND",
+	"height" : 0.7,
+	"weight" : 11.5,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

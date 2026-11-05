@@ -1,1 +1,25 @@
-{}
+{
+	"pokedex_number" : 254,
+	"species" : "SCEPTILE",
+	"category" : "FOREST",
+	"types" : ["GRASS"],
+	"egg_groups" : ["MONSTER", "DRAGON"],
+	"color" : "GREEN",
+	"shape" : "TWO_LEGS_AND_TAIL",
+	"height" : 1.7,
+	"weight" : 52.2,
+	"forms" : [
+		{
+			"id" : 0
+		},
+		{
+			"id" : 1,
+			"code" : "MEGA",
+			"types" : ["GRASS", "DRAGON"],
+			"height" : 1.9,
+			"weight" : 55.2,
+			"mega_origin" : 0,
+			"mega_boost" : [40, 0, 40, 0, 20]
+		}
+	]
+}

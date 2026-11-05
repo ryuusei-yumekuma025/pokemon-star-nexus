@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 265,
+	"species" : "WURMPLE",
+	"category" : "WORM",
+	"types" : ["BUG"],
+	"egg_groups" : ["BUG"],
+	"color" : "RED",
+	"shape" : "INSECT",
+	"height" : 0.3,
+	"weight" : 3.6,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

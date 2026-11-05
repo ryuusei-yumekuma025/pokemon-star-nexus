@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 271,
+	"species" : "LOMBRE",
+	"category" : "JOLLY",
+	"types" : ["WATER", "GRASS"],
+	"egg_groups" : ["WATER_1", "GRASS"],
+	"color" : "GREEN",
+	"shape" : "TWO_LEGS_AND_HUMAN_FORM",
+	"height" : 1.2,
+	"weight" : 32.5,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

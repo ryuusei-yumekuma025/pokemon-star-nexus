@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 261,
+	"species" : "POOCHYENA",
+	"category" : "BITE",
+	"types" : ["DARK"],
+	"egg_groups" : ["FIELD"],
+	"color" : "GRAY",
+	"shape" : "FOUR_LEGGED",
+	"height" : 0.5,
+	"weight" : 13.6,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

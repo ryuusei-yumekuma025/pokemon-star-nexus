@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 279,
+	"species" : "PELIPPER",
+	"category" : "WATER_BIRD",
+	"types" : ["WATER", "FLYING"],
+	"egg_groups" : ["WATER_1", "FLYING"],
+	"color" : "YELLOW",
+	"shape" : "TWO_WINGS",
+	"height" : 1.2,
+	"weight" : 28.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

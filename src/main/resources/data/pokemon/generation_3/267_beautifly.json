@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 267,
+	"species" : "BEAUTIFLY",
+	"category" : "BUTTERFLY",
+	"types" : ["BUG", "FLYING"],
+	"egg_groups" : ["BUG"],
+	"color" : "YELLOW",
+	"shape" : "FOUR_WINGS",
+	"height" : 1.0,
+	"weight" : 28.4,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

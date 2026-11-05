@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 273,
+	"species" : "SEEDOT",
+	"category" : "ACORN",
+	"types" : ["GRASS"],
+	"egg_groups" : ["FIELD", "GRASS"],
+	"color" : "BROWN",
+	"shape" : "LEGS",
+	"height" : 0.5,
+	"weight" : 4.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

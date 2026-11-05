@@ -1,1 +1,24 @@
-{}
+{
+	"pokedex_number" : 260,
+	"species" : "SWAMPERT",
+	"category" : "MUD_FISH",
+	"types" : ["WATER", "GROUND"],
+	"egg_groups" : ["MONSTER", "WATER_1"],
+	"color" : "BLUE",
+	"shape" : "TWO_LEGS_AND_TAIL",
+	"height" : 1.5,
+	"weight" : 81.9,
+	"forms" : [
+		{
+			"id" : 0
+		},
+		{
+			"id" : 1,
+			"code" : "MEGA",
+			"height" : 1.9,
+			"weight" : 102.0,
+			"mega_origin" : 0,
+			"mega_boost" : [50, 20, 0, 20, 10]
+		}
+	]
+}

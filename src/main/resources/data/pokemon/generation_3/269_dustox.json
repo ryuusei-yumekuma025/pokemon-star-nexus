@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 269,
+	"species" : "DUSTOX",
+	"category" : "POISON_MOTH",
+	"types" : ["BUG", "POISON"],
+	"egg_groups" : ["BUG"],
+	"color" : "GREEN",
+	"shape" : "FOUR_WINGS",
+	"height" : 1.2,
+	"weight" : 31.6,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

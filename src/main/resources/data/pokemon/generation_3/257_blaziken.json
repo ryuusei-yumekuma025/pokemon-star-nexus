@@ -1,1 +1,22 @@
-{}
+{
+	"pokedex_number" : 257,
+	"species" : "BLAZIKEN",
+	"category" : "BLAZE",
+	"types" : ["FIRE", "FIGHTING"],
+	"egg_groups" : ["FIELD"],
+	"color" : "RED",
+	"shape" : "TWO_LEGS_AND_TAIL",
+	"height" : 1.9,
+	"weight" : 52.0,
+	"forms" : [
+		{
+			"id" : 0
+		},
+		{
+			"id" : 1,
+			"code" : "MEGA",
+			"mega_origin" : 0,
+			"mega_boost" : [40, 10, 20, 10, 20]
+		}
+	]
+}

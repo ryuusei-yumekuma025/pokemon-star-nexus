@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 278,
+	"species" : "WINGULL",
+	"category" : "SEAGULL",
+	"types" : ["WATER", "FLYING"],
+	"egg_groups" : ["WATER_1", "FLYING"],
+	"color" : "WHITE",
+	"shape" : "TWO_WINGS",
+	"height" : 0.6,
+	"weight" : 9.5,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

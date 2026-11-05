@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 259,
+	"species" : "MARSHTOMP",
+	"category" : "MUD_FISH",
+	"types" : ["WATER", "GROUND"],
+	"egg_groups" : ["MONSTER", "WATER_1"],
+	"color" : "BLUE",
+	"shape" : "TWO_LEGS_AND_TAIL",
+	"height" : 0.7,
+	"weight" : 28.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

@@ -1,1 +1,21 @@
-{}
+{
+	"pokedex_number" : 264,
+	"species" : "LINOONE",
+	"category" : "RUSHING",
+	"types" : ["NORMAL"],
+	"egg_groups" : ["FIELD"],
+	"color" : "WHITE",
+	"shape" : "FOUR_LEGGED",
+	"height" : 0.5,
+	"weight" : 32.5,
+	"forms" : [
+		{
+			"id" : 0
+		},
+		{
+			"id" : 1,
+			"code" : "GALARIAN",
+			"types" : ["DARK", "NORMAL"]
+		}
+	]
+}

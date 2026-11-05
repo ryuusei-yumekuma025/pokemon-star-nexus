@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 270,
+	"species" : "LOTAD",
+	"category" : "WATER_WEED",
+	"types" : ["WATER", "GRASS"],
+	"egg_groups" : ["WATER_1", "GRASS"],
+	"color" : "GREEN",
+	"shape" : "INSECT",
+	"height" : 0.5,
+	"weight" : 2.6,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 276,
+	"species" : "TAILLOW",
+	"category" : "TINY_SWALLOW",
+	"types" : ["NORMAL", "FLYING"],
+	"egg_groups" : ["FLYING"],
+	"color" : "BLUE",
+	"shape" : "TWO_WINGS",
+	"height" : 0.3,
+	"weight" : 2.3,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

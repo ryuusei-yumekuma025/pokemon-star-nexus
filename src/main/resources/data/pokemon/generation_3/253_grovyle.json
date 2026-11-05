@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 253,
+	"species" : "GROVYLE",
+	"category" : "WOOD_GECKO",
+	"types" : ["GRASS"],
+	"egg_groups" : ["MONSTER", "DRAGON"],
+	"color" : "GREEN",
+	"shape" : "TWO_LEGS_AND_TAIL",
+	"height" : 0.9,
+	"weight" : 21.6,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 258,
+	"species" : "MUDKIP",
+	"category" : "MUD_FISH",
+	"types" : ["WATER"],
+	"egg_groups" : ["MONSTER", "WATER_1"],
+	"color" : "BLUE",
+	"shape" : "FOUR_LEGGED",
+	"height" : 0.4,
+	"weight" : 7.6,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}
