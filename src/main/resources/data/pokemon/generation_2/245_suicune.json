@@ -3,7 +3,7 @@
 	"species" : "SUICUNE",
 	"category" : "AURORA",
 	"types" : ["WATER"],
-	"egg_groups" : ["NO_EGG_DISCOVERED"],
+	"egg_groups" : ["NO_EGGS_DISCOVERED"],
 	"color" : "BLUE",
 	"shape" : "FOUR_LEGGED",
 	"height" : 2.0,
