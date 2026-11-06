@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 337,
+	"species" : "LUNATONE",
+	"category" : "METEORITE",
+	"types" : ["ROCK", "PSYCHIC"],
+	"egg_groups" : ["MINERAL"],
+	"color" : "YELLOW",
+	"shape" : "ROUND",
+	"height" : 1.0,
+	"weight" : 168.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

@@ -1,1 +1,25 @@
-{}
+{
+	"pokedex_number" : 306,
+	"species" : "AGGRON",
+	"category" : "IRON_ARMOR",
+	"types" : ["STEEL", "ROCK"],
+	"egg_groups" : ["MONSTER"],
+	"color" : "GRAY",
+	"shape" : "TWO_LEGS_AND_TAIL",
+	"height" : 2.1,
+	"weight" : 360.0,
+	"forms" : [
+		{
+			"id" : 0
+		},
+		{
+			"id" : 1,
+			"code" : "MEGA",
+			"types" : ["STEEL"],
+			"height" : 2.2,
+			"weight" : 395.0,
+			"mega_origin" : 0,
+			"mega_boost" : [30, 50, 0, 20, 0]
+		}
+	]
+}

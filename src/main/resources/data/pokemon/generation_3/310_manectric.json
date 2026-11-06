@@ -1,1 +1,24 @@
-{}
+{
+	"pokedex_number" : 310,
+	"species" : "MANECTRIC",
+	"category" : "DISCHARGE",
+	"types" : ["ELECTRIC"],
+	"egg_groups" : ["FIELD"],
+	"color" : "YELLOW",
+	"shape" : "FOUR_LEGGED",
+	"height" : 1.5,
+	"weight" : 40.2,
+	"forms" : [
+		{
+			"id" : 0
+		},
+		{
+			"id" : 1,
+			"code" : "MEGA",
+			"height" : 1.8,
+			"weight" : 44.0,
+			"mega_origin" : 0,
+			"mega_boost" : [0, 20, 30, 20, 30]
+		}
+	]
+}

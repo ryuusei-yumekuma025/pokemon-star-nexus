@@ -1,1 +1,24 @@
-{}
+{
+	"pokedex_number" : 323,
+	"species" : "CAMERUPT",
+	"category" : "ERUPTION",
+	"types" : ["FIRE", "GROUND"],
+	"egg_groups" : ["FIELD"],
+	"color" : "RED",
+	"shape" : "FOUR_LEGGED",
+	"height" : 1.9,
+	"weight" : 220.0,
+	"forms" : [
+		{
+			"id" : 0
+		},
+		{
+			"id" : 1,
+			"code" : "MEGA",
+			"height" : 2.5,
+			"weight" : 320.5,
+			"mega_origin" : 0,
+			"mega_boost" : [20, 20, 40, 20, 0]
+		}
+	]
+}

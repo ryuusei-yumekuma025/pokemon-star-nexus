@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 329,
+	"species" : "VIBRAVA",
+	"category" : "VIBRATION",
+	"types" : ["GROUND", "DRAGON"],
+	"egg_groups" : ["BUG", "DRAGON"],
+	"color" : "GREEN",
+	"shape" : "FOUR_WINGS",
+	"height" : 1.1,
+	"weight" : 15.3,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

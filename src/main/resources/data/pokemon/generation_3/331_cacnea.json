@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 331,
+	"species" : "CACNEA",
+	"category" : "CACTUS",
+	"types" : ["GRASS"],
+	"egg_groups" : ["GRASS", "HUMAN_LIKE"],
+	"color" : "GREEN",
+	"shape" : "TWO_LEGS_AND_HUMAN_FORM",
+	"height" : 0.4,
+	"weight" : 51.3,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 298,
+	"species" : "AZURILL",
+	"category" : "POLKA_DOT",
+	"types" : ["NORMAL", "FAIRY"],
+	"egg_groups" : ["NO_EGGS_DISCOVERED"],
+	"color" : "BLUE",
+	"shape" : "LEGS",
+	"height" : 0.2,
+	"weight" : 2.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

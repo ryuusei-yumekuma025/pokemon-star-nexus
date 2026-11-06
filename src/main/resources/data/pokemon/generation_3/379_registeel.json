@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 379,
+	"species" : "REGISTEEL",
+	"category" : "IRON",
+	"types" : ["STEEL"],
+	"egg_groups" : ["NO_EGGS_DISCOVERED"],
+	"color" : "GRAY",
+	"shape" : "TWO_LEGS_AND_HUMAN_FORM",
+	"height" : 1.9,
+	"weight" : 205.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

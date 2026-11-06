@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 325,
+	"species" : "SPOINK",
+	"category" : "BOUNCE",
+	"types" : ["PSYCHIC"],
+	"egg_groups" : ["FIELD"],
+	"color" : "BLACK",
+	"shape" : "ARM",
+	"height" : 0.7,
+	"weight" : 30.6,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

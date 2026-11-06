@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 348,
+	"species" : "ARMALDO",
+	"category" : "PLATE",
+	"types" : ["ROCK", "BUG"],
+	"egg_groups" : ["WATER_3"],
+	"color" : "GRAY",
+	"shape" : "TWO_LEGS_AND_TAIL",
+	"height" : 1.5,
+	"weight" : 68.2,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

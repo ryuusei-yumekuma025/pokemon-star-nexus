@@ -1,1 +1,24 @@
-{}
+{
+	"pokedex_number" : 303,
+	"species" : "MAWILE",
+	"category" : "DECEIVER",
+	"types" : ["STEEL", "FAIRY"],
+	"egg_groups" : ["FIELD", "FAIRY"],
+	"color" : "BLACK",
+	"shape" : "TWO_LEGS_AND_HUMAN_FORM",
+	"height" : 0.6,
+	"weight" : 11.5,
+	"forms" : [
+		{
+			"id" : 0
+		},
+		{
+			"id" : 1,
+			"code" : "MEGA",
+			"height" : 1.0,
+			"weight" : 23.5,
+			"mega_origin" : 0,
+			"mega_boost" : [30, 40, 0, 30, 0]
+		}
+	]
+}

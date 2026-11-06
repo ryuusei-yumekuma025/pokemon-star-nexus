@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 305,
+	"species" : "LAIRON",
+	"category" : "IRON_ARMOR",
+	"types" : ["STEEL", "ROCK"],
+	"egg_groups" : ["MONSTER"],
+	"color" : "GRAY",
+	"shape" : "FOUR_LEGGED",
+	"height" : 0.9,
+	"weight" : 120.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

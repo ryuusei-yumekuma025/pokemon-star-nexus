@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 378,
+	"species" : "REGICE",
+	"category" : "ICEBERG",
+	"types" : ["ICE"],
+	"egg_groups" : ["NO_EGGS_DISCOVERED"],
+	"color" : "BLUE",
+	"shape" : "TWO_LEGS_AND_HUMAN_FORM",
+	"height" : 1.8,
+	"weight" : 175.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

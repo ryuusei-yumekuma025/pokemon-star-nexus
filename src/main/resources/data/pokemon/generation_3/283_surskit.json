@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 283,
+	"species" : "SURSKIT",
+	"category" : "POND_SKATER",
+	"types" : ["BUG", "WATER"],
+	"egg_groups" : ["WATER_1", "BUG"],
+	"color" : "BLUE",
+	"shape" : "INSECT",
+	"height" : 0.5,
+	"weight" : 1.7,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

@@ -1,1 +1,24 @@
-{}
+{
+	"pokedex_number" : 376,
+	"species" : "METAGROSS",
+	"category" : "IRON_LEG",
+	"types" : ["STEEL", "PSYCHIC"],
+	"egg_groups" : ["MINERAL"],
+	"color" : "BLUE",
+	"shape" : "GATHERING",
+	"height" : 1.6,
+	"weight" : 550.0,
+	"forms" : [
+		{
+			"id" : 0
+		},
+		{
+			"id" : 1,
+			"code" : "MEGA",
+			"height" : 2.5,
+			"weight" : 942.9,
+			"mega_origin" : 0,
+			"mega_boost" : [10, 20, 10, 20, 40]
+		}
+	]
+}

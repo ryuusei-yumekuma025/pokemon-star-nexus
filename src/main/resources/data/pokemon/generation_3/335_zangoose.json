@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 335,
+	"species" : "ZANGOOSE",
+	"category" : "CAT_FERRET",
+	"types" : ["NORMAL"],
+	"egg_groups" : ["FIELD"],
+	"color" : "WHITE",
+	"shape" : "TWO_LEGS_AND_TAIL",
+	"height" : 1.3,
+	"weight" : 40.3,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

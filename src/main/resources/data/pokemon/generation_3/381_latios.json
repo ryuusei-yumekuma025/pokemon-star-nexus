@@ -1,1 +1,25 @@
-{}
+{
+	"pokedex_number" : 381,
+	"species" : "LATIOS",
+	"category" : "EON",
+	"types" : ["DRAGON", "PSYCHIC"],
+	"egg_groups" : ["NO_EGGS_DISCOVERED"],
+	"color" : "BLUE",
+	"shape" : "TWO_WINGS",
+	"height" : 2.0,
+	"weight" : 60.0,
+	"forms" : [
+		{
+			"id" : 0
+		},
+		{
+			"id" : 1,
+			"code" : "MEGA",
+			"color" : "PURPLE",
+			"height" : 2.3,
+			"weight" : 70.0,
+			"mega_origin" : 0,
+			"mega_boost" : [20, 20, 40, 10, 10]
+		}
+	]
+}

@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 286,
+	"species" : "BRELOOM",
+	"category" : "MUSHROOM",
+	"types" : ["GRASS", "FIGHTING"],
+	"egg_groups" : ["FAIRY", "GRASS"],
+	"color" : "GREEN",
+	"shape" : "TWO_LEGS_AND_TAIL",
+	"height" : 1.2,
+	"weight" : 39.2,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

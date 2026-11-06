@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 316,
+	"species" : "GULPIN",
+	"category" : "STOMACH",
+	"types" : ["POISON"],
+	"egg_groups" : ["AMORPHOUS"],
+	"color" : "GREEN",
+	"shape" : "ARM",
+	"height" : 0.4,
+	"weight" : 10.3,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

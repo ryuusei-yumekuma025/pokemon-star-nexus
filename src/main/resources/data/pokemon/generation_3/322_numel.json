@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 322,
+	"species" : "NUMEL",
+	"category" : "NUMB",
+	"types" : ["FIRE", "GROUND"],
+	"egg_groups" : ["FIELD"],
+	"color" : "YELLOW",
+	"shape" : "FOUR_LEGGED",
+	"height" : 0.7,
+	"weight" : 24.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

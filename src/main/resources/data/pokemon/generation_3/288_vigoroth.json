@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 288,
+	"species" : "VIGOROTH",
+	"category" : "WILD_MONKEY",
+	"types" : ["NORMAL"],
+	"egg_groups" : ["FIELD"],
+	"color" : "WHITE",
+	"shape" : "TWO_LEGS_AND_TAIL",
+	"height" : 1.4,
+	"weight" : 46.5,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

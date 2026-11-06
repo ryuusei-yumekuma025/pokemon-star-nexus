@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 321,
+	"species" : "WAILORD",
+	"category" : "FLOAT_WHALE",
+	"types" : ["WATER"],
+	"egg_groups" : ["FIELD", "WATER_2"],
+	"color" : "BLUE",
+	"shape" : "FISH",
+	"height" : 14.5,
+	"weight" : 398.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 333,
+	"species" : "SWABLU",
+	"category" : "COTTON_BIRD",
+	"types" : ["NORMAL", "FLYING"],
+	"egg_groups" : ["FLYING", "DRAGON"],
+	"color" : "BLUE",
+	"shape" : "TWO_WINGS",
+	"height" : 0.4,
+	"weight" : 1.2,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

@@ -1,1 +1,24 @@
-{}
+{
+	"pokedex_number" : 334,
+	"species" : "ALTARIA",
+	"category" : "HUMMING",
+	"types" : ["DRAGON", "FLYING"],
+	"egg_groups" : ["FLYING", "DRAGON"],
+	"color" : "BLUE",
+	"shape" : "TWO_WINGS",
+	"height" : 1.1,
+	"weight" : 20.6,
+	"forms" : [
+		{
+			"id" : 0
+		},
+		{
+			"id" : 1,
+			"code" : "MEGA",
+			"types" : ["DRAGON", "FAIRY"],
+			"height" : 1.5,
+			"mega_origin" : 0,
+			"mega_boost" : [40, 20, 40, 0, 0]
+		}
+	]
+}

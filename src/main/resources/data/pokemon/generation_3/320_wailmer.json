@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 320,
+	"species" : "WAILMER",
+	"category" : "BALL_WHALE",
+	"types" : ["WATER"],
+	"egg_groups" : ["FIELD", "WATER_2"],
+	"color" : "BLUE",
+	"shape" : "FISH",
+	"height" : 2.0,
+	"weight" : 130.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

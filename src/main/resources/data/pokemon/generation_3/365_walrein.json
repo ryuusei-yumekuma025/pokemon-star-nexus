@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 365,
+	"species" : "WALREIN",
+	"category" : "ICE_BREAK",
+	"types" : ["ICE", "WATER"],
+	"egg_groups" : ["WATER_1", "FIELD"],
+	"color" : "BLUE",
+	"shape" : "FOUR_LEGGED",
+	"height" : 1.4,
+	"weight" : 150.6,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

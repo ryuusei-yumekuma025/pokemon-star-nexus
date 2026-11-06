@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 326,
+	"species" : "GRUMPIG",
+	"category" : "MANIPULATE",
+	"types" : ["PSYCHIC"],
+	"egg_groups" : ["FIELD"],
+	"color" : "PURPLE",
+	"shape" : "TWO_LEGS_AND_TAIL",
+	"height" : 0.9,
+	"weight" : 71.5,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

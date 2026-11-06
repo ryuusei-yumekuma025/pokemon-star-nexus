@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 295,
+	"species" : "EXPLOUD",
+	"category" : "LOUD_NOISE",
+	"types" : ["NORMAL"],
+	"egg_groups" : ["MONSTER", "FIELD"],
+	"color" : "BLUE",
+	"shape" : "TWO_LEGS_AND_TAIL",
+	"height" : 1.5,
+	"weight" : 84.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

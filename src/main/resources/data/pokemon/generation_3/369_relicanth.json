@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 369,
+	"species" : "RELICANTH",
+	"category" : "LONGEVITY",
+	"types" : ["WATER", "ROCK"],
+	"egg_groups" : ["WATER_1", "WATER_2"],
+	"color" : "GRAY",
+	"shape" : "FISH",
+	"height" : 1.0,
+	"weight" : 23.4,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 336,
+	"species" : "SEVIPER",
+	"category" : "FANG_SNAKE",
+	"types" : ["POISON"],
+	"egg_groups" : ["FIELD", "DRAGON"],
+	"color" : "BLACK",
+	"shape" : "BELLY_CRAWLING_NO_LEGS",
+	"height" : 2.7,
+	"weight" : 52.5,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

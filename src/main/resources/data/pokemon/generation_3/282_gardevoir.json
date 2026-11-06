@@ -1,1 +1,22 @@
-{}
+{
+	"pokedex_number" : 282,
+	"species" : "GARDEVOIR",
+	"category" : "EMBRACE",
+	"types" : ["PSYCHIC", "FAIRY"],
+	"egg_groups" : ["HUMAN_LIKE", "AMORPHOUS"],
+	"color" : "WHITE",
+	"shape" : "TWO_LEGS_AND_HUMAN_FORM",
+	"height" : 1.6,
+	"weight" : 48.4,
+	"forms" : [
+		{
+			"id" : 0
+		},
+		{
+			"id" : 1,
+			"code" : "MEGA",
+			"mega_origin" : 0,
+			"mega_boost" : [10, 0, 40, 30, 20]
+		}
+	]
+}

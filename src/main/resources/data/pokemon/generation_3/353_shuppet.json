@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 353,
+	"species" : "SHUPPET",
+	"category" : "PUPPET",
+	"types" : ["GHOST"],
+	"egg_groups" : ["AMORPHOUS"],
+	"color" : "BLACK",
+	"shape" : "ROUND",
+	"height" : 0.6,
+	"weight" : 2.3,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 368,
+	"species" : "GOREBYSS",
+	"category" : "SOUTH_SEA",
+	"types" : ["WATER"],
+	"egg_groups" : ["WATER_1"],
+	"color" : "PINK",
+	"shape" : "BELLY_CRAWLING_NO_LEGS",
+	"height" : 1.8,
+	"weight" : 22.6,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

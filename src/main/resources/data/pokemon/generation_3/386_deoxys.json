@@ -1,1 +1,29 @@
-{}
+{
+	"pokedex_number" : 386,
+	"species" : "DEOXYS",
+	"category" : "DNA",
+	"types" : ["PSYCHIC"],
+	"egg_groups" : ["NO_EGGS_DISCOVERED"],
+	"color" : "RED",
+	"shape" : "TWO_LEGS_AND_HUMAN_FORM",
+	"height" : 1.7,
+	"weight" : 60.8,
+	"forms" : [
+		{
+			"id" : 0,
+			"code" : "NORMAL"
+		},
+		{
+			"id" : 1,
+			"code" : "ATTACK"
+		},
+		{
+			"id" : 2,
+			"code" : "DEFENSE"
+		},
+		{
+			"id" : 3,
+			"code" : "SPEED"
+		}
+	]
+}

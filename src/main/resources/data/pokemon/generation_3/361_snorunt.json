@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 361,
+	"species" : "SNORUNT",
+	"category" : "SNOW_HAT",
+	"types" : ["ICE"],
+	"egg_groups" : ["FAIRY", "MINERAL"],
+	"color" : "GRAY",
+	"shape" : "TWO_LEGS_AND_HUMAN_FORM",
+	"height" : 0.7,
+	"weight" : 16.8,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

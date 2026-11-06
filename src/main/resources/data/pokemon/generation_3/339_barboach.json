@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 339,
+	"species" : "BARBOACH",
+	"category" : "WHISKERS",
+	"types" : ["WATER", "GROUND"],
+	"egg_groups" : ["WATER_2"],
+	"color" : "GRAY",
+	"shape" : "FISH",
+	"height" : 0.4,
+	"weight" : 1.9,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

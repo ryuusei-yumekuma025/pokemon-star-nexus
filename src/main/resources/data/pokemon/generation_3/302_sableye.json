@@ -1,1 +1,23 @@
-{}
+{
+	"pokedex_number" : 302,
+	"species" : "SABLEYE",
+	"category" : "DARKNESS",
+	"types" : ["DARK", "GHOST"],
+	"egg_groups" : ["HUMAN_LIKE"],
+	"color" : "PURPLE",
+	"shape" : "TWO_LEGS_AND_HUMAN_FORM",
+	"height" : 0.5,
+	"weight" : 11.0,
+	"forms" : [
+		{
+			"id" : 0
+		},
+		{
+			"id" : 1,
+			"code" : "MEGA",
+			"weight" : 161.0,
+			"mega_origin" : 0,
+			"mega_boost" : [0, 45, 10, 45, 0]
+		}
+	]
+}

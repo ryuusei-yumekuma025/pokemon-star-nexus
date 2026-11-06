@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 344,
+	"species" : "CLAYDOL",
+	"category" : "CLAY_DOLL",
+	"types" : ["GROUND", "PSYCHIC"],
+	"egg_groups" : ["MINERAL"],
+	"color" : "BLACK",
+	"shape" : "ARM",
+	"height" : 1.5,
+	"weight" : 108.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

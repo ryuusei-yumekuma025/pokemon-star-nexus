@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 317,
+	"species" : "SWALOT",
+	"category" : "POISON_BAG",
+	"types" : ["POISON"],
+	"egg_groups" : ["AMORPHOUS"],
+	"color" : "PURPLE",
+	"shape" : "ARM",
+	"height" : 1.7,
+	"weight" : 80.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

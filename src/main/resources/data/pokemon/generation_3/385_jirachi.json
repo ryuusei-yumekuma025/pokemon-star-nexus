@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 385,
+	"species" : "JIRACHI",
+	"category" : "WISH",
+	"types" : ["STEEL", "PSYCHIC"],
+	"egg_groups" : ["NO_EGGS_DISCOVERED"],
+	"color" : "YELLOW",
+	"shape" : "TWO_LEGS_AND_HUMAN_FORM",
+	"height" : 0.3,
+	"weight" : 1.1,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 332,
+	"species" : "CACTURNE",
+	"category" : "SCARECROW",
+	"types" : ["GRASS", "DARK"],
+	"egg_groups" : ["GRASS", "HUMAN_LIKE"],
+	"color" : "GREEN",
+	"shape" : "TWO_LEGS_AND_HUMAN_FORM",
+	"height" : 1.3,
+	"weight" : 77.4,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

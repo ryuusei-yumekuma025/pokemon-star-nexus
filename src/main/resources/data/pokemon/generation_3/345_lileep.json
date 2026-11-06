@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 345,
+	"species" : "LILEEP",
+	"category" : "SEA_LILY",
+	"types" : ["ROCK", "GRASS"],
+	"egg_groups" : ["WATER_3"],
+	"color" : "PURPLE",
+	"shape" : "UPRIGHT_TORSO",
+	"height" : 1.0,
+	"weight" : 23.8,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

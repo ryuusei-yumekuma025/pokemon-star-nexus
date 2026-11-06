@@ -1,1 +1,24 @@
-{}
+{
+	"pokedex_number" : 382,
+	"species" : "KYOGRE",
+	"category" : "SEA_BASIN",
+	"types" : ["WATER"],
+	"egg_groups" : ["NO_EGGS_DISCOVERED"],
+	"color" : "BLUE",
+	"shape" : "FISH",
+	"height" : 4.5,
+	"weight" : 352.0,
+	"forms" : [
+		{
+			"id" : 0
+		},
+		{
+			"id" : 1,
+			"code" : "PRIMAL",
+			"height" : 9.8,
+			"weight" : 430.0,
+			"primal_origin" : 0,
+			"primal_might" : [30, 20, 30, 20, 0]
+		}
+	]
+}

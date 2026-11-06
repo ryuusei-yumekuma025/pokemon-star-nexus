@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 375,
+	"species" : "METANG",
+	"category" : "IRON_CLAW",
+	"types" : ["STEEL", "PSYCHIC"],
+	"egg_groups" : ["MINERAL"],
+	"color" : "BLUE",
+	"shape" : "ARM",
+	"height" : 1.2,
+	"weight" : 202.5,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

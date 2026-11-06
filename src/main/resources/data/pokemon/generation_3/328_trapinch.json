@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 328,
+	"species" : "TRAPINCH",
+	"category" : "ANT_PIT",
+	"types" : ["GROUND"],
+	"egg_groups" : ["BUG", "DRAGON"],
+	"color" : "BROWN",
+	"shape" : "INSECT",
+	"height" : 0.7,
+	"weight" : 15.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

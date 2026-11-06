@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 377,
+	"species" : "REGIROCK",
+	"category" : "ROCK_PEAK",
+	"types" : ["ROCK"],
+	"egg_groups" : ["NO_EGGS_DISCOVERED"],
+	"color" : "BROWN",
+	"shape" : "TWO_LEGS_AND_HUMAN_FORM",
+	"height" : 1.7,
+	"weight" : 230.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

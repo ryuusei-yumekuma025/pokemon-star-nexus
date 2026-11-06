@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 360,
+	"species" : "WYNAUT",
+	"category" : "BRIGHT",
+	"types" : ["PSYCHIC"],
+	"egg_groups" : ["NO_EGGS_DISCOVERED"],
+	"color" : "BLUE",
+	"shape" : "TWO_LEGS_AND_TAIL",
+	"height" : 0.6,
+	"weight" : 14.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

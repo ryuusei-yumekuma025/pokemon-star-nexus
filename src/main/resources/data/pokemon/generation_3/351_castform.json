@@ -1,1 +1,34 @@
-{}
+{
+	"pokedex_number" : 351,
+	"species" : "CASTFORM",
+	"category" : "WEATHER",
+	"types" : ["NORMAL"],
+	"egg_groups" : ["FAIRY", "AMORPHOUS"],
+	"color" : "GRAY",
+	"shape" : "ROUND",
+	"height" : 0.3,
+	"weight" : 0.8,
+	"forms" : [
+		{
+			"id" : 0
+		},
+		{
+			"id" : 1,
+			"code" : "SUNNY",
+			"types" : ["FIRE"],
+			"color" : "RED"
+		},
+		{
+			"id" : 2,
+			"code" : "RAINY",
+			"types" : ["WATER"],
+			"color" : "BLUE"
+		},
+		{
+			"id" : 3,
+			"code" : "SNOWY",
+			"types" : ["ICE"],
+			"color" : "WHITE"
+		}
+	]
+}

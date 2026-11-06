@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 374,
+	"species" : "BELDUM",
+	"category" : "IRON_BALL",
+	"types" : ["STEEL", "PSYCHIC"],
+	"egg_groups" : ["MINERAL"],
+	"color" : "BLUE",
+	"shape" : "UPRIGHT_TORSO",
+	"height" : 0.6,
+	"weight" : 95.2,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

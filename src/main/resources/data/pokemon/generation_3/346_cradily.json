@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 346,
+	"species" : "CRADILY",
+	"category" : "BARNACLE",
+	"types" : ["ROCK", "GRASS"],
+	"egg_groups" : ["WATER_3"],
+	"color" : "GREEN",
+	"shape" : "UPRIGHT_TORSO",
+	"height" : 1.5,
+	"weight" : 60.4,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

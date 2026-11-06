@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 280,
+	"species" : "RALTS",
+	"category" : "FEELING",
+	"types" : ["PSYCHIC", "FAIRY"],
+	"egg_groups" : ["HUMAN_LIKE", "AMORPHOUS"],
+	"color" : "WHITE",
+	"shape" : "TWO_LEGS_AND_HUMAN_FORM",
+	"height" : 0.4,
+	"weight" : 6.6,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

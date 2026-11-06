@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 291,
+	"species" : "NINJASK",
+	"category" : "NINJA",
+	"types" : ["BUG", "FLYING"],
+	"egg_groups" : ["BUG"],
+	"color" : "YELLOW",
+	"shape" : "FOUR_WINGS",
+	"height" : 0.8,
+	"weight" : 12.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 309,
+	"species" : "ELECTRIKE",
+	"category" : "LIGHTNING",
+	"types" : ["ELECTRIC"],
+	"egg_groups" : ["FIELD"],
+	"color" : "GREEN",
+	"shape" : "FOUR_LEGGED",
+	"height" : 0.6,
+	"weight" : 15.2,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

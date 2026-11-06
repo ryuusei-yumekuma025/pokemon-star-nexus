@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 366,
+	"species" : "CLAMPERL",
+	"category" : "BIVALVE",
+	"types" : ["WATER"],
+	"egg_groups" : ["WATER_1"],
+	"color" : "BLUE",
+	"shape" : "ROUND",
+	"height" : 0.4,
+	"weight" : 52.5,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

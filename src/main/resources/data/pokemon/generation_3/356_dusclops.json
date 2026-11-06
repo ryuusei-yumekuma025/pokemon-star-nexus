@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 356,
+	"species" : "DUSCLOPS",
+	"category" : "BECKON",
+	"types" : ["GHOST"],
+	"egg_groups" : ["AMORPHOUS"],
+	"color" : "BLACK",
+	"shape" : "TWO_LEGS_AND_HUMAN_FORM",
+	"height" : 1.6,
+	"weight" : 30.6,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

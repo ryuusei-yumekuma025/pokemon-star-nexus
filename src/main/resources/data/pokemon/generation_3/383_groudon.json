@@ -1,1 +1,25 @@
-{}
+{
+	"pokedex_number" : 383,
+	"species" : "GROUDON",
+	"category" : "CONTINENT",
+	"types" : ["GROUND"],
+	"egg_groups" : ["NO_EGGS_DISCOVERED"],
+	"color" : "RED",
+	"shape" : "TWO_LEGS_AND_TAIL",
+	"height" : 3.5,
+	"weight" : 950.0,
+	"forms" : [
+		{
+			"id" : 0
+		},
+		{
+			"id" : 1,
+			"code" : "PRIMAL",
+			"types" : ["GROUND", "FIRE"],
+			"height" : 5.0,
+			"weight" : 999.7,
+			"primal_origin" : 0,
+			"primal_might" : [30, 20, 30, 20, 0]
+		}
+	]
+}

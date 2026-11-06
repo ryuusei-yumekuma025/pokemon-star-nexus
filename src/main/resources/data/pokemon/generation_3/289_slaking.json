@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 289,
+	"species" : "SLAKING",
+	"category" : "LAZY",
+	"types" : ["NORMAL"],
+	"egg_groups" : ["FIELD"],
+	"color" : "BROWN",
+	"shape" : "TWO_LEGS_AND_HUMAN_FORM",
+	"height" : 2.0,
+	"weight" : 130.5,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

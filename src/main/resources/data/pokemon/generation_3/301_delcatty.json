@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 301,
+	"species" : "DELCATTY",
+	"category" : "PRIM",
+	"types" : ["NORMAL"],
+	"egg_groups" : ["FIELD", "FAIRY"],
+	"color" : "PURPLE",
+	"shape" : "FOUR_LEGGED",
+	"height" : 1.1,
+	"weight" : 32.6,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

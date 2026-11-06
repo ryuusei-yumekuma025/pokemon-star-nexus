@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 324,
+	"species" : "TORKOAL",
+	"category" : "COAL",
+	"types" : ["FIRE"],
+	"egg_groups" : ["FIELD"],
+	"color" : "BROWN",
+	"shape" : "FOUR_LEGGED",
+	"height" : 0.5,
+	"weight" : 80.4,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

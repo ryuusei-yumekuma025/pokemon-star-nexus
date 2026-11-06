@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 327,
+	"species" : "SPINDA",
+	"category" : "SPOT_PANDA",
+	"types" : ["NORMAL"],
+	"egg_groups" : ["FIELD", "HUMAN_LIKE"],
+	"color" : "BROWN",
+	"shape" : "TWO_LEGS_AND_TAIL",
+	"height" : 1.1,
+	"weight" : 5.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

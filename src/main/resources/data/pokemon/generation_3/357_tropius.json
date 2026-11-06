@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 357,
+	"species" : "TROPIUS",
+	"category" : "FRUIT",
+	"types" : ["GRASS", "FLYING"],
+	"egg_groups" : ["MONSTER", "GRASS"],
+	"color" : "GREEN",
+	"shape" : "FOUR_LEGGED",
+	"height" : 2.0,
+	"weight" : 100.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

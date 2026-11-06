@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 364,
+	"species" : "SEALEO",
+	"category" : "BALL_ROLL",
+	"types" : ["ICE", "WATER"],
+	"egg_groups" : ["WATER_1", "FIELD"],
+	"color" : "BLUE",
+	"shape" : "FISH",
+	"height" : 1.1,
+	"weight" : 87.6,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 342,
+	"species" : "CRAWDAUNT",
+	"category" : "ROGUE",
+	"types" : ["WATER", "DARK"],
+	"egg_groups" : ["WATER_1", "WATER_3"],
+	"color" : "RED",
+	"shape" : "INSECT",
+	"height" : 1.1,
+	"weight" : 32.8,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

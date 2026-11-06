@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 340,
+	"species" : "WHISCASH",
+	"category" : "WHISKERS",
+	"types" : ["WATER", "GROUND"],
+	"egg_groups" : ["WATER_2"],
+	"color" : "BLUE",
+	"shape" : "FISH",
+	"height" : 0.9,
+	"weight" : 23.6,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

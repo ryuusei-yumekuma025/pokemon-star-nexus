@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 371,
+	"species" : "BAGON",
+	"category" : "ROCK_HEAD",
+	"types" : ["DRAGON"],
+	"egg_groups" : ["DRAGON"],
+	"color" : "BLUE",
+	"shape" : "TWO_LEGS_AND_HUMAN_FORM",
+	"height" : 0.6,
+	"weight" : 42.1,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 284,
+	"species" : "MASQUERAIN",
+	"category" : "EYEBALL",
+	"types" : ["BUG", "FLYING"],
+	"egg_groups" : ["WATER_1", "BUG"],
+	"color" : "BLUE",
+	"shape" : "FOUR_WINGS",
+	"height" : 0.8,
+	"weight" : 3.6,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 352,
+	"species" : "KECLEON",
+	"category" : "COLOR_SWAP",
+	"types" : ["NORMAL"],
+	"egg_groups" : ["FIELD"],
+	"color" : "GREEN",
+	"shape" : "TWO_LEGS_AND_TAIL",
+	"height" : 1.0,
+	"weight" : 22.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 299,
+	"species" : "NOSEPASS",
+	"category" : "COMPASS",
+	"types" : ["ROCK"],
+	"egg_groups" : ["MINERAL"],
+	"color" : "GRAY",
+	"shape" : "TWO_LEGS_AND_HUMAN_FORM",
+	"height" : 1.0,
+	"weight" : 97.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

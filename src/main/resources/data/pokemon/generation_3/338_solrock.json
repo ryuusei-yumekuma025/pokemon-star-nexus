@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 338,
+	"species" : "SOLROCK",
+	"category" : "METEORITE",
+	"types" : ["ROCK", "PSYCHIC"],
+	"egg_groups" : ["MINERAL"],
+	"color" : "RED",
+	"shape" : "ROUND",
+	"height" : 1.2,
+	"weight" : 154.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

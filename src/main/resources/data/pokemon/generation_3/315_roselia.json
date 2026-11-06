@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 315,
+	"species" : "ROSELIA",
+	"category" : "THORN",
+	"types" : ["GRASS", "POISON"],
+	"egg_groups" : ["FAIRY", "GRASS"],
+	"color" : "GREEN",
+	"shape" : "TWO_LEGS_AND_HUMAN_FORM",
+	"height" : 0.3,
+	"weight" : 2.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

@@ -1,1 +1,26 @@
-{}
+{
+	"pokedex_number" : 358,
+	"species" : "CHIMECHO",
+	"category" : "WIND_CHIME",
+	"types" : ["PSYCHIC"],
+	"egg_groups" : ["AMORPHOUS"],
+	"color" : "BLUE",
+	"shape" : "ARM",
+	"height" : 0.6,
+	"weight" : 1.0,
+	"forms" : [
+		{
+			"id" : 0
+		},
+		{
+			"id" : 1,
+			"code" : "MEGA",
+			"types" : ["PSYCHIC", "STEEL"],
+			"shape" : "GATHERING",
+			"height" : 1.2,
+			"weight" : 8.0,
+			"mega_origin" : 0,
+			"mega_boost" : [0, 30, 40, 30, 0]
+		}
+	]
+}

@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 347,
+	"species" : "ANORITH",
+	"category" : "OLD_SHRIMP",
+	"types" : ["ROCK", "BUG"],
+	"egg_groups" : ["WATER_3"],
+	"color" : "GRAY",
+	"shape" : "INSECT",
+	"height" : 0.7,
+	"weight" : 12.5,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

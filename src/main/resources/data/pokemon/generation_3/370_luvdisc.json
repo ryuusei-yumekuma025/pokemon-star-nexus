@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 370,
+	"species" : "LUVDISC",
+	"category" : "RENDEZVOUS",
+	"types" : ["WATER"],
+	"egg_groups" : ["WATER_2"],
+	"color" : "PINK",
+	"shape" : "FISH",
+	"height" : 0.6,
+	"weight" : 8.7,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}

@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number" : 330,
+	"species" : "FLYGON",
+	"category" : "MYSTIC",
+	"types" : ["GROUND", "DRAGON"],
+	"egg_groups" : ["BUG", "DRAGON"],
+	"color" : "GREEN",
+	"shape" : "TWO_WINGS",
+	"height" : 2.0,
+	"weight" : 82.0,
+	"forms" : [
+		{
+			"id" : 0
+		}
+	]
+}
