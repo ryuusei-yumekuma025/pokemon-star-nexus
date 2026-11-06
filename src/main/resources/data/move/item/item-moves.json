@@ -97,5 +97,14 @@
 		"stardust_tuning" : 1,
 		"target" : "SELF_OR_SINGLE_ALLY_LONG_RANGE",
 		"tags" : []
+	},
+	{
+		"id" : 7,
+		"code" : "X_ATTACK",
+		"tactic_point" : 3,
+		"bond_energy_cost" : 2,
+		"stardust_tuning" : 1,
+		"target" : "SELF",
+		"tags" : []
 	}
 ]

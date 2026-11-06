@@ -1,5 +1,7 @@
 package org.example;
 
+import com.gameplay.battle.entity.unit.BattlePokemon;
+import com.gameplay.battle.entity.unit.BattleStarPartner;
 import com.gameplay.masterdata.attribute.battle.field.Terrain;
 import com.gameplay.masterdata.attribute.region.WorldRegion;
 import com.gameplay.masterdata.attribute.type.PokemonType;
@@ -19,6 +21,7 @@ import com.gameplay.masterdata.template.move.battle.resonance.ResonanceMove;
 import com.gameplay.masterdata.template.move.tactic.trainer.TrainerMove;
 import com.gameplay.masterdata.template.pokemon.form.PokemonForm;
 import com.gameplay.masterdata.template.trainer.TrainerAlternate;
+import com.gameplay.profile.unit.starpartner.OwnedStarPartner;
 import com.utils.StringUtils;
 
 import java.util.Objects;
@@ -33,15 +36,23 @@ public class Main {
 
 		System.out.println(StarNexusMoveRegistry.getStarNexusMoveByCode("Brand New Dawn of Bubble Beam Shine"));
 
-		System.out.println(StarPartnerRegistry.getStarPartnerByCode("DAWN and EMPOLEON").getStarPartnerId());
-
 		System.out.println(PokemonMoveRegistry.getPokemonMoveByCode("LUNGE").getMoveTier());
 
 		System.out.println(Terrain.equalsTerrain(Terrain.fromCode("Grassy Terrain"), Terrain.OVERGROWN_GRASSY_TERRAIN));
 
-		for (PokemonForm pokemonForm : PokemonRegistry.getAllPokemonForms()) {
+		/*for (PokemonForm pokemonForm : PokemonRegistry.getAllPokemonForms()) {
 			printPokemon(pokemonForm);
-		}
+		}*/
+
+		System.out.println(StarPartnerRegistry.getStarPartnerByCode("Dawn and Empoleon").getStarPartnerStateById(2));
+
+		OwnedStarPartner ownedStarPartner = new OwnedStarPartner(StarPartnerRegistry.getStarPartnerByCode("Dawn and Empoleon"));
+		BattleStarPartner battleStarPartner = new BattleStarPartner(ownedStarPartner);
+
+		battleStarPartner.changeState(1);
+
+		System.out.println(battleStarPartner.getPartnerPokemon().getCurrentForm());
+		System.out.println(ownedStarPartner.getUniteDate());
 	}
 
 	public static void printTrainer(TrainerAlternate trainerAlternate) {
