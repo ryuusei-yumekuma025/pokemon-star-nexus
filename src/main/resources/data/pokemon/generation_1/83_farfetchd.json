@@ -1,6 +1,6 @@
 {
 	"pokedex_number" : 83,
-	"species" : "FARFETCH_D",
+	"species" : "FARFETCHD",
 	"category" : "WILD_DUCK",
 	"types" : ["NORMAL", "FLYING"],
 	"egg_groups" : ["FLYING", "FIELD"],

@@ -1,6 +1,6 @@
 {
 	"pokedex_number" : 122,
-	"species" : "MR_MIME",
+	"species" : "MRMIME",
 	"category" : "BARRIER",
 	"types" : ["PSYCHIC", "FAIRY"],
 	"egg_groups" : ["HUMAN_LIKE"],
