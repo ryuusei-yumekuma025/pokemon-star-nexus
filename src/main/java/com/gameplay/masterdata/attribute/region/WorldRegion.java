@@ -3,7 +3,7 @@ package com.gameplay.masterdata.attribute.region;
 import com.utils.StringUtils;
 
 public enum WorldRegion {
-	HOSHIN,
+	SEIRA,
 	KANTO,
 	JOHTO,
 	HOENN,
@@ -30,7 +30,7 @@ public enum WorldRegion {
 
 	public static WorldRegion fromId(int id) {
 		return switch (id) {
-			case 0 -> HOSHIN;
+			case 0 -> SEIRA;
 			case 1 -> KANTO;
 			case 2 -> JOHTO;
 			case 3 -> HOENN;

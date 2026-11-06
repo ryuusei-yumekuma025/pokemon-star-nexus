@@ -21,6 +21,7 @@ import com.gameplay.masterdata.template.move.battle.resonance.ResonanceMove;
 import com.gameplay.masterdata.template.move.tactic.trainer.TrainerMove;
 import com.gameplay.masterdata.template.pokemon.form.PokemonForm;
 import com.gameplay.masterdata.template.trainer.TrainerAlternate;
+import com.gameplay.profile.PlayProfile;
 import com.gameplay.profile.unit.starpartner.OwnedStarPartner;
 import com.utils.StringUtils;
 
@@ -46,13 +47,16 @@ public class Main {
 
 		System.out.println(StarPartnerRegistry.getStarPartnerByCode("Dawn and Empoleon").getStarPartnerStateById(2));
 
+		PlayProfile playProfile = new PlayProfile("Ryuusei");
 		OwnedStarPartner ownedStarPartner = new OwnedStarPartner(StarPartnerRegistry.getStarPartnerByCode("Dawn and Empoleon"));
 		BattleStarPartner battleStarPartner = new BattleStarPartner(ownedStarPartner);
 
 		battleStarPartner.changeState(1);
 
 		System.out.println(battleStarPartner.getPartnerPokemon().getCurrentForm());
-		System.out.println(ownedStarPartner.getUniteDate());
+		System.out.println(ownedStarPartner.getUniteDateAndTime());
+
+		System.out.println(playProfile.getTrainerId());
 	}
 
 	public static void printTrainer(TrainerAlternate trainerAlternate) {
