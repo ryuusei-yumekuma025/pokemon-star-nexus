@@ -1,9 +1,14 @@
 package com.gameplay.battle.entity.unit;
 
+import com.gameplay.masterdata.attribute.battle.InterferenceCondition;
 import com.gameplay.masterdata.attribute.battle.StatusCondition;
 import com.gameplay.masterdata.template.pokemon.form.PokemonForm;
 import com.gameplay.masterdata.template.starpartner.PartnerPokemon;
 import com.gameplay.masterdata.template.starpartner.PartnerState;
+
+import java.util.EnumSet;
+import java.util.Random;
+import java.util.Set;
 
 public class BattlePokemon {
 
@@ -11,10 +16,16 @@ public class BattlePokemon {
 	//	Fields
 	//==================================================================================================================
 
+	private static final Random RANDOM = new Random();
+
 	private final PartnerPokemon partnerPokemon;
 	private PokemonForm currentForm;
 
 	private StatusCondition currentStatusCondition;
+	private int asleepTurn;
+
+	private final Set<InterferenceCondition> interferenceConditionSet;
+	private int confusedTurn;
 
 	//==================================================================================================================
 	//	Constructor
@@ -25,6 +36,10 @@ public class BattlePokemon {
 		this.currentForm = currentState.getPartnerPokemonForm();
 
 		this.currentStatusCondition = StatusCondition.NONE;
+		this.asleepTurn = 0;
+
+		this.interferenceConditionSet = EnumSet.noneOf(InterferenceCondition.class);
+		this.confusedTurn = 0;
 	}
 
 	//==================================================================================================================
@@ -71,6 +86,9 @@ public class BattlePokemon {
 		}
 
 		this.currentStatusCondition = statusCondition;
+		if (this.currentStatusCondition == StatusCondition.SLEEP) {
+			this.asleepTurn = RANDOM.nextInt(1, 4);
+		}
 
 		return true;
 	}
@@ -81,6 +99,64 @@ public class BattlePokemon {
 		}
 
 		this.currentStatusCondition = StatusCondition.NONE;
+		this.asleepTurn = 0;
+
+		return true;
+	}
+
+	//==================================================================================================================
+	//	Interference Condition Management
+	//==================================================================================================================
+
+	public boolean isInflictedByAInterferenceCondition() {
+		return !interferenceConditionSet.isEmpty();
+	}
+
+	public boolean isConfused() {
+		return interferenceConditionSet.contains(InterferenceCondition.CONFUSION);
+	}
+
+	public boolean isInfatuated() {
+		return interferenceConditionSet.contains(InterferenceCondition.INFATUATION);
+	}
+
+	public boolean isFlinching() {
+		return interferenceConditionSet.contains(InterferenceCondition.FLINCH);
+	}
+
+	public boolean getInflictedWith(InterferenceCondition interferenceCondition) {
+		if (interferenceCondition == null || !this.interferenceConditionSet.add(interferenceCondition)) {
+			return false;
+		}
+
+		switch (interferenceCondition) {
+			case CONFUSION -> this.confusedTurn = RANDOM.nextInt(2, 6);
+			default -> {}
+		}
+
+		return true;
+	}
+
+	public boolean removeInterferenceCondition(InterferenceCondition interferenceCondition) {
+		if (!interferenceConditionSet.remove(interferenceCondition)) {
+			return false;
+		}
+
+		switch (interferenceCondition) {
+			case CONFUSION -> this.confusedTurn = 0;
+			default -> {}
+		}
+
+		return true;
+	}
+
+	public boolean removeInterferenceCondition() {
+		if (interferenceConditionSet.isEmpty()) {
+			return false;
+		}
+
+		this.interferenceConditionSet.clear();
+		this.confusedTurn = 0;
 
 		return true;
 	}

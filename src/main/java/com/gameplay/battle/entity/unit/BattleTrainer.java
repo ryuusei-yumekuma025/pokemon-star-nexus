@@ -1,6 +1,9 @@
 package com.gameplay.battle.entity.unit;
 
+import com.gameplay.masterdata.template.starpartner.StarPartner;
 import com.gameplay.masterdata.template.trainer.TrainerAlternate;
+
+import java.util.Map;
 
 public class BattleTrainer {
 
@@ -14,8 +17,8 @@ public class BattleTrainer {
 	//	Constructor
 	//==================================================================================================================
 
-	protected BattleTrainer(TrainerAlternate partnerTrainer) {
-		this.partnerTrainer = partnerTrainer;
+	protected BattleTrainer(StarPartner starPartner) {
+		this.partnerTrainer = starPartner.getPartnerTrainer();
 	}
 
 	//==================================================================================================================
