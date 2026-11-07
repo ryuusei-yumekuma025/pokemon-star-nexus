@@ -25,7 +25,7 @@ public class BattleStarPartner {
 		this.currentState = starPartner.getStarPartner().getDefaultPartnerState();
 
 		this.partnerPokemon = new BattlePokemon(starPartner.getStarPartner().getPartnerPokemon(), this.currentState);
-		this.partnerTrainer = new BattleTrainer(starPartner.getStarPartner());
+		this.partnerTrainer = new BattleTrainer(starPartner);
 	}
 
 	//==================================================================================================================

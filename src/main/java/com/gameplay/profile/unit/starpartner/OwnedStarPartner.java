@@ -53,12 +53,12 @@ public class OwnedStarPartner {
 	}
 
 	public String getUniteDate() {
-		DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("dd/MM/yyyy").withZone(ZoneId.systemDefault());
+		DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("dd-MM-yyyy").withZone(ZoneId.systemDefault());
 		return dateTimeFormatter.format(uniteTime);
 	}
 
 	public String getUniteDateAndTime() {
-		DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("HH:mm dd/MM/yyyy").withZone(ZoneId.systemDefault());
+		DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("HH:mm dd-MM-yyyy").withZone(ZoneId.systemDefault());
 		return dateTimeFormatter.format(uniteTime);
 	}
 

@@ -1,8 +1,13 @@
 package com.gameplay.battle.entity.unit;
 
+import com.gameplay.masterdata.template.move.tactic.TacticMove;
 import com.gameplay.masterdata.template.starpartner.StarPartner;
 import com.gameplay.masterdata.template.trainer.TrainerAlternate;
+import com.gameplay.profile.unit.starpartner.OwnedStarPartner;
+import com.utils.StringUtils;
 
+import java.util.Collections;
+import java.util.HashMap;
 import java.util.Map;
 
 public class BattleTrainer {
@@ -12,13 +17,19 @@ public class BattleTrainer {
 	//==================================================================================================================
 
 	private final TrainerAlternate partnerTrainer;
+	private final Map<String, Integer> tacticPointTracker;
 
 	//==================================================================================================================
 	//	Constructor
 	//==================================================================================================================
 
-	protected BattleTrainer(StarPartner starPartner) {
-		this.partnerTrainer = starPartner.getPartnerTrainer();
+	protected BattleTrainer(OwnedStarPartner starPartner) {
+		this.partnerTrainer = starPartner.getStarPartner().getPartnerTrainer();
+		Map<String, Integer> tacticPointTracker = new HashMap<>();
+		for (TacticMove move : starPartner.getStarPartner().getAllTacticMoves()) {
+			tacticPointTracker.put(move.getMoveCode(), move.getTacticPoint());
+		}
+		this.tacticPointTracker = Collections.unmodifiableMap(tacticPointTracker);
 	}
 
 	//==================================================================================================================
@@ -27,5 +38,21 @@ public class BattleTrainer {
 
 	public TrainerAlternate getPartnerTrainer() {
 		return partnerTrainer;
+	}
+
+	public Map<String, Integer> getTacticPointTracker() {
+		return tacticPointTracker;
+	}
+
+	public int getTacticPoint(TacticMove move) {
+		return tacticPointTracker.get(move.getMoveCode());
+	}
+
+	public int getTacticPoint(String moveCode) {
+		if (StringUtils.isNullOrBlank(moveCode)) {
+			return -1;
+		}
+		moveCode = StringUtils.upperSnakeCase(moveCode);
+		return tacticPointTracker.get(moveCode);
 	}
 }

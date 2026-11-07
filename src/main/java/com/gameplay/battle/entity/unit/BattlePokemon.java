@@ -89,6 +89,13 @@ public class BattlePokemon {
 		return currentStatusCondition != StatusCondition.NONE;
 	}
 
+	public int getAsleepTurn() {
+		if (currentStatusCondition == StatusCondition.SLEEP) {
+			return asleepTurn;
+		}
+		return 0;
+	}
+
 	public boolean getInflictedWith(StatusCondition statusCondition) {
 		if (statusCondition == null || statusCondition == StatusCondition.NONE || this.currentStatusCondition != StatusCondition.NONE) {
 			return false;

@@ -41,7 +41,7 @@ public class Main {
 		battleStarPartner.changeState(1);
 
 		System.out.println(battleStarPartner.getPartnerPokemon().getCurrentForm());
-		System.out.println(ownedStarPartner.getUniteDateAndTime());
+		System.out.println(ownedStarPartner.getUniteDate());
 
 		System.out.println(playProfile.getCreateDateAndTime());
 	}

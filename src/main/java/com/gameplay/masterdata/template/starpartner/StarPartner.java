@@ -1,9 +1,10 @@
 package com.gameplay.masterdata.template.starpartner;
 
 import com.gameplay.masterdata.data.master.registry.trainer.TrainerRegistry;
+import com.gameplay.masterdata.template.move.Move;
 import com.gameplay.masterdata.template.move.battle.resonance.ResonanceMove;
 import com.gameplay.masterdata.template.move.starnexus.StarNexusMove;
-import com.gameplay.masterdata.template.move.tactic.trainer.TrainerMove;
+import com.gameplay.masterdata.template.move.tactic.TacticMove;
 import com.gameplay.masterdata.template.trainer.TrainerAlternate;
 import com.utils.StringUtils;
 
@@ -136,6 +137,20 @@ public class StarPartner {
 
 	public Collection<PartnerState> getAllPartnerStates() {
 		return Collections.unmodifiableCollection(partnerStateByIdMap.values());
+	}
+
+	public Collection<TacticMove> getAllTacticMoves() {
+		Set<TacticMove> tacticMoves = new LinkedHashSet<>();
+
+		for (PartnerState partnerState : getAllPartnerStates()) {
+			for (Move move : partnerState.getMoveSlots()) {
+				if (move instanceof TacticMove tacticMove) {
+					tacticMoves.add(tacticMove);
+				}
+			}
+		}
+
+		return Collections.unmodifiableSet(tacticMoves);
 	}
 
 	//==================================================================================================================

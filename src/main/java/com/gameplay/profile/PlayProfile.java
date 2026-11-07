@@ -51,12 +51,12 @@ public class PlayProfile {
 	}
 
 	public String getCreateDate() {
-		DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("dd/MM/yyyy").withZone(ZoneId.systemDefault());
+		DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("dd-MM-yyyy").withZone(ZoneId.systemDefault());
 		return dateTimeFormatter.format(createTime);
 	}
 
 	public String getCreateDateAndTime() {
-		DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("HH:mm dd/MM/yyyy").withZone(ZoneId.systemDefault());
+		DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("HH:mm dd-MM-yyyy").withZone(ZoneId.systemDefault());
 		return dateTimeFormatter.format(createTime);
 	}
 
