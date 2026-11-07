@@ -3,6 +3,9 @@ package com.gameplay.profile;
 import com.gameplay.masterdata.template.starpartner.StarPartner;
 import com.gameplay.profile.unit.starpartner.OwnedStarPartner;
 
+import java.time.Instant;
+import java.time.ZoneId;
+import java.time.format.DateTimeFormatter;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.UUID;
@@ -15,6 +18,7 @@ public class PlayProfile {
 
 	private final UUID trainerId;
 	private String profileName;
+	private final Instant createTime;
 
 	private final Map<String, OwnedStarPartner> ownedStarPartnerMap;
 
@@ -22,11 +26,16 @@ public class PlayProfile {
 	//	Constructor
 	//==================================================================================================================
 
-	public PlayProfile(String profileName) {
+	public PlayProfile(String profileName, Instant createTime) {
 		this.trainerId = UUID.randomUUID();
 		this.profileName = profileName;
+		this.createTime = createTime;
 
 		this.ownedStarPartnerMap = new LinkedHashMap<>();
+	}
+
+	public PlayProfile(String profileName) {
+		this(profileName, Instant.now());
 	}
 
 	//==================================================================================================================
@@ -35,6 +44,20 @@ public class PlayProfile {
 
 	public UUID getTrainerId() {
 		return trainerId;
+	}
+
+	public Instant getCreateTime() {
+		return createTime;
+	}
+
+	public String getCreateDate() {
+		DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("dd/MM/yyyy").withZone(ZoneId.systemDefault());
+		return dateTimeFormatter.format(createTime);
+	}
+
+	public String getCreateDateAndTime() {
+		DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("HH:mm dd/MM/yyyy").withZone(ZoneId.systemDefault());
+		return dateTimeFormatter.format(createTime);
 	}
 
 	//==================================================================================================================

@@ -1,31 +1,18 @@
 package org.example;
 
-import com.gameplay.battle.entity.unit.BattlePokemon;
 import com.gameplay.battle.entity.unit.BattleStarPartner;
 import com.gameplay.masterdata.attribute.battle.field.Terrain;
-import com.gameplay.masterdata.attribute.region.WorldRegion;
 import com.gameplay.masterdata.attribute.type.PokemonType;
 import com.gameplay.masterdata.data.master.MasterDataBootstrap;
-import com.gameplay.masterdata.data.master.loader.move.item.ItemMoveLoader;
-import com.gameplay.masterdata.data.master.loader.move.pokemon.PokemonMoveLoader;
-import com.gameplay.masterdata.data.master.loader.starpartner.StarPartnerLoader;
-import com.gameplay.masterdata.data.master.loader.trainer.TrainerLoader;
 import com.gameplay.masterdata.data.master.registry.move.battle.PokemonMoveRegistry;
 import com.gameplay.masterdata.data.master.registry.move.starnexus.StarNexusMoveRegistry;
-import com.gameplay.masterdata.data.master.registry.move.tactic.ItemMoveRegistry;
-import com.gameplay.masterdata.data.master.registry.move.tactic.TrainerMoveRegistry;
-import com.gameplay.masterdata.data.master.registry.pokemon.PokemonRegistry;
 import com.gameplay.masterdata.data.master.registry.starpartner.StarPartnerRegistry;
 import com.gameplay.masterdata.data.master.registry.trainer.TrainerRegistry;
-import com.gameplay.masterdata.template.move.battle.resonance.ResonanceMove;
 import com.gameplay.masterdata.template.move.tactic.trainer.TrainerMove;
 import com.gameplay.masterdata.template.pokemon.form.PokemonForm;
 import com.gameplay.masterdata.template.trainer.TrainerAlternate;
 import com.gameplay.profile.PlayProfile;
 import com.gameplay.profile.unit.starpartner.OwnedStarPartner;
-import com.utils.StringUtils;
-
-import java.util.Objects;
 
 public class Main {
 	static void main() {
@@ -56,7 +43,7 @@ public class Main {
 		System.out.println(battleStarPartner.getPartnerPokemon().getCurrentForm());
 		System.out.println(ownedStarPartner.getUniteDateAndTime());
 
-		System.out.println(playProfile.getTrainerId());
+		System.out.println(playProfile.getCreateDateAndTime());
 	}
 
 	public static void printTrainer(TrainerAlternate trainerAlternate) {

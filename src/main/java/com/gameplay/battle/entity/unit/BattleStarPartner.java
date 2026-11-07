@@ -7,7 +7,7 @@ import com.utils.StringUtils;
 public class BattleStarPartner {
 
 	//==================================================================================================================
-	//	Fields
+	//	Field and Properties
 	//==================================================================================================================
 
 	private final OwnedStarPartner starPartner;
