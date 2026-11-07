@@ -1,5 +1,6 @@
 package com.gameplay.battle.entity.unit;
 
+import com.gameplay.battle.entity.unit.pokemon.StatStageTracker;
 import com.gameplay.masterdata.attribute.battle.InterferenceCondition;
 import com.gameplay.masterdata.attribute.battle.StatusCondition;
 import com.gameplay.masterdata.template.pokemon.form.PokemonForm;
@@ -21,6 +22,8 @@ public class BattlePokemon {
 	private final PartnerPokemon partnerPokemon;
 	private PokemonForm currentForm;
 
+	private final StatStageTracker statStageTracker;
+
 	private StatusCondition currentStatusCondition;
 	private int asleepTurn;
 
@@ -35,6 +38,8 @@ public class BattlePokemon {
 		this.partnerPokemon = partnerPokemon;
 		this.currentForm = currentState.getPartnerPokemonForm();
 
+		this.statStageTracker = new StatStageTracker();
+
 		this.currentStatusCondition = StatusCondition.NONE;
 		this.asleepTurn = 0;
 
@@ -48,6 +53,10 @@ public class BattlePokemon {
 
 	public PartnerPokemon getPartnerPokemon() {
 		return partnerPokemon;
+	}
+
+	public StatStageTracker getStatStageTracker() {
+		return statStageTracker;
 	}
 
 	//==================================================================================================================
