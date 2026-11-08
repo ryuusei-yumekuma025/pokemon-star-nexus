@@ -15,7 +15,6 @@ public class TeamPreset {
 
 	private static final int MAX_TEAM_SLOTS = 3;
 
-	private final int teamNumber;
 	private String teamName;
 	private final List<OwnedStarPartner> starPartners;
 
@@ -24,7 +23,6 @@ public class TeamPreset {
 	//==================================================================================================================
 
 	public TeamPreset(int teamNumber) {
-		this.teamNumber = teamNumber;
 		this.teamName = "#TEAM" + teamNumber;
 		this.starPartners = new ArrayList<>();
 	}
@@ -32,10 +30,6 @@ public class TeamPreset {
 	//==================================================================================================================
 	//	Getters
 	//==================================================================================================================
-
-	public int getTeamNumber() {
-		return teamNumber;
-	}
 
 	public String getTeamName() {
 		return teamName;
