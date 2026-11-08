@@ -1,7 +1,7 @@
 package com.gameplay.profile;
 
 import com.gameplay.masterdata.template.starpartner.StarPartner;
-import com.gameplay.profile.unit.starpartner.OwnedStarPartner;
+import com.gameplay.profile.entity.starpartner.OwnedStarPartner;
 
 import java.time.Instant;
 import java.time.ZoneId;
@@ -69,11 +69,7 @@ public class PlayProfile {
 	}
 
 	public boolean isValidName(String profileName) {
-		if (profileName.length() > 20) {
-			return false;
-		}
-
-		return true;
+		return profileName != null && profileName.length() <= 20;
 	}
 
 	public void changeName(String profileName) {

@@ -37,6 +37,10 @@ public class StatStageTracker {
 	//==================================================================================================================
 
 	public int modifyStat(StatType statType, int deltaStage) {
+		if (!statType.canModify()) {
+			return 0;
+		}
+
 		int currentStatStage = statStages.get(statType);
 		int statStageAfterModify = Math.clamp(currentStatStage + deltaStage, MIN_STAT_STAGE, MAX_STAT_STAGE);
 		statStages.put(statType, statStageAfterModify);
@@ -56,6 +60,10 @@ public class StatStageTracker {
 
 	public void reverseStatStage() {
 		statStages.replaceAll((statType, statStage) -> -statStage);
+	}
+
+	public void reverseRaisedStatStage() {
+		statStages.replaceAll((statType, statStage) -> (statStage > 0) ? -statStage : statStage);
 	}
 
 	public void copyStatStage(StatStageTracker targetedStatStageTracker) {

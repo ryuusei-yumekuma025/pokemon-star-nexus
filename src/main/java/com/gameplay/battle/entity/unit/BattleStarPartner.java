@@ -1,7 +1,7 @@
 package com.gameplay.battle.entity.unit;
 
 import com.gameplay.masterdata.template.starpartner.PartnerState;
-import com.gameplay.profile.unit.starpartner.OwnedStarPartner;
+import com.gameplay.profile.entity.starpartner.OwnedStarPartner;
 import com.utils.StringUtils;
 
 public class BattleStarPartner {

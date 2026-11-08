@@ -1,4 +1,4 @@
-package com.gameplay.profile.unit.starpartner;
+package com.gameplay.profile.entity.starpartner;
 
 import com.gameplay.masterdata.template.starpartner.StarPartner;
 

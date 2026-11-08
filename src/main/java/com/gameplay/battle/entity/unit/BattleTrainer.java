@@ -1,9 +1,8 @@
 package com.gameplay.battle.entity.unit;
 
 import com.gameplay.masterdata.template.move.tactic.TacticMove;
-import com.gameplay.masterdata.template.starpartner.StarPartner;
 import com.gameplay.masterdata.template.trainer.TrainerAlternate;
-import com.gameplay.profile.unit.starpartner.OwnedStarPartner;
+import com.gameplay.profile.entity.starpartner.OwnedStarPartner;
 import com.utils.StringUtils;
 
 import java.util.Collections;

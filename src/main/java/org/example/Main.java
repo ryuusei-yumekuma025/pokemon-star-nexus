@@ -12,7 +12,7 @@ import com.gameplay.masterdata.template.move.tactic.trainer.TrainerMove;
 import com.gameplay.masterdata.template.pokemon.form.PokemonForm;
 import com.gameplay.masterdata.template.trainer.TrainerAlternate;
 import com.gameplay.profile.PlayProfile;
-import com.gameplay.profile.unit.starpartner.OwnedStarPartner;
+import com.gameplay.profile.entity.starpartner.OwnedStarPartner;
 
 public class Main {
 	static void main() {
