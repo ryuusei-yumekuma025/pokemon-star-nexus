@@ -1,12 +1,13 @@
 package com.gameplay.profile.entity.team;
 
 import com.gameplay.profile.entity.starpartner.OwnedStarPartner;
+import com.utils.StringUtils;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class TeamSlot {
+public class TeamPreset {
 
 	//==================================================================================================================
 	//	Field and Properties
@@ -22,7 +23,7 @@ public class TeamSlot {
 	//	Constructor
 	//==================================================================================================================
 
-	public TeamSlot(int teamNumber) {
+	public TeamPreset(int teamNumber) {
 		this.teamNumber = teamNumber;
 		this.teamName = "#TEAM" + teamNumber;
 		this.starPartners = new ArrayList<>();
@@ -68,7 +69,7 @@ public class TeamSlot {
 	//==================================================================================================================
 
 	public boolean isValidName(String teamName) {
-		return teamName != null && teamName.length() <= 20;
+		return teamName != null && teamName.length() <= StringUtils.MAX_NAME_LENGTH;
 	}
 
 	public void changeName(String teamName) {

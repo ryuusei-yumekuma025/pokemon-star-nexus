@@ -2,13 +2,15 @@ package com.gameplay.profile;
 
 import com.gameplay.masterdata.template.starpartner.StarPartner;
 import com.gameplay.profile.entity.starpartner.OwnedStarPartner;
+import com.gameplay.profile.entity.starpartner.OwnedStarPartnerStorage;
+import com.gameplay.profile.entity.team.TeamPreset;
+import com.gameplay.profile.entity.team.TeamPresetStorage;
+import com.utils.StringUtils;
 
 import java.time.Instant;
 import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
-import java.util.LinkedHashMap;
-import java.util.Map;
-import java.util.UUID;
+import java.util.*;
 
 public class PlayProfile {
 
@@ -16,11 +18,14 @@ public class PlayProfile {
 	//	Field and Properties
 	//==================================================================================================================
 
+	private static final int MAX_TEAM_PRESET = 50;
+
 	private final UUID trainerId;
 	private String profileName;
 	private final Instant createTime;
 
-	private final Map<String, OwnedStarPartner> ownedStarPartnerMap;
+	private final OwnedStarPartnerStorage ownedStarPartnerStorage;
+	private final TeamPresetStorage teamPresetStorage;
 
 	//==================================================================================================================
 	//	Constructor
@@ -31,7 +36,8 @@ public class PlayProfile {
 		this.profileName = profileName;
 		this.createTime = createTime;
 
-		this.ownedStarPartnerMap = new LinkedHashMap<>();
+		this.ownedStarPartnerStorage = new OwnedStarPartnerStorage();
+		this.teamPresetStorage = new TeamPresetStorage();
 	}
 
 	public PlayProfile(String profileName) {
@@ -60,6 +66,14 @@ public class PlayProfile {
 		return dateTimeFormatter.format(createTime);
 	}
 
+	public OwnedStarPartnerStorage getOwnedStarPartnerStorage() {
+		return ownedStarPartnerStorage;
+	}
+
+	public TeamPresetStorage getTeamPresetStorage() {
+		return teamPresetStorage;
+	}
+
 	//==================================================================================================================
 	//	Name Management
 	//==================================================================================================================
@@ -69,28 +83,12 @@ public class PlayProfile {
 	}
 
 	public boolean isValidName(String profileName) {
-		return profileName != null && profileName.length() <= 20;
+		return profileName != null && profileName.length() <= StringUtils.MAX_NAME_LENGTH;
 	}
 
 	public void changeName(String profileName) {
 		if (isValidName(profileName)) {
 			this.profileName = profileName;
 		}
-	}
-
-	//==================================================================================================================
-	//	Star Partner Management
-	//==================================================================================================================
-
-	public Map<String, OwnedStarPartner> getOwnedStarPartnerMap() {
-		return ownedStarPartnerMap;
-	}
-
-	public void starPartnerUnite(StarPartner starPartner) {
-		if (ownedStarPartnerMap.containsKey(starPartner.getStarPartnerId())) {
-			return;
-		}
-
-		this.ownedStarPartnerMap.put(starPartner.getStarPartnerId(), new OwnedStarPartner(starPartner));
 	}
 }

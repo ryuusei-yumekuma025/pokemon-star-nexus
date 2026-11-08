@@ -132,6 +132,10 @@ public class BattlePokemon {
 		return interferenceConditionSet.contains(InterferenceCondition.CONFUSION);
 	}
 
+	public int getConfusedTurn() {
+		return confusedTurn;
+	}
+
 	public boolean isInfatuated() {
 		return interferenceConditionSet.contains(InterferenceCondition.INFATUATION);
 	}
