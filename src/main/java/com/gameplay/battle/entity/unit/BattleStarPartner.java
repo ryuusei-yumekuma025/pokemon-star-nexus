@@ -36,10 +36,6 @@ public class BattleStarPartner {
 		return starPartner;
 	}
 
-	public PartnerState getCurrentState() {
-		return currentState;
-	}
-
 	public BattlePokemon getPartnerPokemon() {
 		return partnerPokemon;
 	}
@@ -52,39 +48,49 @@ public class BattleStarPartner {
 	//	Partner State Management
 	//==================================================================================================================
 
-	public boolean changeState(int stateId) {
+	public PartnerState getCurrentState() {
+		return currentState;
+	}
+
+	public record StateChangeCheck(boolean stateChanged, boolean pokemonFormChanged) {
+		static final StateChangeCheck NONE = new StateChangeCheck(false, false);
+	}
+
+	public StateChangeCheck changeState(PartnerState partnerState) {
+		if (partnerState == null || currentState == partnerState) {
+			return StateChangeCheck.NONE;
+		}
+
+		currentState = partnerState;
+
+		boolean formChanged = partnerState.getPartnerPokemonForm() != null && partnerPokemon.changeForm(partnerState.getPartnerPokemonForm());
+
+		return new StateChangeCheck(true, formChanged);
+	}
+
+	public StateChangeCheck changeState(int stateId) {
 		if (stateId < 0) {
-			return false;
+			return StateChangeCheck.NONE;
 		}
 
 		PartnerState partnerState = starPartner.getStarPartner().getStarPartnerStateById(stateId);
 
-		if (partnerState == null || this.currentState == partnerState) {
-			return false;
+		if (partnerState == null) {
+			return StateChangeCheck.NONE;
 		}
 
-		this.currentState = partnerState;
-		this.partnerPokemon.changeForm(partnerState.getPartnerPokemonForm());
-
-		return true;
+		return changeState(partnerState);
 	}
 
-	public boolean changeState(String stateCode) {
+	public StateChangeCheck changeState(String stateCode) {
 		if (StringUtils.isNullOrBlank(stateCode)) {
-			return false;
+			return StateChangeCheck.NONE;
 		}
 
-		stateCode = StringUtils.upperSnakeCase(stateCode);
-
-		PartnerState partnerState = starPartner.getStarPartner().getStarPartnerStateByCode(stateCode);
-
-		if (partnerState == null || this.currentState == partnerState) {
-			return false;
+		try {
+			return changeState(starPartner.getStarPartner().getStarPartnerStateByCode(stateCode));
+		} catch (IllegalArgumentException e) {
+			return StateChangeCheck.NONE;
 		}
-
-		this.currentState = partnerState;
-		this.partnerPokemon.changeForm(partnerState.getPartnerPokemonForm());
-
-		return true;
 	}
 }

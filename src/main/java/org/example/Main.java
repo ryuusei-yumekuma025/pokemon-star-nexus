@@ -38,8 +38,6 @@ public class Main {
 		OwnedStarPartner ownedStarPartner = new OwnedStarPartner(StarPartnerRegistry.getStarPartnerByCode("Dawn and Empoleon"));
 		BattleStarPartner battleStarPartner = new BattleStarPartner(ownedStarPartner);
 
-		battleStarPartner.changeState(1);
-
 		System.out.println(battleStarPartner.getPartnerPokemon().getCurrentForm());
 		System.out.println(ownedStarPartner.getUniteDate());
 
