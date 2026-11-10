@@ -1,18 +1,15 @@
 package com.gameplay.battle.entity.unit.pokemon;
 
 import com.gameplay.masterdata.attribute.stat.StatType;
+import com.gameplay.masterdata.data.config.stat.StatConfig;
 
 import java.util.EnumMap;
-import java.util.Map;
 
 public class StatStageTracker {
 
 	//==================================================================================================================
 	//	Field and Properties
 	//==================================================================================================================
-
-	public static final int MAX_STAT_STAGE = 6;
-	public static final int MIN_STAT_STAGE = -6;
 
 	private final EnumMap<StatType, Integer> statStages = new EnumMap<>(StatType.class);
 
@@ -42,7 +39,7 @@ public class StatStageTracker {
 		}
 
 		int currentStatStage = statStages.get(statType);
-		int statStageAfterModify = Math.clamp(currentStatStage + deltaStage, MIN_STAT_STAGE, MAX_STAT_STAGE);
+		int statStageAfterModify = Math.clamp(currentStatStage + deltaStage, StatConfig.MIN_STAT_STAGE, StatConfig.MAX_STAT_STAGE);
 		statStages.put(statType, statStageAfterModify);
 
 		return statStageAfterModify - currentStatStage;

@@ -1,5 +1,6 @@
 package com.gameplay.profile.entity.starpartner;
 
+import com.gameplay.masterdata.data.config.profile.entity.StarPartnerLevelConfig;
 import com.gameplay.masterdata.template.starpartner.StarPartner;
 
 import java.time.Instant;
@@ -12,15 +13,11 @@ public class OwnedStarPartner {
 	//	Field, Properties and Info
 	//==================================================================================================================
 
-	private static final int[] LEVEL_CAP_BY_STAR_RESONANCE_RANK = {50, 80, 100, 120, 140, 150};
-	private static final int MAX_NON_EX_STAR_RESONANCE_RANK = LEVEL_CAP_BY_STAR_RESONANCE_RANK.length - 1;
-	private static final int MAX_STAR_RESONANCE_RANK = MAX_NON_EX_STAR_RESONANCE_RANK + 50;
-
 	private final StarPartner starPartner;
 	private final Instant uniteTime;
 
 	private int level;
-	private int starResonanceRank;
+	private int evolutionRank;
 	private long currentEXP;
 
 	//==================================================================================================================
@@ -32,7 +29,7 @@ public class OwnedStarPartner {
 		this.uniteTime = uniteTime;
 
 		this.level = 1;
-		this.starResonanceRank = 0;
+		this.evolutionRank = 0;
 		this.currentEXP = 0L;
 	}
 
@@ -71,21 +68,15 @@ public class OwnedStarPartner {
 	}
 
 	public int getLevelCap() {
-		if (starResonanceRank < 0 || starResonanceRank > MAX_STAR_RESONANCE_RANK) {
-			return -1;
-		}
-		if (starResonanceRank < MAX_NON_EX_STAR_RESONANCE_RANK) {
-			return LEVEL_CAP_BY_STAR_RESONANCE_RANK[starResonanceRank];
-		}
-		return LEVEL_CAP_BY_STAR_RESONANCE_RANK[MAX_NON_EX_STAR_RESONANCE_RANK] + (starResonanceRank - MAX_NON_EX_STAR_RESONANCE_RANK);
+		return StarPartnerLevelConfig.getLevelCap(this.evolutionRank);
 	}
 
 	public void unlockLevelCap() {
-		if (starResonanceRank >= MAX_STAR_RESONANCE_RANK) {
+		if (evolutionRank >= StarPartnerLevelConfig.MAX_EVOLUTION_RANK) {
 			return;
 		}
 
-		starResonanceRank++;
+		evolutionRank++;
 	}
 
 	public long getCurrentEXP() {

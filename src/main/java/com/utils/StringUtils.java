@@ -6,6 +6,8 @@ import java.util.StringJoiner;
 public final class StringUtils {
 	public static final int MAX_NAME_LENGTH = 20;
 
+	private StringUtils() {}
+
 	public static boolean isNullOrBlank(String s) {
 		return s == null || s.isBlank();
 	}
