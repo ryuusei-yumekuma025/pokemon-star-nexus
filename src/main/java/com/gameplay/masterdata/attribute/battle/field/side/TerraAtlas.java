@@ -2,7 +2,7 @@ package com.gameplay.masterdata.attribute.battle.field.side;
 
 import com.gameplay.masterdata.attribute.region.WorldRegion;
 
-public enum RegionRealm {
+public enum TerraAtlas {
 	RED_KANTO,
 	BLUE_KANTO,
 	GREEN_KANTO,
@@ -31,7 +31,7 @@ public enum RegionRealm {
 	VIOLET_PALDEA,
 	INDIGO_PALDEA;
 
-	public int getRealmCategory() {
+	public int getAtlasCategory() {
 		return switch (this) {
 			case RED_KANTO,
 				 GOLD_JOHTO,
@@ -66,7 +66,7 @@ public enum RegionRealm {
 		};
 	}
 
-	public WorldRegion getRegion() {
+	public WorldRegion getAtlasRegion() {
 		return WorldRegion.fromCode(this.toString().substring(this.toString().indexOf('_') + 1));
 	}
 }

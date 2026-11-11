@@ -2,7 +2,7 @@ package org.example;
 
 import com.gameplay.battle.entity.unit.BattleStarPartner;
 import com.gameplay.masterdata.attribute.battle.field.entire.Terrain;
-import com.gameplay.masterdata.attribute.battle.field.side.RegionRealm;
+import com.gameplay.masterdata.attribute.battle.field.side.TerraAtlas;
 import com.gameplay.masterdata.attribute.type.PokemonType;
 import com.gameplay.masterdata.data.master.MasterDataBootstrap;
 import com.gameplay.masterdata.data.master.registry.move.battle.PokemonMoveRegistry;
@@ -44,7 +44,7 @@ public class Main {
 
 		System.out.println(playProfile.getCreateDateAndTime());
 
-		System.out.println(RegionRealm.BLACK_UNOVA.getRegion());
+		System.out.println(TerraAtlas.BLACK_UNOVA.getAtlasRegion());
 	}
 
 	public static void printTrainer(TrainerAlternate trainerAlternate) {
