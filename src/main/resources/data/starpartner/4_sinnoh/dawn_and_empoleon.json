@@ -8,7 +8,8 @@
 		"is_shiny" : false
 	},
 	"star_jewel" : {
-		"sync_type" : "WATER"
+		"sync_type" : "WATER",
+		"starsoul" : "REASON"
 	},
 	"resonance_moves" : [
 		{
