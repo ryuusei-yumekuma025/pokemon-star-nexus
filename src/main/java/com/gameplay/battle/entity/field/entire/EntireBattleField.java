@@ -1,5 +1,6 @@
-package com.gameplay.battle.entity.field;
+package com.gameplay.battle.entity.field.entire;
 
+import com.gameplay.battle.entity.field.entire.room.RoomOnBattleField;
 import com.gameplay.masterdata.attribute.battle.field.entire.Terrain;
 import com.gameplay.masterdata.attribute.battle.field.entire.Weather;
 
@@ -15,6 +16,8 @@ public class EntireBattleField {
 	private Terrain currentTerrain;
 	private int remainingTerrainTurn;
 
+	private final RoomOnBattleField room;
+
 	//==================================================================================================================
 	//	Constructor
 	//==================================================================================================================
@@ -25,6 +28,8 @@ public class EntireBattleField {
 
 		this.currentTerrain = Terrain.NONE;
 		this.remainingTerrainTurn = 0;
+
+		this.room = new RoomOnBattleField();
 	}
 
 	//==================================================================================================================
@@ -89,5 +94,13 @@ public class EntireBattleField {
 		this.remainingTerrainTurn = duration;
 
 		return true;
+	}
+
+	//==================================================================================================================
+	//	Room Management
+	//==================================================================================================================
+
+	public RoomOnBattleField getRoom() {
+		return room;
 	}
 }

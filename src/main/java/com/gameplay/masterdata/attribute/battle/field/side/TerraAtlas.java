@@ -67,6 +67,6 @@ public enum TerraAtlas {
 	}
 
 	public WorldRegion getAtlasRegion() {
-		return WorldRegion.fromCode(this.toString().substring(this.toString().indexOf('_') + 1));
+		return WorldRegion.fromCode(this.toString().substring(this.toString().lastIndexOf('_') + 1));
 	}
 }

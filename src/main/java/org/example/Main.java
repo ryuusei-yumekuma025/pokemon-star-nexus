@@ -1,5 +1,6 @@
 package org.example;
 
+import com.gameplay.battle.entity.field.side.terraatlas.TerraAtlasOnBattleField;
 import com.gameplay.battle.entity.unit.BattleStarPartner;
 import com.gameplay.masterdata.attribute.battle.field.entire.Terrain;
 import com.gameplay.masterdata.attribute.battle.field.side.TerraAtlas;
@@ -45,6 +46,11 @@ public class Main {
 		System.out.println(playProfile.getCreateDateAndTime());
 
 		System.out.println(TerraAtlas.BLACK_UNOVA.getAtlasRegion());
+
+		TerraAtlasOnBattleField atlas = new TerraAtlasOnBattleField();
+		atlas.applyTerraAtlasFieldEffect(TerraAtlas.BLACK_UNOVA, 1);
+
+		System.out.println(atlas.getActivatedTerraAtlasSet());
 	}
 
 	public static void printTrainer(TrainerAlternate trainerAlternate) {
