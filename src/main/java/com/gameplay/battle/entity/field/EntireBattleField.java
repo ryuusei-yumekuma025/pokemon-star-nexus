@@ -1,7 +1,7 @@
 package com.gameplay.battle.entity.field;
 
-import com.gameplay.masterdata.attribute.battle.field.Terrain;
-import com.gameplay.masterdata.attribute.battle.field.Weather;
+import com.gameplay.masterdata.attribute.battle.field.entire.Terrain;
+import com.gameplay.masterdata.attribute.battle.field.entire.Weather;
 
 public class EntireBattleField {
 

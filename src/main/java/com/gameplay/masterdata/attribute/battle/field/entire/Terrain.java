@@ -1,4 +1,4 @@
-package com.gameplay.masterdata.attribute.battle.field;
+package com.gameplay.masterdata.attribute.battle.field.entire;
 
 import com.utils.StringUtils;
 
