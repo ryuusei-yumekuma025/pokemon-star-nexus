@@ -5,7 +5,7 @@ import com.utils.StringUtils;
 public enum Starsoul {
 	PASSION,
 	DESIRE,
-	COURAGE,
+	VOLITION,
 	EMOTION,
 	MEMORY,
 	REASON;
