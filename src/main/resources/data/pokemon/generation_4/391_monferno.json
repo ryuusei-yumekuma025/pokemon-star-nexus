@@ -1,1 +1,16 @@
-{}
+{
+  "pokedex_number" : 391,
+  "species" : "MONFERNO",
+  "category" : "PLAYFUL",
+  "types" : ["FIRE", "FIGHTING"],
+  "egg_groups" : ["FIELD", "HUMAN_LIKE"],
+  "color" : "BROWN",
+  "shape" : "TWO_LEGS_AND_TAIL",
+  "height" : 0.9,
+  "weight" : 22.0,
+  "forms" : [
+    {
+      "id" : 0
+    }
+  ]
+}

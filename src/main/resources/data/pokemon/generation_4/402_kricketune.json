@@ -1,1 +1,16 @@
-{}
+{
+  "pokedex_number" : 402,
+  "species" : "KRICKETUNE",
+  "category" : "CRICKET",
+  "types" : ["BUG"],
+  "egg_groups" : ["BUG"],
+  "color" : "RED",
+  "shape" : "FOUR_WINGS",
+  "height" : 1.0,
+  "weight" : 25.5,
+  "forms" : [
+    {
+      "id" : 0
+    }
+  ]
+}

@@ -1,1 +1,16 @@
-{}
+{
+  "pokedex_number" : 478,
+  "species" : "FROSLASS",
+  "category" : "SNOW_LAND",
+  "types" : ["ICE", "GHOST"],
+  "egg_groups" : ["FAIRY", "MINERAL"],
+  "color" : "WHITE",
+  "shape" : "ARM",
+  "height" : 1.3,
+  "weight" : 26.6,
+  "forms" : [
+    {
+      "id" : 0
+    }
+  ]
+}

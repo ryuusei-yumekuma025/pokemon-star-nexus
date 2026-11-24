@@ -1,1 +1,16 @@
-{}
+{
+  "pokedex_number" : 467,
+  "species" : "MAGMORTAR",
+  "category" : "BLAST",
+  "types" : ["FIRE"],
+  "egg_groups" : ["HUMAN_LIKE"],
+  "color" : "RED",
+  "shape" : "TWO_LEGS_AND_TAIL",
+  "height" : 1.6,
+  "weight" : 68.0,
+  "forms" : [
+    {
+      "id" : 0
+    }
+  ]
+}

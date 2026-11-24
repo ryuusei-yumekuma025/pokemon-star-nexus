@@ -1,1 +1,16 @@
-{}
+{
+  "pokedex_number" : 441,
+  "species" : "CHATOT",
+  "category" : "MUSIC_NOTE",
+  "types" : ["NORMAL", "FLYING"],
+  "egg_groups" : ["FLYING"],
+  "color" : "BLACK",
+  "shape" : "TWO_WINGS",
+  "height" : 0.5,
+  "weight" : 1.9,
+  "forms" : [
+    {
+      "id" : 0
+    }
+  ]
+}

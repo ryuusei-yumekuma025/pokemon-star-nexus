@@ -1,1 +1,16 @@
-{}
+{
+  "pokedex_number" : 471,
+  "species" : "GLACEON",
+  "category" : "FRESH_SNOW",
+  "types" : ["ICE"],
+  "egg_groups" : ["FIELD"],
+  "color" : "BLUE",
+  "shape" : "FOUR_LEGGED",
+  "height" : 0.8,
+  "weight" : 25.9,
+  "forms" : [
+    {
+      "id" : 0
+    }
+  ]
+}

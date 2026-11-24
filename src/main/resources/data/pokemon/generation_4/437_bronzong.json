@@ -1,1 +1,16 @@
-{}
+{
+  "pokedex_number" : 437,
+  "species" : "BRONZONG",
+  "category" : "BRONZE_BELL",
+  "types" : ["STEEL", "PSYCHIC"],
+  "egg_groups" : ["MINERAL"],
+  "color" : "GREEN",
+  "shape" : "ARM",
+  "height" : 1.3,
+  "weight" : 187.0,
+  "forms" : [
+    {
+      "id" : 0
+    }
+  ]
+}

@@ -1,1 +1,16 @@
-{}
+{
+  "pokedex_number" : 397,
+  "species" : "STARAVIA",
+  "category" : "STARLING",
+  "types" : ["NORMAL", "FLYING"],
+  "egg_groups" : ["FLYING"],
+  "color" : "BROWN",
+  "shape" : "TWO_WINGS",
+  "height" : 0.6,
+  "weight" : 15.5,
+  "forms" : [
+    {
+      "id" : 0
+    }
+  ]
+}

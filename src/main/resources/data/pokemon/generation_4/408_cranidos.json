@@ -1,1 +1,16 @@
-{}
+{
+  "pokedex_number" : 408,
+  "species" : "CRANIDOS",
+  "category" : "HEAD_BUTT",
+  "types" : ["ROCK"],
+  "egg_groups" : ["MONSTER"],
+  "color" : "BLUE",
+  "shape" : "TWO_LEGS_AND_TAIL",
+  "height" : 0.9,
+  "weight" : 31.5,
+  "forms" : [
+    {
+      "id" : 0
+    }
+  ]
+}

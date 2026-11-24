@@ -1,1 +1,16 @@
-{}
+{
+  "pokedex_number" : 443,
+  "species" : "GIBLE",
+  "category" : "LAND_SHARK",
+  "types" : ["DRAGON", "GROUND"],
+  "egg_groups" : ["MONSTER", "DRAGON"],
+  "color" : "BLUE",
+  "shape" : "TWO_LEGS_AND_TAIL",
+  "height" : 0.7,
+  "weight" : 20.5,
+  "forms" : [
+    {
+      "id" : 0
+    }
+  ]
+}
