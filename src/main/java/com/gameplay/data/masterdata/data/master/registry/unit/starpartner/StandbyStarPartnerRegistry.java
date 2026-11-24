@@ -1,7 +1,7 @@
 package com.gameplay.data.masterdata.data.master.registry.unit.starpartner;
 
 import com.gameplay.data.masterdata.data.master.registry.Registry;
-import com.gameplay.data.masterdata.template.unit.type.standby.StandbyStarPartner;
+import com.gameplay.data.masterdata.template.unit.type.playable.standby.StandbyStarPartner;
 import com.utils.StringUtils;
 
 import java.util.Collection;

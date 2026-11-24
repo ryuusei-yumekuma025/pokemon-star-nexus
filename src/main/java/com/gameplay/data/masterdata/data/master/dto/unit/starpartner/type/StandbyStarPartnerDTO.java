@@ -6,7 +6,7 @@ import com.gameplay.data.masterdata.data.master.dto.unit.starpartner.PartnerPoke
 import com.gameplay.data.masterdata.data.master.dto.unit.starpartner.SpecialMovesDTO;
 import com.gameplay.data.masterdata.data.master.dto.unit.starpartner.StarBattleStateDTO;
 import com.gameplay.data.masterdata.data.master.dto.unit.starpartner.StarJewelDTO;
-import com.gameplay.data.masterdata.template.unit.type.standby.StandbyStarPartner;
+import com.gameplay.data.masterdata.template.unit.type.playable.standby.StandbyStarPartner;
 import com.utils.StringUtils;
 
 import java.util.List;

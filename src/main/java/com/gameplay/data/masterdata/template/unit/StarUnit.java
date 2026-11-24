@@ -108,6 +108,13 @@ public abstract class StarUnit<T extends Trainer, SJ extends StarJewel> {
 			this.partnerTrainer = partnerTrainer;
 		}
 
+		protected Builder(String starUnitId, String starUnitCode, T partnerTrainer, PartnerPokemon partnerPokemon) {
+			this.starUnitId = StringUtils.requireUpperSnakeCase(starUnitId, "Star Unit Id");
+			this.starUnitCode = StringUtils.requireUpperSnakeCase(starUnitCode, "Star Unit Code");
+			this.partnerTrainer = partnerTrainer;
+			this.partnerPokemon = partnerPokemon;
+		}
+
 		public String getStarUnitId() {
 			return starUnitId;
 		}

@@ -1,12 +1,5 @@
 [
 	{
-		"id" : 0,
-		"code" : "",
-		"type" : "",
-		"category" : "",
-		"tier" : 1
-	},
-	{
 		"id" : 284,
 		"code" : "ERUPTION",
 		"type" : "FIRE",
