@@ -1,1 +1,22 @@
-{}
+{
+  "pokedex_number" : 445,
+  "species" : "GARCHOMP",
+  "category" : "MACH",
+  "types" : ["DRAGON", "GROUND"],
+  "egg_groups" : ["MONSTER", "DRAGON"],
+  "color" : "BLUE",
+  "shape" : "TWO_LEGS_AND_TAIL",
+  "height" : 1.9,
+  "weight" : 95.0,
+  "forms" : [
+    {
+      "id" : 0
+    },
+    {
+      "id" : 1,
+      "code" : "MEGA",
+      "mega_origin" : 0,
+      "mega_boost" : [40, 20, 40, 10, -10]
+    }
+  ]
+}

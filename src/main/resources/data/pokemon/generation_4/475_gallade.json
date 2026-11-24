@@ -1,1 +1,23 @@
-{}
+{
+  "pokedex_number" : 475,
+  "species" : "GALLADE",
+  "category" : "BLADE",
+  "types" : ["PSYCHIC", "FIGHTING"],
+  "egg_groups" : ["HUMAN_LIKE", "AMORPHOUS"],
+  "color" : "WHITE",
+  "shape" : "TWO_LEGS_AND_HUMAN_FORM",
+  "height" : 1.6,
+  "weight" : 52.0,
+  "forms" : [
+    {
+      "id" : 0
+    },
+    {
+      "id" : 1,
+      "code" : "MEGA",
+      "weight" : 56.4,
+      "mega_origin" : 0,
+      "mega_boost" : [40, 30, 0, 0, 30]
+    }
+  ]
+}

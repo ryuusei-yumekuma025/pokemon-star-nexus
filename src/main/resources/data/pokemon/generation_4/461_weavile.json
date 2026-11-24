@@ -1,1 +1,16 @@
-{}
+{
+  "pokedex_number" : 461,
+  "species" : "WEAVILE",
+  "category" : "SHARP_CLAW",
+  "types" : ["DARK", "ICE"],
+  "egg_groups" : ["FIELD"],
+  "color" : "BLACK",
+  "shape" : "TWO_LEGS_AND_TAIL",
+  "height" : 1.1,
+  "weight" : 34.0,
+  "forms" : [
+    {
+      "id" : 0
+    }
+  ]
+}

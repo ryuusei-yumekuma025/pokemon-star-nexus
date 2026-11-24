@@ -1,1 +1,24 @@
-{}
+{
+  "pokedex_number" : 487,
+  "species" : "GIRATINA",
+  "category" : "RENEGADE",
+  "types" : ["GHOST", "DRAGON"],
+  "egg_groups" : ["NO_EGGS_DISCOVERED"],
+  "color" : "BLACK",
+  "shape" : "MULTI_LEG",
+  "height" : 4.5,
+  "weight" : 750.0,
+  "forms" : [
+    {
+      "id" : 0,
+      "code" : "ALTERED"
+    },
+    {
+      "id" : 1,
+      "code" : "ORIGIN",
+      "shape" : "BELLY_CRAWLING_NO_LEGS",
+      "height" : 6.9,
+      "weight" : 650.0
+    }
+  ]
+}

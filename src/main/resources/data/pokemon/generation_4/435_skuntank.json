@@ -1,1 +1,16 @@
-{}
+{
+  "pokedex_number" : 435,
+  "species" : "SKUNTANK",
+  "category" : "SKUNK",
+  "types" : ["POISON", "DARK"],
+  "egg_groups" : ["FIELD"],
+  "color" : "PURPLE",
+  "shape" : "FOUR_LEGGED",
+  "height" : 1.0,
+  "weight" : 38.0,
+  "forms" : [
+    {
+      "id" : 0
+    }
+  ]
+}

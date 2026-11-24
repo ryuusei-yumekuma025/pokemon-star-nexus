@@ -1,1 +1,16 @@
-{}
+{
+  "pokedex_number" : 436,
+  "species" : "BRONZOR",
+  "category" : "BRONZE",
+  "types" : ["STEEL", "PSYCHIC"],
+  "egg_groups" : ["MINERAL"],
+  "color" : "GREEN",
+  "shape" : "ROUND",
+  "height" : 0.5,
+  "weight" : 60.5,
+  "forms" : [
+    {
+      "id" : 0
+    }
+  ]
+}

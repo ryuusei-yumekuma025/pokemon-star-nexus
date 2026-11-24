@@ -1,1 +1,16 @@
-{}
+{
+  "pokedex_number" : 407,
+  "species" : "ROSERADE",
+  "category" : "BOUQUET",
+  "types" : ["GRASS", "POISON"],
+  "egg_groups" : ["FAIRY", "GRASS"],
+  "color" : "GREEN",
+  "shape" : "TWO_LEGS_AND_HUMAN_FORM",
+  "height" : 0.9,
+  "weight" : 14.5,
+  "forms" : [
+    {
+      "id" : 0
+    }
+  ]
+}

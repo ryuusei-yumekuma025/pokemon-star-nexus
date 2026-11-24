@@ -1,1 +1,16 @@
-{}
+{
+  "pokedex_number" : 418,
+  "species" : "BUIZEL",
+  "category" : "SEA_WEASEL",
+  "types" : ["WATER"],
+  "egg_groups" : ["WATER_1", "FIELD"],
+  "color" : "BROWN",
+  "shape" : "FOUR_LEGGED",
+  "height" : 0.7,
+  "weight" : 29.5,
+  "forms" : [
+    {
+      "id" : 0
+    }
+  ]
+}

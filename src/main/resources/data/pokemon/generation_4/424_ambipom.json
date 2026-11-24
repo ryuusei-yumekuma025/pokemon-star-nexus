@@ -1,1 +1,16 @@
-{}
+{
+  "pokedex_number" : 424,
+  "species" : "AMBIPOM",
+  "category" : "LONG_TAIL",
+  "types" : ["NORMAL"],
+  "egg_groups" : ["FIELD"],
+  "color" : "PURPLE",
+  "shape" : "TWO_LEGS_AND_TAIL",
+  "height" : 1.2,
+  "weight" : 20.3,
+  "forms" : [
+    {
+      "id" : 0
+    }
+  ]
+}

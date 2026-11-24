@@ -1,1 +1,102 @@
-{}
+{
+  "pokedex_number" : 493,
+  "species" : "ARCEUS",
+  "category" : "ALPHA",
+  "types" : ["NORMAL"],
+  "egg_groups" : ["NO_EGGS_DISCOVERED"],
+  "color" : "WHITE",
+  "shape" : "FOUR_LEGGED",
+  "height" : 3.2,
+  "weight" : 320.0,
+  "forms" : [
+    {
+      "id" : 0,
+      "code" : "NORMAL"
+    },
+    {
+      "id" : 1,
+      "code" : "FIGHTING",
+      "types" : ["FIGHTING"]
+    },
+    {
+      "id" : 2,
+      "code" : "FLYING",
+      "types" : ["FLYING"]
+    },
+    {
+      "id" : 3,
+      "code" : "POISON",
+      "types" : ["POISON"]
+    },
+    {
+      "id" : 4,
+      "code" : "GROUND",
+      "types" : ["GROUND"]
+    },
+    {
+      "id" : 5,
+      "code" : "ROCK",
+      "types" : ["ROCK"]
+    },
+    {
+      "id" : 6,
+      "code" : "BUG",
+      "types" : ["BUG"]
+    },
+    {
+      "id" : 7,
+      "code" : "GHOST",
+      "types" : ["GHOST"]
+    },
+    {
+      "id" : 8,
+      "code" : "STEEL",
+      "types" : ["STEEL"]
+    },
+    {
+      "id" : 9,
+      "code" : "FIRE",
+      "types" : ["FIRE"]
+    },
+    {
+      "id" : 10,
+      "code" : "WATER",
+      "types" : ["WATER"]
+    },
+    {
+      "id" : 11,
+      "code" : "GRASS",
+      "types" : ["GRASS"]
+    },
+    {
+      "id" : 12,
+      "code" : "ELECTRIC",
+      "types" : ["ELECTRIC"]
+    },
+    {
+      "id" : 13,
+      "code" : "PSYCHIC",
+      "types" : ["PSYCHIC"]
+    },
+    {
+      "id" : 14,
+      "code" : "ICE",
+      "types" : ["ICE"]
+    },
+    {
+      "id" : 15,
+      "code" : "DRAGON",
+      "types" : ["DRAGON"]
+    },
+    {
+      "id" : 16,
+      "code" : "DARK",
+      "types" : ["DARK"]
+    },
+    {
+      "id" : 17,
+      "code" : "FAIRY",
+      "types" : ["FAIRY"]
+    }
+  ]
+}
