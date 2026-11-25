@@ -1,16 +1,16 @@
 {
-  "pokedex_number" : 462,
-  "species" : "MAGNEZONE",
-  "category" : "MAGNET_AREA",
-  "types" : ["ELECTRIC", "STEEL"],
-  "egg_groups" : ["MINERAL"],
-  "color" : "GRAY",
-  "shape" : "ARM",
-  "height" : 1.2,
-  "weight" : 180.0,
-  "forms" : [
-    {
-      "id" : 0
-    }
-  ]
+	"pokedex_number": 462,
+	"species": "MAGNEZONE",
+	"category": "MAGNET_AREA",
+	"types": ["ELECTRIC", "STEEL"],
+	"egg_groups": ["MINERAL"],
+	"color": "GRAY",
+	"shape": "ARM",
+	"height": 1.2,
+	"weight": 180.0,
+	"forms": [
+		{
+			"id": 0
+		}
+	]
 }

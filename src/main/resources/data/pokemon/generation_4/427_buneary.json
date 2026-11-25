@@ -1,16 +1,16 @@
 {
-  "pokedex_number" : 427,
-  "species" : "BUNEARY",
-  "category" : "RABBIT",
-  "types" : ["NORMAL"],
-  "egg_groups" : ["FIELD", "HUMAN_LIKE"],
-  "color" : "BROWN",
-  "shape" : "TWO_LEGS_AND_TAIL",
-  "height" : 0.4,
-  "weight" : 5.5,
-  "forms" : [
-    {
-      "id" : 0
-    }
-  ]
+	"pokedex_number": 427,
+	"species": "BUNEARY",
+	"category": "RABBIT",
+	"types": ["NORMAL"],
+	"egg_groups": ["FIELD", "HUMAN_LIKE"],
+	"color": "BROWN",
+	"shape": "TWO_LEGS_AND_TAIL",
+	"height": 0.4,
+	"weight": 5.5,
+	"forms": [
+		{
+			"id": 0
+		}
+	]
 }

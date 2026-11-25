@@ -1,16 +1,16 @@
 {
-  "pokedex_number" : 455,
-  "species" : "CARNIVINE",
-  "category" : "BUG_CATCHER",
-  "types" : ["GRASS"],
-  "egg_groups" : ["GRASS"],
-  "color" : "GREEN",
-  "shape" : "MULTI_LEG",
-  "height" : 1.4,
-  "weight" : 27.0,
-  "forms" : [
-    {
-      "id" : 0
-    }
-  ]
+	"pokedex_number": 455,
+	"species": "CARNIVINE",
+	"category": "BUG_CATCHER",
+	"types": ["GRASS"],
+	"egg_groups": ["GRASS"],
+	"color": "GREEN",
+	"shape": "MULTI_LEG",
+	"height": 1.4,
+	"weight": 27.0,
+	"forms": [
+		{
+			"id": 0
+		}
+	]
 }

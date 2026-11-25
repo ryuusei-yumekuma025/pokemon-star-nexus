@@ -1,16 +1,16 @@
 {
-  "pokedex_number" : 414,
-  "species" : "MOTHIM",
-  "category" : "MOTH",
-  "types" : ["BUG", "FLYING"],
-  "egg_groups" : ["BUG"],
-  "color" : "YELLOW",
-  "shape" : "FOUR_WINGS",
-  "height" : 0.9,
-  "weight" : 23.3,
-  "forms" : [
-    {
-      "id" : 0
-    }
-  ]
+	"pokedex_number": 414,
+	"species": "MOTHIM",
+	"category": "MOTH",
+	"types": ["BUG", "FLYING"],
+	"egg_groups": ["BUG"],
+	"color": "YELLOW",
+	"shape": "FOUR_WINGS",
+	"height": 0.9,
+	"weight": 23.3,
+	"forms": [
+		{
+			"id": 0
+		}
+	]
 }

@@ -1,16 +1,16 @@
 {
-  "pokedex_number" : 396,
-  "species" : "STARLY",
-  "category" : "STARLING",
-  "types" : ["NORMAL", "FLYING"],
-  "egg_groups" : ["FLYING"],
-  "color" : "BROWN",
-  "shape" : "TWO_WINGS",
-  "height" : 0.3,
-  "weight" : 2.0,
-  "forms" : [
-    {
-      "id" : 0
-    }
-  ]
+	"pokedex_number": 396,
+	"species": "STARLY",
+	"category": "STARLING",
+	"types": ["NORMAL", "FLYING"],
+	"egg_groups": ["FLYING"],
+	"color": "BROWN",
+	"shape": "TWO_WINGS",
+	"height": 0.3,
+	"weight": 2.0,
+	"forms": [
+		{
+			"id": 0
+		}
+	]
 }

@@ -1,16 +1,16 @@
 {
-    "pokedex_number": 498,
-    "species": "TEPIG",
-    "category": "FIRE_PIG",
-    "types": ["FIRE"],
-    "egg_groups": ["FIELD"],
-    "color": "RED",
-    "shape": "FOUR_LEGGED",
-    "height": 0.5,
-    "weight": 9.9,
-    "forms": [
-      {
-        "id": 0
-      }
-    ]
-  }
+	"pokedex_number": 498,
+	"species": "TEPIG",
+	"category": "FIRE_PIG",
+	"types": ["FIRE"],
+	"egg_groups": ["FIELD"],
+	"color": "RED",
+	"shape": "FOUR_LEGGED",
+	"height": 0.5,
+	"weight": 9.9,
+	"forms": [
+		{
+			"id": 0
+		}
+	]
+}

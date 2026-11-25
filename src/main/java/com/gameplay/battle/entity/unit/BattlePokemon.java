@@ -1,5 +1,6 @@
 package com.gameplay.battle.entity.unit;
 
+import com.gameplay.data.masterdata.attribute.battle.StatusCondition;
 import com.gameplay.data.masterdata.attribute.type.PokemonType;
 import com.gameplay.data.masterdata.template.pokemon.form.PokemonForm;
 import com.gameplay.data.masterdata.template.unit.PartnerPokemon;
@@ -21,6 +22,9 @@ public class BattlePokemon {
 	private int currentHP;
 	private int maxHP;
 
+	private StatusCondition statusCondition;
+	private int sleepRemainingTurn;
+
 	/*------------------------------------------------------------------------------------------------------------------
 	2.	Constructor																										*/
 
@@ -32,10 +36,17 @@ public class BattlePokemon {
 
 		this.maxHP = 100;
 		this.currentHP = this.maxHP;
+
+		this.statusCondition = StatusCondition.NONE;
+		this.sleepRemainingTurn = 0;
 	}
 
 	/*------------------------------------------------------------------------------------------------------------------
 	3.	Getters																											*/
+
+	public BattleUnit getBattleUnit() {
+		return battleUnit;
+	}
 
 	public PartnerPokemon getPartnerPokemon() {
 		return partnerPokemon;
@@ -46,7 +57,7 @@ public class BattlePokemon {
 	}
 
 	/*------------------------------------------------------------------------------------------------------------------
-	4.	Form Management																											*/
+	4.	Form Management																									*/
 
 	public PokemonForm getPokemonForm() {
 		return currentForm;
@@ -64,9 +75,27 @@ public class BattlePokemon {
 	}
 
 	/*------------------------------------------------------------------------------------------------------------------
-	5.	Status																											*/
+	.	Form Management																									*/
+
+	public int getCurrentHP() {
+		return currentHP;
+	}
+
+	public int getMaxHP() {
+		return maxHP;
+	}
+
+	/*------------------------------------------------------------------------------------------------------------------
+	.	Status																											*/
 
 	public void resetStatus() {
 		this.pokemonTypeList = List.copyOf(this.currentForm.getTypeList());
+	}
+
+	/*------------------------------------------------------------------------------------------------------------------
+	6.	Status Condition Management																						*/
+
+	public StatusCondition getStatusCondition() {
+		return statusCondition;
 	}
 }

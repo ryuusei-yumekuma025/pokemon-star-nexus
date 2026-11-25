@@ -1,16 +1,16 @@
 {
-  "pokedex_number" : 472,
-  "species" : "GLISCOR",
-  "category" : "FANG_SCORP",
-  "types" : ["GROUND", "FLYING"],
-  "egg_groups" : ["BUG"],
-  "color" : "PURPLE",
-  "shape" : "TWO_WINGS",
-  "height" : 2.0,
-  "weight" : 42.5,
-  "forms" : [
-    {
-      "id" : 0
-    }
-  ]
+	"pokedex_number": 472,
+	"species": "GLISCOR",
+	"category": "FANG_SCORP",
+	"types": ["GROUND", "FLYING"],
+	"egg_groups": ["BUG"],
+	"color": "PURPLE",
+	"shape": "TWO_WINGS",
+	"height": 2.0,
+	"weight": 42.5,
+	"forms": [
+		{
+			"id": 0
+		}
+	]
 }

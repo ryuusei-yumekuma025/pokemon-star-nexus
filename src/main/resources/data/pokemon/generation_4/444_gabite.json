@@ -1,16 +1,16 @@
 {
-  "pokedex_number" : 444,
-  "species" : "GABITE",
-  "category" : "CAVE",
-  "types" : ["DRAGON", "GROUND"],
-  "egg_groups" : ["MONSTER", "DRAGON"],
-  "color" : "BLUE",
-  "shape" : "TWO_LEGS_AND_TAIL",
-  "height" : 1.4,
-  "weight" : 56.0,
-  "forms" : [
-    {
-      "id" : 0
-    }
-  ]
+	"pokedex_number": 444,
+	"species": "GABITE",
+	"category": "CAVE",
+	"types": ["DRAGON", "GROUND"],
+	"egg_groups": ["MONSTER", "DRAGON"],
+	"color": "BLUE",
+	"shape": "TWO_LEGS_AND_TAIL",
+	"height": 1.4,
+	"weight": 56.0,
+	"forms": [
+		{
+			"id": 0
+		}
+	]
 }

@@ -1,16 +1,16 @@
 {
-  "pokedex_number" : 488,
-  "species" : "CRESSELIA",
-  "category" : "LUNAR",
-  "types" : ["PSYCHIC"],
-  "egg_groups" : ["NO_EGGS_DISCOVERED"],
-  "color" : "YELLOW",
-  "shape" : "BELLY_CRAWLING_NO_LEGS",
-  "height" : 1.5,
-  "weight" : 85.6,
-  "forms" : [
-    {
-      "id" : 0
-    }
-  ]
+	"pokedex_number": 488,
+	"species": "CRESSELIA",
+	"category": "LUNAR",
+	"types": ["PSYCHIC"],
+	"egg_groups": ["NO_EGGS_DISCOVERED"],
+	"color": "YELLOW",
+	"shape": "BELLY_CRAWLING_NO_LEGS",
+	"height": 1.5,
+	"weight": 85.6,
+	"forms": [
+		{
+			"id": 0
+		}
+	]
 }

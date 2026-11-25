@@ -1,16 +1,16 @@
 {
-  "pokedex_number" : 486,
-  "species" : "REGIGIGAS",
-  "category" : "COLOSSAL",
-  "types" : ["NORMAL"],
-  "egg_groups" : ["NO_EGGS_DISCOVERED"],
-  "color" : "WHITE",
-  "shape" : "TWO_LEGS_AND_HUMAN_FORM",
-  "height" : 3.7,
-  "weight" : 420.0,
-  "forms" : [
-    {
-      "id" : 0
-    }
-  ]
+	"pokedex_number": 486,
+	"species": "REGIGIGAS",
+	"category": "COLOSSAL",
+	"types": ["NORMAL"],
+	"egg_groups": ["NO_EGGS_DISCOVERED"],
+	"color": "WHITE",
+	"shape": "TWO_LEGS_AND_HUMAN_FORM",
+	"height": 3.7,
+	"weight": 420.0,
+	"forms": [
+		{
+			"id": 0
+		}
+	]
 }

@@ -1,16 +1,16 @@
 {
-  "pokedex_number" : 470,
-  "species" : "LEAFEON",
-  "category" : "VERDANT",
-  "types" : ["GRASS"],
-  "egg_groups" : ["FIELD"],
-  "color" : "GREEN",
-  "shape" : "FOUR_LEGGED",
-  "height" : 1.0,
-  "weight" : 25.5,
-  "forms" : [
-    {
-      "id" : 0
-    }
-  ]
+	"pokedex_number": 470,
+	"species": "LEAFEON",
+	"category": "VERDANT",
+	"types": ["GRASS"],
+	"egg_groups": ["FIELD"],
+	"color": "GREEN",
+	"shape": "FOUR_LEGGED",
+	"height": 1.0,
+	"weight": 25.5,
+	"forms": [
+		{
+			"id": 0
+		}
+	]
 }

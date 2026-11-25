@@ -1,16 +1,16 @@
 {
-  "pokedex_number" : 387,
-  "species" : "TURTWIG",
-  "category" : "TINY_LEAF",
-  "types" : ["GRASS"],
-  "egg_groups" : ["MONSTER", "GRASS"],
-  "color" : "GREEN",
-  "shape" : "FOUR_LEGGED",
-  "height" : 0.4,
-  "weight" : 10.2,
-  "forms" : [
-    {
-      "id" : 0
-    }
-  ]
+	"pokedex_number": 387,
+	"species": "TURTWIG",
+	"category": "TINY_LEAF",
+	"types": ["GRASS"],
+	"egg_groups": ["MONSTER", "GRASS"],
+	"color": "GREEN",
+	"shape": "FOUR_LEGGED",
+	"height": 0.4,
+	"weight": 10.2,
+	"forms": [
+		{
+			"id": 0
+		}
+	]
 }

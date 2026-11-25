@@ -1,16 +1,16 @@
 {
-  "pokedex_number" : 420,
-  "species" : "CHERUBI",
-  "category" : "CHERRY",
-  "types" : ["GRASS"],
-  "egg_groups" : ["FAIRY", "GRASS"],
-  "color" : "PINK",
-  "shape" : "GATHERING",
-  "height" : 0.4,
-  "weight" : 3.3,
-  "forms" : [
-    {
-      "id" : 0
-    }
-  ]
+	"pokedex_number": 420,
+	"species": "CHERUBI",
+	"category": "CHERRY",
+	"types": ["GRASS"],
+	"egg_groups": ["FAIRY", "GRASS"],
+	"color": "PINK",
+	"shape": "GATHERING",
+	"height": 0.4,
+	"weight": 3.3,
+	"forms": [
+		{
+			"id": 0
+		}
+	]
 }

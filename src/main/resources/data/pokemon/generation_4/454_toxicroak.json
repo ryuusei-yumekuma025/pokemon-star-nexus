@@ -1,16 +1,16 @@
 {
-  "pokedex_number" : 454,
-  "species" : "TOXICROAK",
-  "category" : "TOXIC_MOUTH",
-  "types" : ["POISON", "FIGHTING"],
-  "egg_groups" : ["HUMAN_LIKE"],
-  "color" : "BLUE",
-  "shape" : "TWO_LEGS_AND_HUMAN_FORM",
-  "height" : 1.3,
-  "weight" : 44.4,
-  "forms" : [
-    {
-      "id" : 0
-    }
-  ]
+	"pokedex_number": 454,
+	"species": "TOXICROAK",
+	"category": "TOXIC_MOUTH",
+	"types": ["POISON", "FIGHTING"],
+	"egg_groups": ["HUMAN_LIKE"],
+	"color": "BLUE",
+	"shape": "TWO_LEGS_AND_HUMAN_FORM",
+	"height": 1.3,
+	"weight": 44.4,
+	"forms": [
+		{
+			"id": 0
+		}
+	]
 }

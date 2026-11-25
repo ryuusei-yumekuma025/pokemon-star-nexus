@@ -1,16 +1,16 @@
 {
-  "pokedex_number" : 449,
-  "species" : "HIPPOPOTAS",
-  "category" : "HIPPO",
-  "types" : ["GROUND"],
-  "egg_groups" : ["FIELD"],
-  "color" : "BROWN",
-  "shape" : "FOUR_LEGGED",
-  "height" : 0.8,
-  "weight" : 49.5,
-  "forms" : [
-    {
-      "id" : 0
-    }
-  ]
+	"pokedex_number": 449,
+	"species": "HIPPOPOTAS",
+	"category": "HIPPO",
+	"types": ["GROUND"],
+	"egg_groups": ["FIELD"],
+	"color": "BROWN",
+	"shape": "FOUR_LEGGED",
+	"height": 0.8,
+	"weight": 49.5,
+	"forms": [
+		{
+			"id": 0
+		}
+	]
 }

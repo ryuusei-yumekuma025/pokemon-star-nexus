@@ -1,16 +1,16 @@
 {
-  "pokedex_number" : 399,
-  "species" : "BIDOOF",
-  "category" : "PLUMP_MOUSE",
-  "types" : ["NORMAL"],
-  "egg_groups" : ["WATER_1", "FIELD"],
-  "color" : "BROWN",
-  "shape" : "FOUR_LEGGED",
-  "height" : 0.5,
-  "weight" : 20.0,
-  "forms" : [
-    {
-      "id" : 0
-    }
-  ]
+	"pokedex_number": 399,
+	"species": "BIDOOF",
+	"category": "PLUMP_MOUSE",
+	"types": ["NORMAL"],
+	"egg_groups": ["WATER_1", "FIELD"],
+	"color": "BROWN",
+	"shape": "FOUR_LEGGED",
+	"height": 0.5,
+	"weight": 20.0,
+	"forms": [
+		{
+			"id": 0
+		}
+	]
 }

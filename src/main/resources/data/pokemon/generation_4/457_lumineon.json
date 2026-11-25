@@ -1,16 +1,16 @@
 {
-  "pokedex_number" : 457,
-  "species" : "LUMINEON",
-  "category" : "NEON",
-  "types" : ["WATER"],
-  "egg_groups" : ["WATER_2"],
-  "color" : "BLUE",
-  "shape" : "FISH",
-  "height" : 1.2,
-  "weight" : 24.0,
-  "forms" : [
-    {
-      "id" : 0
-    }
-  ]
+	"pokedex_number": 457,
+	"species": "LUMINEON",
+	"category": "NEON",
+	"types": ["WATER"],
+	"egg_groups": ["WATER_2"],
+	"color": "BLUE",
+	"shape": "FISH",
+	"height": 1.2,
+	"weight": 24.0,
+	"forms": [
+		{
+			"id": 0
+		}
+	]
 }

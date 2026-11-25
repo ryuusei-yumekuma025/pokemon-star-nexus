@@ -1,16 +1,16 @@
 {
-  "pokedex_number" : 477,
-  "species" : "DUSKNOIR",
-  "category" : "GRIPPER",
-  "types" : ["GHOST"],
-  "egg_groups" : ["AMORPHOUS"],
-  "color" : "BLACK",
-  "shape" : "ARM",
-  "height" : 2.2,
-  "weight" : 106.6,
-  "forms" : [
-    {
-      "id" : 0
-    }
-  ]
+	"pokedex_number": 477,
+	"species": "DUSKNOIR",
+	"category": "GRIPPER",
+	"types": ["GHOST"],
+	"egg_groups": ["AMORPHOUS"],
+	"color": "BLACK",
+	"shape": "ARM",
+	"height": 2.2,
+	"weight": 106.6,
+	"forms": [
+		{
+			"id": 0
+		}
+	]
 }

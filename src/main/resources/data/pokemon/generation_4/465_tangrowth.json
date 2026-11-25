@@ -1,16 +1,16 @@
 {
-  "pokedex_number" : 465,
-  "species" : "TANGROWTH",
-  "category" : "VINE",
-  "types" : ["GRASS"],
-  "egg_groups" : ["GRASS"],
-  "color" : "BLUE",
-  "shape" : "TWO_LEGS_AND_HUMAN_FORM",
-  "height" : 2.0,
-  "weight" : 128.6,
-  "forms" : [
-    {
-      "id" : 0
-    }
-  ]
+	"pokedex_number": 465,
+	"species": "TANGROWTH",
+	"category": "VINE",
+	"types": ["GRASS"],
+	"egg_groups": ["GRASS"],
+	"color": "BLUE",
+	"shape": "TWO_LEGS_AND_HUMAN_FORM",
+	"height": 2.0,
+	"weight": 128.6,
+	"forms": [
+		{
+			"id": 0
+		}
+	]
 }

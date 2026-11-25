@@ -1,16 +1,16 @@
 {
-  "pokedex_number" : 490,
-  "species" : "MANAPHY",
-  "category" : "SEAFARING",
-  "types" : ["WATER"],
-  "egg_groups" : ["WATER_1", "FAIRY"],
-  "color" : "BLUE",
-  "shape" : "TWO_LEGS_AND_HUMAN_FORM",
-  "height" : 0.3,
-  "weight" : 1.4,
-  "forms" : [
-    {
-      "id" : 0
-    }
-  ]
+	"pokedex_number": 490,
+	"species": "MANAPHY",
+	"category": "SEAFARING",
+	"types": ["WATER"],
+	"egg_groups": ["WATER_1", "FAIRY"],
+	"color": "BLUE",
+	"shape": "TWO_LEGS_AND_HUMAN_FORM",
+	"height": 0.3,
+	"weight": 1.4,
+	"forms": [
+		{
+			"id": 0
+		}
+	]
 }

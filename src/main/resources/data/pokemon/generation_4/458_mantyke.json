@@ -1,16 +1,16 @@
 {
-  "pokedex_number" : 458,
-  "species" : "MANTYKE",
-  "category" : "KITE",
-  "types" : ["WATER", "FLYING"],
-  "egg_groups" : ["NO_EGGS_DISCOVERED"],
-  "color" : "BLUE",
-  "shape" : "TWO_WINGS",
-  "height" : 1.0,
-  "weight" : 65.0,
-  "forms" : [
-    {
-      "id" : 0
-    }
-  ]
+	"pokedex_number": 458,
+	"species": "MANTYKE",
+	"category": "KITE",
+	"types": ["WATER", "FLYING"],
+	"egg_groups": ["NO_EGGS_DISCOVERED"],
+	"color": "BLUE",
+	"shape": "TWO_WINGS",
+	"height": 1.0,
+	"weight": 65.0,
+	"forms": [
+		{
+			"id": 0
+		}
+	]
 }

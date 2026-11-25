@@ -1,16 +1,16 @@
 {
-  "pokedex_number" : 466,
-  "species" : "ELECTIVIRE",
-  "category" : "THUNDERBOLT",
-  "types" : ["ELECTRIC"],
-  "egg_groups" : ["HUMAN_LIKE"],
-  "color" : "YELLOW",
-  "shape" : "TWO_LEGS_AND_TAIL",
-  "height" : 1.8,
-  "weight" : 138.6,
-  "forms" : [
-    {
-      "id" : 0
-    }
-  ]
+	"pokedex_number": 466,
+	"species": "ELECTIVIRE",
+	"category": "THUNDERBOLT",
+	"types": ["ELECTRIC"],
+	"egg_groups": ["HUMAN_LIKE"],
+	"color": "YELLOW",
+	"shape": "TWO_LEGS_AND_TAIL",
+	"height": 1.8,
+	"weight": 138.6,
+	"forms": [
+		{
+			"id": 0
+		}
+	]
 }

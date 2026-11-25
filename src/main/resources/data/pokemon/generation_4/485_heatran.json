@@ -1,16 +1,16 @@
 {
-  "pokedex_number" : 485,
-  "species" : "HEATRAN",
-  "category" : "LAVA_DOME",
-  "types" : ["FIRE", "STEEL"],
-  "egg_groups" : ["NO_EGGS_DISCOVERED"],
-  "color" : "BROWN",
-  "shape" : "FOUR_LEGGED",
-  "height" : 1.7,
-  "weight" : 430.0,
-  "forms" : [
-    {
-      "id" : 0
-    }
-  ]
+	"pokedex_number": 485,
+	"species": "HEATRAN",
+	"category": "LAVA_DOME",
+	"types": ["FIRE", "STEEL"],
+	"egg_groups": ["NO_EGGS_DISCOVERED"],
+	"color": "BROWN",
+	"shape": "FOUR_LEGGED",
+	"height": 1.7,
+	"weight": 430.0,
+	"forms": [
+		{
+			"id": 0
+		}
+	]
 }

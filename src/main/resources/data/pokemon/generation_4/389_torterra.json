@@ -1,16 +1,16 @@
 {
-  "pokedex_number" : 389,
-  "species" : "TORTERRA",
-  "category" : "CONTINENT",
-  "types" : ["GRASS", "GROUND"],
-  "egg_groups" : ["MONSTER", "GRASS"],
-  "color" : "GREEN",
-  "shape" : "FOUR_LEGGED",
-  "height" : 2.2,
-  "weight" : 310.0,
-  "forms" : [
-    {
-      "id" : 0
-    }
-  ]
+	"pokedex_number": 389,
+	"species": "TORTERRA",
+	"category": "CONTINENT",
+	"types": ["GRASS", "GROUND"],
+	"egg_groups": ["MONSTER", "GRASS"],
+	"color": "GREEN",
+	"shape": "FOUR_LEGGED",
+	"height": 2.2,
+	"weight": 310.0,
+	"forms": [
+		{
+			"id": 0
+		}
+	]
 }

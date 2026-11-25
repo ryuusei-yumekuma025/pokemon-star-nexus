@@ -1,16 +1,16 @@
 {
-  "pokedex_number" : 459,
-  "species" : "SNOVER",
-  "category" : "FROST_TREE",
-  "types" : ["GRASS", "ICE"],
-  "egg_groups" : ["MONSTER", "GRASS"],
-  "color" : "WHITE",
-  "shape" : "TWO_LEGS_AND_TAIL",
-  "height" : 1.0,
-  "weight" : 50.5,
-  "forms" : [
-    {
-      "id" : 0
-    }
-  ]
+	"pokedex_number": 459,
+	"species": "SNOVER",
+	"category": "FROST_TREE",
+	"types": ["GRASS", "ICE"],
+	"egg_groups": ["MONSTER", "GRASS"],
+	"color": "WHITE",
+	"shape": "TWO_LEGS_AND_TAIL",
+	"height": 1.0,
+	"weight": 50.5,
+	"forms": [
+		{
+			"id": 0
+		}
+	]
 }

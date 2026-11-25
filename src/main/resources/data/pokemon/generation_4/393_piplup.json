@@ -1,16 +1,16 @@
 {
-  "pokedex_number" : 393,
-  "species" : "PIPLUP",
-  "category" : "PENGUIN",
-  "types" : ["WATER"],
-  "egg_groups" : ["WATER_1", "FIELD"],
-  "color" : "BLUE",
-  "shape" : "TWO_LEGS_AND_HUMAN_FORM",
-  "height" : 0.4,
-  "weight" : 5.2,
-  "forms" : [
-    {
-      "id" : 0
-    }
-  ]
+	"pokedex_number": 393,
+	"species": "PIPLUP",
+	"category": "PENGUIN",
+	"types": ["WATER"],
+	"egg_groups": ["WATER_1", "FIELD"],
+	"color": "BLUE",
+	"shape": "TWO_LEGS_AND_HUMAN_FORM",
+	"height": 0.4,
+	"weight": 5.2,
+	"forms": [
+		{
+			"id": 0
+		}
+	]
 }

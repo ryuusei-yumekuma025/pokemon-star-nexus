@@ -1,25 +1,25 @@
 {
-  "pokedex_number" : 412,
-  "species" : "BURMY",
-  "category" : "BAGWORM",
-  "types" : ["BUG"],
-  "egg_groups" : ["BUG"],
-  "color" : "GREEN",
-  "shape" : "UPRIGHT_TORSO",
-  "height" : 0.2,
-  "weight" : 3.4,
-  "forms" : [
-    {
-      "id" : 0,
-      "code" : "PLANT"
-    },
-    {
-      "id" : 1,
-      "code" : "SANDY"
-    },
-    {
-      "id" : 2,
-      "code" : "TRASH"
-    }
-  ]
+	"pokedex_number": 412,
+	"species": "BURMY",
+	"category": "BAGWORM",
+	"types": ["BUG"],
+	"egg_groups": ["BUG"],
+	"color": "GREEN",
+	"shape": "UPRIGHT_TORSO",
+	"height": 0.2,
+	"weight": 3.4,
+	"forms": [
+		{
+			"id": 0,
+			"code": "PLANT"
+		},
+		{
+			"id": 1,
+			"code": "SANDY"
+		},
+		{
+			"id": 2,
+			"code": "TRASH"
+		}
+	]
 }

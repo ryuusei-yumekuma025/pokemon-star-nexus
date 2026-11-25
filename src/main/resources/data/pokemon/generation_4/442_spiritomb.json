@@ -1,16 +1,16 @@
 {
-  "pokedex_number" : 442,
-  "species" : "SPIRITOMB",
-  "category" : "FORBIDDEN",
-  "types" : ["GHOST", "DARK"],
-  "egg_groups" : ["AMORPHOUS"],
-  "color" : "PURPLE",
-  "shape" : "UPRIGHT_TORSO",
-  "height" : 1.0,
-  "weight" : 108.0,
-  "forms" : [
-    {
-      "id" : 0
-    }
-  ]
+	"pokedex_number": 442,
+	"species": "SPIRITOMB",
+	"category": "FORBIDDEN",
+	"types": ["GHOST", "DARK"],
+	"egg_groups": ["AMORPHOUS"],
+	"color": "PURPLE",
+	"shape": "UPRIGHT_TORSO",
+	"height": 1.0,
+	"weight": 108.0,
+	"forms": [
+		{
+			"id": 0
+		}
+	]
 }

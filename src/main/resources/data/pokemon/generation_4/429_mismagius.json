@@ -1,16 +1,16 @@
 {
-  "pokedex_number" : 429,
-  "species" : "MISMAGIUS",
-  "category" : "MAGICAL",
-  "types" : ["GHOST"],
-  "egg_groups" : ["AMORPHOUS"],
-  "color" : "PURPLE",
-  "shape" : "ROUND",
-  "height" : 0.9,
-  "weight" : 4.4,
-  "forms" : [
-    {
-      "id" : 0
-    }
-  ]
+	"pokedex_number": 429,
+	"species": "MISMAGIUS",
+	"category": "MAGICAL",
+	"types": ["GHOST"],
+	"egg_groups": ["AMORPHOUS"],
+	"color": "PURPLE",
+	"shape": "ROUND",
+	"height": 0.9,
+	"weight": 4.4,
+	"forms": [
+		{
+			"id": 0
+		}
+	]
 }

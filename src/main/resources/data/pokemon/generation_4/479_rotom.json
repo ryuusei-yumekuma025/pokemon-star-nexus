@@ -1,41 +1,41 @@
 {
-  "pokedex_number" : 479,
-  "species" : "ROTOM",
-  "category" : "PLASMA",
-  "types" : ["ELECTRIC", "GHOST"],
-  "egg_groups" : ["AMORPHOUS"],
-  "color" : "RED",
-  "shape" : "ROUND",
-  "height" : 0.3,
-  "weight" : 0.3,
-  "forms" : [
-    {
-      "id" : 0
-    },
-    {
-      "id" : 1,
-      "code" : "HEAT",
-      "types" : ["ELECTRIC", "FIRE"]
-    },
-    {
-      "id" : 2,
-      "code" : "WASH",
-      "types" : ["ELECTRIC", "WATER"]
-    },
-    {
-      "id" : 3,
-      "code" : "FROST",
-      "types" : ["ELECTRIC", "ICE"]
-    },
-    {
-      "id" : 4,
-      "code" : "FAN",
-      "types" : ["ELECTRIC", "FLYING"]
-    },
-    {
-      "id" : 5,
-      "code" : "MOW",
-      "types" : ["ELECTRIC", "GRASS"]
-    }
-  ]
+	"pokedex_number": 479,
+	"species": "ROTOM",
+	"category": "PLASMA",
+	"types": ["ELECTRIC", "GHOST"],
+	"egg_groups": ["AMORPHOUS"],
+	"color": "RED",
+	"shape": "ROUND",
+	"height": 0.3,
+	"weight": 0.3,
+	"forms": [
+		{
+			"id": 0
+		},
+		{
+			"id": 1,
+			"code": "HEAT",
+			"types": ["ELECTRIC", "FIRE"]
+		},
+		{
+			"id": 2,
+			"code": "WASH",
+			"types": ["ELECTRIC", "WATER"]
+		},
+		{
+			"id": 3,
+			"code": "FROST",
+			"types": ["ELECTRIC", "ICE"]
+		},
+		{
+			"id": 4,
+			"code": "FAN",
+			"types": ["ELECTRIC", "FLYING"]
+		},
+		{
+			"id": 5,
+			"code": "MOW",
+			"types": ["ELECTRIC", "GRASS"]
+		}
+	]
 }

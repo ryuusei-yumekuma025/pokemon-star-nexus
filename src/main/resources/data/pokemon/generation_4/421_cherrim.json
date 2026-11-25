@@ -1,22 +1,22 @@
 {
-  "pokedex_number" : 421,
-  "species" : "CHERRIM",
-  "category" : "BLOSSOM",
-  "types" : ["GRASS"],
-  "egg_groups" : ["FAIRY", "GRASS"],
-  "color" : "PURPLE",
-  "shape" : "LEGS",
-  "height" : 0.5,
-  "weight" : 9.3,
-  "forms" : [
-    {
-      "id" : 0,
-      "code" : "OVERCAST"
-    },
-    {
-      "id" : 1,
-      "code" : "SUNSHINE",
-      "color" : "PINK"
-    }
-  ]
+	"pokedex_number": 421,
+	"species": "CHERRIM",
+	"category": "BLOSSOM",
+	"types": ["GRASS"],
+	"egg_groups": ["FAIRY", "GRASS"],
+	"color": "PURPLE",
+	"shape": "LEGS",
+	"height": 0.5,
+	"weight": 9.3,
+	"forms": [
+		{
+			"id": 0,
+			"code": "OVERCAST"
+		},
+		{
+			"id": 1,
+			"code": "SUNSHINE",
+			"color": "PINK"
+		}
+	]
 }

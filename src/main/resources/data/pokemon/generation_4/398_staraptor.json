@@ -1,16 +1,22 @@
 {
-  "pokedex_number" : 398,
-  "species" : "STARAPTOR",
-  "category" : "PREDATOR",
-  "types" : ["NORMAL", "FLYING"],
-  "egg_groups" : ["FLYING"],
-  "color" : "BROWN",
-  "shape" : "TWO_WINGS",
-  "height" : 1.2,
-  "weight" : 24.9,
-  "forms" : [
-    {
-      "id" : 0
-    }
-  ]
+	"pokedex_number": 398,
+	"species": "STARAPTOR",
+	"category": "PREDATOR",
+	"types": ["NORMAL", "FLYING"],
+	"egg_groups": ["FLYING"],
+	"color": "BROWN",
+	"shape": "TWO_WINGS",
+	"height": 1.2,
+	"weight": 24.9,
+	"forms": [
+		{
+			"id": 0
+		},
+		{
+			"id" : 1,
+			"code" : "MEGA",
+			"mega_origin" : 0,
+			"mega_boost" : [0, 0, 0, 0, 0]
+		}
+	]
 }

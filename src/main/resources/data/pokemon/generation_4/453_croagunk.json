@@ -1,16 +1,16 @@
 {
-  "pokedex_number" : 453,
-  "species" : "CROAGUNK",
-  "category" : "TOXIC_MOUTH",
-  "types" : ["POISON", "FIGHTING"],
-  "egg_groups" : ["HUMAN_LIKE"],
-  "color" : "BLUE",
-  "shape" : "TWO_LEGS_AND_HUMAN_FORM",
-  "height" : 0.7,
-  "weight" : 23.0,
-  "forms" : [
-    {
-      "id" : 0
-    }
-  ]
+	"pokedex_number": 453,
+	"species": "CROAGUNK",
+	"category": "TOXIC_MOUTH",
+	"types": ["POISON", "FIGHTING"],
+	"egg_groups": ["HUMAN_LIKE"],
+	"color": "BLUE",
+	"shape": "TWO_LEGS_AND_HUMAN_FORM",
+	"height": 0.7,
+	"weight": 23.0,
+	"forms": [
+		{
+			"id": 0
+		}
+	]
 }

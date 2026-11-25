@@ -1,16 +1,16 @@
 {
-  "pokedex_number" : 415,
-  "species" : "COMBEE",
-  "category" : "TINY_BEE",
-  "types" : ["BUG", "FLYING"],
-  "egg_groups" : ["BUG"],
-  "color" : "YELLOW",
-  "shape" : "GATHERING",
-  "height" : 0.3,
-  "weight" : 5.5,
-  "forms" : [
-    {
-      "id" : 0
-    }
-  ]
+	"pokedex_number": 415,
+	"species": "COMBEE",
+	"category": "TINY_BEE",
+	"types": ["BUG", "FLYING"],
+	"egg_groups": ["BUG"],
+	"color": "YELLOW",
+	"shape": "GATHERING",
+	"height": 0.3,
+	"weight": 5.5,
+	"forms": [
+		{
+			"id": 0
+		}
+	]
 }

@@ -1,16 +1,16 @@
 {
-  "pokedex_number" : 464,
-  "species" : "RHYPERIOR",
-  "category" : "DRILL",
-  "types" : ["GROUND", "ROCK"],
-  "egg_groups" : ["MONSTER", "FIELD"],
-  "color" : "GRAY",
-  "shape" : "TWO_LEGS_AND_TAIL",
-  "height" : 2.4,
-  "weight" : 282.8,
-  "forms" : [
-    {
-      "id" : 0
-    }
-  ]
+	"pokedex_number": 464,
+	"species": "RHYPERIOR",
+	"category": "DRILL",
+	"types": ["GROUND", "ROCK"],
+	"egg_groups": ["MONSTER", "FIELD"],
+	"color": "GRAY",
+	"shape": "TWO_LEGS_AND_TAIL",
+	"height": 2.4,
+	"weight": 282.8,
+	"forms": [
+		{
+			"id": 0
+		}
+	]
 }

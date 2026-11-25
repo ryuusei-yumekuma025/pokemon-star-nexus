@@ -1,16 +1,16 @@
 {
-  "pokedex_number" : 476,
-  "species" : "PROBOPASS",
-  "category" : "COMPASS",
-  "types" : ["ROCK", "STEEL"],
-  "egg_groups" : ["MINERAL"],
-  "color" : "GRAY",
-  "shape" : "ROUND",
-  "height" : 1.4,
-  "weight" : 340.0,
-  "forms" : [
-    {
-      "id" : 0
-    }
-  ]
+	"pokedex_number": 476,
+	"species": "PROBOPASS",
+	"category": "COMPASS",
+	"types": ["ROCK", "STEEL"],
+	"egg_groups": ["MINERAL"],
+	"color": "GRAY",
+	"shape": "ROUND",
+	"height": 1.4,
+	"weight": 340.0,
+	"forms": [
+		{
+			"id": 0
+		}
+	]
 }

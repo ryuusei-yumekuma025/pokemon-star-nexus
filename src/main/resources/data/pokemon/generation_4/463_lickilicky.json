@@ -1,16 +1,16 @@
 {
-  "pokedex_number" : 463,
-  "species" : "LICKILICKY",
-  "category" : "LICKING",
-  "types" : ["NORMAL"],
-  "egg_groups" : ["MONSTER"],
-  "color" : "PINK",
-  "shape" : "TWO_LEGS_AND_HUMAN_FORM",
-  "height" : 1.7,
-  "weight" : 140.0,
-  "forms" : [
-    {
-      "id" : 0
-    }
-  ]
+	"pokedex_number": 463,
+	"species": "LICKILICKY",
+	"category": "LICKING",
+	"types": ["NORMAL"],
+	"egg_groups": ["MONSTER"],
+	"color": "PINK",
+	"shape": "TWO_LEGS_AND_HUMAN_FORM",
+	"height": 1.7,
+	"weight": 140.0,
+	"forms": [
+		{
+			"id": 0
+		}
+	]
 }

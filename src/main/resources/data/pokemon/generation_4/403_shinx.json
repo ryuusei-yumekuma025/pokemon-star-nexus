@@ -1,16 +1,16 @@
 {
-  "pokedex_number" : 403,
-  "species" : "SHINX",
-  "category" : "FLASH",
-  "types" : ["ELECTRIC"],
-  "egg_groups" : ["FIELD"],
-  "color" : "BLUE",
-  "shape" : "FOUR_LEGGED",
-  "height" : 0.5,
-  "weight" : 9.5,
-  "forms" : [
-    {
-      "id" : 0
-    }
-  ]
+	"pokedex_number": 403,
+	"species": "SHINX",
+	"category": "FLASH",
+	"types": ["ELECTRIC"],
+	"egg_groups": ["FIELD"],
+	"color": "BLUE",
+	"shape": "FOUR_LEGGED",
+	"height": 0.5,
+	"weight": 9.5,
+	"forms": [
+		{
+			"id": 0
+		}
+	]
 }

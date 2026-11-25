@@ -1,16 +1,16 @@
 {
-  "pokedex_number" : 430,
-  "species" : "HONCHKROW",
-  "category" : "BIG_BOSS",
-  "types" : ["DARK", "FLYING"],
-  "egg_groups" : ["FLYING"],
-  "color" : "BLACK",
-  "shape" : "TWO_WINGS",
-  "height" : 0.9,
-  "weight" : 27.3,
-  "forms" : [
-    {
-      "id" : 0
-    }
-  ]
+	"pokedex_number": 430,
+	"species": "HONCHKROW",
+	"category": "BIG_BOSS",
+	"types": ["DARK", "FLYING"],
+	"egg_groups": ["FLYING"],
+	"color": "BLACK",
+	"shape": "TWO_WINGS",
+	"height": 0.9,
+	"weight": 27.3,
+	"forms": [
+		{
+			"id": 0
+		}
+	]
 }

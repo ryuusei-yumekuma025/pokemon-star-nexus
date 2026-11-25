@@ -5,7 +5,7 @@
 	"types": ["ICE"],
 	"egg_groups": ["MINERAL"],
 	"color": "WHITE",
-	"shape": "HEAD_AND_BASE",
+	"shape": "UPRIGHT_TORSO",
 	"height": 0.4,
 	"weight": 5.7,
 	"forms": [

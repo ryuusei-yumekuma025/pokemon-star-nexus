@@ -1,16 +1,16 @@
 {
-  "pokedex_number" : 426,
-  "species" : "DRIFBLIM",
-  "category" : "BLIMP",
-  "types" : ["GHOST", "FLYING"],
-  "egg_groups" : ["AMORPHOUS"],
-  "color" : "PURPLE",
-  "shape" : "ARM",
-  "height" : 1.2,
-  "weight" : 15.0,
-  "forms" : [
-    {
-      "id" : 0
-    }
-  ]
+	"pokedex_number": 426,
+	"species": "DRIFBLIM",
+	"category": "BLIMP",
+	"types": ["GHOST", "FLYING"],
+	"egg_groups": ["AMORPHOUS"],
+	"color": "PURPLE",
+	"shape": "ARM",
+	"height": 1.2,
+	"weight": 15.0,
+	"forms": [
+		{
+			"id": 0
+		}
+	]
 }

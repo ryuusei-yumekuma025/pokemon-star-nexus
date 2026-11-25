@@ -5,7 +5,7 @@
 	"types": ["NORMAL"],
 	"egg_groups": ["FIELD"],
 	"color": "BROWN",
-	"shape": "QUADRUPED",
+	"shape": "FOUR_LEGGED",
 	"height": 1.6,
 	"weight": 94.6,
 	"forms": [

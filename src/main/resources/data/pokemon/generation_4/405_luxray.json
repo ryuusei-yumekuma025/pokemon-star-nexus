@@ -1,16 +1,16 @@
 {
-  "pokedex_number" : 405,
-  "species" : "LUXRAY",
-  "category" : "GLEAM_EYES",
-  "types" : ["ELECTRIC"],
-  "egg_groups" : ["FIELD"],
-  "color" : "BLUE",
-  "shape" : "FOUR_LEGGED",
-  "height" : 1.4,
-  "weight" : 42.0,
-  "forms" : [
-    {
-      "id" : 0
-    }
-  ]
+	"pokedex_number": 405,
+	"species": "LUXRAY",
+	"category": "GLEAM_EYES",
+	"types": ["ELECTRIC"],
+	"egg_groups": ["FIELD"],
+	"color": "BLUE",
+	"shape": "FOUR_LEGGED",
+	"height": 1.4,
+	"weight": 42.0,
+	"forms": [
+		{
+			"id": 0
+		}
+	]
 }

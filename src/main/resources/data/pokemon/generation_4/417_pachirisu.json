@@ -1,16 +1,16 @@
 {
-  "pokedex_number" : 417,
-  "species" : "PACHIRISU",
-  "category" : "ELESQUIRREL",
-  "types" : ["ELECTRIC"],
-  "egg_groups" : ["FIELD", "FAIRY"],
-  "color" : "WHITE",
-  "shape" : "FOUR_LEGGED",
-  "height" : 0.4,
-  "weight" : 3.9,
-  "forms" : [
-    {
-      "id" : 0
-    }
-  ]
+	"pokedex_number": 417,
+	"species": "PACHIRISU",
+	"category": "ELESQUIRREL",
+	"types": ["ELECTRIC"],
+	"egg_groups": ["FIELD", "FAIRY"],
+	"color": "WHITE",
+	"shape": "FOUR_LEGGED",
+	"height": 0.4,
+	"weight": 3.9,
+	"forms": [
+		{
+			"id": 0
+		}
+	]
 }

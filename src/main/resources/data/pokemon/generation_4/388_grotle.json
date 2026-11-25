@@ -1,16 +1,16 @@
 {
-  "pokedex_number" : 388,
-  "species" : "GROTLE",
-  "category" : "GROVE",
-  "types" : ["GRASS"],
-  "egg_groups" : ["MONSTER", "GRASS"],
-  "color" : "GREEN",
-  "shape" : "FOUR_LEGGED",
-  "height" : 1.1,
-  "weight" : 97.0,
-  "forms" : [
-    {
-      "id" : 0
-    }
-  ]
+	"pokedex_number": 388,
+	"species": "GROTLE",
+	"category": "GROVE",
+	"types": ["GRASS"],
+	"egg_groups": ["MONSTER", "GRASS"],
+	"color": "GREEN",
+	"shape": "FOUR_LEGGED",
+	"height": 1.1,
+	"weight": 97.0,
+	"forms": [
+		{
+			"id": 0
+		}
+	]
 }

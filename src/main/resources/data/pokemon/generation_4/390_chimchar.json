@@ -1,16 +1,16 @@
 {
-  "pokedex_number" : 390,
-  "species" : "CHIMCHAR",
-  "category" : "CHIMP",
-  "types" : ["FIRE"],
-  "egg_groups" : ["FIELD", "HUMAN_LIKE"],
-  "color" : "BROWN",
-  "shape" : "TWO_LEGS_AND_TAIL",
-  "height" : 0.5,
-  "weight" : 6.2,
-  "forms" : [
-    {
-      "id" : 0
-    }
-  ]
+	"pokedex_number": 390,
+	"species": "CHIMCHAR",
+	"category": "CHIMP",
+	"types": ["FIRE"],
+	"egg_groups": ["FIELD", "HUMAN_LIKE"],
+	"color": "BROWN",
+	"shape": "TWO_LEGS_AND_TAIL",
+	"height": 0.5,
+	"weight": 6.2,
+	"forms": [
+		{
+			"id": 0
+		}
+	]
 }

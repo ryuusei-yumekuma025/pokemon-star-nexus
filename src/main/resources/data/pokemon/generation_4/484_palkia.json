@@ -1,23 +1,23 @@
 {
-  "pokedex_number" : 484,
-  "species" : "PALKIA",
-  "category" : "SPATIAL",
-  "types" : ["WATER", "DRAGON"],
-  "egg_groups" : ["NO_EGGS_DISCOVERED"],
-  "color" : "PURPLE",
-  "shape" : "TWO_LEGS_AND_TAIL",
-  "height" : 4.2,
-  "weight" : 336.0,
-  "forms" : [
-    {
-      "id" : 0
-    },
-    {
-      "id" : 1,
-      "code" : "ORIGIN",
-      "shape" : "FOUR_LEGGED",
-      "height" : 6.3,
-      "weight" : 660.0
-    }
-  ]
+	"pokedex_number": 484,
+	"species": "PALKIA",
+	"category": "SPATIAL",
+	"types": ["WATER", "DRAGON"],
+	"egg_groups": ["NO_EGGS_DISCOVERED"],
+	"color": "PURPLE",
+	"shape": "TWO_LEGS_AND_TAIL",
+	"height": 4.2,
+	"weight": 336.0,
+	"forms": [
+		{
+			"id": 0
+		},
+		{
+			"id": 1,
+			"code": "ORIGIN",
+			"shape": "FOUR_LEGGED",
+			"height": 6.3,
+			"weight": 660.0
+		}
+	]
 }

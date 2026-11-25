@@ -1,16 +1,16 @@
 {
-  "pokedex_number" : 392,
-  "species" : "INFERNAPE",
-  "category" : "FLAME",
-  "types" : ["FIRE", "FIGHTING"],
-  "egg_groups" : ["FIELD", "HUMAN_LIKE"],
-  "color" : "BROWN",
-  "shape" : "TWO_LEGS_AND_TAIL",
-  "height" : 1.2,
-  "weight" : 55.0,
-  "forms" : [
-    {
-      "id" : 0
-    }
-  ]
+	"pokedex_number": 392,
+	"species": "INFERNAPE",
+	"category": "FLAME",
+	"types": ["FIRE", "FIGHTING"],
+	"egg_groups": ["FIELD", "HUMAN_LIKE"],
+	"color": "BROWN",
+	"shape": "TWO_LEGS_AND_TAIL",
+	"height": 1.2,
+	"weight": 55.0,
+	"forms": [
+		{
+			"id": 0
+		}
+	]
 }

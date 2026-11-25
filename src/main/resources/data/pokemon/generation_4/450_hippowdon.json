@@ -1,16 +1,16 @@
 {
-  "pokedex_number" : 450,
-  "species" : "HIPPOWDON",
-  "category" : "HEAVYWEIGHT",
-  "types" : ["GROUND"],
-  "egg_groups" : ["FIELD"],
-  "color" : "BROWN",
-  "shape" : "FOUR_LEGGED",
-  "height" : 2.0,
-  "weight" : 300.0,
-  "forms" : [
-    {
-      "id" : 0
-    }
-  ]
+	"pokedex_number": 450,
+	"species": "HIPPOWDON",
+	"category": "HEAVYWEIGHT",
+	"types": ["GROUND"],
+	"egg_groups": ["FIELD"],
+	"color": "BROWN",
+	"shape": "FOUR_LEGGED",
+	"height": 2.0,
+	"weight": 300.0,
+	"forms": [
+		{
+			"id": 0
+		}
+	]
 }

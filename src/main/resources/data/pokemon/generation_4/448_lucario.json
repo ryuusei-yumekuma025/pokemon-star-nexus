@@ -1,24 +1,24 @@
 {
-  "pokedex_number" : 448,
-  "species" : "LUCARIO",
-  "category" : "AURA",
-  "types" : ["FIGHTING", "STEEL"],
-  "egg_groups" : ["FIELD", "HUMAN_LIKE"],
-  "color" : "BLUE",
-  "shape" : "TWO_LEGS_AND_TAIL",
-  "height" : 1.2,
-  "weight" : 54.0,
-  "forms" : [
-    {
-      "id" : 0
-    },
-    {
-      "id" : 1,
-      "code" : "MEGA",
-      "height" : 1.3,
-      "weight" : 57.5,
-      "mega_origin" : 0,
-      "mega_boost" : [35, 18, 25, 0, 22]
-    }
-  ]
+	"pokedex_number": 448,
+	"species": "LUCARIO",
+	"category": "AURA",
+	"types": ["FIGHTING", "STEEL"],
+	"egg_groups": ["FIELD", "HUMAN_LIKE"],
+	"color": "BLUE",
+	"shape": "TWO_LEGS_AND_TAIL",
+	"height": 1.2,
+	"weight": 54.0,
+	"forms": [
+		{
+			"id": 0
+		},
+		{
+			"id": 1,
+			"code": "MEGA",
+			"height": 1.3,
+			"weight": 57.5,
+			"mega_origin": 0,
+			"mega_boost": [35, 18, 25, 0, 22]
+		}
+	]
 }

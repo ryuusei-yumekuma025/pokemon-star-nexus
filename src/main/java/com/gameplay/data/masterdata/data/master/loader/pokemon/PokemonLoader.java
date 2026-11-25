@@ -55,8 +55,12 @@ public final class PokemonLoader {
 			//
 
 			PokemonSpeciesDTO pokemonSpeciesDTO = MAPPER.readValue(json, PokemonSpeciesDTO.class);
-			PokemonSpecies pokemonSpecies = pokemonSpeciesDTO.create();
-			PokemonRegistry.register(pokemonSpecies);
+			try {
+				PokemonSpecies pokemonSpecies = pokemonSpeciesDTO.create();
+				PokemonRegistry.register(pokemonSpecies);
+			} catch (Exception e) {
+				throw new IllegalStateException("Error : " + pokemonPath, e);
+			}
 		} catch (IOException e) {
 			throw new UncheckedIOException("Error : " + pokemonPath, e);
 		}

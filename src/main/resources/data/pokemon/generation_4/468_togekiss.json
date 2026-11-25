@@ -1,16 +1,16 @@
 {
-  "pokedex_number" : 468,
-  "species" : "TOGEKISS",
-  "category" : "JUBILEE",
-  "types" : ["FAIRY", "FLYING"],
-  "egg_groups" : ["FLYING", "FAIRY"],
-  "color" : "WHITE",
-  "shape" : "TWO_WINGS",
-  "height" : 1.5,
-  "weight" : 38.0,
-  "forms" : [
-    {
-      "id" : 0
-    }
-  ]
+	"pokedex_number": 468,
+	"species": "TOGEKISS",
+	"category": "JUBILEE",
+	"types": ["FAIRY", "FLYING"],
+	"egg_groups": ["FLYING", "FAIRY"],
+	"color": "WHITE",
+	"shape": "TWO_WINGS",
+	"height": 1.5,
+	"weight": 38.0,
+	"forms": [
+		{
+			"id": 0
+		}
+	]
 }

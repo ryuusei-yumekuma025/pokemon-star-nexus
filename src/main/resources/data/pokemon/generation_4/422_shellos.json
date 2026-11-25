@@ -1,22 +1,22 @@
 {
-  "pokedex_number" : 422,
-  "species" : "SHELLOS",
-  "category" : "SEA_SLUG",
-  "types" : ["WATER"],
-  "egg_groups" : ["WATER_1", "AMORPHOUS"],
-  "color" : "PURPLE",
-  "shape" : "BELLY_CRAWLING_NO_LEGS",
-  "height" : 0.3,
-  "weight" : 6.3,
-  "forms" : [
-    {
-      "id" : 0,
-      "code" : "WEST"
-    },
-    {
-      "id" : 1,
-      "code" : "EAST",
-      "color" : "BLUE"
-    }
-  ]
+	"pokedex_number": 422,
+	"species": "SHELLOS",
+	"category": "SEA_SLUG",
+	"types": ["WATER"],
+	"egg_groups": ["WATER_1", "AMORPHOUS"],
+	"color": "PURPLE",
+	"shape": "BELLY_CRAWLING_NO_LEGS",
+	"height": 0.3,
+	"weight": 6.3,
+	"forms": [
+		{
+			"id": 0,
+			"code": "WEST"
+		},
+		{
+			"id": 1,
+			"code": "EAST",
+			"color": "BLUE"
+		}
+	]
 }

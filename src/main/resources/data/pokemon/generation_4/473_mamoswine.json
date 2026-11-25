@@ -1,16 +1,16 @@
 {
-  "pokedex_number" : 473,
-  "species" : "MAMOSWINE",
-  "category" : "TWIN_TUSK",
-  "types" : ["ICE", "GROUND"],
-  "egg_groups" : ["FIELD"],
-  "color" : "BROWN",
-  "shape" : "FOUR_LEGGED",
-  "height" : 2.5,
-  "weight" : 291.0,
-  "forms" : [
-    {
-      "id" : 0
-    }
-  ]
+	"pokedex_number": 473,
+	"species": "MAMOSWINE",
+	"category": "TWIN_TUSK",
+	"types": ["ICE", "GROUND"],
+	"egg_groups": ["FIELD"],
+	"color": "BROWN",
+	"shape": "FOUR_LEGGED",
+	"height": 2.5,
+	"weight": 291.0,
+	"forms": [
+		{
+			"id": 0
+		}
+	]
 }
