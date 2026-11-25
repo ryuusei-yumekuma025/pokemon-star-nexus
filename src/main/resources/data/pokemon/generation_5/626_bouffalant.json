@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number": 626,
+	"species": "BOUFFALANT",
+	"category": "BASH_BUFFALO",
+	"types": ["NORMAL"],
+	"egg_groups": ["FIELD"],
+	"color": "BROWN",
+	"shape": "QUADRUPED",
+	"height": 1.6,
+	"weight": 94.6,
+	"forms": [
+		{
+			"id": 0
+		}
+	]
+}

@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number": 580,
+	"species": "DUCKLETT",
+	"category": "WATER_BIRD",
+	"types": ["WATER", "FLYING"],
+	"egg_groups": ["WATER_1", "FLYING"],
+	"color": "BLUE",
+	"shape": "WINGS",
+	"height": 0.5,
+	"weight": 5.5,
+	"forms": [
+		{
+			"id": 0
+		}
+	]
+}

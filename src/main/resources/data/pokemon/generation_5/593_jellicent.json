@@ -1,1 +1,16 @@
-{}
+{
+  "pokedex_number": 593,
+  "species": "JELLICENT",
+  "category": "FLOATING",
+  "types": ["WATER", "GHOST"],
+  "egg_groups": ["AMORPHOUS"],
+  "color": "WHITE",
+  "shape": "MULTI_LEG",
+  "height": 2.2,
+  "weight": 135.0,
+  "forms": [
+    {
+      "id": 0
+    }
+  ]
+}

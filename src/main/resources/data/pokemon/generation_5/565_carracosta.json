@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number": 565,
+	"species": "CARRACOSTA",
+	"category": "PROTOTURTLE",
+	"types": ["WATER", "ROCK"],
+	"egg_groups": ["WATER_1", "WATER_3"],
+	"color": "BLUE",
+	"shape": "TWO_LEGS_AND_TAIL",
+	"height": 1.2,
+	"weight": 81.0,
+	"forms": [
+		{
+			"id": 0
+		}
+	]
+}

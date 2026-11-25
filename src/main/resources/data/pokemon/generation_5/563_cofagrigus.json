@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number": 563,
+	"species": "COFAGRIGUS",
+	"category": "COFFIN",
+	"types": ["GHOST"],
+	"egg_groups": ["MINERAL", "AMORPHOUS"],
+	"color": "YELLOW",
+	"shape": "UPRIGHT_TORSO",
+	"height": 1.7,
+	"weight": 76.5,
+	"forms": [
+		{
+			"id": 0
+		}
+	]
+}

@@ -1,1 +1,22 @@
-{}
+{
+    "pokedex_number": 503,
+    "species": "SAMUROTT",
+    "category": "FORMIDABLE",
+    "types": ["WATER"],
+    "egg_groups": ["FIELD"],
+    "color": "BLUE",
+    "shape": "FOUR_LEGGED",
+    "height": 1.5,
+    "weight": 94.6,
+    "forms": [
+      {
+        "id": 0
+      },
+      {
+        "id": 1,
+        "code": "HISUIAN",
+        "types": ["WATER", "DARK"],
+        "weight": 58.2
+      }
+    ]
+  }

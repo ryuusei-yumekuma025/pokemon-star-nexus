@@ -1,1 +1,16 @@
-{}
+{
+ "pokedex_number": 638,
+ "species": "COBALION",
+ "category": "IRON_WILL",
+ "types": ["STEEL", "FIGHTING"],
+ "egg_groups": ["NO_EGGS_DISCOVERED"],
+ "color": "BLUE",
+ "shape": "FOUR_LEGGED",
+ "height": 2.1,
+ "weight": 250.0,
+ "forms": [
+  {
+   "id": 0
+  }
+ ]
+}

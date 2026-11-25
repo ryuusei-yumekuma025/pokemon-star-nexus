@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number": 566,
+	"species": "ARCHEN",
+	"category": "FIRST_BIRD",
+	"types": ["ROCK", "FLYING"],
+	"egg_groups": ["FLYING", "WATER_3"],
+	"color": "YELLOW",
+	"shape": "TWO_WINGS",
+	"height": 0.5,
+	"weight": 9.5,
+	"forms": [
+		{
+			"id": 0
+		}
+	]
+}

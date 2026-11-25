@@ -1,1 +1,16 @@
-{}
+{
+  "pokedex_number": 591,
+  "species": "AMOONGUSS",
+  "category": "MUSHROOM",
+  "types": ["GRASS", "POISON"],
+  "egg_groups": ["GRASS"],
+  "color": "WHITE",
+  "shape": "UPRIGHT_TORSO",
+  "height": 0.6,
+  "weight": 10.5,
+  "forms": [
+    {
+      "id": 0
+    }
+  ]
+}

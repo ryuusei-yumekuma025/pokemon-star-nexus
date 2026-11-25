@@ -1,1 +1,23 @@
-{}
+{
+	"pokedex_number": 554,
+	"species": "DARUMAKA",
+	"category": "ZEN_CHARM",
+	"types": ["FIRE"],
+	"egg_groups": ["FIELD"],
+	"color": "RED",
+	"shape": "TWO_LEGS_AND_HUMAN_FORM",
+	"height": 0.6,
+	"weight": 37.5,
+	"forms": [
+		{
+			"id": 0
+		},
+		{
+			"id": 1,
+			"code": "GALARIAN",
+			"types": ["ICE"],
+			"height": 0.7,
+			"weight": 40.0
+		}
+	]
+}

@@ -1,1 +1,16 @@
-{}
+{
+  "pokedex_number": 601,
+  "species": "KLINKLANG",
+  "category": "GEAR",
+  "types": ["STEEL"],
+  "egg_groups": ["MINERAL"],
+  "color": "GRAY",
+  "shape": "GATHERING",
+  "height": 0.6,
+  "weight": 81.0,
+  "forms": [
+    {
+      "id": 0
+    }
+  ]
+}

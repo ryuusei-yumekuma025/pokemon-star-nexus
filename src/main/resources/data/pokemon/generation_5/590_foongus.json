@@ -1,1 +1,16 @@
-{}
+{
+  "pokedex_number": 590,
+  "species": "FOONGUS",
+  "category": "MUSHROOM",
+  "types": ["GRASS", "POISON"],
+  "egg_groups": ["GRASS"],
+  "color": "WHITE",
+  "shape": "UPRIGHT_TORSO",
+  "height": 0.2,
+  "weight": 1.0,
+  "forms": [
+    {
+      "id": 0
+    }
+  ]
+}

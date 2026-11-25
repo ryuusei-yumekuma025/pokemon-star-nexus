@@ -1,1 +1,16 @@
-{}
+{
+    "pokedex_number": 495,
+    "species": "SNIVY",
+    "category": "GRASS_SNAKE",
+    "types": ["GRASS"],
+    "egg_groups": ["FIELD", "GRASS"],
+    "color": "GREEN",
+    "shape": "TWO_LEGS_AND_TAIL",
+    "height": 0.6,
+    "weight": 8.1,
+    "forms": [
+      {
+        "id": 0
+      }
+    ]
+  }

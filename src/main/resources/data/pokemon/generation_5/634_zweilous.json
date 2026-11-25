@@ -1,1 +1,16 @@
-{}
+{
+ "pokedex_number": 634,
+ "species": "ZWEILOUS",
+ "category": "HOSTILE",
+ "types": ["DARK", "DRAGON"],
+ "egg_groups": ["DRAGON"],
+ "color": "BLUE",
+ "shape": "FOUR_LEGGED",
+ "height": 1.4,
+ "weight": 50.0,
+ "forms": [
+  {
+   "id": 0
+  }
+ ]
+}

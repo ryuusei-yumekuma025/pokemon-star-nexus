@@ -1,1 +1,16 @@
-{}
+{
+ "pokedex_number": 635,
+ "species": "HYDREIGON",
+ "category": "BRUTAL",
+ "types": ["DARK", "DRAGON"],
+ "egg_groups": ["DRAGON"],
+ "color": "BLUE",
+ "shape": "TWO_LEGS_AND_TAIL",
+ "height": 1.8,
+ "weight": 160.0,
+ "forms": [
+  {
+   "id": 0
+  }
+ ]
+}

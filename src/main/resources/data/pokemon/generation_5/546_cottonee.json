@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number": 546,
+	"species": "COTTONEE",
+	"category": "COTTON_PUFF",
+	"types": ["GRASS", "FAIRY"],
+	"egg_groups": ["GRASS", "FAIRY"],
+	"color": "GREEN",
+	"shape": "ROUND",
+	"height": 0.3,
+	"weight": 0.6,
+	"forms": [
+		{
+			"id": 0
+		}
+	]
+}

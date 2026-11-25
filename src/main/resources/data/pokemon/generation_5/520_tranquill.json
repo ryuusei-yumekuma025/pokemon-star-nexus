@@ -1,1 +1,16 @@
-{}
+{
+    "pokedex_number": 520,
+    "species": "TRANQUILL",
+    "category": "WILD_PIGEON",
+    "types": ["NORMAL", "FLYING"],
+    "egg_groups": ["FLYING"],
+    "color": "GRAY",
+    "shape": "TWO_WINGS",
+    "height": 0.6,
+    "weight": 15.0,
+    "forms": [
+      {
+        "id": 0
+      }
+    ]
+  }

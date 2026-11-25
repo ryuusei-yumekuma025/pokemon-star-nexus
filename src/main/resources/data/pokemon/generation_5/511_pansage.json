@@ -1,1 +1,16 @@
-{}
+{
+    "pokedex_number": 511,
+    "species": "PANSAGE",
+    "category": "GRASS_MONKEY",
+    "types": ["GRASS"],
+    "egg_groups": ["FIELD"],
+    "color": "GREEN",
+    "shape": "GATHERING",
+    "height": 0.6,
+    "weight": 10.5,
+    "forms": [
+      {
+        "id": 0
+      }
+    ]
+  }

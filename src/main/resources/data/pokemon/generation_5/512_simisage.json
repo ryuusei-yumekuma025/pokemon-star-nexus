@@ -1,1 +1,16 @@
-{}
+{
+    "pokedex_number": 512,
+    "species": "SIMISAGE",
+    "category": "THORN_MONKEY",
+    "types": ["GRASS"],
+    "egg_groups": ["FIELD"],
+    "color": "GREEN",
+    "shape": "GATHERING",
+    "height": 1.1,
+    "weight": 30.5,
+    "forms": [
+      {
+        "id": 0
+      }
+    ]
+  }

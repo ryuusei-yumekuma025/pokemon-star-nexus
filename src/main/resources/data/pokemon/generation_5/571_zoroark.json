@@ -1,1 +1,23 @@
-{}
+{
+	"pokedex_number": 571,
+	"species": "ZOROARK",
+	"category": "ILLUSION_FOX",
+	"types": ["DARK"],
+	"egg_groups": ["FIELD"],
+	"color": "GRAY",
+	"shape": "TWO_LEGS_AND_TAIL",
+	"height": 1.6,
+	"weight": 81.1,
+	"forms": [
+		{
+			"id": 0
+		},
+		{
+			"id": 1,
+			"code": "HISUIAN",
+			"category": "BANEFUL_FOX",
+			"types": ["NORMAL", "GHOST"],
+			"weight": 73.0
+		}
+	]
+}

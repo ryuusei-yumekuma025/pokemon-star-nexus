@@ -1,1 +1,22 @@
-{}
+{
+	"pokedex_number": 618,
+	"species": "STUNFISK",
+	"category": "TRAP",
+	"types": ["GROUND", "ELECTRIC"],
+	"egg_groups": ["WATER_1", "AMORPHOUS"],
+	"color": "BROWN",
+	"shape": "FISH",
+	"height": 0.7,
+	"weight": 11.0,
+	"forms": [
+		{
+			"id": 0
+		},
+		{
+			"id": 1,
+			"code": "GALARIAN",
+			"types": ["GROUND", "STEEL"],
+			"weight": 20.5
+		}
+	]
+}

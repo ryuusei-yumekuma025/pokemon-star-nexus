@@ -1,1 +1,16 @@
-{}
+{
+    "pokedex_number": 519,
+    "species": "PIDOVE",
+    "category": "TINY_PIGEON",
+    "types": ["NORMAL", "FLYING"],
+    "egg_groups": ["FLYING"],
+    "color": "GRAY",
+    "shape": "TWO_WINGS",
+    "height": 0.3,
+    "weight": 2.1,
+    "forms": [
+      {
+        "id": 0
+      }
+    ]
+  }

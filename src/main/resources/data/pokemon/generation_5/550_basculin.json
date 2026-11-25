@@ -1,1 +1,26 @@
-{}
+{
+	"pokedex_number": 550,
+	"species": "BASCULIN",
+	"category": "HOSTILE",
+	"types": ["WATER"],
+	"egg_groups": ["WATER_2"],
+	"color": "GREEN",
+	"shape": "FISH",
+	"height": 1.0,
+	"weight": 18.0,
+	"forms": [
+		{
+			"id": 0,
+			"code": "RED_STRIPED"
+		},
+		{
+			"id": 1,
+			"code": "BLUE_STRIPED"
+		},
+		{
+			"id": 2,
+			"code": "WHITE_STRIPED",
+			"category": "MELLOW"
+		}
+	]
+}

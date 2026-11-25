@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number": 553,
+	"species": "KROOKODILE",
+	"category": "INTIMIDATION",
+	"types": ["GROUND", "DARK"],
+	"egg_groups": ["FIELD"],
+	"color": "RED",
+	"shape": "TWO_LEGS_AND_TAIL",
+	"height": 1.5,
+	"weight": 96.3,
+	"forms": [
+		{
+			"id": 0
+		}
+	]
+}

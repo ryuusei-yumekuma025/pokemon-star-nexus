@@ -1,1 +1,16 @@
-{}
+{
+  "pokedex_number": 526,
+  "species": "GIGALITH",
+  "category": "COMPRESSED",
+  "types": ["ROCK"],
+  "egg_groups": ["MINERAL"],
+  "color": "BLUE",
+  "shape": "FOUR_LEGGED",
+  "height": 1.7,
+  "weight": 260.0,
+  "forms": [
+    {
+      "id": 0
+    }
+  ]
+}

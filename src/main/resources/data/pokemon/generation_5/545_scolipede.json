@@ -1,1 +1,24 @@
-{}
+{
+	"pokedex_number": 545,
+	"species": "SCOLIPEDE",
+	"category": "MEGAPEDE",
+	"types": ["BUG", "POISON"],
+	"egg_groups": ["BUG"],
+	"color": "RED",
+	"shape": "MULTI_LEG",
+	"height": 2.5,
+	"weight": 200.5,
+	"forms": [
+		{
+			"id": 0
+		},
+		{
+			"id": 1,
+			"code": "MEGA",
+			"height": 3.2,
+			"weight": 230.5,
+			"mega_origin": 0,
+			"mega_boost": [40, 60, 20, 30, -50]
+		}
+	]
+}

@@ -1,1 +1,16 @@
-{}
+{
+ "pokedex_number": 640,
+ "species": "VIRIZION",
+ "category": "GRASSLAND",
+ "types": ["GRASS", "FIGHTING"],
+ "egg_groups": ["NO_EGGS_DISCOVERED"],
+ "color": "GREEN",
+ "shape": "FOUR_LEGGED",
+ "height": 2.0,
+ "weight": 200.0,
+ "forms": [
+  {
+   "id": 0
+  }
+ ]
+}

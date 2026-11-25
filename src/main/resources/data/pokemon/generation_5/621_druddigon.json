@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number": 621,
+	"species": "DRUDDIGON",
+	"category": "CAVE",
+	"types": ["DRAGON"],
+	"egg_groups": ["DRAGON", "MONSTER"],
+	"color": "RED",
+	"shape": "TWO_LEGS_AND_TAIL",
+	"height": 1.6,
+	"weight": 139.0,
+	"forms": [
+		{
+			"id": 0
+		}
+	]
+}

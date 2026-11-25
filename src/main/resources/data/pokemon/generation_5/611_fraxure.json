@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number": 611,
+	"species": "FRAXURE",
+	"category": "AXE_JAW",
+	"types": ["DRAGON"],
+	"egg_groups": ["MONSTER", "DRAGON"],
+	"color": "GREEN",
+	"shape": "TWO_LEGS_AND_TAIL",
+	"height": 1.0,
+	"weight": 36.0,
+	"forms": [
+		{
+			"id": 0
+		}
+	]
+}

@@ -1,1 +1,16 @@
-{}
+{
+  "pokedex_number": 524,
+  "species": "ROGGENROLA",
+  "category": "MANTLE",
+  "types": ["ROCK"],
+  "egg_groups": ["MINERAL"],
+  "color": "BLUE",
+  "shape": "LEGS",
+  "height": 0.4,
+  "weight": 18.0,
+  "forms": [
+    {
+      "id": 0
+    }
+  ]
+}

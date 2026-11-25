@@ -1,1 +1,25 @@
-{}
+{
+	"pokedex_number": 549,
+	"species": "LILLIGANT",
+	"category": "FLOWERING",
+	"types": ["GRASS"],
+	"egg_groups": ["GRASS"],
+	"color": "GREEN",
+	"shape": "UPRIGHT_TORSO",
+	"height": 1.1,
+	"weight": 16.3,
+	"forms": [
+		{
+			"id": 0
+		},
+		{
+			"id": 1,
+			"code": "HISUIAN",
+			"category": "SPINNING",
+			"types": ["GRASS", "FIGHTING"],
+			"shape": "TWO_LEGS_AND_HUMAN_FORM",
+			"height": 1.2,
+			"weight": 19.2
+		}
+	]
+}

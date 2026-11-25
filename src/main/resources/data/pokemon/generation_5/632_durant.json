@@ -1,1 +1,16 @@
-{}
+{
+ "pokedex_number": 632,
+ "species": "DURANT",
+ "category": "IRON_ANT",
+ "types": ["BUG", "STEEL"],
+ "egg_groups": ["BUG"],
+ "color": "GRAY",
+ "shape": "INSECT",
+ "height": 0.3,
+ "weight": 33.0,
+ "forms": [
+  {
+   "id": 0
+  }
+ ]
+}

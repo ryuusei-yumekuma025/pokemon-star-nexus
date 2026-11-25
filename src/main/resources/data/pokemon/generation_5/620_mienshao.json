@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number": 620,
+	"species": "MIENSHAO",
+	"category": "MARTIAL_ARTS",
+	"types": ["FIGHTING"],
+	"egg_groups": ["FIELD", "HUMAN_LIKE"],
+	"color": "PURPLE",
+	"shape": "TWO_LEGS_AND_TAIL",
+	"height": 1.4,
+	"weight": 35.5,
+	"forms": [
+		{
+			"id": 0
+		}
+	]
+}

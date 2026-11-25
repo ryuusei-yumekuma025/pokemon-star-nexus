@@ -1,1 +1,21 @@
-{}
+{
+	"pokedex_number": 569,
+	"species": "GARBODOR",
+	"category": "TRASH_HEAP",
+	"types": ["POISON"],
+	"egg_groups": ["MINERAL"],
+	"color": "GREEN",
+	"shape": "TWO_LEGS_AND_HUMAN_FORM",
+	"height": 1.9,
+	"weight": 107.3,
+	"forms": [
+		{
+			"id": 0
+		},
+		{
+			"id": 1,
+			"code": "GIGANTAMAX",
+			"height": 21.0
+		}
+	]
+}

@@ -1,1 +1,20 @@
-{}
+{
+ "pokedex_number": 647,
+ "species": "KELDEO",
+ "category": "COLT",
+ "types": ["WATER", "FIGHTING"],
+ "egg_groups": ["NO_EGGS_DISCOVERED"],
+ "color": "YELLOW",
+ "shape": "FOUR_LEGGED",
+ "height": 1.4,
+ "weight": 48.5,
+ "forms": [
+  {
+   "id": 0
+  },
+  {
+   "id": 1,
+   "code": "RESOLUTE"
+  }
+ ]
+}

@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number": 622,
+	"species": "GOLETT",
+	"category": "AUTOMATON",
+	"types": ["GROUND", "GHOST"],
+	"egg_groups": ["MINERAL"],
+	"color": "GREEN",
+	"shape": "TWO_LEGS_AND_HUMAN_FORM",
+	"height": 1.0,
+	"weight": 92.0,
+	"forms": [
+		{
+			"id": 0
+		}
+	]
+}

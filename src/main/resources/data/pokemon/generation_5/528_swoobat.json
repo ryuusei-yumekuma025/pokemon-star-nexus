@@ -1,1 +1,16 @@
-{}
+{
+  "pokedex_number": 528,
+  "species": "SWOOBAT",
+  "category": "COURTING",
+  "types": ["PSYCHIC", "FLYING"],
+  "egg_groups": ["FIELD", "FLYING"],
+  "color": "BLUE",
+  "shape": "TWO_WINGS",
+  "height": 0.9,
+  "weight": 10.5,
+  "forms": [
+    {
+      "id": 0
+    }
+  ]
+}

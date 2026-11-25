@@ -1,1 +1,23 @@
-{}
+{
+	"pokedex_number": 623,
+	"species": "GOLURK",
+	"category": "AUTOMATON",
+	"types": ["GROUND", "GHOST"],
+	"egg_groups": ["MINERAL"],
+	"color": "GREEN",
+	"shape": "TWO_LEGS_AND_HUMAN_FORM",
+	"height": 2.8,
+	"weight": 330.0,
+	"forms": [
+		{
+			"id": 0
+		},
+		{
+			"id": 1,
+			"code": "MEGA",
+			"height": 4.0,
+			"mega_origin": 0,
+			"mega_boost": [35, 25, 15, 25, 0]
+		}
+	]
+}

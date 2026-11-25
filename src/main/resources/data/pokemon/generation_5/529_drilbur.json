@@ -1,1 +1,16 @@
-{}
+{
+  "pokedex_number": 529,
+  "species": "DRILBUR",
+  "category": "MOLE",
+  "types": ["GROUND"],
+  "egg_groups": ["FIELD"],
+  "color": "GRAY",
+  "shape": "BIPEDAL_TAIL",
+  "height": 0.3,
+  "weight": 8.5,
+  "forms": [
+    {
+      "id": 0
+    }
+  ]
+}

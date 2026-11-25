@@ -1,1 +1,16 @@
-{}
+{
+ "pokedex_number": 627,
+ "species": "RUFFLET",
+ "category": "EAGLET",
+ "types": ["NORMAL", "FLYING"],
+ "egg_groups": ["FLYING"],
+ "color": "WHITE",
+ "shape": "TWO_WINGS",
+ "height": 0.5,
+ "weight": 10.5,
+ "forms": [
+  {
+   "id": 0
+  }
+ ]
+}

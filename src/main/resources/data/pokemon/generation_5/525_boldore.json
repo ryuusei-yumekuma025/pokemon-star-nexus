@@ -1,1 +1,16 @@
-{}
+{
+  "pokedex_number": 525,
+  "species": "BOLDORE",
+  "category": "ORE",
+  "types": ["ROCK"],
+  "egg_groups": ["MINERAL"],
+  "color": "BLUE",
+  "shape": "MULTI_LEG",
+  "height": 0.9,
+  "weight": 102.0,
+  "forms": [
+    {
+      "id": 0
+    }
+  ]
+}

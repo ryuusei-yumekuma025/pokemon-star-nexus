@@ -1,1 +1,16 @@
-{}
+{
+  "pokedex_number": 588,
+  "species": "KARRABLAST",
+  "category": "CLAMPING",
+  "types": ["BUG"],
+  "egg_groups": ["BUG"],
+  "color": "BLUE",
+  "shape": "TWO_LEGS_AND_HUMAN_FORM",
+  "height": 0.5,
+  "weight": 5.9,
+  "forms": [
+    {
+      "id": 0
+    }
+  ]
+}

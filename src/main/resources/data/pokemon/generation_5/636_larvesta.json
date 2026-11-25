@@ -1,1 +1,16 @@
-{}
+{
+ "pokedex_number": 636,
+ "species": "LARVESTA",
+ "category": "TORCH",
+ "types": ["BUG", "FIRE"],
+ "egg_groups": ["BUG"],
+ "color": "WHITE",
+ "shape": "INSECT",
+ "height": 1.1,
+ "weight": 28.8,
+ "forms": [
+  {
+   "id": 0
+  }
+ ]
+}

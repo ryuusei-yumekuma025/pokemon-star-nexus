@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number": 619,
+	"species": "MIENFOO",
+	"category": "MARTIAL_ARTS",
+	"types": ["FIGHTING"],
+	"egg_groups": ["FIELD", "HUMAN_LIKE"],
+	"color": "YELLOW",
+	"shape": "TWO_LEGS_AND_TAIL",
+	"height": 0.9,
+	"weight": 20.0,
+	"forms": [
+		{
+			"id": 0
+		}
+	]
+}

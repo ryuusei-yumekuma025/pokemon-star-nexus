@@ -1,1 +1,16 @@
-{}
+{
+ "pokedex_number": 643,
+ "species": "RESHIRAM",
+ "category": "VAST_WHITE",
+ "types": ["DRAGON", "FIRE"],
+ "egg_groups": ["NO_EGGS_DISCOVERED"],
+ "color": "WHITE",
+ "shape": "TWO_WINGS",
+ "height": 3.2,
+ "weight": 330.0,
+ "forms": [
+  {
+   "id": 0
+  }
+ ]
+}

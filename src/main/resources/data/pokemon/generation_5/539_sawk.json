@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number": 539,
+	"species": "SAWK",
+	"category": "KARATE",
+	"types": ["FIGHTING"],
+	"egg_groups": ["HUMAN_LIKE"],
+	"color": "BLUE",
+	"shape": "TWO_LEGS_AND_HUMAN_FORM",
+	"height": 1.4,
+	"weight": 51.0,
+	"forms": [
+		{
+			"id": 0
+		}
+	]
+}
