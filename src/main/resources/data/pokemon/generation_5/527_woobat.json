@@ -1,1 +1,16 @@
-{}
+{
+  "pokedex_number": 527,
+  "species": "WOOBAT",
+  "category": "BAT",
+  "types": ["PSYCHIC", "FLYING"],
+  "egg_groups": ["FIELD", "FLYING"],
+  "color": "BLUE",
+  "shape": "TWO_WINGS",
+  "height": 0.4,
+  "weight": 2.1,
+  "forms": [
+    {
+      "id": 0
+    }
+  ]
+}

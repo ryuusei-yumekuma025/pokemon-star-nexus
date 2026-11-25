@@ -1,1 +1,16 @@
-{}
+{
+  "pokedex_number": 607,
+  "species": "LITWICK",
+  "category": "CANDLE",
+  "types": ["GHOST", "FIRE"],
+  "egg_groups": ["AMORPHOUS"],
+  "color": "WHITE",
+  "shape": "UPRIGHT_TORSO",
+  "height": 0.3,
+  "weight": 3.1,
+  "forms": [
+    {
+      "id": 0
+    }
+  ]
+}

@@ -1,1 +1,16 @@
-{}
+{
+ "pokedex_number": 630,
+ "species": "MANDIBUZZ",
+ "category": "BONE_VULTURE",
+ "types": ["DARK", "FLYING"],
+ "egg_groups": ["FLYING"],
+ "color": "BROWN",
+ "shape": "TWO_WINGS",
+ "height": 1.2,
+ "weight": 39.5,
+ "forms": [
+  {
+   "id": 0
+  }
+ ]
+}

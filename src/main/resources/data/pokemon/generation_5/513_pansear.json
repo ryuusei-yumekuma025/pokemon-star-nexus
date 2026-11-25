@@ -1,1 +1,16 @@
-{}
+{
+    "pokedex_number": 513,
+    "species": "PANSEAR",
+    "category": "HIGH_TEMP",
+    "types": ["FIRE"],
+    "egg_groups": ["FIELD"],
+    "color": "RED",
+    "shape": "GATHERING",
+    "height": 0.6,
+    "weight": 11.0,
+    "forms": [
+      {
+        "id": 0
+      }
+    ]
+  }

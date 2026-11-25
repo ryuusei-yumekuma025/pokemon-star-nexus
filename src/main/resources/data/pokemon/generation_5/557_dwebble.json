@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number": 557,
+	"species": "DWEBBLE",
+	"category": "ROCK_INN",
+	"types": ["BUG", "ROCK"],
+	"egg_groups": ["BUG", "MINERAL"],
+	"color": "RED",
+	"shape": "INSECT",
+	"height": 0.3,
+	"weight": 14.5,
+	"forms": [
+		{
+			"id": 0
+		}
+	]
+}

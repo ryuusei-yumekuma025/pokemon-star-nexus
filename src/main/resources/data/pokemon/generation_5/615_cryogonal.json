@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number": 615,
+	"species": "CRYOGONAL",
+	"category": "CRYSTALLIZING",
+	"types": ["ICE"],
+	"egg_groups": ["MINERAL"],
+	"color": "BLUE",
+	"shape": "ROUND",
+	"height": 1.1,
+	"weight": 148.0,
+	"forms": [
+		{
+			"id": 0
+		}
+	]
+}

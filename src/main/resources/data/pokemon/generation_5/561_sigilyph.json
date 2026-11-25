@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number": 561,
+	"species": "SIGILYPH",
+	"category": "AVIANOID",
+	"types": ["PSYCHIC", "FLYING"],
+	"egg_groups": ["FLYING"],
+	"color": "BLACK",
+	"shape": "WINGS",
+	"height": 1.4,
+	"weight": 14.0,
+	"forms": [
+		{
+			"id": 0
+		}
+	]
+}

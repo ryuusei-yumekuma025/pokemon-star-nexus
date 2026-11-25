@@ -1,1 +1,16 @@
-{}
+{
+  "pokedex_number": 605,
+  "species": "ELGYEM",
+  "category": "CEREBRAL",
+  "types": ["PSYCHIC"],
+  "egg_groups": ["HUMAN_LIKE"],
+  "color": "BLUE",
+  "shape": "LEGS",
+  "height": 0.5,
+  "weight": 9.0,
+  "forms": [
+    {
+      "id": 0
+    }
+  ]
+}

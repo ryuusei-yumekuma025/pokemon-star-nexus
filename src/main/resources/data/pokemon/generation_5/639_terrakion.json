@@ -1,1 +1,16 @@
-{}
+{
+ "pokedex_number": 639,
+ "species": "TERRAKION",
+ "category": "CAVERN",
+ "types": ["ROCK", "FIGHTING"],
+ "egg_groups": ["NO_EGGS_DISCOVERED"],
+ "color": "GRAY",
+ "shape": "FOUR_LEGGED",
+ "height": 1.9,
+ "weight": 260.0,
+ "forms": [
+  {
+   "id": 0
+  }
+ ]
+}

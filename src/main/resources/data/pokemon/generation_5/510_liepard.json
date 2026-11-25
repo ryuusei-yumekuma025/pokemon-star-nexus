@@ -1,1 +1,16 @@
-{}
+{
+    "pokedex_number": 510,
+    "species": "LIEPARD",
+    "category": "CRUEL",
+    "types": ["DARK"],
+    "egg_groups": ["FIELD"],
+    "color": "PURPLE",
+    "shape": "FOUR_LEGGED",
+    "height": 1.1,
+    "weight": 37.5,
+    "forms": [
+      {
+        "id": 0
+      }
+    ]
+  }

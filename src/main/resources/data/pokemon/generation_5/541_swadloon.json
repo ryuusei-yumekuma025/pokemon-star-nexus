@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number": 541,
+	"species": "SWADLOON",
+	"category": "LEAF_WRAPPED",
+	"types": ["BUG", "GRASS"],
+	"egg_groups": ["BUG"],
+	"color": "GREEN",
+	"shape": "ARM",
+	"height": 0.5,
+	"weight": 7.3,
+	"forms": [
+		{
+			"id": 0
+		}
+	]
+}

@@ -1,1 +1,16 @@
-{}
+{
+  "pokedex_number": 583,
+  "species": "VANILLISH",
+  "category": "ICY_SNOW",
+  "types": ["ICE"],
+  "egg_groups": ["MINERAL"],
+  "color": "WHITE",
+  "shape": "UPRIGHT_TORSO",
+  "height": 1.1,
+  "weight": 41.0,
+  "forms": [
+    {
+      "id": 0
+    }
+  ]
+}

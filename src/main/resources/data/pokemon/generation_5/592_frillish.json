@@ -1,1 +1,16 @@
-{}
+{
+  "pokedex_number": 592,
+  "species": "FRILLISH",
+  "category": "FLOATING",
+  "types": ["WATER", "GHOST"],
+  "egg_groups": ["AMORPHOUS"],
+  "color": "WHITE",
+  "shape": "MULTI_LEG",
+  "height": 1.2,
+  "weight": 33.0,
+  "forms": [
+    {
+      "id": 0
+    }
+  ]
+}

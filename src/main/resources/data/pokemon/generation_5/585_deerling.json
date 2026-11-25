@@ -1,1 +1,29 @@
-{}
+{
+  "pokedex_number": 585,
+  "species": "DEERLING",
+  "category": "SEASON",
+  "types": ["NORMAL", "GRASS"],
+  "egg_groups": ["FIELD"],
+  "color": "PINK",
+  "shape": "FOUR_LEGGED",
+  "height": 0.6,
+  "weight": 19.5,
+  "forms": [
+    {
+      "id": 0,
+      "code": "SPRING"
+    },
+    {
+      "id": 1,
+      "code": "SUMMER"
+    },
+    {
+      "id": 2,
+      "code": "AUTUMN"
+    },
+    {
+      "id": 3,
+      "code": "WINTER"
+    }
+  ]
+}

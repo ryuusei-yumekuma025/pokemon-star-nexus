@@ -1,1 +1,16 @@
-{}
+{
+  "pokedex_number": 599,
+  "species": "KLINK",
+  "category": "GEAR",
+  "types": ["STEEL"],
+  "egg_groups": ["MINERAL"],
+  "color": "GRAY",
+  "shape": "GATHERING",
+  "height": 0.3,
+  "weight": 21.0,
+  "forms": [
+    {
+      "id": 0
+    }
+  ]
+}

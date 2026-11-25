@@ -1,1 +1,16 @@
-{}
+{
+  "pokedex_number": 595,
+  "species": "JOLTIK",
+  "category": "ATTACHING",
+  "types": ["BUG", "ELECTRIC"],
+  "egg_groups": ["BUG"],
+  "color": "YELLOW",
+  "shape": "LEGS",
+  "height": 0.1,
+  "weight": 0.6,
+  "forms": [
+    {
+      "id": 0
+    }
+  ]
+}

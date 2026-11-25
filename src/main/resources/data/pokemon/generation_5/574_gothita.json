@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number": 574,
+	"species": "GOTHITA",
+	"category": "FIXATION",
+	"types": ["PSYCHIC"],
+	"egg_groups": ["HUMAN_LIKE"],
+	"color": "PURPLE",
+	"shape": "TWO_LEGS_AND_HUMAN_FORM",
+	"height": 0.4,
+	"weight": 5.8,
+	"forms": [
+		{
+			"id": 0
+		}
+	]
+}

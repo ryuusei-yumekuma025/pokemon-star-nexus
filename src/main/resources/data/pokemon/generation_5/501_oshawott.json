@@ -1,1 +1,16 @@
-{}
+{
+    "pokedex_number": 501,
+    "species": "OSHAWOTT",
+    "category": "SEA_OTTER",
+    "types": ["WATER"],
+    "egg_groups": ["FIELD"],
+    "color": "BLUE",
+    "shape": "TWO_LEGS_AND_TAIL",
+    "height": 0.5,
+    "weight": 5.9,
+    "forms": [
+      {
+        "id": 0
+      }
+    ]
+  }

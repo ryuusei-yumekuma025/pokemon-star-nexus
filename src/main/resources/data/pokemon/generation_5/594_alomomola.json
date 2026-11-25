@@ -1,1 +1,16 @@
-{}
+{
+  "pokedex_number": 594,
+  "species": "ALOMOMOLA",
+  "category": "CARING",
+  "types": ["WATER"],
+  "egg_groups": ["WATER_1", "WATER_2"],
+  "color": "PINK",
+  "shape": "FISH",
+  "height": 1.2,
+  "weight": 31.6,
+  "forms": [
+    {
+      "id": 0
+    }
+  ]
+}

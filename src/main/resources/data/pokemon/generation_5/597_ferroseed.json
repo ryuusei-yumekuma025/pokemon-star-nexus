@@ -1,1 +1,16 @@
-{}
+{
+  "pokedex_number": 597,
+  "species": "FERROSEED",
+  "category": "THORN_SEED",
+  "types": ["GRASS", "STEEL"],
+  "egg_groups": ["GRASS", "MINERAL"],
+  "color": "GRAY",
+  "shape": "ROUND",
+  "height": 0.6,
+  "weight": 18.8,
+  "forms": [
+    {
+      "id": 0
+    }
+  ]
+}

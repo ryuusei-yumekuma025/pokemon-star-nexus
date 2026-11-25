@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number": 559,
+	"species": "SCRAGGY",
+	"category": "SHEDDING",
+	"types": ["DARK", "FIGHTING"],
+	"egg_groups": ["FIELD", "DRAGON"],
+	"color": "YELLOW",
+	"shape": "TWO_LEGS_AND_HUMAN_FORM",
+	"height": 0.6,
+	"weight": 11.8,
+	"forms": [
+		{
+			"id": 0
+		}
+	]
+}

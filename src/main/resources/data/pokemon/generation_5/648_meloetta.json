@@ -1,1 +1,22 @@
-{}
+{
+ "pokedex_number": 648,
+ "species": "MELOETTA",
+ "category": "MELODY",
+ "types": ["NORMAL", "PSYCHIC"],
+ "egg_groups": ["NO_EGGS_DISCOVERED"],
+ "color": "WHITE",
+ "shape": "TWO_LEGS_AND_HUMAN_FORM",
+ "height": 0.6,
+ "weight": 6.5,
+ "forms": [
+  {
+   "id": 0
+  },
+  {
+   "id": 1,
+   "code": "PIROUETTE",
+   "types": ["NORMAL", "FIGHTING"],
+   "stat_boost": [51, 13, -51, -51, 38]
+  }
+ ]
+}

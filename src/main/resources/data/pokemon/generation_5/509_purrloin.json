@@ -1,1 +1,16 @@
-{}
+{
+    "pokedex_number": 509,
+    "species": "PURRLOIN",
+    "category": "DEVIOUS",
+    "types": ["DARK"],
+    "egg_groups": ["FIELD"],
+    "color": "PURPLE",
+    "shape": "FOUR_LEGGED",
+    "height": 0.4,
+    "weight": 10.1,
+    "forms": [
+      {
+        "id": 0
+      }
+    ]
+  }

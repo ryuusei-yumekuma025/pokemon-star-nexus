@@ -1,1 +1,16 @@
-{}
+{
+  "pokedex_number": 603,
+  "species": "EELEKTRIK",
+  "category": "ELEFISH",
+  "types": ["ELECTRIC"],
+  "egg_groups": ["AMORPHOUS"],
+  "color": "BLUE",
+  "shape": "FIN",
+  "height": 1.2,
+  "weight": 22.0,
+  "forms": [
+    {
+      "id": 0
+    }
+  ]
+}

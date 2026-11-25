@@ -1,1 +1,16 @@
-{}
+{
+ "pokedex_number": 629,
+ "species": "VULLABY",
+ "category": "DIAPERED",
+ "types": ["DARK", "FLYING"],
+ "egg_groups": ["FLYING"],
+ "color": "BROWN",
+ "shape": "TWO_WINGS",
+ "height": 0.5,
+ "weight": 9.0,
+ "forms": [
+  {
+   "id": 0
+  }
+ ]
+}

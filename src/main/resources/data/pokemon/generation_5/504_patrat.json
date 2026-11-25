@@ -1,1 +1,16 @@
-{}
+{
+    "pokedex_number": 504,
+    "species": "PATRAT",
+    "category": "SCOUT",
+    "types": ["NORMAL"],
+    "egg_groups": ["FIELD"],
+    "color": "BROWN",
+    "shape": "UPRIGHT_TORSO",
+    "height": 0.5,
+    "weight": 11.6,
+    "forms": [
+      {
+        "id": 0
+      }
+    ]
+  }

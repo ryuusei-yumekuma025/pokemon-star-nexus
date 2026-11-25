@@ -1,1 +1,16 @@
-{}
+{
+  "pokedex_number": 602,
+  "species": "TYNAMO",
+  "category": "ELEFISH",
+  "types": ["ELECTRIC"],
+  "egg_groups": ["AMORPHOUS"],
+  "color": "WHITE",
+  "shape": "FIN",
+  "height": 0.2,
+  "weight": 0.3,
+  "forms": [
+    {
+      "id": 0
+    }
+  ]
+}

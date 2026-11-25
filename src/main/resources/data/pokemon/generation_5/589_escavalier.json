@@ -1,1 +1,16 @@
-{}
+{
+  "pokedex_number": 589,
+  "species": "ESCAVALIER",
+  "category": "CAVALRY",
+  "types": ["BUG", "STEEL"],
+  "egg_groups": ["BUG"],
+  "color": "GRAY",
+  "shape": "ARM",
+  "height": 1.0,
+  "weight": 33.0,
+  "forms": [
+    {
+      "id": 0
+    }
+  ]
+}

@@ -1,1 +1,23 @@
-{}
+{
+ "pokedex_number": 641,
+ "species": "TORNADUS",
+ "category": "CYCLONE",
+ "types": ["FLYING"],
+ "egg_groups": ["NO_EGGS_DISCOVERED"],
+ "color": "GREEN",
+ "shape": "TWO_LEGS_AND_HUMAN_FORM",
+ "height": 1.5,
+ "weight": 63.0,
+ "forms": [
+  {
+   "id": 0
+  },
+  {
+   "id": 1,
+   "code": "THERIAN",
+   "shape": "TWO_WINGS",
+   "height": 1.4,
+   "stat_boost": [-15, 10, -15, 10, 10]
+  }
+ ]
+}

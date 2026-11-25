@@ -1,1 +1,16 @@
-{}
+{
+  "pokedex_number": 598,
+  "species": "FERROTHORN",
+  "category": "THORN_POD",
+  "types": ["GRASS", "STEEL"],
+  "egg_groups": ["GRASS", "MINERAL"],
+  "color": "GRAY",
+  "shape": "MULTI_LEG",
+  "height": 1.0,
+  "weight": 110.0,
+  "forms": [
+    {
+      "id": 0
+    }
+  ]
+}

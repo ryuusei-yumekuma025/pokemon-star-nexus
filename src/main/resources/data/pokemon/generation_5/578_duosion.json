@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number": 578,
+	"species": "DUOSION",
+	"category": "MITOSIS",
+	"types": ["PSYCHIC"],
+	"egg_groups": ["AMORPHOUS"],
+	"color": "GREEN",
+	"shape": "ROUND",
+	"height": 0.6,
+	"weight": 8.0,
+	"forms": [
+		{
+			"id": 0
+		}
+	]
+}

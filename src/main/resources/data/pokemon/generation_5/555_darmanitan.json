@@ -1,1 +1,38 @@
-{}
+{
+	"pokedex_number": 555,
+	"species": "DARMANITAN",
+	"category": "BLAZING",
+	"types": ["FIRE"],
+	"egg_groups": ["FIELD"],
+	"color": "RED",
+	"shape": "TWO_LEGS_AND_HUMAN_FORM",
+	"height": 1.3,
+	"weight": 92.9,
+	"forms": [
+		{
+			"id": 0,
+			"code": "STANDARD_MODE"
+		},
+		{
+			"id": 1,
+			"code": "ZEN_MODE",
+			"types": ["FIRE", "PSYCHIC"]
+		},
+		{
+			"id": 2,
+			"code": "GALARIAN_STANDARD_MODE",
+			"category": "ZEN_CHARM",
+			"types": ["ICE"],
+			"height": 1.7,
+			"weight": 120.0
+		},
+		{
+			"id": 3,
+			"code": "GALARIAN_ZEN_MODE",
+			"category": "ZEN_CHARM",
+			"types": ["ICE", "FIRE"],
+			"height": 1.7,
+			"weight": 120.0
+		}
+	]
+}

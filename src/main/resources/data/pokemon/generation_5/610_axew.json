@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number": 610,
+	"species": "AXEW",
+	"category": "TUSK",
+	"types": ["DRAGON"],
+	"egg_groups": ["MONSTER", "DRAGON"],
+	"color": "GREEN",
+	"shape": "TWO_LEGS_AND_TAIL",
+	"height": 0.6,
+	"weight": 18.0,
+	"forms": [
+		{
+			"id": 0
+		}
+	]
+}

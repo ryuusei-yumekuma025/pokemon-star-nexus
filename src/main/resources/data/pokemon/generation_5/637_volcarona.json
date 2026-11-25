@@ -1,1 +1,16 @@
-{}
+{
+ "pokedex_number": 637,
+ "species": "VOLCARONA",
+ "category": "SUN",
+ "types": ["BUG", "FIRE"],
+ "egg_groups": ["BUG"],
+ "color": "WHITE",
+ "shape": "FOUR_WINGS",
+ "height": 1.6,
+ "weight": 46.0,
+ "forms": [
+  {
+   "id": 0
+  }
+ ]
+}

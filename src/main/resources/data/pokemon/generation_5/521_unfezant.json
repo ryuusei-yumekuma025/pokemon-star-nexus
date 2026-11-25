@@ -1,1 +1,16 @@
-{}
+{
+    "pokedex_number": 521,
+    "species": "UNFEZANT",
+    "category": "PROUD",
+    "types": ["NORMAL", "FLYING"],
+    "egg_groups": ["FLYING"],
+    "color": "GRAY",
+    "shape": "TWO_WINGS",
+    "height": 1.2,
+    "weight": 29.0,
+    "forms": [
+      {
+        "id": 0
+      }
+    ]
+  }

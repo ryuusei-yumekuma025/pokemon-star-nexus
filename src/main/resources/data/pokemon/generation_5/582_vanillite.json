@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number": 582,
+	"species": "VANILLITE",
+	"category": "FRESH_SNOW",
+	"types": ["ICE"],
+	"egg_groups": ["MINERAL"],
+	"color": "WHITE",
+	"shape": "HEAD_AND_BASE",
+	"height": 0.4,
+	"weight": 5.7,
+	"forms": [
+		{
+			"id": 0
+		}
+	]
+}

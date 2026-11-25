@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number": 551,
+	"species": "SANDILE",
+	"category": "DESERT_CROC",
+	"types": ["GROUND", "DARK"],
+	"egg_groups": ["FIELD"],
+	"color": "BROWN",
+	"shape": "FOUR_LEGGED",
+	"height": 0.7,
+	"weight": 15.2,
+	"forms": [
+		{
+			"id": 0
+		}
+	]
+}

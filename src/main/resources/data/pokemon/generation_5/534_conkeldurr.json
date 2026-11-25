@@ -1,1 +1,16 @@
-{}
+{
+	"pokedex_number": 534,
+	"species": "CONKELDURR",
+	"category": "MUSCULAR",
+	"types": ["FIGHTING"],
+	"egg_groups": ["HUMAN_LIKE"],
+	"color": "BROWN",
+	"shape": "TWO_LEGS_AND_HUMAN_FORM",
+	"height": 1.4,
+	"weight": 87.0,
+	"forms": [
+		{
+			"id": 0
+		}
+	]
+}

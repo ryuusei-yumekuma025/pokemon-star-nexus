@@ -1,1 +1,28 @@
-{}
+{
+ "pokedex_number": 646,
+ "species": "KYUREM",
+ "category": "BOUNDARY",
+ "types": ["DRAGON", "ICE"],
+ "egg_groups": ["NO_EGGS_DISCOVERED"],
+ "color": "GRAY",
+ "shape": "TWO_WINGS",
+ "height": 3.0,
+ "weight": 325.0,
+ "forms": [
+  {
+   "id": 0
+  },
+  {
+   "id": 1,
+   "code": "WHITE",
+   "height": 3.6,
+   "stat_boost": [-10, 0, 40, 10, 0]
+  },
+  {
+   "id": 2,
+   "code": "BLACK",
+   "height": 3.3,
+   "stat_boost": [40, 10, -10, 0, 0]
+  }
+ ]
+}

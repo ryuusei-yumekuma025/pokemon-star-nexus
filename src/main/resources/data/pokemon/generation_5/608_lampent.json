@@ -1,1 +1,16 @@
-{}
+{
+  "pokedex_number": 608,
+  "species": "LAMPENT",
+  "category": "LAMP",
+  "types": ["GHOST", "FIRE"],
+  "egg_groups": ["AMORPHOUS"],
+  "color": "BLACK",
+  "shape": "ARM",
+  "height": 0.6,
+  "weight": 13.0,
+  "forms": [
+    {
+      "id": 0
+    }
+  ]
+}

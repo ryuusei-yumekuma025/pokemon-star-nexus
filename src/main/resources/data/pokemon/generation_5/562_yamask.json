@@ -1,1 +1,21 @@
-{}
+{
+	"pokedex_number": 562,
+	"species": "YAMASK",
+	"category": "SPIRIT",
+	"types": ["GHOST"],
+	"egg_groups": ["MINERAL", "AMORPHOUS"],
+	"color": "BLACK",
+	"shape": "ARM",
+	"height": 0.5,
+	"weight": 1.5,
+	"forms": [
+		{
+			"id": 0
+		},
+		{
+			"id": 1,
+			"code": "GALARIAN",
+			"types": ["GROUND", "GHOST"]
+		}
+	]
+}
