@@ -42,6 +42,7 @@
 			"id" : 0,
 			"code" : "BASE",
 			"pokemon_form" : "TYPHLOSION",
+			"base_stat" : [721, 183, 190, 342, 192, 437],
 			"moveset" : [
 				"PM/FLAMETHROWER",
 				"RM/BLAZING_SOUL_ERUPTION",

@@ -8,6 +8,7 @@ import com.gameplay.data.masterdata.template.unit.phase.StarBattleState;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class BattlePokemon {
 
@@ -85,6 +86,37 @@ public class BattlePokemon {
 		return maxHP;
 	}
 
+	public double getHPPercentage() {
+		return (double) currentHP / maxHP;
+	}
+
+	public int takeDamage(int damage) {
+		if (damage <= 0) {
+			return 0;
+		}
+
+		int damageDealt = Math.min(this.currentHP, damage);
+
+		this.currentHP -= damageDealt;
+
+		if (isFainted()) {
+			removeStatusCondition();
+		}
+
+		return damageDealt;
+	}
+
+	public int restoreHP(int healAmount) {
+		if (healAmount <= 0 || isFainted() || this.currentHP == this.maxHP) {
+			return 0;
+		}
+
+		int healed = Math.min(this.maxHP - this.currentHP, healAmount);
+		this.currentHP += healed;
+
+		return healed;
+	}
+
 	/*------------------------------------------------------------------------------------------------------------------
 	.	Status																											*/
 
@@ -98,4 +130,42 @@ public class BattlePokemon {
 	public StatusCondition getStatusCondition() {
 		return statusCondition;
 	}
+
+	public boolean affectedByStatusCondition() {
+		return statusCondition != StatusCondition.NONE;
+	}
+
+	public int getAsleepTurn() {
+		if (statusCondition == StatusCondition.SLEEP) {
+			return sleepRemainingTurn;
+		}
+		return 0;
+	}
+
+	public boolean getInflictedWith(StatusCondition statusCondition) {
+		if (statusCondition == null || statusCondition == StatusCondition.NONE || this.statusCondition != StatusCondition.NONE) {
+			return false;
+		}
+
+		this.statusCondition = statusCondition;
+		if (this.statusCondition == StatusCondition.SLEEP) {
+			this.sleepRemainingTurn = ThreadLocalRandom.current().nextInt(1, 4);
+		}
+
+		return true;
+	}
+
+	public boolean removeStatusCondition() {
+		if (this.statusCondition == StatusCondition.NONE) {
+			return false;
+		}
+
+		this.statusCondition = StatusCondition.NONE;
+		this.sleepRemainingTurn = 0;
+
+		return true;
+	}
+
+	/*------------------------------------------------------------------------------------------------------------------
+	.	Turn																											*/
 }

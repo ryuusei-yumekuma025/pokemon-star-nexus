@@ -1,4 +1,4 @@
-package com.gameplay.battle.entity.field;
+package com.gameplay.battle.entity.field.entire;
 
 import com.gameplay.data.masterdata.attribute.battle.field.entire.Room;
 

@@ -13,6 +13,7 @@ public class PlayProfile {
 	private final UUID trainerId;
 	private String profileName;
 	private final Instant createTime;
+
 	private final OwnedStarPartnerCollection ownedStarPartnerCollection;
 	private final TeamPresetStorage teamPresetStorage;
 

@@ -12,9 +12,16 @@ import java.util.Map;
 
 public class BattleTrainer {
 
+	/*------------------------------------------------------------------------------------------------------------------
+	1.	Fields																											*/
+
 	private final BattleUnit battleUnit;
 	private final Trainer partnerTrainer;
 	private final Map<String, Integer> tacticPointTracker;
+	private final Map<String, Integer> maxTacticPoint;
+
+	/*------------------------------------------------------------------------------------------------------------------
+																														*/
 
 	protected BattleTrainer(BattleUnit battleUnit, Trainer trainer, List<TacticMove> tacticMoveList, List<Move> moveset) {
 		this.battleUnit = battleUnit;
@@ -32,8 +39,12 @@ public class BattleTrainer {
 			}
 		}
 
-		this.tacticPointTracker = Collections.unmodifiableMap(tacticPointTracker);
+		this.maxTacticPoint = Collections.unmodifiableMap(tacticPointTracker);
+		this.tacticPointTracker = new HashMap<>(this.maxTacticPoint);
 	}
+
+	/*------------------------------------------------------------------------------------------------------------------
+																														*/
 
 	public BattleUnit getBattleUnit() {
 		return battleUnit;
@@ -44,11 +55,18 @@ public class BattleTrainer {
 	}
 
 	public Map<String, Integer> getTacticPointTracker() {
-		return tacticPointTracker;
+		return Collections.unmodifiableMap(tacticPointTracker);
+	}
+
+	public Map<String, Integer> getMaxTacticPoint() {
+		return maxTacticPoint;
 	}
 
 	public int getTacticPoint(TacticMove move) {
-		return tacticPointTracker.get(move.getMoveCode());
+		if (move == null) {
+			return -1;
+		}
+		return tacticPointTracker.getOrDefault(move.getMoveCode(), -1);
 	}
 
 	public int getTacticPoint(String moveCode) {
@@ -58,6 +76,9 @@ public class BattleTrainer {
 		moveCode = StringUtils.upperSnakeCase(moveCode);
 		return tacticPointTracker.get(moveCode);
 	}
+
+	/*------------------------------------------------------------------------------------------------------------------
+																														*/
 
 	public boolean performMove(TacticMove tacticMove) {
 		if (tacticMove == null) {
@@ -75,5 +96,26 @@ public class BattleTrainer {
 		tacticPointTracker.put(code, points - 1);
 
 		return true;
+	}
+
+	public int restoreTacticPoint(TacticMove tacticMove, int restoredAmount) {
+		if (restoredAmount <= 0 || tacticMove == null) {
+			return 0;
+		}
+
+		String code = tacticMove.getMoveCode();
+		Integer current = tacticPointTracker.get(code);
+		if (current == null) {
+			return 0;
+		}
+
+		int restored = Math.min(maxTacticPoint.get(code) - current, restoredAmount);
+		tacticPointTracker.put(code, current + restored);
+
+		return restored;
+	}
+
+	public void fullyRestoreAllTacticMove() {
+		tacticPointTracker.putAll(this.maxTacticPoint);
 	}
 }

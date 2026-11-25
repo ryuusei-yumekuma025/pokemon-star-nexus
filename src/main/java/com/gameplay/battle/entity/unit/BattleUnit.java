@@ -31,6 +31,7 @@ public class BattleUnit {
 	private int syncEther;
 	private int maxSyncEther;
 
+	private final List<Move> starMapMoveset;
 	private List<Move> moveset;
 
 	/*------------------------------------------------------------------------------------------------------------------
@@ -56,7 +57,7 @@ public class BattleUnit {
 
 		this.moveset = new ArrayList<>();
 		this.moveset.addAll(this.currentBattleState.getMoveset());
-		this.moveset.addAll(moveset);
+		this.starMapMoveset = List.copyOf(moveset);
 	}
 
 	public BattleUnit(int slot, boolean isAlly, OwnedStarPartner<?> ownedStarPartner) {
@@ -166,25 +167,25 @@ public class BattleUnit {
 		return maxSyncEther;
 	}
 
-	public boolean consumeSyncEther(int syncEther) {
+	public int consumeSyncEther(int syncEther) {
 		if (syncEther <= 0 || this.syncEther < syncEther) {
-			return false;
+			return 0;
 		}
 
 		int currentSyncEther = this.syncEther;
 		this.syncEther = currentSyncEther - syncEther;
 
-		return true;
+		return syncEther;
 	}
 
-	public boolean restoreSyncEther(int syncEther) {
+	public int restoreSyncEther(int syncEther) {
 		if (syncEther <= 0 || this.syncEther == this.maxSyncEther) {
-			return false;
+			return 0;
 		}
 
 		int currentSyncEther = this.syncEther;
 		this.syncEther = Math.min(maxSyncEther, currentSyncEther + syncEther);
 
-		return true;
+		return this.syncEther - currentSyncEther;
 	}
 }

@@ -6,4 +6,5 @@ public final class EnergyConfig {
 
 	public static int BASE_MAX_SYNC_ETHER = 100;
 
+	public static int MAX_MEGA_POWER = 50;
 }
