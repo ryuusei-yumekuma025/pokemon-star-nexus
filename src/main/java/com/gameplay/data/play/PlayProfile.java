@@ -1,6 +1,7 @@
 package com.gameplay.data.play;
 
 import com.gameplay.data.play.collection.ownedstarpartner.OwnedStarPartnerCollection;
+import com.gameplay.data.play.collection.teampreset.TeamPresetStorage;
 
 import java.time.Instant;
 import java.time.ZoneId;
@@ -13,12 +14,14 @@ public class PlayProfile {
 	private String profileName;
 	private final Instant createTime;
 	private final OwnedStarPartnerCollection ownedStarPartnerCollection;
+	private final TeamPresetStorage teamPresetStorage;
 
 	public PlayProfile(String profileName) {
 		this.trainerId = UUID.randomUUID();
 		this.profileName = profileName;
 		this.createTime = Instant.now();
 		this.ownedStarPartnerCollection = new OwnedStarPartnerCollection();
+		this.teamPresetStorage = new TeamPresetStorage();
 	}
 
 	public UUID getTrainerId() {
@@ -55,5 +58,9 @@ public class PlayProfile {
 
 	public OwnedStarPartnerCollection getOwnedStarPartnerCollection() {
 		return ownedStarPartnerCollection;
+	}
+
+	public TeamPresetStorage getTeamPresetStorage() {
+		return teamPresetStorage;
 	}
 }
