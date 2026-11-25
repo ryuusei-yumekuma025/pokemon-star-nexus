@@ -13,16 +13,19 @@ public record StarBattlePhaseDTO(
 		int phase,
 		@JsonProperty("code")
 		String code,
+		@JsonProperty("default")
+		Integer defaultState,
 		@JsonProperty("states")
 		List<StarBattleStateDTO> starBattleStateDTOList
 ) {
 	public StarBattlePhaseDTO {
 		code = StringUtils.requireUpperSnakeCase(code, "Phase Code");
+		defaultState = (defaultState != null) ? defaultState : 0;
 		starBattleStateDTOList = (starBattleStateDTOList != null) ? List.copyOf(starBattleStateDTOList) : List.of();
 	}
 
 	public StarBattlePhase create() {
-		StarBattlePhase.Builder builder = new StarBattlePhase.Builder(phase, code);
+		StarBattlePhase.Builder builder = new StarBattlePhase.Builder(phase, code, defaultState);
 
 		for (StarBattleStateDTO starBattleStateDTO : starBattleStateDTOList) {
 			builder.addState(starBattleStateDTO.create());

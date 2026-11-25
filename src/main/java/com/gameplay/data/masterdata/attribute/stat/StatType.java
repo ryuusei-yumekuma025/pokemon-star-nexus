@@ -13,4 +13,8 @@ public enum StatType {
 	public boolean canModify() {
 		return this != HP;
 	}
+
+	public boolean isBaseStat() {
+		return this != ACCURACY && this != EVASIVENESS;
+	}
 }

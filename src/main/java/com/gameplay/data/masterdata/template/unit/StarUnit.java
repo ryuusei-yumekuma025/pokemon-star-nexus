@@ -1,6 +1,8 @@
 package com.gameplay.data.masterdata.template.unit;
 
 import com.gameplay.data.masterdata.data.master.registry.trainer.TrainerRegistry;
+import com.gameplay.data.masterdata.template.move.Move;
+import com.gameplay.data.masterdata.template.move.tactic.TacticMove;
 import com.gameplay.data.masterdata.template.trainer.Trainer;
 import com.gameplay.data.masterdata.template.unit.phase.StarBattlePhase;
 import com.gameplay.data.masterdata.template.unit.phase.StarBattleState;
@@ -8,8 +10,7 @@ import com.gameplay.data.masterdata.template.unit.starjewel.StarJewel;
 import com.utils.IdCodeKeyMap;
 import com.utils.StringUtils;
 
-import java.util.Collection;
-import java.util.List;
+import java.util.*;
 
 public abstract class StarUnit<T extends Trainer, SJ extends StarJewel> {
 
@@ -80,6 +81,20 @@ public abstract class StarUnit<T extends Trainer, SJ extends StarJewel> {
 		return starBattlePhases.getAll();
 	}
 
+	public Collection<TacticMove> getAllTacticMoves() {
+		Set<TacticMove> tacticMoves = new LinkedHashSet<>();
+		for (StarBattlePhase starBattlePhase : getAllPhases()) {
+			for (StarBattleState starBattleState : starBattlePhase.getAllStates()) {
+				for (Move move : starBattleState.getMoveset()) {
+					if (move instanceof TacticMove tacticMove) {
+						tacticMoves.add(tacticMove);
+					}
+				}
+			}
+		}
+		return Collections.unmodifiableSet(tacticMoves);
+	}
+
 	/*------------------------------------------------------------------------------------------------------------------
 	4.	Builder																											*/
 
@@ -91,7 +106,7 @@ public abstract class StarUnit<T extends Trainer, SJ extends StarJewel> {
 		private SJ starJewel;
 		private final IdCodeKeyMap.Builder<Integer, StarBattlePhase> starBattlePhases = new IdCodeKeyMap.Builder<>();
 		private boolean hasMultiPhase = false;
-		private StarBattlePhase.Builder nonPhase = new StarBattlePhase.Builder(0, "BASE");
+		private StarBattlePhase.Builder nonPhase = new StarBattlePhase.Builder(0, "BASE", 0);
 
 		protected Builder(String starUnitId, String starUnitCode, String trainerCode, Class<T> trainerType) {
 			this.starUnitId = StringUtils.upperSnakeCase(starUnitId);

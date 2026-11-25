@@ -7,6 +7,7 @@ import com.gameplay.data.masterdata.data.master.registry.move.tactic.TrainerMove
 import com.gameplay.data.masterdata.data.master.registry.pokemon.PokemonRegistry;
 import com.gameplay.data.masterdata.template.move.Move;
 import com.gameplay.data.masterdata.template.pokemon.form.PokemonForm;
+import com.gameplay.data.masterdata.template.unit.BaseStat;
 import com.utils.StringUtils;
 
 import java.util.ArrayList;
@@ -21,6 +22,7 @@ public class StarBattleState {
 	private final String stateCode;
 	private final PokemonForm pokemonForm;
 	private final List<Move> moveset;
+	private final BaseStat unitBaseStat;
 
 	/*------------------------------------------------------------------------------------------------------------------
 	2.	Constructor																										*/
@@ -30,6 +32,7 @@ public class StarBattleState {
 		this.stateCode = builder.stateCode;
 		this.pokemonForm = builder.pokemonForm;
 		this.moveset = List.copyOf(builder.moveset);
+		this.unitBaseStat = builder.unitBaseStat;
 	}
 
 	/*------------------------------------------------------------------------------------------------------------------
@@ -59,6 +62,10 @@ public class StarBattleState {
 		return moveClass.cast(getMove(slot));
 	}
 
+	public BaseStat getUnitBaseStat() {
+		return unitBaseStat;
+	}
+
 	/*------------------------------------------------------------------------------------------------------------------
 	4.	Builder																											*/
 
@@ -67,6 +74,7 @@ public class StarBattleState {
 		private final String stateCode;
 		private final PokemonForm pokemonForm;
 		private final List<Move> moveset = new ArrayList<>();
+		private BaseStat unitBaseStat;
 
 		public Builder(int stateId, String stateCode, String pokemonForm) {
 			this.stateId = stateId;
@@ -91,6 +99,11 @@ public class StarBattleState {
 					}
 				}
 			}
+			return this;
+		}
+
+		public Builder setBaseStat(List<Integer> baseStat) {
+			this.unitBaseStat = new BaseStat(baseStat);
 			return this;
 		}
 

@@ -1,5 +1,7 @@
 package com.gameplay.data.play.collection.ownedstarpartner;
 
+import com.gameplay.battle.entity.unit.instance.UnitInstance;
+import com.gameplay.battle.entity.unit.stat.StatTracker;
 import com.gameplay.data.masterdata.data.config.StarPartnerLevelConfig;
 import com.gameplay.data.masterdata.template.move.Move;
 import com.gameplay.data.masterdata.template.unit.type.playable.PlayableStarPartner;
@@ -11,7 +13,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
-public abstract class OwnedStarPartner<SP extends PlayableStarPartner> {
+public abstract class OwnedStarPartner<SP extends PlayableStarPartner> implements UnitInstance {
 
 	private final String instanceId;
 	private final SP starPartner;
@@ -32,11 +34,13 @@ public abstract class OwnedStarPartner<SP extends PlayableStarPartner> {
 		this.moveset = new ArrayList<>();
 	}
 
+	@Override
 	public String getInstanceId() {
 		return instanceId;
 	}
 
-	public SP getStarPartner() {
+	@Override
+	public SP getStarUnit() {
 		return starPartner;
 	}
 
@@ -54,6 +58,7 @@ public abstract class OwnedStarPartner<SP extends PlayableStarPartner> {
 		return dateTimeFormatter.format(uniteTime);
 	}
 
+	@Override
 	public int getLevel() {
 		return level;
 	}
@@ -96,6 +101,10 @@ public abstract class OwnedStarPartner<SP extends PlayableStarPartner> {
 		if (level >= getLevelCap()) {
 			currentEXP = 0;
 		}
+	}
+
+	public List<Move> getMoveset() {
+		return moveset;
 	}
 
 	public boolean addMove(Move move) {
