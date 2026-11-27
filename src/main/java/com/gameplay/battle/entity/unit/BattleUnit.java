@@ -1,20 +1,24 @@
 package com.gameplay.battle.entity.unit;
 
+import com.gameplay.battle.entity.unit.action.ActionInterval;
 import com.gameplay.battle.entity.unit.instance.UnitInstance;
+import com.gameplay.data.masterdata.attribute.stat.StatType;
 import com.gameplay.data.masterdata.content.EnemyInstance;
 import com.gameplay.data.masterdata.data.config.EnergyConfig;
 import com.gameplay.data.masterdata.template.move.Move;
+import com.gameplay.data.masterdata.template.move.tactic.TacticMove;
 import com.gameplay.data.masterdata.template.unit.phase.StarBattlePhase;
 import com.gameplay.data.masterdata.template.unit.phase.StarBattleState;
 import com.gameplay.data.play.collection.ownedstarpartner.OwnedStarPartner;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class BattleUnit {
 
 	/*------------------------------------------------------------------------------------------------------------------
-	1.	Fields																											*/
+																														*/
 
 	private final String battleId;
 	private final String instanceId;
@@ -26,38 +30,42 @@ public class BattleUnit {
 	private StarBattlePhase currentBattlePhase;
 	private StarBattleState currentBattleState;
 
+	private final ActionInterval actionInterval;
+
 	private int stardust;
 
 	private int syncEther;
 	private int maxSyncEther;
 
-	private final List<Move> starMapMoveset;
+	private final List<Move> baseMoveset;
 	private List<Move> moveset;
 
 	/*------------------------------------------------------------------------------------------------------------------
-	2.	Constructor																										*/
+																														*/
 
 	public BattleUnit(int slot, boolean isAlly, UnitInstance unitInstance, List<Move> moveset) {
 		this.battleId = ((isAlly) ? "AS_" : "OS_") + String.format("%02d", slot);
 		this.instanceId = unitInstance.getInstanceId();
 		this.unitInstance = unitInstance;
 		this.isAlly = isAlly;
+		this.baseMoveset = (moveset == null) ? List.of() : List.copyOf(moveset);
+
 		this.battleTrainer = (unitInstance.getStarUnit().getPartnerTrainer() == null) ? null :
 				new BattleTrainer(this, unitInstance.getStarUnit().getPartnerTrainer(),
 						unitInstance.getStarUnit().getAllTacticMoves().stream().toList(),
-						moveset);
+						this.baseMoveset);
 		this.currentBattlePhase = unitInstance.getStarUnit().getPhase();
 		this.currentBattleState = this.currentBattlePhase.getDefaultState();
 		this.battlePokemon = new BattlePokemon(this, unitInstance.getStarUnit().getPartnerPokemon(), this.currentBattleState);
+
+		this.actionInterval = new ActionInterval(this.battlePokemon.getStatTracker().getStat(StatType.SPEED));
 
 		this.stardust = 0;
 
 		this.maxSyncEther = EnergyConfig.BASE_MAX_SYNC_ETHER;
 		this.syncEther = this.maxSyncEther;
 
-		this.moveset = new ArrayList<>();
-		this.moveset.addAll(this.currentBattleState.getMoveset());
-		this.starMapMoveset = List.copyOf(moveset);
+		rebuildMoveset();
 	}
 
 	public BattleUnit(int slot, boolean isAlly, OwnedStarPartner<?> ownedStarPartner) {
@@ -69,7 +77,7 @@ public class BattleUnit {
 	}
 
 	/*------------------------------------------------------------------------------------------------------------------
-	3.	Getters																											*/
+																														*/
 
 	public String getBattleId() {
 		return battleId;
@@ -100,7 +108,7 @@ public class BattleUnit {
 	}
 
 	/*------------------------------------------------------------------------------------------------------------------
-	4.	Phase Management																								*/
+																														*/
 
 	public StarBattlePhase getCurrentBattlePhase() {
 		return currentBattlePhase;
@@ -120,7 +128,7 @@ public class BattleUnit {
 	}
 
 	/*------------------------------------------------------------------------------------------------------------------
-	5.	State Management																								*/
+																														*/
 
 	public StarBattleState getCurrentBattleState() {
 		return currentBattleState;
@@ -135,29 +143,55 @@ public class BattleUnit {
 
 		int formChange = this.battlePokemon.changeForm(this.currentBattleState.getPokemonForm());
 
-		if (unitInstance instanceof OwnedStarPartner<?>) {
-			int moveSlot = 0;
-			for (Move move : this.currentBattleState.getMoveset()) {
-				this.moveset.add(moveSlot, move);
-				moveSlot++;
-			}
-		} else {
-			this.moveset.clear();
-			this.moveset.addAll(this.currentBattleState.getMoveset());
-		}
+		this.battlePokemon.getStatTracker().switchBaseStat(this.currentBattleState.getUnitBaseStat());
+
+		rebuildMoveset();
 
 		return 10 + formChange;
 	}
 
 	/*------------------------------------------------------------------------------------------------------------------
-	6.	Stardust Management																								*/
+																														*/
+
+	private void rebuildMoveset() {
+		List<Move> combined = new ArrayList<>(this.currentBattleState.getMoveset());
+		combined.addAll(this.baseMoveset);
+
+		this.moveset = Collections.unmodifiableList(combined);
+	}
+
+	public List<Move> getMoveset() {
+		return moveset;
+	}
+
+	/*------------------------------------------------------------------------------------------------------------------
+																														*/
+
+	public boolean useTacticMove(TacticMove tacticMove) {
+		if (battleTrainer == null || isFainted()) {
+			return false;
+		}
+
+		return battleTrainer.performMove(tacticMove);
+	}
+
+	/*------------------------------------------------------------------------------------------------------------------
+																														*/
+
+	public ActionInterval getActionInterval() {
+		return actionInterval;
+	}
+
+
+	/*------------------------------------------------------------------------------------------------------------------
+																														*/
 
 	public int getStardust() {
 		return stardust;
 	}
 
 	/*------------------------------------------------------------------------------------------------------------------
-	7.	Sync Ether Management																							*/
+																														*/
 
 	public int getSyncEther() {
 		return syncEther;

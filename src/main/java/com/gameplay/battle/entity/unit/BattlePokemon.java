@@ -1,6 +1,8 @@
 package com.gameplay.battle.entity.unit;
 
+import com.gameplay.battle.entity.unit.stat.StatTracker;
 import com.gameplay.data.masterdata.attribute.battle.StatusCondition;
+import com.gameplay.data.masterdata.attribute.stat.StatType;
 import com.gameplay.data.masterdata.attribute.type.PokemonType;
 import com.gameplay.data.masterdata.template.pokemon.form.PokemonForm;
 import com.gameplay.data.masterdata.template.unit.PartnerPokemon;
@@ -13,21 +15,31 @@ import java.util.concurrent.ThreadLocalRandom;
 public class BattlePokemon {
 
 	/*------------------------------------------------------------------------------------------------------------------
-	1.	Fields																											*/
+	.	Constants																											*/
+
+	private static final int MAX_FROZEN_TURN = 4;
+	private static final double FREEZE_THAW_CHANCE = 0.2;
+	private static final double FULLY_PARALYZED_CHANCE = 0.25;
+
+	/*------------------------------------------------------------------------------------------------------------------
+	.	Fields																											*/
 
 	private final BattleUnit battleUnit;
 	private final PartnerPokemon partnerPokemon;
 	private PokemonForm currentForm;
 	private List<PokemonType> pokemonTypeList;
 
+	private final StatTracker statTracker;
+
 	private int currentHP;
 	private int maxHP;
 
 	private StatusCondition statusCondition;
 	private int sleepRemainingTurn;
+	private int freezeRemainingTurn;
 
 	/*------------------------------------------------------------------------------------------------------------------
-	2.	Constructor																										*/
+	.	Constructor																										*/
 
 	protected BattlePokemon(BattleUnit battleUnit, PartnerPokemon partnerPokemon, StarBattleState currentState) {
 		this.battleUnit = battleUnit;
@@ -35,15 +47,18 @@ public class BattlePokemon {
 		this.currentForm = currentState.getPokemonForm();
 		this.pokemonTypeList = new ArrayList<>(this.currentForm.getTypeList());
 
-		this.maxHP = 100;
+		this.statTracker = new StatTracker(battleUnit.getUnitInstance(), this.battleUnit.getCurrentBattleState().getUnitBaseStat());
+
+		this.maxHP = this.statTracker.getStat(StatType.HP);
 		this.currentHP = this.maxHP;
 
 		this.statusCondition = StatusCondition.NONE;
 		this.sleepRemainingTurn = 0;
+		this.freezeRemainingTurn = 0;
 	}
 
 	/*------------------------------------------------------------------------------------------------------------------
-	3.	Getters																											*/
+	.	Getters																											*/
 
 	public BattleUnit getBattleUnit() {
 		return battleUnit;
@@ -58,7 +73,7 @@ public class BattlePokemon {
 	}
 
 	/*------------------------------------------------------------------------------------------------------------------
-	4.	Form Management																									*/
+	.	Form Management																									*/
 
 	public PokemonForm getPokemonForm() {
 		return currentForm;
@@ -76,7 +91,14 @@ public class BattlePokemon {
 	}
 
 	/*------------------------------------------------------------------------------------------------------------------
-	.	Form Management																									*/
+	.	Stat Management																									*/
+
+	public StatTracker getStatTracker() {
+		return statTracker;
+	}
+
+	/*------------------------------------------------------------------------------------------------------------------
+	.	HP Management																									*/
 
 	public int getCurrentHP() {
 		return currentHP;
@@ -125,7 +147,7 @@ public class BattlePokemon {
 	}
 
 	/*------------------------------------------------------------------------------------------------------------------
-	6.	Status Condition Management																						*/
+	.	Status Condition Management																						*/
 
 	public StatusCondition getStatusCondition() {
 		return statusCondition;
@@ -150,6 +172,8 @@ public class BattlePokemon {
 		this.statusCondition = statusCondition;
 		if (this.statusCondition == StatusCondition.SLEEP) {
 			this.sleepRemainingTurn = ThreadLocalRandom.current().nextInt(1, 4);
+		} else if (this.statusCondition == StatusCondition.FREEZE) {
+			this.freezeRemainingTurn = MAX_FROZEN_TURN;
 		}
 
 		return true;
@@ -162,10 +186,66 @@ public class BattlePokemon {
 
 		this.statusCondition = StatusCondition.NONE;
 		this.sleepRemainingTurn = 0;
+		this.freezeRemainingTurn = 0;
 
 		return true;
 	}
 
 	/*------------------------------------------------------------------------------------------------------------------
-	.	Turn																											*/
+	.	Turn Flow																										*/
+
+	public enum StartStepResult {
+		ACT,
+		WOKE_UP,
+		THAWED,
+		ASLEEP,
+		FROZEN,
+		FAINTED;
+
+		public boolean canAct() {
+			return switch (this) {
+				case ACT, WOKE_UP, THAWED -> true;
+				default -> false;
+			};
+		}
+	}
+
+	public StartStepResult startStep() {
+		if (isFainted()) {
+			return StartStepResult.FAINTED;
+		}
+
+		ThreadLocalRandom random = ThreadLocalRandom.current();
+
+		if (statusCondition == StatusCondition.SLEEP) {
+			if (sleepRemainingTurn > 0) {
+				sleepRemainingTurn--;
+				return StartStepResult.ASLEEP;
+			}
+
+			removeStatusCondition();
+			return StartStepResult.WOKE_UP;
+		}
+
+		if (this.statusCondition == StatusCondition.FREEZE) {
+			if (random.nextDouble() < FREEZE_THAW_CHANCE) {
+				removeStatusCondition();
+				return StartStepResult.THAWED;
+			}
+
+			if (freezeRemainingTurn > 0) {
+				freezeRemainingTurn--;
+				return StartStepResult.FROZEN;
+			}
+
+			removeStatusCondition();
+			return StartStepResult.THAWED;
+		}
+
+		return StartStepResult.ACT;
+	}
+
+	public boolean isFullyParalyzed() {
+		return statusCondition == StatusCondition.PARALYSIS && ThreadLocalRandom.current().nextDouble() < FULLY_PARALYZED_CHANCE;
+	}
 }

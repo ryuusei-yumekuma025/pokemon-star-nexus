@@ -1,4 +1,4 @@
-package com.gameplay.data.masterdata.data.master.dto.unit.starpartner;
+package com.gameplay.data.masterdata.data.master.dto.unit;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -15,6 +15,8 @@ public record StarBattleStateDTO(
 		String code,
 		@JsonProperty("pokemon_form")
 		String pokemonForm,
+		@JsonProperty("base_stat")
+		BaseStatDTO baseStatDTO,
 		@JsonProperty("moveset")
 		List<String> moveset
 ) {
@@ -26,6 +28,7 @@ public record StarBattleStateDTO(
 
 	public StarBattleState create() {
 		StarBattleState.Builder builder = new StarBattleState.Builder(id, code, pokemonForm)
+				.setBaseStat(baseStatDTO)
 				.setMoveset(moveset);
 
 		return builder.build();

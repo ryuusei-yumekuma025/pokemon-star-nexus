@@ -1,5 +1,6 @@
 package com.gameplay.data.masterdata.template.unit.phase;
 
+import com.gameplay.data.masterdata.data.master.dto.unit.BaseStatDTO;
 import com.gameplay.data.masterdata.data.master.registry.move.combat.PokemonMoveRegistry;
 import com.gameplay.data.masterdata.data.master.registry.move.combat.ResonanceMoveRegistry;
 import com.gameplay.data.masterdata.data.master.registry.move.tactic.ItemMoveRegistry;
@@ -102,8 +103,10 @@ public class StarBattleState {
 			return this;
 		}
 
-		public Builder setBaseStat(List<Integer> baseStat) {
-			this.unitBaseStat = new BaseStat(baseStat);
+		public Builder setBaseStat(BaseStatDTO baseStat) {
+			if (baseStat != null) {
+				this.unitBaseStat = baseStat.create();
+			}
 			return this;
 		}
 

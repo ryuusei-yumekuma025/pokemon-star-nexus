@@ -3,7 +3,7 @@ package com.gameplay.data.masterdata.data.master.loader.unit.starpartner;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.gameplay.data.masterdata.attribute.region.WorldRegion;
-import com.gameplay.data.masterdata.data.master.dto.unit.starpartner.type.StandbyStarPartnerDTO;
+import com.gameplay.data.masterdata.data.master.dto.unit.type.StandbyStarPartnerDTO;
 import com.gameplay.data.masterdata.data.master.registry.unit.starpartner.StandbyStarPartnerRegistry;
 import com.gameplay.data.masterdata.template.unit.type.playable.standby.StandbyStarPartner;
 import com.utils.StringUtils;

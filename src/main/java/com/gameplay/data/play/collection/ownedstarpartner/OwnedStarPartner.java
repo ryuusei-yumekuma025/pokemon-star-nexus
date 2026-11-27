@@ -1,8 +1,8 @@
 package com.gameplay.data.play.collection.ownedstarpartner;
 
 import com.gameplay.battle.entity.unit.instance.UnitInstance;
-import com.gameplay.battle.entity.unit.stat.StatTracker;
-import com.gameplay.data.masterdata.data.config.StarPartnerLevelConfig;
+import com.gameplay.battle.entity.unit.stat.modifier.StatModifier;
+import com.gameplay.data.masterdata.data.config.LevelConfig;
 import com.gameplay.data.masterdata.template.move.Move;
 import com.gameplay.data.masterdata.template.unit.type.playable.PlayableStarPartner;
 import com.gameplay.data.play.collection.ownedstarpartner.standby.OwnedStandbyStarPartner;
@@ -20,10 +20,11 @@ public abstract class OwnedStarPartner<SP extends PlayableStarPartner> implement
 	private final Instant uniteTime;
 
 	private int level;
-	private int evolutionRank;
+	private int nexusEvolutionRank;
 	private long currentEXP;
 
 	private final List<Move> moveset;
+	private final StatModifier statModifier;
 
 	protected OwnedStarPartner(SP starPartner, String instanceId) {
 		this.instanceId = instanceId;
@@ -32,6 +33,7 @@ public abstract class OwnedStarPartner<SP extends PlayableStarPartner> implement
 		this.level = 1;
 		this.currentEXP = 0L;
 		this.moveset = new ArrayList<>();
+		this.statModifier = new StatModifier();
 	}
 
 	@Override
@@ -64,15 +66,19 @@ public abstract class OwnedStarPartner<SP extends PlayableStarPartner> implement
 	}
 
 	public int getLevelCap() {
-		return StarPartnerLevelConfig.getLevelCap(this.evolutionRank);
+		return LevelConfig.getLevelCap(this.nexusEvolutionRank);
+	}
+
+	public int getNexusEvolutionRank() {
+		return nexusEvolutionRank;
 	}
 
 	public void unlockLevelCap() {
-		if (evolutionRank >= StarPartnerLevelConfig.MAX_EVOLUTION_RANK) {
+		if (nexusEvolutionRank >= LevelConfig.MAX_EVOLUTION_RANK) {
 			return;
 		}
 
-		evolutionRank++;
+		nexusEvolutionRank++;
 	}
 
 	public long getCurrentEXP() {
@@ -124,5 +130,9 @@ public abstract class OwnedStarPartner<SP extends PlayableStarPartner> implement
 
 		this.moveset.remove(slot);
 		return true;
+	}
+
+	public StatModifier getStatModifier() {
+		return statModifier;
 	}
 }

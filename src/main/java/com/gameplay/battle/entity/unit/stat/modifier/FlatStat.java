@@ -1,7 +1,6 @@
-package com.gameplay.battle.entity.unit.stat;
+package com.gameplay.battle.entity.unit.stat.modifier;
 
 import com.gameplay.data.masterdata.attribute.stat.StatType;
-import com.gameplay.data.masterdata.template.unit.BaseStat;
 
 import java.util.ArrayList;
 import java.util.List;

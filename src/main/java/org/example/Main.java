@@ -1,5 +1,6 @@
 package org.example;
 
+import com.gameplay.data.masterdata.data.config.LevelConfig;
 import com.gameplay.data.masterdata.data.master.GameMasterDataBootstrap;
 import com.gameplay.data.masterdata.data.master.registry.unit.enemy.StarEnemyRegistry;
 import com.gameplay.data.masterdata.data.master.registry.unit.starpartner.StandbyStarPartnerRegistry;
@@ -19,8 +20,7 @@ public class Main {
 
 		playProfile.getTeamPresetStorage().getActiveTeamPreset().joinTeam(playProfile.getOwnedStarPartnerCollection().getStarPartner(StandbyStarPartnerRegistry.getStarPartnerByCode("Ethan and Typhlosion")));
 
-
-
-
+		System.out.println(StandbyStarPartnerRegistry.getStarPartnerByCode("Ethan and Typhlosion").getPhase().getDefaultState().getUnitBaseStat()
+				.getBaseSpeed(200, 55));
 	}
 }

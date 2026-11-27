@@ -1,4 +1,4 @@
-package com.gameplay.data.masterdata.data.master.dto.unit.starpartner;
+package com.gameplay.data.masterdata.data.master.dto.unit;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;

@@ -1,11 +1,11 @@
-package com.gameplay.data.masterdata.data.master.dto.unit.starpartner.type;
+package com.gameplay.data.masterdata.data.master.dto.unit.type;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.gameplay.data.masterdata.data.master.dto.unit.starpartner.PartnerPokemonDTO;
-import com.gameplay.data.masterdata.data.master.dto.unit.starpartner.StarBattlePhaseDTO;
-import com.gameplay.data.masterdata.data.master.dto.unit.starpartner.StarBattleStateDTO;
-import com.gameplay.data.masterdata.data.master.dto.unit.starpartner.StarJewelDTO;
+import com.gameplay.data.masterdata.data.master.dto.unit.PartnerPokemonDTO;
+import com.gameplay.data.masterdata.data.master.dto.unit.StarBattlePhaseDTO;
+import com.gameplay.data.masterdata.data.master.dto.unit.StarBattleStateDTO;
+import com.gameplay.data.masterdata.data.master.dto.unit.StarJewelDTO;
 import com.gameplay.data.masterdata.data.master.registry.trainer.TrainerRegistry;
 import com.gameplay.data.masterdata.template.trainer.Trainer;
 import com.gameplay.data.masterdata.template.unit.PartnerPokemon;

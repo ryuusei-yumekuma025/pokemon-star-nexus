@@ -4,7 +4,7 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.gameplay.data.masterdata.attribute.region.WorldRegion;
 import com.gameplay.data.masterdata.attribute.trainer.NPCTrainerClass;
-import com.gameplay.data.masterdata.data.master.dto.unit.starpartner.type.StarEnemyDTO;
+import com.gameplay.data.masterdata.data.master.dto.unit.type.StarEnemyDTO;
 import com.gameplay.data.masterdata.data.master.registry.unit.enemy.StarEnemyRegistry;
 import com.gameplay.data.masterdata.template.unit.type.enemy.StarEnemy;
 import com.utils.StringUtils;

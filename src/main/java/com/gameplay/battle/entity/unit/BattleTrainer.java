@@ -12,6 +12,8 @@ import java.util.Map;
 
 public class BattleTrainer {
 
+	public static final int UNLIMITED = -1;
+
 	/*------------------------------------------------------------------------------------------------------------------
 	1.	Fields																											*/
 
@@ -19,6 +21,9 @@ public class BattleTrainer {
 	private final Trainer partnerTrainer;
 	private final Map<String, Integer> tacticPointTracker;
 	private final Map<String, Integer> maxTacticPoint;
+
+	private int tacticPointUsedThisTurn;
+	private int tacticPointLimitPerTurn = UNLIMITED;
 
 	/*------------------------------------------------------------------------------------------------------------------
 																														*/
@@ -80,8 +85,16 @@ public class BattleTrainer {
 	/*------------------------------------------------------------------------------------------------------------------
 																														*/
 
+	public boolean canPerform(TacticMove tacticMove) {
+		if (tacticPointLimitPerTurn != UNLIMITED && this.tacticPointUsedThisTurn >= this.tacticPointLimitPerTurn) {
+			return false;
+		}
+
+		return getTacticPoint(tacticMove) > 0;
+	}
+
 	public boolean performMove(TacticMove tacticMove) {
-		if (tacticMove == null) {
+		if (!canPerform(tacticMove)) {
 			return false;
 		}
 
@@ -94,6 +107,8 @@ public class BattleTrainer {
 		}
 
 		tacticPointTracker.put(code, points - 1);
+
+		tacticPointUsedThisTurn++;
 
 		return true;
 	}
@@ -117,5 +132,24 @@ public class BattleTrainer {
 
 	public void fullyRestoreAllTacticMove() {
 		tacticPointTracker.putAll(this.maxTacticPoint);
+	}
+
+	/*------------------------------------------------------------------------------------------------------------------
+	.	Turn																											*/
+
+	public void startStep() {
+		this.tacticPointUsedThisTurn = 0;
+	}
+
+	public int getTacticPointUsedThisTurn() {
+		return tacticPointUsedThisTurn;
+	}
+
+	public int getTacticPointLimitPerTurn() {
+		return tacticPointLimitPerTurn;
+	}
+
+	public void setTacticPointLimitPerTurn(int limit) {
+		this.tacticPointLimitPerTurn = (limit < 0) ? UNLIMITED : limit;
 	}
 }
