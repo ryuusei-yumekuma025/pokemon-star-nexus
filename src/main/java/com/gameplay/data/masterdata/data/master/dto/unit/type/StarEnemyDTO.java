@@ -4,7 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.gameplay.data.masterdata.data.master.dto.unit.PartnerPokemonDTO;
 import com.gameplay.data.masterdata.data.master.dto.unit.StarBattlePhaseDTO;
-import com.gameplay.data.masterdata.data.master.dto.unit.StarBattleStateDTO;
+import com.gameplay.data.masterdata.data.master.dto.unit.StarBattleModeDTO;
 import com.gameplay.data.masterdata.data.master.dto.unit.StarJewelDTO;
 import com.gameplay.data.masterdata.data.master.registry.trainer.TrainerRegistry;
 import com.gameplay.data.masterdata.template.trainer.Trainer;
@@ -29,15 +29,15 @@ public record StarEnemyDTO(
 		PartnerPokemonDTO partnerPokemonDTO,
 		@JsonProperty("star_jewel")
 		StarJewelDTO starJewelDTO,
-		@JsonProperty("states")
-		List<StarBattleStateDTO> starBattleStateDTOList,
+		@JsonProperty("modes")
+		List<StarBattleModeDTO> starBattleModeDTOList,
 		@JsonProperty("phases")
 		List<StarBattlePhaseDTO> starBattlePhaseDTOList
 ) {
 	public StarEnemyDTO {
 		code = StringUtils.requireUpperSnakeCase(code, "Enemy Code");
-		starBattleStateDTOList = (starBattleStateDTOList != null && starBattlePhaseDTOList() == null) ?
-				List.copyOf(starBattleStateDTOList) : List.of();
+		starBattleModeDTOList = (starBattleModeDTOList != null && starBattlePhaseDTOList() == null) ?
+				List.copyOf(starBattleModeDTOList) : List.of();
 		starBattlePhaseDTOList = (starBattlePhaseDTOList != null) ?
 				List.copyOf(starBattlePhaseDTOList) : List.of();
 	}
@@ -68,9 +68,9 @@ public record StarEnemyDTO(
 			for (StarBattlePhaseDTO starBattlePhaseDTO : starBattlePhaseDTOList) {
 				builder.addPhase(starBattlePhaseDTO.create());
 			}
-		} else if (starBattleStateDTOList != null && !starBattleStateDTOList.isEmpty()) {
-			for (StarBattleStateDTO starBattleStateDTO : starBattleStateDTOList) {
-				builder.addState(starBattleStateDTO.create());
+		} else if (starBattleModeDTOList != null && !starBattleModeDTOList.isEmpty()) {
+			for (StarBattleModeDTO starBattleModeDTO : starBattleModeDTOList) {
+				builder.addMode(starBattleModeDTO.create());
 			}
 		}
 

@@ -26,7 +26,7 @@ public final class PokemonRegistry {
 	private PokemonRegistry() {}
 
 	/*------------------------------------------------------------------------------------------------------------------
-	3.	Data Registry State																								*/
+	3.	Data Registry Mode																								*/
 
 	public static synchronized void freeze() {
 		SPECIES_REGISTRY.freeze();

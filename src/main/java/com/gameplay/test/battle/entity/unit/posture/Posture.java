@@ -1,4 +1,4 @@
-package com.gameplay.battle.entity.unit.posture;
+package com.gameplay.test.battle.entity.unit.posture;
 
 public enum Posture {
 	PROTECT,

@@ -1,14 +1,11 @@
 package com.gameplay.battle.entity.unit;
 
-import com.gameplay.battle.entity.unit.action.ActionInterval;
-import com.gameplay.battle.entity.unit.instance.UnitInstance;
-import com.gameplay.data.masterdata.attribute.stat.StatType;
-import com.gameplay.data.masterdata.content.EnemyInstance;
+import com.gameplay.battle.entity.unit.action.ActionClock;
+import com.gameplay.battle.entity.unit.profile.UnitProfile;
 import com.gameplay.data.masterdata.data.config.EnergyConfig;
 import com.gameplay.data.masterdata.template.move.Move;
-import com.gameplay.data.masterdata.template.move.tactic.TacticMove;
 import com.gameplay.data.masterdata.template.unit.phase.StarBattlePhase;
-import com.gameplay.data.masterdata.template.unit.phase.StarBattleState;
+import com.gameplay.data.masterdata.template.unit.phase.StarBattleMode;
 import com.gameplay.data.play.collection.ownedstarpartner.OwnedStarPartner;
 
 import java.util.ArrayList;
@@ -18,21 +15,18 @@ import java.util.List;
 public class BattleUnit {
 
 	/*------------------------------------------------------------------------------------------------------------------
-																														*/
+	.	Fields																											*/
 
 	private final String battleId;
-	private final String instanceId;
-	private final UnitInstance unitInstance;
+	private final UnitProfile unitProfile;
 	private final boolean isAlly;
-	private final BattleTrainer battleTrainer;
-	private final BattlePokemon battlePokemon;
+	private final BattleTrainer partnerTrainer;
+	private final BattlePokemon partnerPokemon;
 
 	private StarBattlePhase currentBattlePhase;
-	private StarBattleState currentBattleState;
+	private StarBattleMode currentBattleMode;
 
-	private final ActionInterval actionInterval;
-
-	private int stardust;
+	private final ActionClock actionClock;
 
 	private int syncEther;
 	private int maxSyncEther;
@@ -40,27 +34,21 @@ public class BattleUnit {
 	private final List<Move> baseMoveset;
 	private List<Move> moveset;
 
-	/*------------------------------------------------------------------------------------------------------------------
-																														*/
-
-	public BattleUnit(int slot, boolean isAlly, UnitInstance unitInstance, List<Move> moveset) {
+	public BattleUnit(int slot, boolean isAlly, UnitProfile unitProfile, List<Move> baseMoveset) {
 		this.battleId = ((isAlly) ? "AS_" : "OS_") + String.format("%02d", slot);
-		this.instanceId = unitInstance.getInstanceId();
-		this.unitInstance = unitInstance;
+		this.unitProfile = unitProfile;
 		this.isAlly = isAlly;
-		this.baseMoveset = (moveset == null) ? List.of() : List.copyOf(moveset);
+		this.baseMoveset = (baseMoveset == null) ? List.of() : List.copyOf(baseMoveset);
 
-		this.battleTrainer = (unitInstance.getStarUnit().getPartnerTrainer() == null) ? null :
-				new BattleTrainer(this, unitInstance.getStarUnit().getPartnerTrainer(),
-						unitInstance.getStarUnit().getAllTacticMoves().stream().toList(),
-						this.baseMoveset);
-		this.currentBattlePhase = unitInstance.getStarUnit().getPhase();
-		this.currentBattleState = this.currentBattlePhase.getDefaultState();
-		this.battlePokemon = new BattlePokemon(this, unitInstance.getStarUnit().getPartnerPokemon(), this.currentBattleState);
+		this.partnerTrainer = (unitProfile.getStarUnit().getPartnerTrainer() == null) ? null :
+				new BattleTrainer(this, unitProfile.getStarUnit().getPartnerTrainer(),
+										unitProfile.getStarUnit().getAllTacticMoves().stream().toList(),
+										this.baseMoveset);
+		this.currentBattlePhase = unitProfile.getStarUnit().getPhase();
+		this.currentBattleMode = this.currentBattlePhase.getDefaultMode();
+		this.partnerPokemon = new BattlePokemon(this, unitProfile.getStarUnit().getPartnerPokemon(), this.currentBattleMode);
 
-		this.actionInterval = new ActionInterval(this.battlePokemon.getStatTracker().getStat(StatType.SPEED));
-
-		this.stardust = 0;
+		this.actionClock = new ActionClock();
 
 		this.maxSyncEther = EnergyConfig.BASE_MAX_SYNC_ETHER;
 		this.syncEther = this.maxSyncEther;
@@ -68,82 +56,58 @@ public class BattleUnit {
 		rebuildMoveset();
 	}
 
-	public BattleUnit(int slot, boolean isAlly, OwnedStarPartner<?> ownedStarPartner) {
-		this(slot, isAlly, ownedStarPartner, ownedStarPartner.getMoveset());
-	}
-
-	public BattleUnit(int slot, EnemyInstance enemyInstance) {
-		this(slot, false, enemyInstance, List.of());
+	public BattleUnit(int slot, UnitProfile unitProfile) {
+		boolean category = unitProfile instanceof OwnedStarPartner<?> ownedStarPartner;
+		this(slot, category, unitProfile, (category) ? ((OwnedStarPartner<?>) unitProfile).getMoveset() : List.of());
 	}
 
 	/*------------------------------------------------------------------------------------------------------------------
-																														*/
+	.	Getters																											*/
 
 	public String getBattleId() {
 		return battleId;
 	}
 
-	public String getInstanceId() {
-		return instanceId;
-	}
-
-	public UnitInstance getUnitInstance() {
-		return unitInstance;
+	public UnitProfile getUnitProfile() {
+		return unitProfile;
 	}
 
 	public boolean isAlly() {
 		return isAlly;
 	}
 
-	public BattleTrainer getBattleTrainer() {
-		return battleTrainer;
+	public BattleTrainer getPartnerTrainer() {
+		return partnerTrainer;
 	}
 
-	public BattlePokemon getBattlePokemon() {
-		return battlePokemon;
-	}
-
-	public boolean isFainted() {
-		return battlePokemon.isFainted();
+	public BattlePokemon getPartnerPokemon() {
+		return partnerPokemon;
 	}
 
 	/*------------------------------------------------------------------------------------------------------------------
-																														*/
+	.	Action Handler																									*/
 
-	public StarBattlePhase getCurrentBattlePhase() {
-		return currentBattlePhase;
-	}
-
-	public int changePhase(int phase) {
-		if (phase <= 0 || phase == currentBattlePhase.getPhaseOrdinal() || phase > getUnitInstance().getStarUnit().getAllPhases().size()) {
-			return 0;
-		}
-
-		this.currentBattlePhase = getUnitInstance().getStarUnit().getPhaseById(phase);
-		int formChange = changeState(this.currentBattlePhase.getDefaultStateId()) % 10;
-
-		this.battlePokemon.resetStatus();
-
-		return 10 + formChange;
+	public ActionClock getActionTick() {
+		return actionClock;
 	}
 
 	/*------------------------------------------------------------------------------------------------------------------
-																														*/
+	.	Mode Controller																								*/
 
-	public StarBattleState getCurrentBattleState() {
-		return currentBattleState;
+	public StarBattleMode getCurrentBattleMode() {
+		return currentBattleMode;
 	}
 
-	public int changeState(int state) {
-		if (state < 0 || state > this.currentBattlePhase.getAllStates().size() || state == this.currentBattleState.getStateId()) {
+	public int changeMode(int mode) {
+		if (mode < 0 || mode > this.currentBattlePhase.getAllModes().size() || mode == this.currentBattleMode.getModeId()) {
 			return 0;
 		}
 
-		this.currentBattleState = this.currentBattlePhase.getStateById(state);
+		this.currentBattleMode = this.currentBattlePhase.getModeById(mode);
 
-		int formChange = this.battlePokemon.changeForm(this.currentBattleState.getPokemonForm());
+		int formChange = this.partnerPokemon.changeForm(this.currentBattleMode.getPokemonForm());
 
-		this.battlePokemon.getStatTracker().switchBaseStat(this.currentBattleState.getUnitBaseStat());
+		this.partnerPokemon.getStatTracker().switchBaseStat(this.currentBattleMode.getUnitBaseStat());
 
 		rebuildMoveset();
 
@@ -151,54 +115,44 @@ public class BattleUnit {
 	}
 
 	/*------------------------------------------------------------------------------------------------------------------
-																														*/
+	.	Phase Controller																								*/
 
-	private void rebuildMoveset() {
-		List<Move> combined = new ArrayList<>(this.currentBattleState.getMoveset());
-		combined.addAll(this.baseMoveset);
-
-		this.moveset = Collections.unmodifiableList(combined);
+	public StarBattlePhase getCurrentBattlePhase() {
+		return currentBattlePhase;
 	}
+
+	public int changePhase(int phase) {
+		if (phase <= 0 || phase == currentBattlePhase.getPhaseOrdinal() || phase > getUnitProfile().getStarUnit().getAllPhases().size()) {
+			return 0;
+		}
+
+		this.currentBattlePhase = getUnitProfile().getStarUnit().getPhaseById(phase);
+		int formChange = changeMode(this.currentBattlePhase.getDefaultModeId()) % 10;
+
+		this.partnerPokemon.resetState();
+
+		return 10 + formChange;
+	}
+
+	/*------------------------------------------------------------------------------------------------------------------
+	.	Moveset																											*/
 
 	public List<Move> getMoveset() {
 		return moveset;
 	}
 
-	/*------------------------------------------------------------------------------------------------------------------
-																														*/
+	private void rebuildMoveset() {
+		List<Move> combined = new ArrayList<>(this.currentBattleMode.getMoveset());
+		combined.addAll(this.baseMoveset);
 
-	public boolean useTacticMove(TacticMove tacticMove) {
-		if (battleTrainer == null || isFainted()) {
-			return false;
-		}
-
-		return battleTrainer.performMove(tacticMove);
+		this.moveset = Collections.unmodifiableList(combined);
 	}
 
 	/*------------------------------------------------------------------------------------------------------------------
-																														*/
-
-	public ActionInterval getActionInterval() {
-		return actionInterval;
-	}
-
-
-	/*------------------------------------------------------------------------------------------------------------------
-																														*/
-
-	public int getStardust() {
-		return stardust;
-	}
-
-	/*------------------------------------------------------------------------------------------------------------------
-																														*/
+	.	Sync Ether Tracker																								*/
 
 	public int getSyncEther() {
 		return syncEther;
-	}
-
-	public int getMaxSyncEther() {
-		return maxSyncEther;
 	}
 
 	public int consumeSyncEther(int syncEther) {
@@ -221,5 +175,25 @@ public class BattleUnit {
 		this.syncEther = Math.min(maxSyncEther, currentSyncEther + syncEther);
 
 		return this.syncEther - currentSyncEther;
+	}
+
+	public int getMaxSyncEther() {
+		return maxSyncEther;
+	}
+
+	public boolean setNewMaxSyncEther(int newMax) {
+		if (newMax < 0) {
+			return false;
+		}
+		this.maxSyncEther = newMax;
+		return true;
+	}
+
+	public boolean modifyMaxSyncEther(int deltaMax) {
+		if (deltaMax <= 0) {
+			return false;
+		}
+		this.maxSyncEther += deltaMax;
+		return true;
 	}
 }

@@ -17,7 +17,7 @@ public final class ItemMoveRegistry extends MoveRegistry<Integer, ItemMove> {
 	}
 
 	/*------------------------------------------------------------------------------------------------------------------
-	2.	Data Registry State																								*/
+	2.	Data Registry Mode																								*/
 
 	public static void freeze() {
 		INSTANCE.freezeMoveStorage();

@@ -1,29 +1,29 @@
 package com.gameplay.data.masterdata.content;
 
-import com.gameplay.battle.entity.unit.instance.UnitInstance;
+import com.gameplay.battle.entity.unit.profile.UnitProfile;
 import com.gameplay.data.masterdata.template.unit.type.enemy.StarEnemy;
 
-public class EnemyInstance implements UnitInstance {
+public class EnemyProfile implements UnitProfile {
 
-	private final String instanceId;
+	private final String profileId;
 	private final StarEnemy starEnemy;
 	private final int level;
 	private final double hpThreshold;
 
-	public EnemyInstance(String stageId, StarEnemy starEnemy, int level, double hpThreshold) {
-		this.instanceId = "STGENM_" + stageId + starEnemy.getStarUnitId().substring(4);
+	public EnemyProfile(String stageId, StarEnemy starEnemy, int level, double hpThreshold) {
+		this.profileId = "STGENM_" + stageId + starEnemy.getStarUnitId().substring(4);
 		this.starEnemy = starEnemy;
 		this.level = level;
 		this.hpThreshold = hpThreshold;
 	}
 
-	public EnemyInstance(String stageId, StarEnemy starEnemy, int level) {
+	public EnemyProfile(String stageId, StarEnemy starEnemy, int level) {
 		this(stageId, starEnemy, level, 1.0);
 	}
 
 	@Override
-	public String getInstanceId() {
-		return instanceId;
+	public String getProfileId() {
+		return profileId;
 	}
 
 	@Override

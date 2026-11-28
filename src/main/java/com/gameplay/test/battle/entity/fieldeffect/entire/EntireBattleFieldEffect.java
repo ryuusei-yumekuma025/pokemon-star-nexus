@@ -1,9 +1,9 @@
-package com.gameplay.battle.entity.field.entire;
+package com.gameplay.test.battle.entity.fieldeffect.entire;
 
 import com.gameplay.data.masterdata.attribute.battle.field.entire.Terrain;
 import com.gameplay.data.masterdata.attribute.battle.field.entire.Weather;
 
-public class EntireBattleField {
+public class EntireBattleFieldEffect {
 
 	private Weather currentWeather;
 	private int remainingWeatherTurn;
@@ -13,7 +13,7 @@ public class EntireBattleField {
 
 	private final RoomOnBattleField room;
 
-	public EntireBattleField() {
+	public EntireBattleFieldEffect() {
 		this.currentWeather = Weather.NONE;
 		this.remainingWeatherTurn = 0;
 

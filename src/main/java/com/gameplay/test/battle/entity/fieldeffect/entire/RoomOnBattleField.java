@@ -1,4 +1,4 @@
-package com.gameplay.battle.entity.field.entire;
+package com.gameplay.test.battle.entity.fieldeffect.entire;
 
 import com.gameplay.data.masterdata.attribute.battle.field.entire.Room;
 

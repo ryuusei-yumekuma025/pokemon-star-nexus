@@ -12,10 +12,13 @@ import java.util.Map;
 
 public class BattleTrainer {
 
+	/*------------------------------------------------------------------------------------------------------------------
+	.	Constants																											*/
+
 	public static final int UNLIMITED = -1;
 
 	/*------------------------------------------------------------------------------------------------------------------
-	1.	Fields																											*/
+	.	Fields																											*/
 
 	private final BattleUnit battleUnit;
 	private final Trainer partnerTrainer;
@@ -26,7 +29,7 @@ public class BattleTrainer {
 	private int tacticPointLimitPerTurn = UNLIMITED;
 
 	/*------------------------------------------------------------------------------------------------------------------
-																														*/
+	.	Constructor																										*/
 
 	protected BattleTrainer(BattleUnit battleUnit, Trainer trainer, List<TacticMove> tacticMoveList, List<Move> moveset) {
 		this.battleUnit = battleUnit;
@@ -49,7 +52,7 @@ public class BattleTrainer {
 	}
 
 	/*------------------------------------------------------------------------------------------------------------------
-																														*/
+	.	Getters																											*/
 
 	public BattleUnit getBattleUnit() {
 		return battleUnit;
@@ -58,6 +61,9 @@ public class BattleTrainer {
 	public Trainer getPartnerTrainer() {
 		return partnerTrainer;
 	}
+
+	/*------------------------------------------------------------------------------------------------------------------
+	.	Tactic Point Tracker																							*/
 
 	public Map<String, Integer> getTacticPointTracker() {
 		return Collections.unmodifiableMap(tacticPointTracker);
@@ -82,8 +88,29 @@ public class BattleTrainer {
 		return tacticPointTracker.get(moveCode);
 	}
 
+	public int restoreTacticPoint(TacticMove tacticMove, int restoredAmount) {
+		if (restoredAmount <= 0 || tacticMove == null) {
+			return 0;
+		}
+
+		String code = tacticMove.getMoveCode();
+		Integer current = tacticPointTracker.get(code);
+		if (current == null) {
+			return 0;
+		}
+
+		int restored = Math.min(maxTacticPoint.get(code) - current, restoredAmount);
+		tacticPointTracker.put(code, current + restored);
+
+		return restored;
+	}
+
+	public void fullyRestoreAllTacticMove() {
+		tacticPointTracker.putAll(this.maxTacticPoint);
+	}
+
 	/*------------------------------------------------------------------------------------------------------------------
-																														*/
+	.	Perform																											*/
 
 	public boolean canPerform(TacticMove tacticMove) {
 		if (tacticPointLimitPerTurn != UNLIMITED && this.tacticPointUsedThisTurn >= this.tacticPointLimitPerTurn) {
@@ -106,32 +133,11 @@ public class BattleTrainer {
     		return false;
 		}
 
-		tacticPointTracker.put(code, points - 1);
+		this.tacticPointTracker.put(code, points - 1);
 
-		tacticPointUsedThisTurn++;
+		this.tacticPointUsedThisTurn++;
 
 		return true;
-	}
-
-	public int restoreTacticPoint(TacticMove tacticMove, int restoredAmount) {
-		if (restoredAmount <= 0 || tacticMove == null) {
-			return 0;
-		}
-
-		String code = tacticMove.getMoveCode();
-		Integer current = tacticPointTracker.get(code);
-		if (current == null) {
-			return 0;
-		}
-
-		int restored = Math.min(maxTacticPoint.get(code) - current, restoredAmount);
-		tacticPointTracker.put(code, current + restored);
-
-		return restored;
-	}
-
-	public void fullyRestoreAllTacticMove() {
-		tacticPointTracker.putAll(this.maxTacticPoint);
 	}
 
 	/*------------------------------------------------------------------------------------------------------------------

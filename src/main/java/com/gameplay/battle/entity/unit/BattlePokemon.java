@@ -6,16 +6,17 @@ import com.gameplay.data.masterdata.attribute.stat.StatType;
 import com.gameplay.data.masterdata.attribute.type.PokemonType;
 import com.gameplay.data.masterdata.template.pokemon.form.PokemonForm;
 import com.gameplay.data.masterdata.template.unit.PartnerPokemon;
-import com.gameplay.data.masterdata.template.unit.phase.StarBattleState;
+import com.gameplay.data.masterdata.template.unit.phase.StarBattleMode;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class BattlePokemon {
 
 	/*------------------------------------------------------------------------------------------------------------------
-	.	Constants																											*/
+	.	Constants																										*/
 
 	private static final int MAX_FROZEN_TURN = 4;
 	private static final double FREEZE_THAW_CHANCE = 0.2;
@@ -38,16 +39,18 @@ public class BattlePokemon {
 	private int sleepRemainingTurn;
 	private int freezeRemainingTurn;
 
+	private boolean enduringEffect;
+
 	/*------------------------------------------------------------------------------------------------------------------
 	.	Constructor																										*/
 
-	protected BattlePokemon(BattleUnit battleUnit, PartnerPokemon partnerPokemon, StarBattleState currentState) {
+	protected BattlePokemon(BattleUnit battleUnit, PartnerPokemon partnerPokemon, StarBattleMode currentMode) {
 		this.battleUnit = battleUnit;
 		this.partnerPokemon = partnerPokemon;
-		this.currentForm = currentState.getPokemonForm();
+		this.currentForm = currentMode.getPokemonForm();
 		this.pokemonTypeList = new ArrayList<>(this.currentForm.getTypeList());
 
-		this.statTracker = new StatTracker(battleUnit.getUnitInstance(), this.battleUnit.getCurrentBattleState().getUnitBaseStat());
+		this.statTracker = new StatTracker(battleUnit.getUnitProfile(), this.battleUnit.getCurrentBattleMode().getUnitBaseStat());
 
 		this.maxHP = this.statTracker.getStat(StatType.HP);
 		this.currentHP = this.maxHP;
@@ -55,6 +58,8 @@ public class BattlePokemon {
 		this.statusCondition = StatusCondition.NONE;
 		this.sleepRemainingTurn = 0;
 		this.freezeRemainingTurn = 0;
+
+		this.enduringEffect = false;
 	}
 
 	/*------------------------------------------------------------------------------------------------------------------
@@ -69,36 +74,11 @@ public class BattlePokemon {
 	}
 
 	public boolean isFainted() {
-		return currentHP <= 0;
+		return this.currentHP <= 0;
 	}
 
 	/*------------------------------------------------------------------------------------------------------------------
-	.	Form Management																									*/
-
-	public PokemonForm getPokemonForm() {
-		return currentForm;
-	}
-
-	public int changeForm(PokemonForm pokemonForm) {
-		if (this.currentForm == pokemonForm) {
-			return 0;
-		}
-
-		this.currentForm = pokemonForm;
-		this.pokemonTypeList = List.copyOf(this.currentForm.getTypeList());
-
-		return 1;
-	}
-
-	/*------------------------------------------------------------------------------------------------------------------
-	.	Stat Management																									*/
-
-	public StatTracker getStatTracker() {
-		return statTracker;
-	}
-
-	/*------------------------------------------------------------------------------------------------------------------
-	.	HP Management																									*/
+	.	HP Controller																									*/
 
 	public int getCurrentHP() {
 		return currentHP;
@@ -140,14 +120,77 @@ public class BattlePokemon {
 	}
 
 	/*------------------------------------------------------------------------------------------------------------------
-	.	Status																											*/
+	.	Form Controller																									*/
 
-	public void resetStatus() {
+	public PokemonForm getCurrentForm() {
+		return currentForm;
+	}
+
+	public int changeForm(PokemonForm pokemonForm) {
+		if (this.currentForm == pokemonForm) {
+			return 0;
+		}
+
+		this.currentForm = pokemonForm;
 		this.pokemonTypeList = List.copyOf(this.currentForm.getTypeList());
+
+		return 1;
 	}
 
 	/*------------------------------------------------------------------------------------------------------------------
-	.	Status Condition Management																						*/
+	.	Type Controller																									*/
+
+	public List<PokemonType> getPokemonTypeList() {
+		return Collections.unmodifiableList(pokemonTypeList);
+	}
+
+	public boolean hasType(PokemonType pokemonType) {
+		return pokemonTypeList.contains(pokemonType);
+	}
+
+	public boolean addType(PokemonType pokemonType) {
+		if (pokemonType == null || pokemonTypeList.contains(pokemonType)) {
+			return false;
+		}
+
+		this.pokemonTypeList.add(pokemonType);
+
+		return true;
+	}
+
+	public boolean overrideType(PokemonType pokemonType) {
+		if (pokemonType == null || (pokemonTypeList.size() == 1 && pokemonTypeList.contains(pokemonType))) {
+			return false;
+		}
+
+		this.pokemonTypeList.clear();
+		this.pokemonTypeList.add(pokemonType);
+
+		return true;
+	}
+
+	public void resetTypes() {
+		pokemonTypeList.clear();
+		pokemonTypeList.addAll(this.currentForm.getTypeList());
+	}
+
+	/*------------------------------------------------------------------------------------------------------------------
+	.	Stat Tracker																									*/
+
+	public StatTracker getStatTracker() {
+		return statTracker;
+	}
+
+	/*------------------------------------------------------------------------------------------------------------------
+	.	State Controller																								*/
+
+	public void resetState() {
+		this.pokemonTypeList = List.copyOf(this.currentForm.getTypeList());
+		resetTypes();
+	}
+
+	/*------------------------------------------------------------------------------------------------------------------
+	.	Status Condition Controller																						*/
 
 	public StatusCondition getStatusCondition() {
 		return statusCondition;
@@ -192,60 +235,10 @@ public class BattlePokemon {
 	}
 
 	/*------------------------------------------------------------------------------------------------------------------
-	.	Turn Flow																										*/
+	.	Effect																											*/
 
-	public enum StartStepResult {
-		ACT,
-		WOKE_UP,
-		THAWED,
-		ASLEEP,
-		FROZEN,
-		FAINTED;
-
-		public boolean canAct() {
-			return switch (this) {
-				case ACT, WOKE_UP, THAWED -> true;
-				default -> false;
-			};
-		}
-	}
-
-	public StartStepResult startStep() {
-		if (isFainted()) {
-			return StartStepResult.FAINTED;
-		}
-
-		ThreadLocalRandom random = ThreadLocalRandom.current();
-
-		if (statusCondition == StatusCondition.SLEEP) {
-			if (sleepRemainingTurn > 0) {
-				sleepRemainingTurn--;
-				return StartStepResult.ASLEEP;
-			}
-
-			removeStatusCondition();
-			return StartStepResult.WOKE_UP;
-		}
-
-		if (this.statusCondition == StatusCondition.FREEZE) {
-			if (random.nextDouble() < FREEZE_THAW_CHANCE) {
-				removeStatusCondition();
-				return StartStepResult.THAWED;
-			}
-
-			if (freezeRemainingTurn > 0) {
-				freezeRemainingTurn--;
-				return StartStepResult.FROZEN;
-			}
-
-			removeStatusCondition();
-			return StartStepResult.THAWED;
-		}
-
-		return StartStepResult.ACT;
-	}
-
-	public boolean isFullyParalyzed() {
-		return statusCondition == StatusCondition.PARALYSIS && ThreadLocalRandom.current().nextDouble() < FULLY_PARALYZED_CHANCE;
+	public boolean applyEnduringEffect() {
+		this.enduringEffect = true;
+		return enduringEffect;
 	}
 }

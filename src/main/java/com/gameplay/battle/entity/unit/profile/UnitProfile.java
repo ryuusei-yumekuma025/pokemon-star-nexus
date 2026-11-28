@@ -1,9 +1,9 @@
-package com.gameplay.battle.entity.unit.instance;
+package com.gameplay.battle.entity.unit.profile;
 
 import com.gameplay.data.masterdata.template.unit.StarUnit;
 
-public interface UnitInstance {
+public interface UnitProfile {
 	StarUnit<?, ?> getStarUnit();
-	String getInstanceId();
+	String getProfileId();
 	int getLevel();
 }

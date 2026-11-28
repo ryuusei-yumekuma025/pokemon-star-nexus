@@ -1,8 +1,8 @@
-package com.gameplay.battle.entity.field.side;
+package com.gameplay.test.battle.entity.fieldeffect.side;
 
-import com.gameplay.battle.entity.field.side.terraatlas.TerraAtlasOnBattleField;
+import com.gameplay.test.battle.entity.fieldeffect.side.terraatlas.TerraAtlasOnBattleField;
 
-public class SideBattleField {
+public class SideBattleFieldEffect {
 
 	/*------------------------------------------------------------------------------------------------------------------
 																														*/
@@ -13,7 +13,7 @@ public class SideBattleField {
 	/*------------------------------------------------------------------------------------------------------------------
 																														*/
 
-	public SideBattleField(boolean isAlliedSide) {
+	public SideBattleFieldEffect(boolean isAlliedSide) {
 		this.isAlliedSide = isAlliedSide;
 		this.terraAtlas = new TerraAtlasOnBattleField();
 	}

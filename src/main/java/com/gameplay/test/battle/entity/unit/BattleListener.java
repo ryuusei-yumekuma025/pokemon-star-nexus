@@ -1,7 +1,7 @@
-package com.gameplay.battle.entity.unit;
+package com.gameplay.test.battle.entity.unit;
 
-import com.gameplay.battle.entity.turn.BattleActionQueue;
-import com.gameplay.battle.entity.turn.BattleTurn;
+import com.gameplay.test.battle.entity.turn.BattleActionQueue;
+import com.gameplay.test.battle.entity.turn.BattleTurn;
 import com.gameplay.data.masterdata.template.move.tactic.TacticMove;
 
 import java.util.List;

@@ -14,7 +14,7 @@
 		{
 			"phase" : 1,
 			"code" : "FIRST_PHASE",
-			"states" : [
+			"modes" : [
 				{
 					"id" : 0,
 					"code" : "BASE",
@@ -34,7 +34,7 @@
 		{
 			"phase" : 2,
 			"code" : "SECOND_PHASE",
-			"states" : [
+			"modes" : [
 				{
 					"id" : 0,
 					"code" : "BASE",
@@ -54,7 +54,7 @@
 		{
 			"phase" : 3,
 			"code" : "THIRD_PHASE",
-			"states" : [
+			"modes" : [
 				{
 					"id" : 0,
 					"code" : "BASE",

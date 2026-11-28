@@ -12,7 +12,7 @@
 		"star_type" : "FIRE",
 		"starsoul" : "PASSION"
 	},
-	"states" : [
+	"modes" : [
 		{
 			"id" : 0,
 			"code" : "BASE",

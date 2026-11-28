@@ -11,7 +11,7 @@
 	"star_jewel" : {
 		"star_type" : "BUG"
 	},
-	"states" : [
+	"modes" : [
 		{
 			"id" : 0,
 			"code" : "BASE",

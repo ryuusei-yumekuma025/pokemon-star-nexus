@@ -36,7 +36,7 @@ public final class TrainerRegistry {
 	private TrainerRegistry() {}
 
 	/*------------------------------------------------------------------------------------------------------------------
-	3.	Data Registry State																								*/
+	3.	Data Registry Mode																								*/
 
 	public static synchronized void freeze() {
 		IDENTITY_REGISTRY.freeze();

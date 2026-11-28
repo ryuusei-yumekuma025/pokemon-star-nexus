@@ -1,4 +1,4 @@
-package com.gameplay.battle.entity.field.side.terraatlas;
+package com.gameplay.test.battle.entity.fieldeffect.side.terraatlas;
 
 import com.gameplay.data.masterdata.attribute.battle.field.side.TerraAtlas;
 

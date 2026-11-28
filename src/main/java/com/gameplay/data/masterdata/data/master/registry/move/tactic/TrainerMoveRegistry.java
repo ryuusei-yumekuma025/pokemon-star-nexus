@@ -17,7 +17,7 @@ public final class TrainerMoveRegistry extends MoveRegistry<String, TrainerMove>
 	}
 
 	/*------------------------------------------------------------------------------------------------------------------
-	2.	Data Registry State																								*/
+	2.	Data Registry Mode																								*/
 
 	public static void freeze() {
 		INSTANCE.freezeMoveStorage();

@@ -1,4 +1,4 @@
-package com.gameplay.battle.entity.unit.action;
+package com.gameplay.test.battle.entity.unit.action;
 
 import com.gameplay.battle.calculator.ActionIntervalCalculator;
 

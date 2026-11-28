@@ -17,7 +17,7 @@ public final class PokemonMoveRegistry extends MoveRegistry<Integer, PokemonMove
 	}
 
 	/*------------------------------------------------------------------------------------------------------------------
-	2.	Data Registry State																								*/
+	2.	Data Registry Mode																								*/
 
 	public static void freeze() {
 		INSTANCE.freezeMoveStorage();

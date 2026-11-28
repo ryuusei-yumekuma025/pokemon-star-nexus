@@ -20,7 +20,7 @@ public class Main {
 
 		playProfile.getTeamPresetStorage().getActiveTeamPreset().joinTeam(playProfile.getOwnedStarPartnerCollection().getStarPartner(StandbyStarPartnerRegistry.getStarPartnerByCode("Ethan and Typhlosion")));
 
-		System.out.println(StandbyStarPartnerRegistry.getStarPartnerByCode("Ethan and Typhlosion").getPhase().getDefaultState().getUnitBaseStat()
+		System.out.println(StandbyStarPartnerRegistry.getStarPartnerByCode("Ethan and Typhlosion").getPhase().getDefaultMode().getUnitBaseStat()
 				.getBaseSpeed(200, 55));
 	}
 }

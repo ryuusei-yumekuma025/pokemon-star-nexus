@@ -5,7 +5,7 @@ import com.gameplay.data.masterdata.template.move.Move;
 import com.gameplay.data.masterdata.template.move.tactic.TacticMove;
 import com.gameplay.data.masterdata.template.trainer.Trainer;
 import com.gameplay.data.masterdata.template.unit.phase.StarBattlePhase;
-import com.gameplay.data.masterdata.template.unit.phase.StarBattleState;
+import com.gameplay.data.masterdata.template.unit.phase.StarBattleMode;
 import com.gameplay.data.masterdata.template.unit.starjewel.StarJewel;
 import com.utils.IdCodeKeyMap;
 import com.utils.StringUtils;
@@ -84,8 +84,8 @@ public abstract class StarUnit<T extends Trainer, SJ extends StarJewel> {
 	public Collection<TacticMove> getAllTacticMoves() {
 		Set<TacticMove> tacticMoves = new LinkedHashSet<>();
 		for (StarBattlePhase starBattlePhase : getAllPhases()) {
-			for (StarBattleState starBattleState : starBattlePhase.getAllStates()) {
-				for (Move move : starBattleState.getMoveset()) {
+			for (StarBattleMode starBattleMode : starBattlePhase.getAllModes()) {
+				for (Move move : starBattleMode.getMoveset()) {
 					if (move instanceof TacticMove tacticMove) {
 						tacticMoves.add(tacticMove);
 					}
@@ -154,9 +154,9 @@ public abstract class StarUnit<T extends Trainer, SJ extends StarJewel> {
 			return self();
 		}
 
-		public void addState(StarBattleState starBattleState) {
-			if (starBattleState != null) {
-				nonPhase.addState(starBattleState);
+		public void addMode(StarBattleMode starBattleMode) {
+			if (starBattleMode != null) {
+				nonPhase.addMode(starBattleMode);
 			}
 		}
 

@@ -11,8 +11,8 @@ public class StarBattlePhase {
 
 	private final int phaseOrdinal;
 	private final String phaseCode;
-	private final int defaultState;
-	private final IdCodeKeyMap<Integer, StarBattleState> starBattleStates;
+	private final int defaultMode;
+	private final IdCodeKeyMap<Integer, StarBattleMode> starBattleModes;
 
 	/*------------------------------------------------------------------------------------------------------------------
 	2.	Constructor																										*/
@@ -20,8 +20,8 @@ public class StarBattlePhase {
 	private StarBattlePhase(Builder builder) {
 		this.phaseOrdinal = builder.phaseOrdinal;
 		this.phaseCode = builder.phaseCode;
-		this.defaultState = builder.defaultState;
-		this.starBattleStates = builder.starBattleStates.build();
+		this.defaultMode = builder.defaultMode;
+		this.starBattleModes = builder.starBattleModes.build();
 	}
 
 	/*------------------------------------------------------------------------------------------------------------------
@@ -35,24 +35,24 @@ public class StarBattlePhase {
 		return phaseCode;
 	}
 
-	public StarBattleState getStateById(int id) {
-		return starBattleStates.getById(id);
+	public StarBattleMode getModeById(int id) {
+		return starBattleModes.getById(id);
 	}
 
-	public StarBattleState getStateByCode(String code) {
-		return starBattleStates.getByCode(code);
+	public StarBattleMode getModeByCode(String code) {
+		return starBattleModes.getByCode(code);
 	}
 
-	public int getDefaultStateId() {
-		return defaultState;
+	public int getDefaultModeId() {
+		return defaultMode;
 	}
 
-	public StarBattleState getDefaultState() {
-		return getStateById(defaultState);
+	public StarBattleMode getDefaultMode() {
+		return getModeById(defaultMode);
 	}
 
-	public Collection<StarBattleState> getAllStates() {
-		return starBattleStates.getAll();
+	public Collection<StarBattleMode> getAllModes() {
+		return starBattleModes.getAll();
 	}
 
 	/*------------------------------------------------------------------------------------------------------------------
@@ -61,18 +61,18 @@ public class StarBattlePhase {
 	public static class Builder {
 		private final int phaseOrdinal;
 		private final String phaseCode;
-		private final int defaultState;
-		private final IdCodeKeyMap.Builder<Integer, StarBattleState> starBattleStates = new IdCodeKeyMap.Builder<>();
+		private final int defaultMode;
+		private final IdCodeKeyMap.Builder<Integer, StarBattleMode> starBattleModes = new IdCodeKeyMap.Builder<>();
 
-		public Builder(int phaseOrdinal, String phaseCode, int defaultState) {
+		public Builder(int phaseOrdinal, String phaseCode, int defaultMode) {
 			this.phaseOrdinal = phaseOrdinal;
 			this.phaseCode = phaseCode;
-			this.defaultState = defaultState;
+			this.defaultMode = defaultMode;
 		}
 
-		public void addState(StarBattleState starBattleState) {
-			if (starBattleState != null) {
-				this.starBattleStates.put(starBattleState.getStateId(), starBattleState.getStateCode(), starBattleState);
+		public void addMode(StarBattleMode starBattleMode) {
+			if (starBattleMode != null) {
+				this.starBattleModes.put(starBattleMode.getModeId(), starBattleMode.getModeCode(), starBattleMode);
 			}
 		}
 

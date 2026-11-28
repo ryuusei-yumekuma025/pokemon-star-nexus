@@ -4,7 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.gameplay.data.masterdata.data.master.dto.unit.PartnerPokemonDTO;
 import com.gameplay.data.masterdata.data.master.dto.unit.SpecialMovesDTO;
-import com.gameplay.data.masterdata.data.master.dto.unit.StarBattleStateDTO;
+import com.gameplay.data.masterdata.data.master.dto.unit.StarBattleModeDTO;
 import com.gameplay.data.masterdata.data.master.dto.unit.StarJewelDTO;
 import com.gameplay.data.masterdata.template.unit.type.playable.standby.StandbyStarPartner;
 import com.utils.StringUtils;
@@ -25,8 +25,8 @@ public record StandbyStarPartnerDTO(
 		StarJewelDTO starJewelEmblem,
 		@JsonProperty("special_moves")
 		SpecialMovesDTO specialMovesDTO,
-		@JsonProperty("states")
-		List<StarBattleStateDTO> starBattleStateDTOList
+		@JsonProperty("modes")
+		List<StarBattleModeDTO> starBattleModeDTOList
 ) {
 	public StandbyStarPartnerDTO {
 		code = StringUtils.requireUpperSnakeCase(code, "Standby Star Partner Code");
@@ -39,9 +39,9 @@ public record StandbyStarPartnerDTO(
 
 		specialMovesDTO.parse(builder.getStarUnitId());
 
-		if (starBattleStateDTOList != null) {
-			for (StarBattleStateDTO starBattleStateDTO : starBattleStateDTOList) {
-				builder.addState(starBattleStateDTO.create());
+		if (starBattleModeDTOList != null) {
+			for (StarBattleModeDTO starBattleModeDTO : starBattleModeDTOList) {
+				builder.addMode(starBattleModeDTO.create());
 			}
 		}
 

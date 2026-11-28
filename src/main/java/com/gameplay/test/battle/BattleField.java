@@ -1,9 +1,9 @@
-package com.gameplay.battle;
+package com.gameplay.test.battle;
 
-import com.gameplay.battle.entity.turn.BattleActionQueue;
-import com.gameplay.battle.entity.turn.BattleTurn;
-import com.gameplay.battle.entity.unit.BattleListener;
-import com.gameplay.battle.entity.unit.BattleUnit;
+import com.gameplay.test.battle.entity.turn.BattleActionQueue;
+import com.gameplay.test.battle.entity.turn.BattleTurn;
+import com.gameplay.test.battle.entity.unit.BattleListener;
+import com.gameplay.test.battle.entity.unit.BattleUnit;
 
 import java.util.ArrayList;
 import java.util.HashSet;

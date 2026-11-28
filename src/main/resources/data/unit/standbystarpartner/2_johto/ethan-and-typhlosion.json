@@ -37,7 +37,7 @@
 			}
 		]
 	},
-	"states" : [
+	"modes" : [
 		{
 			"id" : 0,
 			"code" : "BASE",

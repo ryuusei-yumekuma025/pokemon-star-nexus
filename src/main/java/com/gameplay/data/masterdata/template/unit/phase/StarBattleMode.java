@@ -14,13 +14,13 @@ import com.utils.StringUtils;
 import java.util.ArrayList;
 import java.util.List;
 
-public class StarBattleState {
+public class StarBattleMode {
 
 	/*------------------------------------------------------------------------------------------------------------------
 	1.	Fields																											*/
 
-	private final int stateId;
-	private final String stateCode;
+	private final int modeId;
+	private final String modeCode;
 	private final PokemonForm pokemonForm;
 	private final List<Move> moveset;
 	private final BaseStat unitBaseStat;
@@ -28,9 +28,9 @@ public class StarBattleState {
 	/*------------------------------------------------------------------------------------------------------------------
 	2.	Constructor																										*/
 
-	private StarBattleState(Builder builder) {
-		this.stateId = builder.stateId;
-		this.stateCode = builder.stateCode;
+	private StarBattleMode(Builder builder) {
+		this.modeId = builder.modeId;
+		this.modeCode = builder.modeCode;
 		this.pokemonForm = builder.pokemonForm;
 		this.moveset = List.copyOf(builder.moveset);
 		this.unitBaseStat = builder.unitBaseStat;
@@ -39,12 +39,12 @@ public class StarBattleState {
 	/*------------------------------------------------------------------------------------------------------------------
 	3.	Getters																											*/
 
-	public int getStateId() {
-		return stateId;
+	public int getModeId() {
+		return modeId;
 	}
 
-	public String getStateCode() {
-		return stateCode;
+	public String getModeCode() {
+		return modeCode;
 	}
 
 	public PokemonForm getPokemonForm() {
@@ -71,15 +71,15 @@ public class StarBattleState {
 	4.	Builder																											*/
 
 	public static class Builder {
-		private final int stateId;
-		private final String stateCode;
+		private final int modeId;
+		private final String modeCode;
 		private final PokemonForm pokemonForm;
 		private final List<Move> moveset = new ArrayList<>();
 		private BaseStat unitBaseStat;
 
-		public Builder(int stateId, String stateCode, String pokemonForm) {
-			this.stateId = stateId;
-			this.stateCode = StringUtils.requireUpperSnakeCase(stateCode, "State Code");
+		public Builder(int modeId, String modeCode, String pokemonForm) {
+			this.modeId = modeId;
+			this.modeCode = StringUtils.requireUpperSnakeCase(modeCode, "Mode Code");
 			this.pokemonForm = PokemonRegistry.getFormByCode(pokemonForm);
 		}
 
@@ -110,8 +110,8 @@ public class StarBattleState {
 			return this;
 		}
 
-		public StarBattleState build() {
-			return new StarBattleState(this);
+		public StarBattleMode build() {
+			return new StarBattleMode(this);
 		}
 	}
 }

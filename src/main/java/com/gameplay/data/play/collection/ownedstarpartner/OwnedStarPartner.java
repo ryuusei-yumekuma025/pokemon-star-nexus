@@ -1,6 +1,6 @@
 package com.gameplay.data.play.collection.ownedstarpartner;
 
-import com.gameplay.battle.entity.unit.instance.UnitInstance;
+import com.gameplay.battle.entity.unit.profile.UnitProfile;
 import com.gameplay.battle.entity.unit.stat.modifier.StatModifier;
 import com.gameplay.data.masterdata.data.config.LevelConfig;
 import com.gameplay.data.masterdata.template.move.Move;
@@ -13,9 +13,9 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
-public abstract class OwnedStarPartner<SP extends PlayableStarPartner> implements UnitInstance {
+public abstract class OwnedStarPartner<SP extends PlayableStarPartner> implements UnitProfile {
 
-	private final String instanceId;
+	private final String profileId;
 	private final SP starPartner;
 	private final Instant uniteTime;
 
@@ -26,8 +26,8 @@ public abstract class OwnedStarPartner<SP extends PlayableStarPartner> implement
 	private final List<Move> moveset;
 	private final StatModifier statModifier;
 
-	protected OwnedStarPartner(SP starPartner, String instanceId) {
-		this.instanceId = instanceId;
+	protected OwnedStarPartner(SP starPartner, String profileId) {
+		this.profileId = profileId;
 		this.starPartner = starPartner;
 		this.uniteTime = Instant.now();
 		this.level = 1;
@@ -37,8 +37,8 @@ public abstract class OwnedStarPartner<SP extends PlayableStarPartner> implement
 	}
 
 	@Override
-	public String getInstanceId() {
-		return instanceId;
+	public String getProfileId() {
+		return profileId;
 	}
 
 	@Override
